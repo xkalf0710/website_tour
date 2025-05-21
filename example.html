@@ -2,38 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Northern Mongolia</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-50 p-6 font-sans text-gray-800">
-  <h1 class="text-3xl font-bold mb-6">Northern Mongolia</h1>
-
-  <div class="grid grid-cols-3 gap-4 max-w-7xl mx-auto">
-    <!-- First row (Buir Lake - large image) -->
-    <div class="col-span-2 relative h-60">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Buir_Lake_Mongolia.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow text-lg">Buir Lake</div>
+<body class="bg-blue-50 p-6">
+  <header class="bg-[#0f3e7e] text-white">
+  <div class="flex items-center justify-between px-6 py-3">
+    <!-- Logo + About -->
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center space-x-1">
+        <span class="text-lg font-bold">BNM</span>
+        <img src="/path/to/logo.png" alt="Logo" class="w-5 h-5" />
+      </div>
+      <a href="#" class="text-sm hover:underline">About us</a>
     </div>
 
-    <!-- Top-right image -->
-    <div class="relative h-60">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Volcanic_crater_Northern_Mongolia.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+    <!-- Search bar -->
+    <div class="flex-1 mx-6 max-w-xl">
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="Search"
+          class="w-full rounded-md pl-10 pr-4 py-1 text-sm text-black"
+        />
+        <svg
+          class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
     </div>
 
-    <!-- Right-tall image -->
-    <div class="row-span-2 relative h-full">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Mongolian_Monk.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-    </div>
-
-    <!-- Bottom-left image -->
-    <div class="relative h-60">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Murun_city.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-    </div>
-
-    <!-- Bottom-middle image -->
-    <div class="relative h-60">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Tsaatan_people_reindeer.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+    <!-- Icons (User, Language) -->
+    <div class="flex items-center space-x-2">
+      <button class="bg-blue-500 hover:bg-blue-600 p-2 rounded-md">
+        <svg
+          class="w-4 h-4 text-white"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.121 17.804A8 8 0 1112 20a8.001 8.001 0 01-6.879-2.196z"
+          />
+        </svg>
+      </button>
+      <button class="bg-white text-black px-2 py-1 rounded-md text-sm">
+        EN
+        <svg
+          class="inline w-3 h-3 ml-1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
     </div>
   </div>
+
+  <!-- Navigation links -->
+  <nav class="bg-[#09326b] text-sm px-6 py-1">
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#" class="hover:underline">Visit Ulaanbaatar</a></li>
+      <li><a href="#" class="hover:underline underline">Destinations</a></li>
+      <li><a href="#" class="hover:underline">Accommodation</a></li>
+      <li><a href="#" class="hover:underline">BNM Tour</a></li>
+      <li><a href="#" class="hover:underline">Events</a></li>
+      <li><a href="#" class="hover:underline">Info</a></li>
+      <li><a href="#" class="hover:underline">Commercial</a></li>
+    </ul>
+  </nav>
+</header>
+
 </body>
 </html>
