@@ -1,0 +1,60 @@
+.header {
+    background: linear-gradient(to bottom, #aeb1b5 0%, #e8eefc 100%);
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .destination-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .destination-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .destination-card img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .destination-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    .destination-title {
+      font-size: 14px;
+    }
+  }
