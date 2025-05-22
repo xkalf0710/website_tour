@@ -1,87 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Northern Mongolia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accommodation Grid</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-50 p-6">
-  <header class="bg-[#0f3e7e] text-white">
-  <div class="flex items-center justify-between px-6 py-3">
-    <!-- Logo + About -->
-    <div class="flex items-center space-x-6">
-      <div class="flex items-center space-x-1">
-        <span class="text-lg font-bold">BNM</span>
-        <img src="/path/to/logo.png" alt="Logo" class="w-5 h-5" />
-      </div>
-      <a href="#" class="text-sm hover:underline">About us</a>
-    </div>
+<body class="bg-[#e8efff] min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-7xl w-full">
+    <h1 class="text-center text-2xl font-semibold text-gray-800 mb-8">Accommodation</h1>
 
-    <!-- Search bar -->
-    <div class="flex-1 mx-6 max-w-xl">
-      <div class="relative">
-        <input
-          type="text"
-          placeholder="Search"
-          class="w-full rounded-md pl-10 pr-4 py-1 text-sm text-black"
-        />
-        <svg
-          class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-        >
-          <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card Template -->
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Day Trip" class="w-full h-48 object-cover">
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <span class="text-white font-medium text-lg">Day Trip</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Icons (User, Language) -->
-    <div class="flex items-center space-x-2">
-      <button class="bg-blue-500 hover:bg-blue-600 p-2 rounded-md">
-        <svg
-          class="w-4 h-4 text-white"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M5.121 17.804A8 8 0 1112 20a8.001 8.001 0 01-6.879-2.196z"
-          />
-        </svg>
-      </button>
-      <button class="bg-white text-black px-2 py-1 rounded-md text-sm">
-        EN
-        <svg
-          class="inline w-3 h-3 ml-1"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-        >
-          <path d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
+      <!-- Copy for other locations -->
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Central Mongolia" class="w-full h-48 object-cover">
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <span class="text-white font-medium text-lg">Central Mongolia</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Northern Mongolia" class="w-full h-48 object-cover">
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <span class="text-white font-medium text-lg">Northern Mongolia</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Western Mongolia" class="w-full h-48 object-cover">
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <span class="text-white font-medium text-lg">Western Mongolia</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Southern Mongolia" class="w-full h-48 object-cover">
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <span class="text-white font-medium text-lg">Southern Mongolia</span>
+        </div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Eastern Mongolia" class="w-full h-48 object-cover">
+        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+          <span class="text-white font-medium text-lg">Eastern Mongolia</span>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- Navigation links -->
-  <nav class="bg-[#09326b] text-sm px-6 py-1">
-    <ul class="flex space-x-6">
-      <li><a href="#" class="hover:underline">Home</a></li>
-      <li><a href="#" class="hover:underline">Visit Ulaanbaatar</a></li>
-      <li><a href="#" class="hover:underline underline">Destinations</a></li>
-      <li><a href="#" class="hover:underline">Accommodation</a></li>
-      <li><a href="#" class="hover:underline">BNM Tour</a></li>
-      <li><a href="#" class="hover:underline">Events</a></li>
-      <li><a href="#" class="hover:underline">Info</a></li>
-      <li><a href="#" class="hover:underline">Commercial</a></li>
-    </ul>
-  </nav>
-</header>
-
 </body>
 </html>
