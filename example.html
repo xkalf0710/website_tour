@@ -3,57 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accommodation Grid</title>
+  <title>Western Mongolia</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#e8efff] min-h-screen flex items-center justify-center px-4">
+<body class="bg-blue-50 min-h-screen flex items-center justify-center p-6">
   <div class="max-w-7xl w-full">
-    <h1 class="text-center text-2xl font-semibold text-gray-800 mb-8">Accommodation</h1>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card Template -->
+    <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">Western Mongolia</h1>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+      
+      <!-- Each card below can use col-span or row-span to adjust size -->
+      
       <div class="relative rounded-xl overflow-hidden shadow-md">
-        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Day Trip" class="w-full h-48 object-cover">
-        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <span class="text-white font-medium text-lg">Day Trip</span>
-        </div>
+        <img src="img1.jpg" class="w-full h-full object-cover" alt="Baga Gazriin Chuluu" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Baga Gazriin Chuluu</div>
       </div>
-
-      <!-- Copy for other locations -->
-      <div class="relative rounded-xl overflow-hidden shadow-md">
-        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Central Mongolia" class="w-full h-48 object-cover">
-        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <span class="text-white font-medium text-lg">Central Mongolia</span>
-        </div>
+      
+      <div class="relative rounded-xl overflow-hidden shadow-md sm:col-span-2">
+        <img src="img2.jpg" class="w-full h-full object-cover" alt="Ulaagchnii Khar Lake" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Ulaagchnii Khar Lake</div>
       </div>
 
       <div class="relative rounded-xl overflow-hidden shadow-md">
-        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Northern Mongolia" class="w-full h-48 object-cover">
-        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <span class="text-white font-medium text-lg">Northern Mongolia</span>
-        </div>
+        <img src="img3.jpg" class="w-full h-full object-cover" alt="Mukhart River" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Mukhart River</div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md sm:col-span-2">
+        <img src="img4.jpg" class="w-full h-full object-cover" alt="Altai Tavan Bogd" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Altai Tavan Bogd</div>
       </div>
 
       <div class="relative rounded-xl overflow-hidden shadow-md">
-        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Western Mongolia" class="w-full h-48 object-cover">
-        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <span class="text-white font-medium text-lg">Western Mongolia</span>
-        </div>
+        <img src="img5.jpg" class="w-full h-full object-cover" alt="Baga Turgen’s Waterfall" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Baga Turgen’s Waterfall</div>
       </div>
 
       <div class="relative rounded-xl overflow-hidden shadow-md">
-        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Southern Mongolia" class="w-full h-48 object-cover">
-        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <span class="text-white font-medium text-lg">Southern Mongolia</span>
-        </div>
+        <img src="img6.jpg" class="w-full h-full object-cover" alt="Otgontenger" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Otgontenger</div>
       </div>
 
       <div class="relative rounded-xl overflow-hidden shadow-md">
-        <img src="/mnt/data/bb4e09e3-cdd9-4cc2-a74f-8214ee0b67ab.png" alt="Eastern Mongolia" class="w-full h-48 object-cover">
-        <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
-          <span class="text-white font-medium text-lg">Eastern Mongolia</span>
-        </div>
+        <img src="img7.jpg" class="w-full h-full object-cover" alt="Ulgii City" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Ulgii City</div>
       </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="img8.jpg" class="w-full h-full object-cover" alt="Khyargas Lake" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Khyargas Lake</div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="img9.jpg" class="w-full h-full object-cover" alt="Khovd City" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Khovd City</div>
+      </div>
+
+      <div class="relative rounded-xl overflow-hidden shadow-md">
+        <img src="img10.jpg" class="w-full h-full object-cover" alt="Uliastai" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent text-white p-2 text-sm">Uliastai</div>
+      </div>
+
     </div>
   </div>
 </body>
