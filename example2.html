@@ -1,87 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Southern Mongolia Slider</title>
+  <meta charset="UTF-8">
+  <title>Navbar</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-50 p-8">
-
-  
-
-  <div class="max-w-7xl mx-auto">
-    <h1 class="text-2xl font-bold text-gray-800 mb-6">Southern Mongolia</h1>
-    <!-- Left Arrow -->
-    <!-- <button id="scrollLeft" class="absolute z-10 left-0 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-gray-100">
-      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-    </button> -->
-
-    <!-- Right Arrow -->
-    <button id="scrollRight" class="absolute z-10 right-0 top-1/2 -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-gray-100">
-      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-
-    <!-- Scrollable container -->
-    <div id="slider" class="grid grid-cols-6 gap-4 auto-rows-[200px]">
-      <!-- Slide Item Template -->
-      <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-        <img src="img/thumbnails/Southern/Southern-1.jpg" alt="Baga Gazariin Chuluu" class="w-full h-full object-cover">
-        <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Baga Gazariin Chuluu</div>
+<body>
+  <nav class="bg-[#123E78] px-6 py-2 flex items-center justify-between">
+    <!-- Left Side -->
+    <div class="flex items-center space-x-6">
+      <div class="flex items-center space-x-2 text-white font-semibold">
+        <span>BNM</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/BNM_Logo.png" alt="Logo" class="h-4 w-4" />
       </div>
-      <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-        <img src="img/thumbnails/Southern/Southern-3.jpg" alt="Tsagaan Suvarga" class="w-full h-full object-cover">
-        <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Tsagaan Suvarga</div>
-      </div>
-
-      <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-        <img src="img/thumbnails/Southern/Southern-8.jpg" alt="Khongor Sand Dunes" class="h-full w-full object-cover">
-        <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Khongor Sand Dunes</div>
-      </div>
-
-
-      <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-        <img src="img/thumbnails/Southern/Southern-2.jpg" alt="Ikh Gazariin Chuluu" class="h-full w-full object-cover">
-        <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Ikh Gazariin Chuluu</div>
-      </div>
-
-
-      <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-        <img src="img/thumbnails/Southern/Southern-9.jpg" alt="Flaming Cliffs" class="h-full w-full object-cover">
-        <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Flaming Cliffs</div>
-      </div>
-
-      <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-        <img src="img/thumbnails/Southern/Southern-4.jpg" alt="Dalanzadgad" class="w-full h-full object-cover" />
-        <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Dalanzadgad</div>
-      </div>
-
-
-      
+      <a href="#" class="text-white text-sm">About us</a>
     </div>
-  </div>
 
-  <!-- Hide Scrollbar -->
-  <style>
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
+    <!-- Center: Search -->
+    <div class="flex-1 max-w-md mx-6">
+      <div class="relative">
+        <input type="text" placeholder="Search"
+               class="w-full pl-8 pr-4 py-1 rounded-md focus:outline-none"
+        />
+        <div class="absolute left-2 top-1.5 text-blue-600">
+          🔍
+        </div>
+      </div>
+    </div>
 
-  <!-- JavaScript for Arrow Scroll -->
-  <script>
-    const slider = document.getElementById('slider');
-    document.getElementById('scrollLeft').onclick = () => slider.scrollBy({ left: -300, behavior: 'smooth' });
-    document.getElementById('scrollRight').onclick = () => slider.scrollBy({ left: 300, behavior: 'smooth' });
-  </script>
-
+    <!-- Right Side -->
+    <div class="flex items-center space-x-4">
+      <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-md">
+        👤
+      </button>
+      <div class="bg-white/10 text-white px-2 py-1 rounded-md text-sm">
+        EN ⌄
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
