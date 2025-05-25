@@ -7,125 +7,97 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-  <section class="p-6 max-w-full overflow-hidden">
-    <div class="relative">
-      <h1 class="text-3xl font-bold mb-6">Southern Mongolia</h1>
+  <div class="bg-blue-50 p-6">
+  <h2 class="text-2xl font-bold mb-6">Central Mongolia</h2>
 
-        <div class="grid grid-cols-6 gap-4 auto-rows-[200px]">
-          
-          <!-- Row 1 -->
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Baga Gazarin Chuluu" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Baga Gazarin Chuluu</div>
+  <div class="relative">
+    <!-- Scrollable slider container -->
+    <div id="slider" class="flex gap-4 overflow-x-auto scroll-smooth pb-4">
+      
+      <!-- Grid inside scroll item -->
+      <div class="grid grid-cols-6 grid-rows-3 gap-4 min-w-[1024px]">
+
+        <!-- Khogno Tarna NP -->
+        <div class="col-span-2 row-span-1 relative">
+          <img src="img/thumbnails/Central Mongolia/Central-1.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Khogno Tarna NP
           </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Tsagaan Suvarga" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Tsagaan Suvarga</div>
-          </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Khongor Sand Dunes" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Khongor Sand Dunes</div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="relative col-span-1 row-span-2 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x600" alt="Yolyn Am" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Yolyn Am</div>
-          </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Ikh Gazriin Chuluu" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Ikh Gazriin Chuluu</div>
-          </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Flaming Cliffs" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Flaming Cliffs</div>
-          </div>
-
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Dalanzadgad" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Dalanzadgad</div>
-          </div>
-
-          <!-- Row 3 -->
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Mukhar Shivert Am" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Mukhar Shivert Am</div>
-          </div>
-
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Monastery of Bulgan" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Monastery of Bulgan</div>
-          </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Moltsog Sand Dunes" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Moltsog Sand Dunes</div>
-          </div>
-
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Ongi Monastery" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Ongi Monastery</div>
-          </div>
-
-          <!-- Row 4 -->
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Khermen Tsav" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Khermen Tsav</div>
-          </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Dungenee Am" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Dungenee Am</div>
-          </div>
-
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Bulgan" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Bulgan</div>
-          </div>
-
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Petroglyphs of Khavtsgait" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Petroglyphs of Khavtsgait</div>
-          </div>
-
-          <div class="relative col-span-2 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Khanan Khets" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Khanan Khets</div>
-          </div>
-
-          <div class="relative col-span-1 row-span-1 bg-white rounded overflow-hidden shadow">
-            <img src="https://via.placeholder.com/400x300" alt="Khamriin Khiid" class="w-full h-full object-cover" />
-            <div class="absolute bottom-0 bg-black/60 text-white p-2 text-sm">Khamriin Khiid</div>
-          </div>
-
         </div>
+
+        <!-- Ulaan Tsutgalan (Tall) -->
+        <div class="col-span-1 row-span-3 relative">
+          <img src="ulaantsutgalan.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Ulaan Tsutgalan
+          </div>
+        </div>
+
+        <!-- Khuisin Naiman Lake -->
+        <div class="col-span-2 row-span-1 relative">
+          <img src="khuisin.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Khuisin Naiman Lake
+          </div>
+        </div>
+
+        <!-- Tsenkher -->
+        <div class="col-span-1 row-span-1 relative">
+          <img src="img/thumbnails/Central Mongolia/Central-7.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Tsenkher
+          </div>
+        </div>
+
+        <!-- Kharkhorin -->
+        <div class="col-span-1 row-span-1 relative">
+          <img src="img/thumbnails/Central Mongolia/Central-2.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Kharkhorin
+          </div>
+        </div>
+
+        <!-- Ugii Lake -->
+        <div class="col-span-2 row-span-1 relative">
+          <img src="ugiilake.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Ugii Lake
+          </div>
+        </div>
+
+        <!-- Tuvkhun Monastery -->
+        <div class="col-span-2 row-span-1 relative">
+          <img src="img/thumbnails/Central Mongolia/Central-6.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Tuvkhun Monastery
+          </div>
+        </div>
+
+        <!-- Tsetserleg -->
+        <div class="col-span-1 row-span-1 relative">
+          <img src="tsetserleg.jpg" class="w-full h-full object-cover rounded-xl shadow" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
+            Tsetserleg
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Add more grid sections if needed here -->
+
     </div>
-  </section>
 
-  <script>
-    const slider = document.getElementById('slider');
-    const scrollLeft = document.getElementById('scrollLeft');
-    const scrollRight = document.getElementById('scrollRight');
+    <!-- Right scroll button -->
+    <button onclick="document.getElementById('slider').scrollBy({ left: 400, behavior: 'smooth' })"
+      class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+</div>
 
-    scrollLeft.addEventListener('click', () => {
-      slider.scrollBy({ left: -300, behavior: 'smooth' });
-    });
 
-    scrollRight.addEventListener('click', () => {
-      slider.scrollBy({ left: 300, behavior: 'smooth' });
-    });
-
-    // Optional: Autoplay
-    let autoScroll = true;
-    if (autoScroll) {
-      setInterval(() => {
-        slider.scrollBy({ left: 300, behavior: 'smooth' });
-      }, 4000); // every 4 seconds
-    }
-  </script>
 </body>
 </html>
