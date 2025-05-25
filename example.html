@@ -1,55 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centered Navbar</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#0e3b78]">
-  <header class="bg-[#0e3b78] text-white px-6 py-2">
-    <div class="flex justify-between items-center">
-      <!-- Left: Logo -->
-      <div class="flex items-center space-x-2">
-        <span class="font-bold text-sm">BNM</span>
-        <img src="https://www.svgrepo.com/show/513271/globe.svg" class="w-4 h-4" alt="globe" />
-      </div>
-
-      <!-- Center: About + Search -->
-      <div class="flex-1 flex justify-center items-center space-x-4">
-        <a href="#" class="text-sm hover:underline">About us</a>
-        <div class="relative w-full max-w-sm">
-          <input type="text" placeholder="Search"
-            class="w-full pl-10 pr-4 py-1.5 rounded-md text-sm text-black focus:outline-none" />
-          <div class="absolute left-3 top-2.5">
-            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
-                clip-rule="evenodd"></path>
-            </svg>
+<html>
+  <head>
+    <style>
+  .overlap-wrapper {
+    position: relative;
+    width: 1450px;
+    height: 691px;
+    background-color: var(--variable-collection-blue-duplicate);
+    border-radius: 32px;
+    overflow: hidden;
+  }
+  
+  .overlap-3 {
+    position: relative;
+    height: 1058px;
+  }
+  
+  .image-3 {
+    position: absolute;
+    width: 1450px;
+    height: 691px;
+    top: 0;
+    left: 0;
+  }
+  
+  .frame-35 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 10px 0px 0px;
+    position: absolute;
+    top: 76px;
+    left: 129px;
+  }
+  
+  .frame-36 {
+    gap: 8px;
+    flex: 0 0 auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .text-wrapper-27 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--header-4-semibold-24-font-family);
+    font-weight: var(--header-4-semibold-24-font-weight);
+    color: var(--ui-white);
+    font-size: var(--header-4-semibold-24-font-size);
+    letter-spacing: var(--header-4-semibold-24-letter-spacing);
+    line-height: var(--header-4-semibold-24-line-height);
+    white-space: nowrap;
+    font-style: var(--header-4-semibold-24-font-style);
+  }
+  
+  .text-wrapper-28 {
+    position: relative;
+    width: 302px;
+    font-family: var(--header-6-medium-16-font-family);
+    font-weight: var(--header-6-medium-16-font-weight);
+    color: var(--ui-white);
+    font-size: var(--header-6-medium-16-font-size);
+    text-align: center;
+    letter-spacing: var(--header-6-medium-16-letter-spacing);
+    line-height: var(--header-6-medium-16-line-height);
+    font-style: var(--header-6-medium-16-font-style);
+    text-align: justify;
+  }
+  
+  .browse-through-our {
+    position: relative;
+    width: 307px;
+    font-family: var(--header-6-medium-16-font-family);
+    font-weight: var(--header-6-medium-16-font-weight);
+    color: var(--ui-white);
+    font-size: var(--header-6-medium-16-font-size);
+    text-align: center;
+    letter-spacing: var(--header-6-medium-16-letter-spacing);
+    line-height: var(--header-6-medium-16-line-height);
+    font-style: var(--header-6-medium-16-font-style);
+    text-align: justify;
+  }
+  
+  .text-wrapper-29 {
+    position: relative;
+    width: 244px;
+    font-family: var(--header-6-medium-16-font-family);
+    font-weight: var(--header-6-medium-16-font-weight);
+    color: var(--ui-white);
+    font-size: var(--header-6-medium-16-font-size);
+    text-align: center;
+    letter-spacing: var(--header-6-medium-16-letter-spacing);
+    line-height: var(--header-6-medium-16-line-height);
+    font-style: var(--header-6-medium-16-font-style);
+    text-align: justify;
+  }
+  
+  .group-21 {
+    position: absolute;
+    width: 399px;
+    height: 128px;
+    top: 504px;
+    left: 939px;
+  }
+  
+  .text-wrapper-30 {
+    position: absolute;
+    height: 40px;
+    top: 0;
+    left: 95px;
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 40px;
+    white-space: nowrap;
+  }
+  
+  .group-22 {
+    position: absolute;
+    width: 397px;
+    height: 61px;
+    top: 67px;
+    left: 0;
+  }
+  
+  .badge-ios {
+    position: absolute;
+    width: 182px;
+    height: 61px;
+    top: 0;
+    left: 0;
+  }
+  
+  .badge-android {
+    position: absolute;
+    width: 205px;
+    height: 61px;
+    top: 0;
+    left: 192px;
+  }
+  
+  .group-23 {
+    position: absolute;
+    width: 590px;
+    height: 812px;
+    top: 246px;
+    left: 129px;
+  }
+  
+  .overlap-group-5 {
+    position: relative;
+    height: 445px;
+  }
+  
+  .imockup-google-pixel {
+    position: absolute;
+    width: 360px;
+    height: 445px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .imockup-google-pixel-2 {
+    position: absolute;
+    width: 360px;
+    height: 339px;
+    top: 106px;
+    left: 230px;
+    object-fit: cover;
+  }
+  
+  .frame-37 {
+    position: absolute;
+    width: 1224px;
+    height: 517px;
+    top: 8249px;
+    left: 348px;
+    background-color: var(--ui-white);
+    border-radius: 32px;
+    overflow: hidden;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="overlap-wrapper">
+        <div class="overlap-3">
+          <img class="image-3" src="https://c.animaapp.com/vkYqbqlS/img/image-34.png" />
+          <div class="frame-35">
+            <div class="frame-36">
+              <div class="text-wrapper-27">Confident Travel with Expertise</div>
+              <p class="text-wrapper-28">
+                Explore Mongolia confidently, backed by our app – a showcase of our extensive knowledge, making us
+                your trusted travel companion.
+              </p>
+            </div>
+          <div class="frame-36">
+            <p class="text-wrapper-27">Discover Mongolia at Your Fingertips:</p>
+                  <p class="browse-through-our">
+                    Browse through our app&#39;s wealth of data: tourist destinations, events, cultural insights, and
+                    history, empowering you to plan your journey effortlessly.
+                  </p>
+                </div>
+                <div class="frame-36">
+                  <div class="text-wrapper-27">Essential Travel Tips Unveiled</div>
+                  <p class="text-wrapper-29">
+                    Access all the tourist information you need – FAQs, preparation tips, and travel insights – ensuring
+                    a seamless and informed adventure in Mongolia.
+                  </p>
+                </div>
+              </div>
+              <div class="group-21">
+                <div class="text-wrapper-30">Download app</div>
+                <div class="group-22">
+                  <img class="badge-ios" src="https://c.animaapp.com/vkYqbqlS/img/badge-ios.svg" />
+                  <img class="badge-android" src="https://c.animaapp.com/vkYqbqlS/img/badge-android.svg" />
+                </div>
+              </div>
+              <div class="group-23">
+                <div class="overlap-group-5">
+                  <img
+                    class="imockup-google-pixel"
+                    src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro-1.png"
+                  />
+              <img
+                class="imockup-google-pixel-2"
+                src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro.png"/>
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Right: User + Language -->
-      <div class="flex items-center space-x-3">
-        <!-- User Icon Button -->
-        <button class="bg-blue-600 hover:bg-blue-500 p-2 rounded-md">
-          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-          </svg>
-        </button>
-
-        <!-- Language Dropdown -->
-        <button class="bg-[#123765] hover:bg-[#17437d] text-white text-sm px-3 py-1 rounded-md flex items-center">
-          EN
-          <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
-          </svg>
-        </button>
-      </div>
     </div>
-  </header>
-</body>
+  </body>
 </html>
