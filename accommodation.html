@@ -8,24 +8,48 @@
 </head>
 <body class="font-sans">
 
-  <!-- Navbar -->
-  <header class="flex justify-between items-center px-6 py-4 bg-white shadow">
-    <div class="flex items-center space-x-2">
-      <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-8 h-8" />
-      <span class="text-xl font-bold">BNM</span>
-    </div>
-    <nav class="flex-1 max-w-lg mx-4">
-      <ul class="flex space-x-2 text-sm text-gray-700">
-        <li><a href="#" class="hover:text-blue-600">About us</a></li>
-        <li><input type="text" placeholder="Search" class="px-3 py-1 border rounded w-full"/></li>
-      </ul>
-    </nav>
-    <div class="flex items-center space-x-4">
-      <button class="text-sm text-white bg-blue-600 px-4 py-1 rounded">Log In</button>
-      <select class="border rounded px-2 py-1 text-sm">
-        <option>EN</option>
-        <option>MN</option>
-      </select>
+<header class="bg-[#0e3b78] text-white px-6 py-2">
+    <div class="flex justify-between items-center">
+      <!-- Left: Logo -->
+      <div class="flex items-center space-x-2">
+        <span class="font-bold text-sm">BNM</span>
+        <img src="https://www.svgrepo.com/show/513271/globe.svg" class="w-4 h-4" alt="globe" />
+      </div>
+
+      <!-- Center: About + Search -->
+      <div class="flex-1 flex justify-center items-center space-x-4">
+        <a href="#" class="text-sm hover:underline">About us</a>
+        <div class="relative w-full max-w-sm">
+          <input type="text" placeholder="Search"
+            class="w-full pl-10 pr-4 py-1.5 rounded-md text-sm text-black focus:outline-none" />
+          <div class="absolute left-3 top-2.5">
+            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: User + Language -->
+      <div class="flex items-center space-x-3">
+        <!-- User Icon Button -->
+        <button class="bg-blue-600 hover:bg-blue-500 p-2 rounded-md">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+          </svg>
+        </button>
+
+        <!-- Language Dropdown -->
+        <button class="bg-[#123765] hover:bg-[#17437d] text-white text-sm px-3 py-1 rounded-md flex items-center">
+          EN
+          <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -64,13 +88,17 @@
     <!-- Aglag Buteelii Khiid -->
     <div class="col-span-2 relative rounded-lg overflow-hidden shadow-md">
       <img src="img/Destinaion Thumbnail/AglagMonastery.jpg" alt="Aglag Buteelii Khiid" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 text-white text-sm p-2">Aglag Buteelii Khiid</div>
+      <a href="aglag_bvteel.html">
+        <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 text-white text-sm p-2">Aglag Buteelii Khiid</div>
+      </a>
     </div>
 
     <!-- Khustai Nuruu NP -->
     <div class="col-span-3 relative rounded-lg overflow-hidden shadow-md">
       <img src="img/Destinaion Thumbnail/KhustaiNp.jpg" alt="Khustai Nuruu NP" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 text-white text-sm p-2">Khustai Nuruu NP</div>
+      <a href="terelj_khustai_nuruu.html">
+        <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 text-white text-sm p-2">Khustai Nuruu NP</div>
+      </a>
     </div>
 
     <!-- Genghis Khan Statue -->
@@ -82,7 +110,9 @@
     <!-- Terelj NP -->
     <div class="col-span-3 relative rounded-lg overflow-hidden shadow-md">
       <img src="img/Destinaion Thumbnail/Terelj.jpg" alt="Terelj NP" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 text-white text-sm p-2">Terelj NP</div>
+      <a href="terelj_natural.html">
+        <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-50 text-white text-sm p-2">Terelj NP</div>
+      </a>
     </div>
 
     <!-- Chinggis Khaan Khuree -->
