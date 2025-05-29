@@ -2,102 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Southern Mongolia Slider</title>
+  <title>Custom Image Grid</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-  <div class="bg-blue-50 p-6">
-  <h2 class="text-2xl font-bold mb-6">Central Mongolia</h2>
+<body class="bg-white p-10">
 
-  <div class="relative">
-    <!-- Scrollable slider container -->
-    <div id="slider" class="flex gap-4 overflow-x-auto scroll-smooth pb-4">
-      
-      <!-- Grid inside scroll item -->
-      <div class="grid grid-cols-6 grid-rows-3 gap-4 min-w-[1024px]">
+  <div class="relative max-w-4xl mx-auto grid grid-cols-3 gap-4 items-start">
 
-        <!-- Khogno Tarna NP -->
-        <div class="col-span-2 row-span-1 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-1.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Khogno Tarna NP
-          </div>
-        </div>
-
-        <!-- Ulaan Tsutgalan (Tall) -->
-        <div class="col-span-1 row-span-3 relative">
-          <img src="ulaantsutgalan.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Ulaan Tsutgalan
-          </div>
-        </div>
-
-        <!-- Khuisin Naiman Lake -->
-        <div class="col-span-2 row-span-1 relative">
-          <img src="khuisin.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Khuisin Naiman Lake
-          </div>
-        </div>
-
-        <!-- Tsenkher -->
-        <div class="col-span-1 row-span-1 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-7.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Tsenkher
-          </div>
-        </div>
-
-        <!-- Kharkhorin -->
-        <div class="col-span-1 row-span-1 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-2.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Kharkhorin
-          </div>
-        </div>
-
-        <!-- Ugii Lake -->
-        <div class="col-span-2 row-span-1 relative">
-          <img src="ugiilake.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Ugii Lake
-          </div>
-        </div>
-
-        <!-- Tuvkhun Monastery -->
-        <div class="col-span-2 row-span-1 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-6.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Tuvkhun Monastery
-          </div>
-        </div>
-
-        <!-- Tsetserleg -->
-        <div class="col-span-1 row-span-1 relative">
-          <img src="tsetserleg.jpg" class="w-full h-full object-cover rounded-xl shadow" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-40 px-2 py-1 rounded">
-            Tsetserleg
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Add more grid sections if needed here -->
-
+    <!-- Top Left Large Image -->
+    <div class="col-span-2 row-span-1">
+      <img src="child-dune.jpg" alt="Child on Dune" class="rounded-xl w-full h-auto object-cover shadow-md" />
     </div>
 
-    <!-- Right scroll button -->
-    <button onclick="document.getElementById('slider').scrollBy({ left: 400, behavior: 'smooth' })"
-      class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-  </div>
-</div>
+    <!-- Guide Illustration Floating Right -->
+    <div class="absolute top-10 right-0 w-28">
+      <img src="guide-icon.png" alt="Guide" class="w-full h-auto" />
+    </div>
 
+    <!-- Bottom Left Small Vertical Image -->
+    <div class="col-span-1 row-span-1">
+      <img src="family-vertical.jpg" alt="Family Portrait" class="rounded-xl w-full h-auto object-cover shadow-md" />
+    </div>
+
+    <!-- Bottom Right Large Horizontal Image -->
+    <div class="col-span-2 row-span-1">
+      <img src="family-hiking.jpg" alt="Family Hiking" class="rounded-xl w-full h-auto object-cover shadow-md" />
+    </div>
+
+  </div>
 
 </body>
 </html>

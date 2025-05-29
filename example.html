@@ -2,43 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meet The Team</title>
+  <title>Directional Discoveries Tour</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white p-10">
-  <div class="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
+<body class="bg-gradient-to-tr from-blue-100 to-white">
 
-    <!-- Image Section -->
-    <div class="relative w-full max-w-md">
-      <!-- Character Overlay -->
-      <img src="character.png" alt="Character" class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 z-10" />
+  <div class="flex flex-col lg:flex-row items-center justify-between px-10 py-16 gap-10">
 
-      <!-- Top Image -->
-      <div class="rounded-xl overflow-hidden shadow-lg">
-        <img src="img-top.jpg" alt="Top" class="object-cover w-full h-48" />
+    <!-- Left Section -->
+    <div class="flex flex-col lg:w-1/2 items-start space-y-6">
+      <div class="flex items-center gap-4">
+        <img src="explorer.png" alt="Explorer" class="w-24 h-auto" />
+        <img src="compass.png" alt="Compass" class="w-12 h-auto" />
       </div>
-
-      <!-- Bottom Row Images -->
-      <div class="grid grid-cols-2 gap-4 mt-4">
-        <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="img-left.jpg" alt="Left" class="object-cover w-full h-40" />
-        </div>
-        <div class="rounded-xl overflow-hidden shadow-md">
-          <img src="img-right.jpg" alt="Right" class="object-cover w-full h-40" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Text Section -->
-    <div class="flex-1 max-w-xl text-center lg:text-left">
-      <h2 class="text-xl font-semibold text-red-600">Meet The Team:</h2>
-      <h3 class="text-2xl font-bold text-gray-900 mt-1 mb-4">A Family At The Heart Of Adventure</h3>
-      <p class="text-gray-600 leading-relaxed text-base">
-        Brave New Mongolia Tours is a family-run business with a deeply personal touch. Led by Anar, a seasoned guide and photographer, and his son Tenuun, every tour feels like traveling with family. Our close-knit approach ensures every traveler feels welcome and cared for, experiencing Mongolia in a way few others can.”
+      <h2 class="text-3xl font-bold text-blue-900">Directional<br>Discoveries Tour</h2>
+      <p class="text-gray-700 max-w-lg">
+        Unlock the essence of Mongolia with our uniquely crafted directional tours. Each tour is a gateway to
+        unparalleled experiences, offering the most efficient and comprehensive exploration of Mongolia’s diverse
+        landscapes, cultures, and wonders. Choose your direction, and let the adventure unfold.
       </p>
     </div>
 
+    <!-- Right Section -->
+    <div class="relative lg:w-1/2 flex justify-center items-center">
+      <div class="relative w-[300px] h-[300px]">
+        <!-- Top (North) -->
+        <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 text-center">
+          <h3 class="text-base font-semibold text-blue-800">
+            Numinous <span class="text-lg font-bold text-blue-600">N</span>orthern Reindeer
+          </h3>
+          <p class="text-sm text-gray-600">May 23 – May 30, 2024 | 13 Days</p>
+          <p class="text-sm text-gray-700">Starting from: <span class="font-semibold">$1050</span></p>
+        </div>
+
+        <!-- Right (East) -->
+        <div class="absolute top-1/2 -right-[180px] transform -translate-y-1/2 text-left">
+          <h3 class="text-base font-semibold text-blue-800">Eastern Echoes in Time</h3>
+          <p class="text-sm text-gray-600">May 23 – May 30, 2024 | 13 Days</p>
+          <p class="text-sm text-gray-700">Starting from: <span class="font-semibold">$1050</span></p>
+        </div>
+
+        <!-- Bottom (South) -->
+        <div class="absolute -bottom-20 left-1/2 transform -translate-x-1/2 text-center">
+          <h3 class="text-base font-semibold text-blue-800">
+            Singing <span class="text-lg font-bold text-blue-600">S</span>outhern Dunes
+          </h3>
+          <p class="text-sm text-gray-600">May 23 – May 30, 2024 | 13 Days</p>
+          <p class="text-sm text-gray-700">Starting from: <span class="font-semibold">$1050</span></p>
+        </div>
+
+        <!-- Left (West) -->
+        <div class="absolute top-1/2 -left-[180px] transform -translate-y-1/2 text-right">
+          <h3 class="text-base font-semibold text-blue-800">Western Horizon Wings</h3>
+          <p class="text-sm text-gray-600">May 23 – May 30, 2024 | 13 Days</p>
+          <p class="text-sm text-gray-700">Starting from: <span class="font-semibold">$1050</span></p>
+        </div>
+
+        <!-- Diamond Image Grid -->
+        <div class="absolute inset-0 m-auto w-full h-full transform rotate-45 grid grid-cols-2 grid-rows-2 gap-0">
+          <img src="north.jpg" alt="North" class="w-full h-full object-cover transform -rotate-45 border-4 border-white" />
+          <img src="east.jpg" alt="East" class="w-full h-full object-cover transform -rotate-45 border-4 border-white" />
+          <img src="west.jpg" alt="West" class="w-full h-full object-cover transform -rotate-45 border-4 border-white" />
+          <img src="south.jpg" alt="South" class="w-full h-full object-cover transform -rotate-45 border-4 border-white" />
+        </div>
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
