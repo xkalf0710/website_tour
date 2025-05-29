@@ -1,110 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Southern Mongolia Grid</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet The Team</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-6">
-  <h2 class="text-xl font-semibold mb-4">Southern Mongolia</h2>
+<body class="bg-white p-10">
+  <div class="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
 
-  <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 auto-rows-[120px] sm:auto-rows-[50px] lg:auto-rows-[80px] gap-2">
-    <!-- Image 1 -->
-    <div class="col-span-2 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x400" alt="Baga Gazriin Chuluu" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Baga Gazriin Chuluu</div>
+    <!-- Image Section -->
+    <div class="relative w-full max-w-md">
+      <!-- Character Overlay -->
+      <img src="character.png" alt="Character" class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 z-10" />
+
+      <!-- Top Image -->
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <img src="img-top.jpg" alt="Top" class="object-cover w-full h-48" />
+      </div>
+
+      <!-- Bottom Row Images -->
+      <div class="grid grid-cols-2 gap-4 mt-4">
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="img-left.jpg" alt="Left" class="object-cover w-full h-40" />
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="img-right.jpg" alt="Right" class="object-cover w-full h-40" />
+        </div>
+      </div>
     </div>
 
-    <!-- Image 2 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Tsagaan Suvarga" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Tsagaan Suvarga</div>
+    <!-- Text Section -->
+    <div class="flex-1 max-w-xl text-center lg:text-left">
+      <h2 class="text-xl font-semibold text-red-600">Meet The Team:</h2>
+      <h3 class="text-2xl font-bold text-gray-900 mt-1 mb-4">A Family At The Heart Of Adventure</h3>
+      <p class="text-gray-600 leading-relaxed text-base">
+        Brave New Mongolia Tours is a family-run business with a deeply personal touch. Led by Anar, a seasoned guide and photographer, and his son Tenuun, every tour feels like traveling with family. Our close-knit approach ensures every traveler feels welcome and cared for, experiencing Mongolia in a way few others can.”
+      </p>
     </div>
 
-    <!-- Image 3 -->
-    <div class="col-span-4 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/800x400" alt="Khongor Sand Dunes" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Khongor Sand Dunes</div>
-    </div>
-
-    <!-- Image 4 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Yolyn Am" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Yolyn Am</div>
-    </div>
-
-    <!-- Image 5 -->
-    <div class="col-span-2 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x400" alt="Bayanzag" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Bayanzag</div>
-    </div>
-
-    <!-- Image 6 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Nemegt Valley" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Nemegt Valley</div>
-    </div>
-
-    <!-- Image 7 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Gobi Gurvansaikhan" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Gobi Gurvansaikhan</div>
-    </div>
-
-    <!-- Image 8 -->
-    <div class="col-span-2 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x400" alt="Ongi Monastery" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Ongi Monastery</div>
-    </div>
-
-    <!-- Image 9 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Tsagaan Agui" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Tsagaan Agui</div>
-    </div>
-
-    <!-- Image 10 -->
-    <div class="col-span-4 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/800x400" alt="Khermen Tsav" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Khermen Tsav</div>
-    </div>
-
-    <!-- Image 11 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Zuun Mod" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Zuun Mod</div>
-    </div>
-
-    <!-- Image 12 -->
-    <div class="col-span-2 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x400" alt="Tsagaan Els" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Tsagaan Els</div>
-    </div>
-
-    <!-- Image 13 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Gobi Altai" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Gobi Altai</div>
-    </div>
-
-    <!-- Image 14 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Tsagaan Nuur" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Tsagaan Nuur</div>
-    </div>
-
-    <!-- Image 15 -->
-    <div class="col-span-2 row-span-2 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x400" alt="Eej Khad" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Eej Khad</div>
-    </div>
-
-    <!-- Image 16 -->
-    <div class="col-span-2 row-span-1 relative rounded overflow-hidden shadow">
-      <img src="https://via.placeholder.com/600x300" alt="Shiliin Bogd" class="object-cover w-full h-full" />
-      <div class="absolute bottom-0 bg-black bg-opacity-40 text-white text-sm p-1">Shiliin Bogd</div>
-    </div>
   </div>
 </body>
 </html>
