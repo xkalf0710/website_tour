@@ -2,34 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Custom Image Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white p-10">
+<body class="bg-gray-100 text-gray-800">
 
-  <div class="relative max-w-4xl mx-auto grid grid-cols-3 gap-4 items-start">
+  <section class="py-12 px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">WHAT TRAVELERS SAY</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">
+      Every journey leaves a story. Here's what some of our guests had to say after experiencing Mongolia with us—unfiltered, heartfelt, and in their own words.
+    </p>
 
-    <!-- Top Left Large Image -->
-    <div class="col-span-2 row-span-1">
-      <img src="child-dune.jpg" alt="Child on Dune" class="rounded-xl w-full h-auto object-cover shadow-md" />
+    <div class="grid gap-6 md:grid-cols-3 max-w-7xl mx-auto">
+      <!-- Testimonial Card -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
+        <img src="/mnt/data/7030b1ca-22e7-4904-b625-e5e239e09e48.png" alt="Traveler 1" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <span class="text-blue-600 text-3xl leading-none">“</span>
+          <p class="text-gray-700 mt-2">
+            Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
+          </p>
+          <p class="mt-4 font-semibold">Luke Walter</p>
+        </div>
+      </div>
+
+      <!-- Duplicate card with different image/text if desired -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
+        <img src="/mnt/data/7030b1ca-22e7-4904-b625-e5e239e09e48.png" alt="Traveler 2" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <span class="text-blue-600 text-3xl leading-none">“</span>
+          <p class="text-gray-700 mt-2">
+            Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
+          </p>
+          <p class="mt-4 font-semibold">Luke Walter</p>
+        </div>
+      </div>
+
+      <!-- Third Testimonial -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
+        <img src="/mnt/data/7030b1ca-22e7-4904-b625-e5e239e09e48.png" alt="Traveler 3" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <span class="text-blue-600 text-3xl leading-none">“</span>
+          <p class="text-gray-700 mt-2">
+            Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
+          </p>
+          <p class="mt-4 font-semibold">Luke Walter</p>
+        </div>
+      </div>
     </div>
-
-    <!-- Guide Illustration Floating Right -->
-    <div class="absolute top-10 right-0 w-28">
-      <img src="guide-icon.png" alt="Guide" class="w-full h-auto" />
-    </div>
-
-    <!-- Bottom Left Small Vertical Image -->
-    <div class="col-span-1 row-span-1">
-      <img src="family-vertical.jpg" alt="Family Portrait" class="rounded-xl w-full h-auto object-cover shadow-md" />
-    </div>
-
-    <!-- Bottom Right Large Horizontal Image -->
-    <div class="col-span-2 row-span-1">
-      <img src="family-hiking.jpg" alt="Family Hiking" class="rounded-xl w-full h-auto object-cover shadow-md" />
-    </div>
-
-  </div>
+  </section>
 
 </body>
 </html>
