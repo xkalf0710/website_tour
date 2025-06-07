@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accordion Travel Card</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>Phone Number Input</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+  <style>
+    .iti {
+      width: 100%;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 p-6">
-  <div class="max-w-4xl mx-auto">
-    <details class="bg-white rounded-xl shadow-md p-6 group">
-      <summary class="text-lg font-semibold cursor-pointer">Day 1 — Genghis Khan Statue Complex & Terelj National Park</summary>
-      
-      <div class="mt-4 grid md:grid-cols-2 gap-6">
-        
-        <!-- Left Column -->
-        <div class="space-y-4">
-          <h2 class="text-gray-700 text-base">
-            Start your journey at the towering Genghis Khan Statue Complex, where you can enjoy panoramic views and learn about Mongolia’s history. Then, head to Terelj National Park to explore iconic landmarks such as Turtle Rock and the serene Aryapal Monastery.
-          </h2>
-
-          <div class="text-sm text-gray-600 space-y-1">
-            <p>📍 <strong>Travel Distance:</strong> ~100 KM</p>
-            <p>🕒 <strong>Driving Time:</strong> ~3 Hours 30 Minutes</p>
-            <p>🎯 <strong>Activities:</strong> Explore Turtle Rock and Aryapal Monastery</p>
-            <p>🍽️ <strong>Meals:</strong></p>
-            <ul class="ml-4 list-disc">
-              <li>Breakfast – Ulaanbaatar</li>
-              <li>Lunch – Genghis Khan Statue Complex</li>
-              <li>Dinner – Terelj National Park (Overnight in ger camp)</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Right Column: 2x2 Image Grid -->
-        <div class="grid grid-cols-2 grid-rows-2 gap-2">
-          <img src="https://via.placeholder.com/150?text=Main+Video" class="rounded-lg row-span-2 object-cover w-full h-full" alt="Video" />
-          <img src="https://via.placeholder.com/150?text=Statue+1" class="rounded-lg object-cover w-full h-full" alt="Image 1" />
-          <img src="https://via.placeholder.com/150?text=Statue+2" class="rounded-lg object-cover w-full h-full" alt="Image 2" />
-          <img src="https://via.placeholder.com/150?text=Landscape" class="rounded-lg object-cover w-full h-full" alt="Image 3" />
-        </div>
-
-      </div>
-    </details>
+  <div class="max-w-md mx-auto">
+    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone number</label>
+    <input id="phone" type="tel" class="border border-gray-300 rounded w-full py-2 px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your phone number">
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "fr",
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    });
+  </script>
 </body>
 </html>

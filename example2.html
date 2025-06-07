@@ -1,42 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Navbar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour Inquiry Form</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav class="bg-[#123E78] px-6 py-2 flex items-center justify-between">
-    <!-- Left Side -->
-    <div class="flex items-center space-x-6">
-      <div class="flex items-center space-x-2 text-white font-semibold">
-        <span>BNM</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/BNM_Logo.png" alt="Logo" class="h-4 w-4" />
-      </div>
-      <a href="#" class="text-white text-sm">About us</a>
-    </div>
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- Center: Search -->
-    <div class="flex-1 max-w-md mx-6">
-      <div class="relative">
-        <input type="text" placeholder="Search"
-               class="w-full pl-8 pr-4 py-1 rounded-md focus:outline-none"
-        />
-        <div class="absolute left-2 top-1.5 text-blue-600">
-          🔍
+  <div class="max-w-3xl mx-auto p-8 bg-white shadow-lg mt-10 rounded-lg">
+    <h2 class="text-2xl font-bold mb-6 text-center">Tour Inquiry Form</h2>
+
+    <form class="space-y-5">
+      <input type="text" placeholder="Please enter your full name" class="w-full p-3 border rounded-md" />
+      <input type="email" placeholder="Your email address" class="w-full p-3 border rounded-md" />
+      <input type="tel" placeholder="+1 Enter your phone number" class="w-full p-3 border rounded-md" />
+
+      <div class="grid grid-cols-2 gap-4">
+        <select class="w-full p-3 border rounded-md">
+          <option>Number of Adults</option>
+        </select>
+        <select class="w-full p-3 border rounded-md">
+          <option>Number of Children</option>
+        </select>
+      </div>
+
+      <select class="w-full p-3 border rounded-md">
+        <option>Interested Tour</option>
+      </select>
+
+      <div class="grid grid-cols-2 gap-4">
+        <input type="date" class="w-full p-3 border rounded-md" placeholder="Start date" />
+        <input type="date" class="w-full p-3 border rounded-md" placeholder="End date" />
+      </div>
+
+      <select class="w-full p-3 border rounded-md">
+        <option>Tour Package Selection</option>
+      </select>
+
+      <div class="grid grid-cols-3 gap-4">
+        <button type="button" class="p-2 border rounded-md">Email</button>
+        <button type="button" class="p-2 border rounded-md">Facebook Messenger</button>
+        <button type="button" class="p-2 border rounded-md">WhatsApp</button>
+        <button type="button" class="p-2 border rounded-md">Viber</button>
+        <button type="button" class="p-2 border rounded-md">Instagram</button>
+        <button type="button" class="p-2 border rounded-md">Phone Number</button>
+      </div>
+
+      <input type="text" placeholder="e.g. camel riding, horse riding..." class="w-full p-3 border rounded-md" />
+      <input type="text" placeholder="Any dietary preferences or allergies?" class="w-full p-3 border rounded-md" />
+      <textarea placeholder="Any additional comments or questions?" class="w-full p-3 border rounded-md"></textarea>
+
+      <button type="submit" class="w-full p-3 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 transition">Submit Inquiry</button>
+    </form>
+  </div>
+
+  <footer class="bg-blue-900 text-white mt-20">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-bold text-lg mb-2">Brave New Mongolia</h3>
+        <p class="text-sm mb-4">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-300">📘</a>
+          <a href="#" class="hover:text-gray-300">📸</a>
+          <a href="#" class="hover:text-gray-300">▶️</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Support</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="hover:underline">About us</a></li>
+          <li><a href="#" class="hover:underline">Package Information</a></li>
+          <li><a href="#" class="hover:underline">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2">Download our mobile app</h4>
+        <div class="flex flex-col space-y-2">
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Available_on_the_App_Store_(black)_SVG.svg" class="w-32" alt="App Store" /></a>
+          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="w-36" alt="Google Play" /></a>
         </div>
       </div>
     </div>
 
-    <!-- Right Side -->
-    <div class="flex items-center space-x-4">
-      <button class="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-md">
-        👤
-      </button>
-      <div class="bg-white/10 text-white px-2 py-1 rounded-md text-sm">
-        EN ⌄
-      </div>
+    <div class="text-center text-sm border-t border-blue-800 py-4">
+      <p>Phone: +976 8925-6868 | Email: bravenbmt@gmail.com</p>
+      <p>Address: 17-22, 7-khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
+      <p class="mt-2">Copyright © 2023 Brave New Mongolia</p>
     </div>
-  </nav>
+  </footer>
+
 </body>
 </html>

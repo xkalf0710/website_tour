@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar with Tailwind CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .iti {
+      width: 100%;
+    }
+  </style>
+</head>
+
+
+<body class="bg-white">
+
+  <!-- NAVBAR START -->
+  <nav class="bg-blue-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center h-16">
+        <!-- LEFT: Logo + “About us” -->
+        <div class="flex items-center space-x-6">
+          <!-- Logo -->
+          <a href="index.html">
+            <div class="flex items-center space-x-2 flex-1">
+            <span class="font-bold text-sm text-white">BNM</span>
+            <img src="img/footer/bnm round.png" class="w-8 h-8" alt="globe" />
+          </div>
+          </a>
+          <!-- “About us” Link -->
+          <a href="about_us.html" class="text-white hover:underline font-medium">
+            About us
+          </a>
+        </div>
+
+        <!-- CENTER: Search bar -->
+        <div class="flex-1 flex justify-center px-4">
+          <div class="relative w-full max-w-md">
+            <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+              <!-- Search icon -->
+              <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" 
+                   xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="8" stroke-linecap="round" stroke-linejoin="round"></circle>
+                <path d="M21 21l-4.35-4.35" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+            <input
+              type="text"
+              placeholder="Search"
+              class="block w-full pl-10 pr-4 py-2 rounded-lg bg-white text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+        </div>
+
+        <!-- RIGHT: Log In button -->
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors duration-150">
+            Log In
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- MAIN HEADING BELOW NAVBAR -->
+  <main class="mt-12">
+    <h1 class="text-3xl font-bold text-center text-gray-900">
+      Tour Inquiry Form
+    </h1>
+    <!-- Rest of your page content… -->
+
+     <form class="max-w-4xl mx-auto space-y-6">
+    
+    <!-- Name Field -->
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Please enter your full name"
+        class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+      />
+    </div>
+
+    <!-- Email Address Field -->
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your email address"
+        class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+      />
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone number</label>
+
+      <input id="phone" type="tel" class="border border-gray-300 rounded w-full py-2 px-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your phone number">
+
+
+    </div>
+
+    
+
+   <div class="max-w-4xl mx-auto bg-white">
+    <form class="space-y-6">
+      <!-- Number of Adults and Children -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Number of Adults</label>
+          <select class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200">
+            <option value="">--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Number of Children</label>
+          <select class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200">
+            <option value="">--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+      </div>
+
+      <!-- Interested Tour -->
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Interested Tour</label>
+        <select class="w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-200">
+          <option value="">--</option>
+          <option value="beach">Beach Tour</option>
+          <option value="mountain">Mountain Tour</option>
+          <!-- Add more tour options as needed -->
+        </select>
+      </div>
+
+      <!-- Travel Dates (Placeholder for further design) -->
+      <div>
+        <br>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Travel Dates</label>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm text-gray-600 mb-1" for="start-date">Start Date</label>
+          <input
+            type="date"
+            id="start-date"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div>
+          <label class="block text-sm text-gray-600 mb-1" for="end-date">End Date</label>
+          <input
+            type="date"
+            id="end-date"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">Tour Package Selection:</label>
+      <span class="block text-sm text-gray-500 mb-1">Choose Your Ideal Experience</span>
+      <select
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        <option value="">--</option>
+        <option value="adventure">Adventure Tour</option>
+        <option value="luxury">Luxury Retreat</option>
+        <option value="cultural">Cultural Exploration</option>
+      </select>
+    </div>
+
+    
+    </form>
+
+    <form id="inquiryForm" class="max-w-4xl mx-auto space-y-6">
+    <!-- Preferred Communication -->
+    <div>
+      <br>
+      <label class="block text-sm font-medium text-gray-800 mb-1">
+        Preferred Platform for Communication
+      </label>
+      <p class="text-sm text-gray-500 mb-3">Please select how you'd like to communicate with us:</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button type="button" class="comm-btn">Email <span>+</span>
+        </button>
+        <button type="button" class="comm-btn">Facebook Messenger <span>+</span></button>
+        <button type="button" class="comm-btn">WhatsApp <span>+</span></button>
+        <button type="button" class="comm-btn">Viber <span>+</span></button>
+        <button type="button" class="comm-btn">Instagram <span>+</span></button>
+        <button type="button" class="comm-btn">Phone Number <span>+</span></button>
+      </div>
+      <!-- Hidden input to hold selected platforms -->
+      <input type="hidden" name="preferredPlatforms" id="preferredPlatforms">
+    </div>
+
+    <!-- Activities -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Any Specific Activities or Experiences You Want to Include?
+      </label>
+      <input type="text" name="activities" placeholder="e.g. camel riding, horseback riding, etc."
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Dietary Restrictions -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Dietary Preferences or Restrictions
+      </label>
+      <input type="text" name="diet" placeholder="Please let us know if anyone has allergies"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Comments -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Any Additional Comments or Questions?
+      </label>
+      <input type="text" name="comments" placeholder="Feel free to share anything else!"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-blue-500">
+    </div>
+
+    <!-- Submit -->
+    <div>
+      <button type="submit"
+        class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-medium py-2 rounded-md shadow hover:from-blue-600 hover:to-blue-700 transition">
+        Submit Inquiry
+      </button>
+    </div>
+  </form>
+
+  </div>
+  </main>
+<script>
+
+  const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "fr",
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    });
+
+
+    const buttons = document.querySelectorAll('.comm-btn');
+    const platformsInput = document.getElementById('preferredPlatforms');
+    let selectedPlatforms = [];
+
+    buttons.forEach(btn => {
+      btn.classList.add('flex', 'justify-between', 'items-center', 'px-4', 'py-2', 'border', 'border-gray-300', 'rounded-md', 'text-sm', 'hover:bg-gray-100');
+
+      btn.addEventListener('click', () => {
+        const platform = btn.textContent.trim().replace('+', '').trim();
+        const isSelected = selectedPlatforms.includes(platform);
+
+        if (isSelected) {
+          selectedPlatforms = selectedPlatforms.filter(p => p !== platform);
+          btn.classList.remove('bg-blue-100', 'border-blue-500', 'text-blue-700');
+          btn.querySelector('span').textContent = '+';
+        } else {
+          selectedPlatforms.push(platform);
+          btn.classList.add('bg-blue-100', 'border-blue-500', 'text-blue-700');
+          btn.querySelector('span').textContent = '✓';
+        }
+
+        platformsInput.value = selectedPlatforms.join(', ');
+      });
+    });
+
+    document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert(`Form submitted with platforms: ${platformsInput.value}`);
+      // You can now send this data using fetch/AJAX here
+    });
+  </script>
+
+  <br>
+  <footer class="bg-blue-950 text-black">
+  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Left Column -->
+    <div>
+      <div class="flex items-center space-x-2">
+        <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-8 h-8" />
+        <span class="text-xl font-bold">BNM</span>
+      </div>
+      <h4 class="font-bold">Brave New Mongolia</h4>
+      <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
+
+      <div class="flex space-x-4 mt-4">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+      </div>
+
+      <div class="mt-4 text-sm">
+        <p>Phone: +976 8625-6868</p>
+        <p>Email: bnmtours@gmail.com</p>
+        <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div>
+      <h4 class="font-bold mb-2">Support</h4>
+      <ul class="text-sm space-y-2">
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Package information</a></li>
+        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Column -->
+    <div>
+      <h4 class="font-bold mb-4">Download our mobile app</h4>
+      <div class="space-y-4">
+        <a href="#">
+          <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+
+        <br>
+        <a href="#">
+          <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
+    Copyright © 2025 Brave New Mongolia
+  </div>
+</footer>
+</body>
+</html>

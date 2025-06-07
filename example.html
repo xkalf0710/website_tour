@@ -3,32 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Directional Discoveries Tour</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Communication & Preferences</title>
 </head>
-<body class="bg-gradient-to-r from-blue-100 to-white text-gray-800 font-sans">
-
-  <section class="max-w-7xl mx-auto py-16 px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
-
-    <!-- Left Content -->
-    <div class="flex flex-col items-start lg:w-1/2 space-y-6">
-      <h2 class="text-3xl font-bold text-blue-800">Directional Discoveries Tour</h2>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        Unlock the essence of Mongolia with our uniquely crafted directional tours. Each tour is a gateway to unparalleled experiences, offering the most efficient and comprehensive exploration of Mongolia’s diverse landscapes, cultures, and wonders. Choose your direction, and let the adventure unfold.
-      </p>
+<body class="bg-white p-6">
+  <form class="space-y-6 max-w-3xl mx-auto">
+    <!-- Preferred Platform -->
+    <div>
+      <label class="block text-sm font-medium text-gray-800 mb-1">
+        Preferred Platform for Communication
+      </label>
+      <span class="block text-sm text-gray-500 mb-3">
+        Please select how you'd like to communicate with us:
+      </span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
+          Email <span class="text-lg font-bold">+</span>
+        </button>
+        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
+          Facebook Messenger <span class="text-lg font-bold">+</span>
+        </button>
+        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
+          WhatsApp <span class="text-lg font-bold">+</span>
+        </button>
+        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
+          Viber <span class="text-lg font-bold">+</span>
+        </button>
+        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
+          Instagram <span class="text-lg font-bold">+</span>
+        </button>
+        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
+          Phone Number <span class="text-lg font-bold">+</span>
+        </button>
+      </div>
     </div>
 
-    <!-- Right Content: 2-Image Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:w-1/2">
-      <div class="overflow-hidden rounded-lg shadow-md">
-        <img src="img/medeelel.png" alt="Image 1" class="w-full h-auto object-cover">
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-md">
-        <img src="img/4n zugiin aylal.png" alt="Image 2" class="w-full h-auto object-cover">
-      </div>
+    <!-- Specific Activities -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Any Specific Activities or Experiences You Want to Include?
+      </label>
+      <input
+        type="text"
+        placeholder="e.g. camel riding, horseback riding, reindeer herding, etc."
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
     </div>
 
-  </section>
+    <!-- Dietary Preferences -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Dietary Preferences or Restrictions
+      </label>
+      <input
+        type="text"
+        placeholder="Please let us know if you or anyone in your group has any dietary preferences or allergies"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
 
+    <!-- Additional Comments -->
+    <div>
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Any Additional Comments or Questions?
+      </label>
+      <input
+        type="text"
+        placeholder="Feel free to share anything else you’d like us to know!"
+        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button
+        type="submit"
+        class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-medium py-2 rounded-md shadow hover:from-blue-600 hover:to-blue-700 transition"
+      >
+        Submit Inquiry
+      </button>
+    </div>
+  </form>
 </body>
 </html>
