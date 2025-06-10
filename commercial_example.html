@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Listing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <!-- Filters -->
+  <div class="flex flex-wrap gap-2 mb-6">
+    <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-full">Hotel &gt;</button>
+    <button class="bg-blue-600 text-white px-4 py-2 rounded-full">All</button>
+    <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-full">Luxurious</button>
+    <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-full">Premium</button>
+    <button class="bg-white border border-gray-300 text-gray-700 px-4 py-2 rounded-full">Affordable</button>
+  </div>
+
+  <!-- Hotel Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Card 1 -->
+    <div class="relative rounded-xl overflow-hidden shadow-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Hotel" class="w-full h-48 object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4">
+        <h3 class="font-semibold">Best Western Premier Tuushin Hotel</h3>
+        <span class="text-sm text-yellow-400">Luxurious</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative rounded-xl overflow-hidden shadow-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Hotel" class="w-full h-48 object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4">
+        <h3 class="font-semibold">Puma Imperial Hotel</h3>
+        <span class="text-sm text-yellow-400">Premium</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative rounded-xl overflow-hidden shadow-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Hotel" class="w-full h-48 object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4">
+        <h3 class="font-semibold">Novotel Ulaanbaatar</h3>
+        <span class="text-sm text-yellow-400">Premium</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="relative rounded-xl overflow-hidden shadow-lg">
+      <img src="https://via.placeholder.com/300x200" alt="Hotel" class="w-full h-48 object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white p-4">
+        <h3 class="font-semibold">Premium Hotel Ulaanbaatar</h3>
+        <span class="text-sm text-green-400">Affordable</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Improved Hotel Listings</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-blue-50 min-h-screen p-6">
+
+  <div x-data="{ 
+        dropdownOpen: false, 
+        filter: 'All',
+        categories: ['All','Luxurious','Premium','Affordable'] 
+      }" class="space-y-6">
+
+
+    <div class="relative inline-block text-left">
+      <button 
+        @click="dropdownOpen = !dropdownOpen" 
+        class="inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-100"
+      >
+        Hotel
+        <svg class="ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div
+        x-show="dropdownOpen"
+        @click.away="dropdownOpen = false"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        class="absolute mt-2 w-64 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-10"
+      >
+        <div class="py-1 text-sm text-gray-700">
+          <template x-for="cat in ['Hotel','Food','Fashion','Nightlife','Shopping','Wellness','Activities','Guesthouses & Rentals','Hospitals']" :key="cat">
+            <a href="#" 
+              @click.prevent="filter = cat; dropdownOpen = false"
+              class="flex items-center px-4 py-2 hover:bg-gray-100"
+              :class="filter === cat ? 'bg-blue-100 font-semibold' : ''">
+              <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+              <span x-text="cat"></span>
+            </a>
+          </template>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="space-x-2">
+      <template x-for="cat in categories" :key="cat">
+        <button
+          @click="filter = cat"
+          :class="filter === cat 
+            ? 'bg-blue-500 text-white' 
+            : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-100'"
+          class="px-4 py-2 rounded-full text-sm font-medium transition"
+        >
+          <span x-text="cat"></span>
+        </button>
+      </template>
+    </div>
+
+    <h2 class="text-2xl font-bold text-gray-800">Browse Hotels</h2>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <template 
+        x-for="hotel in [
+          { name: 'Puma Imperial Hotel', tag: 'Premium', img: 'https://via.placeholder.com/300x200' },
+          { name: 'Novotel Ulaanbaatar', tag: 'Premium', img: 'https://via.placeholder.com/300x200' },
+          { name: 'Premium Hotel Ulaanbaatar', tag: 'Affordable', img: 'https://via.placeholder.com/300x200' },
+          { name: 'Luxury Grand', tag: 'Luxurious', img: 'https://via.placeholder.com/300x200' }
+        ]"
+        :key="hotel.name"
+      >
+        <div
+          x-show="filter === 'All' || filter === hotel.tag"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 translate-y-2"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          class="bg-white rounded-lg shadow overflow-hidden transform hover:scale-105 transition duration-300"
+        >
+          <img 
+            :src="hotel.img" 
+            :alt="hotel.name" 
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <div 
+              class="text-sm font-semibold mb-1"
+              :class="hotel.tag === 'Affordable' 
+                ? 'text-green-600' 
+                : 'text-yellow-600'"
+            >
+              <span x-text="hotel.tag === 'Affordable' ? '✅ Affordable' : '🌟 ' + hotel.tag"></span>
+            </div>
+            <div class="font-semibold text-gray-800" x-text="hotel.name"></div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+  </div>
+</body>
+</html>
