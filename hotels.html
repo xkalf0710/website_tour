@@ -175,7 +175,201 @@
 </header>
 
 
-category
+<div class="max-w-7xl mx-auto p-6 space-y-10">
+   <!-- Back Button -->
+    <div class="mb-4">
+        <button class="text-sm text-blue-700 hover:underline flex items-center space-x-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 19l-7-7 7-7"/></svg>
+          <span>Back</span>
+      </button>
+    </div>
+
+        <!-- Hotel Dropdown -->
+  <div class="flex items-center space-x-4">
+    <!-- Hotel Dropdown -->
+    <div class="relative">
+      <button id="dropdownBtn" class="border border-blue-200 px-4 py-1 rounded-full text-sm text-gray-700 flex items-center">
+        Hotel
+        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+      <!-- Dropdown menu -->
+      <div id="dropdownMenu" class="absolute z-10 mt-2 w-36 bg-white shadow-md rounded-md hidden">
+        <ul class="text-sm text-gray-700">
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Hotel</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Food</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Fashion</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nightlife</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Shopping</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Wellness</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Activities</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Guesthouses & Rentals</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Hospitials</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-l h-5 border-gray-300"></div>
+
+    <!-- Filter Buttons -->
+    <div class="flex space-x-2" id="filterButtons">
+      <button class="filter-btn bg-blue-500 text-white px-4 py-1 rounded-full text-sm">All</button>
+      <a href=""><button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Luxorious</button></a>
+      <button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Premium</button>
+      <button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Affordable</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    
+    <!-- Hotel Card Component -->
+    <div class="relative rounded-xl overflow-hidden shadow-md">
+      <img src="img/TfuushinTop-1.jpg" alt="Best Western Premier Tuushin Hotel" class="object-cover">
+      <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
+        <h2 class="font-semibold text-lg">Best Western Premier Tuushin Hotel</h2>
+        <div class="flex items-center gap-2 text-sm mt-1">
+          <span>👑</span>
+          <span>Luxurious</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative rounded-xl overflow-hidden shadow-md">
+      <img src="img/PumaThumbnail-1.jpg" alt="Puma Imperial Hotel" class="w-full h-82 object-cover">
+      <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
+        <h2 class="font-semibold text-lg">Puma Imperial Hotel</h2>
+        <div class="flex items-center gap-2 text-sm mt-1">
+          <span>🌟</span>
+          <span>Premium</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="relative rounded-xl overflow-hidden shadow-md">
+      <img src="img/NovotelThumbnail-1.jpg" alt="Novotel Ulaanbaatar" class="w-full h-82 object-cover">
+      <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
+        <h2 class="font-semibold text-lg">Novotel Ulaanbaatar</h2>
+        <div class="flex items-center gap-2 text-sm mt-1">
+          <span>🌟</span>
+          <span>Premium</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="relative rounded-xl overflow-hidden shadow-md">
+      <img src="img/PremiumThumbnail-1.jpg" alt="Premium Hotel Ulaanbaatar" class="w-full h-82 object-cover">
+      <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
+        <h2 class="font-semibold text-lg">Premium Hotel Ulaanbaatar</h2>
+        <div class="flex items-center gap-2 text-sm mt-1">
+          <span>💰</span>
+          <span>Affordable</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 class="text-2xl font-bold text-center mb-8">Commercial</h1>
+
+  <div class="grid grid-cols-4 gap-4 max-w-6xl mx-auto">
+    <!-- Column1 -->
+    <div class="row-span-2 col-span-1">
+      <div class="rounded-2xl overflow-hidden shadow-lg relative">
+        <img src="img/Commercial/Hotels.jpg" alt="Hotel" class="object-cover w-full h-full" />
+        <div class="absolute bottom-2 left-4 text-white font-semibold">Hotel</div>
+        </div>
+    </div>
+
+    <!-- Column 2 (row 1) -->
+                <div class="col-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Activities.jpg" alt="Activities" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Activities</div>
+                  </div>
+                </div>
+
+                <div class="col-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Wellness.jpg" alt="Wellness" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Wellness</div>
+                  </div>
+                </div>
+
+                <div class="col-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Nightlife.jpg" alt="Nightlife" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Nightlife</div>
+                  </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="col-span-2 row-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Food.jpg" alt="Food" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Food</div>
+                  </div>
+                </div>
+
+                <div class="col-span-1 row-span-2">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/fashion.jpg" alt="Fashion" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Fashion</div>
+                  </div>
+                </div>
+
+                <!-- Bottom row (row 3) -->
+                <div class="col-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Shopping.jpg" alt="Shopping" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Shopping</div>
+                  </div>
+                </div>
+
+                <div class="col-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Guesthouse.jpg" alt="Guesthouses" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Guesthouses</div>
+                  </div>
+                </div>
+
+                <div class="col-span-1">
+                  <div class="rounded-2xl overflow-hidden shadow-lg relative">
+                    <img src="img/Commercial/Hospitals.jpg" alt="Hospitals" class="object-cover w-full h-full" />
+                    <div class="absolute bottom-2 left-4 text-white font-semibold">Hospitals</div>
+                  </div>
+                </div>
+  </div>
+
+  <div class="w-[1200px] h-[300px] bg-gradient-to-r from-[#2d3dcf] via-[#92419b] to-[#3475f1] rounded-[30px] flex items-center justify-between px-10 relative overflow-hidden">
+                <!-- Left Characters and Signpost -->
+                <div class="flex space-x-6 items-end">
+                <!-- Character with Binoculars -->
+                <img src="img/medeelel.png" alt="Character with binoculars" class="h-[220px] object-contain" />
+                
+                <!-- Character with Signpost -->
+                <img src="img/tailbarlagch.png" alt="Character with signpost" class="h-[220px] object-contain" />
+                </div>
+
+                <!-- Right Content -->
+                <div class="text-white text-right space-y-2">
+                <h1 class="text-4xl font-semibold leading-tight">Escape to<br />the Land of Stories</h1>
+                <button class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-semibold py-2 px-6 rounded-full flex items-center space-x-2 transition duration-200">
+                    <span>VISIT BNM TOURS</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                </div>
+        </div>
+  
+</div>
 <footer class="bg-[#0B2B6C] text-white">
   <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
     
@@ -232,5 +426,41 @@ category
     Copyright © 2025 Brave New Mongolia
   </div>
 </footer>
+
+
+ <!-- Script to toggle dropdown -->
+  <script>
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active styles from all buttons
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-blue-500', 'text-white');
+          b.classList.add('border', 'border-blue-200', 'text-gray-700');
+        });
+
+        // Add active style to clicked button
+        btn.classList.remove('border', 'border-blue-200', 'text-gray-700');
+        btn.classList.add('bg-blue-500', 'text-white');
+      });
+    });
+
+
+    const dropdownBtn = document.getElementById("dropdownBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+
+    dropdownBtn.addEventListener("click", () => {
+      dropdownMenu.classList.toggle("hidden");
+    });
+
+    // Optional: click outside to close
+    document.addEventListener("click", function (event) {
+      if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.add("hidden");
+      }
+    });
+  </script>
 </body>
 </html>
