@@ -2,68 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Slider Menu</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-50 p-8 font-sans">
-
-  <h2 class="text-2xl font-semibold mb-4">Services</h2>
-
-  <div class="relative">
-    <div id="slider" class="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth">
-      
-      <!-- Slide 1 -->
-      <div class="min-w-[250px] bg-white rounded-xl shadow p-2">
-        <img src="img/Room1/Room1/NovotelRoom-1.jpg" class="rounded-lg mb-2">
-        <p class="font-medium text-sm text-gray-800 px-2 pb-2">Biere House</p>
+<body class="bg-blue-50 font-sans p-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Products Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Products</h2>
+        <div id="slider" class="grid grid-cols-2 gap-4 overflow-hidden">
+          <!-- Slide Items -->
+          <div class="rounded-xl overflow-hidden border border-gray-300">
+            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" alt="Dish 1" class="w-full h-auto object-cover"/>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-gray-300">
+            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" alt="Dish 2" class="w-full h-auto object-cover"/>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-gray-300">
+            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" alt="Dish 3" class="w-full h-auto object-cover"/>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-gray-300">
+            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" alt="Dish 4" class="w-full h-auto object-cover"/>
+          </div>
+        </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="min-w-[250px] bg-white rounded-xl shadow p-2">
-        <img src="img/Room2/Room2/NovotelRoom-2.jpg" class="rounded-lg mb-2">
-        <p class="font-medium text-sm text-gray-800 px-2 pb-2">Du Vin Restaurant</p>
-      </div>
+      <!-- Menu Section -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Menu</h2>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-3xl font-bold tracking-tight">LA ROSA</h3>
+          <p class="text-sm font-semibold mb-4 uppercase text-gray-500">Tapas & Tequila Bar</p>
+          
+          <h4 class="font-bold mt-4 mb-1">Dessert</h4>
+          <ul class="text-sm text-gray-800 space-y-2">
+            <li><strong>Churros & Chocolate</strong> 10<br><span class="text-gray-600">Fried dough pastry tossed with cinnamon sugar, served with sweet and slightly spicy chocolate dipping sauce</span></li>
+            <li><strong>Fig + Honey Cheesecake</strong> 12<br><span class="text-gray-600">Creamy cheese cake topped with Torrontes wine and honey stewed figs</span></li>
+            <li><strong>Tres Leches Cake</strong> 10<br><span class="text-gray-600">Soft vanilla sponge cake, soaked with evaporated milk, condensed milk, and heavy cream topped with cinnamon whipped cream</span></li>
+          </ul>
 
-      <!-- Slide 3 -->
-      <div class="min-w-[250px] bg-white rounded-xl shadow p-2">
-        <img src="img/Room3/Room3/NovotelRoom-3.jpg" class="rounded-lg mb-2">
-        <p class="font-medium text-sm text-gray-800 px-2 pb-2">Food Exchange Buffet Restaurant</p>
+          <h4 class="font-bold mt-6 mb-1">Coffee Selection</h4>
+          <ul class="text-sm text-gray-800 space-y-1">
+            <li>Single Espresso 4</li>
+            <li>Double Espresso 5.5</li>
+            <li>Americano 4</li>
+            <li>Cappuccino 5</li>
+            <li>Café Latte 5</li>
+            <li>Café au Lait 5</li>
+            <li>Flat White 6</li>
+            <li>Mocha Latte 7</li>
+          </ul>
+        </div>
       </div>
-
-      <!-- Slide 4 -->
-      <div class="min-w-[250px] bg-white rounded-xl shadow p-2">
-        <img src="img/Room1/Room1/NovotelRoom-1.jpg" class="rounded-lg mb-2">
-        <p class="font-medium text-sm text-gray-800 px-2 pb-2">Gourmet Lobby Lounge</p>
-      </div>
-
     </div>
-
-    <!-- Next Arrow -->
-    <button onclick="slideNext()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
   </div>
 
+  <!-- Optional: Basic slider behavior -->
   <script>
-    function slideNext() {
-      const slider = document.getElementById('slider');
-      slider.scrollBy({ left: 270, behavior: 'smooth' });
-    }
+    // Add custom slider functionality if needed (e.g., auto scroll, swipe)
   </script>
-
-  <style>
-    /* Hide scrollbar */
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-
 </body>
 </html>
