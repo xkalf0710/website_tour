@@ -2,66 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Rosa Menu</title>
+  <title>Product Grid</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-50 p-6 font-sans">
-  <div class="grid md:grid-cols-2 gap-8">
-    <!-- Products Section -->
-    <div>
-      <h2 class="text-2xl font-bold mb-4">Products</h2>
-      <div class="grid grid-cols-2 gap-4">
-        <img src="https://via.placeholder.com/300x200" alt="Dish 1" class="rounded-xl shadow-lg">
-        <img src="https://via.placeholder.com/300x200" alt="Dish 2" class="rounded-xl shadow-lg">
-        <img src="https://via.placeholder.com/300x200" alt="Dish 3" class="rounded-xl shadow-lg">
-        <img src="https://via.placeholder.com/300x200" alt="Dish 4" class="rounded-xl shadow-lg">
+<body class="bg-blue-100 p-8">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-xl font-semibold mb-6">Products</h2>
+    
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <!-- Product Card -->
+      <div class="bg-white rounded-xl shadow p-2">
+        <img src="https://via.placeholder.com/300x400?text=Jacket+1" alt="V-Neck Sweater" class="w-full h-auto rounded-lg" />
+        <div class="mt-2 text-sm text-center">
+          <div class="font-medium">V-Neck Sweater</div>
+          <div class="text-blue-600">€290,10</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Menu Section -->
-    <div>
-      <h2 class="text-2xl font-bold mb-4">Menu</h2>
-      <div class="bg-white rounded-xl shadow-md p-6 space-y-4">
-        <h3 class="text-3xl font-extrabold tracking-tight">LA ROSA <span class="text-sm font-normal">Tapas & Tequila Bar</span></h3>
-        
-        <h4 class="text-lg font-semibold">DESSERT</h4>
-        <ul class="space-y-2 text-sm">
-          <li><strong>CHURROS & CHOCOLATE</strong> <span class="float-right">10</span><br>
-            Fried-dough pastry toasted with cinnamon sugar, served with sweet and slightly spicy chocolate dipping sauce
-          </li>
-          <li><strong>FIG + HONEY CHEESE CAKE</strong> <br>
-            Creamy cheese cake topped with Torrontes wine and honey stewed figs
-          </li>
-          <li><strong>TRES LECHES CAKE</strong><br>
-            Soft vanilla sponge cake, soaked with evaporated milk, condensed milk, and heavy cream topped with cinnamon whipped cream
-          </li>
-        </ul>
-
-        <h4 class="text-lg font-semibold pt-4">COFFEE SELECTION</h4>
-        <ul class="text-sm space-y-1">
-          <li>Single Espresso 4</li>
-          <li>Double Espresso 5.5</li>
-          <li>Americano 4</li>
-          <li>Cappuccino 5</li>
-          <li>Cafe Latte 5</li>
-          <li>Cafe au lait 5</li>
-          <li>Flat White 6</li>
-          <li>Mocha Latte 7</li>
-        </ul>
+      <!-- Duplicate Product Cards (Copy as needed) -->
+      <div class="bg-white rounded-xl shadow p-2">
+        <img src="https://via.placeholder.com/300x400?text=Jacket+2" alt="V-Neck Sweater" class="w-full h-auto rounded-lg" />
+        <div class="mt-2 text-sm text-center">
+          <div class="font-medium">V-Neck Sweater</div>
+          <div class="text-blue-600">€290,10</div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Image Slider Section -->
-  <div class="mt-10">
-    <h2 class="text-2xl font-bold mb-4">Gallery</h2>
-    <div class="overflow-x-auto whitespace-nowrap space-x-4 flex">
-      <img src="https://via.placeholder.com/200x150" alt="Slide 1" class="inline-block rounded-lg shadow-md">
-      <img src="https://via.placeholder.com/200x150" alt="Slide 2" class="inline-block rounded-lg shadow-md">
-      <img src="https://via.placeholder.com/200x150" alt="Slide 3" class="inline-block rounded-lg shadow-md">
-      <img src="https://via.placeholder.com/200x150" alt="Slide 4" class="inline-block rounded-lg shadow-md">
-      <img src="https://via.placeholder.com/200x150" alt="Slide 5" class="inline-block rounded-lg shadow-md">
+      <!-- Repeat more product cards... -->
     </div>
   </div>
 </body>
