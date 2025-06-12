@@ -1,90 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Product Slider Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Rosa Menu</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Hide scrollbar for the slider */
-    #slider::-webkit-scrollbar {
-      display: none;
-    }
-    #slider {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
 </head>
-<body class="bg-blue-50 font-sans p-6">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Products Section -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Products</h2>
-        <div class="relative">
-          <!-- Slider Container -->
-          <div id="slider" class="flex overflow-x-auto scroll-smooth space-x-4 rounded-xl">
-            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" class="min-w-full rounded-xl border border-gray-300" />
-            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" class="min-w-full rounded-xl border border-gray-300" />
-            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" class="min-w-full rounded-xl border border-gray-300" />
-            <img src="c1b92d85-8f56-4908-a862-9c15395304c5.png" class="min-w-full rounded-xl border border-gray-300" />
-          </div>
-
-          <!-- Arrow Buttons -->
-          <button onclick="scrollSlider(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10">
-            &#8592;
-          </button>
-          <button onclick="scrollSlider(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow p-2 rounded-full z-10">
-            &#8594;
-          </button>
-        </div>
+<body class="bg-blue-50 p-6 font-sans">
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Products Section -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Products</h2>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://via.placeholder.com/300x200" alt="Dish 1" class="rounded-xl shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Dish 2" class="rounded-xl shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Dish 3" class="rounded-xl shadow-lg">
+        <img src="https://via.placeholder.com/300x200" alt="Dish 4" class="rounded-xl shadow-lg">
       </div>
+    </div>
 
-      <!-- Menu Section -->
-      <div>
-        <h2 class="text-2xl font-semibold mb-4">Menu</h2>
-        <div class="bg-white p-6 rounded-xl shadow-md">
-          <h3 class="text-3xl font-bold tracking-tight">LA ROSA</h3>
-          <p class="text-sm font-semibold mb-4 uppercase text-gray-500">Tapas & Tequila Bar</p>
-          
-          <h4 class="font-bold mt-4 mb-1">Dessert</h4>
-          <ul class="text-sm text-gray-800 space-y-2">
-            <li><strong>Churros & Chocolate</strong> 10<br><span class="text-gray-600">Fried dough pastry tossed with cinnamon sugar, served with sweet and slightly spicy chocolate dipping sauce</span></li>
-            <li><strong>Fig + Honey Cheesecake</strong> 12<br><span class="text-gray-600">Creamy cheese cake topped with Torrontes wine and honey stewed figs</span></li>
-            <li><strong>Tres Leches Cake</strong> 10<br><span class="text-gray-600">Soft vanilla sponge cake, soaked with evaporated milk, condensed milk, and heavy cream topped with cinnamon whipped cream</span></li>
-          </ul>
+    <!-- Menu Section -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Menu</h2>
+      <div class="bg-white rounded-xl shadow-md p-6 space-y-4">
+        <h3 class="text-3xl font-extrabold tracking-tight">LA ROSA <span class="text-sm font-normal">Tapas & Tequila Bar</span></h3>
+        
+        <h4 class="text-lg font-semibold">DESSERT</h4>
+        <ul class="space-y-2 text-sm">
+          <li><strong>CHURROS & CHOCOLATE</strong> <span class="float-right">10</span><br>
+            Fried-dough pastry toasted with cinnamon sugar, served with sweet and slightly spicy chocolate dipping sauce
+          </li>
+          <li><strong>FIG + HONEY CHEESE CAKE</strong> <br>
+            Creamy cheese cake topped with Torrontes wine and honey stewed figs
+          </li>
+          <li><strong>TRES LECHES CAKE</strong><br>
+            Soft vanilla sponge cake, soaked with evaporated milk, condensed milk, and heavy cream topped with cinnamon whipped cream
+          </li>
+        </ul>
 
-          <h4 class="font-bold mt-6 mb-1">Coffee Selection</h4>
-          <ul class="text-sm text-gray-800 space-y-1">
-            <li>Single Espresso 4</li>
-            <li>Double Espresso 5.5</li>
-            <li>Americano 4</li>
-            <li>Cappuccino 5</li>
-            <li>Café Latte 5</li>
-            <li>Café au Lait 5</li>
-            <li>Flat White 6</li>
-            <li>Mocha Latte 7</li>
-          </ul>
-        </div>
+        <h4 class="text-lg font-semibold pt-4">COFFEE SELECTION</h4>
+        <ul class="text-sm space-y-1">
+          <li>Single Espresso 4</li>
+          <li>Double Espresso 5.5</li>
+          <li>Americano 4</li>
+          <li>Cappuccino 5</li>
+          <li>Cafe Latte 5</li>
+          <li>Cafe au lait 5</li>
+          <li>Flat White 6</li>
+          <li>Mocha Latte 7</li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <!-- Slider JavaScript -->
-  <script>
-    const slider = document.getElementById('slider');
-
-    function scrollSlider(direction) {
-      const slideWidth = slider.offsetWidth;
-      slider.scrollBy({
-        left: direction * slideWidth,
-        behavior: 'smooth'
-      });
-    }
-
-    // Auto-scroll every 5 seconds
-    setInterval(() => scrollSlider(1), 5000);
-  </script>
+  <!-- Image Slider Section -->
+  <div class="mt-10">
+    <h2 class="text-2xl font-bold mb-4">Gallery</h2>
+    <div class="overflow-x-auto whitespace-nowrap space-x-4 flex">
+      <img src="https://via.placeholder.com/200x150" alt="Slide 1" class="inline-block rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/200x150" alt="Slide 2" class="inline-block rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/200x150" alt="Slide 3" class="inline-block rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/200x150" alt="Slide 4" class="inline-block rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/200x150" alt="Slide 5" class="inline-block rounded-lg shadow-md">
+    </div>
+  </div>
 </body>
 </html>
