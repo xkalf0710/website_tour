@@ -201,12 +201,18 @@
         <ul class="text-sm text-gray-700">
           <a href="hotels.html"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Hotel</li></a>
           <a href="food.html"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Food</li></a>
-          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Fashion</li>
-          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nightlife</li>
-          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Shopping</li>
-          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Wellness</li>
-          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Activities</li>
-          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Guesthouses & Rentals</li>
+          <a href="fashion.html"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Fashion</li></a>
+          <a href="nightlife.html"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nightlife</li></a>
+          <a href="shopping.html">
+            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Shopping</li>
+          </a>
+          <a href="wellness.html"><li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Wellness</li></a>
+          <a href="activities.html">
+            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Activities</li>
+          </a>
+         <a href="guesthouse.html">
+           <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Guesthouses & Rentals</li>
+         </a>
           <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Hospitials</li>
         </ul>
       </div>
@@ -218,8 +224,8 @@
     <!-- Filter Buttons -->
     <div class="flex space-x-2" id="filterButtons">
       <button class="filter-btn bg-blue-500 text-white px-4 py-1 rounded-full text-sm">All</button>
-      <a href="commercial_hotel_priemium.html"><button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Luxorious</button></a>
-      <a href="commercial_free.html"><button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Premium</button></a>
+      <a href=""><button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Luxorious</button></a>
+      <a href="hotels_free.html"><button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Premium</button></a>
       <button class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Affordable</button>
     </div>
   </div>
@@ -227,19 +233,22 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
     
     <!-- Hotel Card Component -->
+  <a href="hotel_priemium.html">
     <div class="relative rounded-xl overflow-hidden shadow-md">
-      <img src="img/TfuushinTop-1.jpg" alt="Best Western Premier Tuushin Hotel" class="object-cover">
+      <img src="img/TfuushinTop-1.jpg" alt="Puma Imperial Hotel" class="w-full h-82 object-cover">
       <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
-        <h2 class="font-semibold text-lg">Best Western Premier Tuushin Hotel</h2>
+        <h2 class="font-semibold text-lg">Puma Imperial Hotel</h2>
         <div class="flex items-center gap-2 text-sm mt-1">
-          <span>👑</span>
-          <span>Luxurious</span>
+          <span>🌟</span>
+          <span>Premium</span>
         </div>
       </div>
     </div>
+  </a>
 
     <!-- Card 2 -->
-    <div class="relative rounded-xl overflow-hidden shadow-md">
+    <a href="hotel_priemium.html">
+      <div class="relative rounded-xl overflow-hidden shadow-md">
       <img src="img/PumaThumbnail-1.jpg" alt="Puma Imperial Hotel" class="w-full h-82 object-cover">
       <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
         <h2 class="font-semibold text-lg">Puma Imperial Hotel</h2>
@@ -249,9 +258,11 @@
         </div>
       </div>
     </div>
+    </a>
 
     <!-- Card 3 -->
-    <div class="relative rounded-xl overflow-hidden shadow-md">
+    <a href="hotel_priemium.html">
+      <div class="relative rounded-xl overflow-hidden shadow-md">
       <img src="img/NovotelThumbnail-1.jpg" alt="Novotel Ulaanbaatar" class="w-full h-82 object-cover">
       <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
         <h2 class="font-semibold text-lg">Novotel Ulaanbaatar</h2>
@@ -261,9 +272,11 @@
         </div>
       </div>
     </div>
+    </a>
 
     <!-- Card 4 -->
-    <div class="relative rounded-xl overflow-hidden shadow-md">
+    <a href="hotels_free.html">
+      <div class="relative rounded-xl overflow-hidden shadow-md">
       <img src="img/PremiumThumbnail-1.jpg" alt="Premium Hotel Ulaanbaatar" class="w-full h-82 object-cover">
       <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent text-white p-4">
         <h2 class="font-semibold text-lg">Premium Hotel Ulaanbaatar</h2>
@@ -273,6 +286,7 @@
         </div>
       </div>
     </div>
+    </a>
 
   </div>
 
