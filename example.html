@@ -2,87 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Central Mongolia Slider</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Communication & Preferences</title>
 </head>
-<body class="bg-white p-6">
-  <form class="space-y-6 max-w-3xl mx-auto">
-    <!-- Preferred Platform -->
-    <div>
-      <label class="block text-sm font-medium text-gray-800 mb-1">
-        Preferred Platform for Communication
-      </label>
-      <span class="block text-sm text-gray-500 mb-3">
-        Please select how you'd like to communicate with us:
-      </span>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
-          Email <span class="text-lg font-bold">+</span>
-        </button>
-        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
-          Facebook Messenger <span class="text-lg font-bold">+</span>
-        </button>
-        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
-          WhatsApp <span class="text-lg font-bold">+</span>
-        </button>
-        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
-          Viber <span class="text-lg font-bold">+</span>
-        </button>
-        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
-          Instagram <span class="text-lg font-bold">+</span>
-        </button>
-        <button type="button" class="flex justify-between items-center px-4 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50">
-          Phone Number <span class="text-lg font-bold">+</span>
-        </button>
+<body class="bg-blue-100 p-6">
+
+  <!-- Section Title -->
+  <h2 class="text-xl font-bold mb-4">Central Mongolia</h2>
+
+  <!-- Slider Container -->
+  <div class="relative">
+    <div id="slider" class="flex overflow-x-auto space-x-4 scroll-smooth pb-2">
+      
+      <!-- Card -->
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-1.jpg" alt="Khogno Tarna NP" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Khogno Tarna NP</div>
       </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-4.jpg" alt="Ulaan Tsutgalan" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Ulaan Tsutgalan</div>
+      </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-5.jpg" alt="Khuisiin Naiman Lake" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Khuisiin Naiman Lake</div>
+      </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-7.jpg" alt="Tsenkher Hot Spring" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Tsenkher Hot Spring</div>
+      </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-3.jpg" alt="Ugii Lake" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Ugii Lake</div>
+      </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-2.jpg" alt="Kharkhorin" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Kharkhorin</div>
+      </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-6.jpg" alt="Tuvkhun Monastery" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Tuvkhun Monastery</div>
+      </div>
+
+      <div class="flex-shrink-0 w-80 h-52 relative">
+        <img src="img/thumbnails/Central Mongolia/Central-8.jpg" alt="Tsetserleg City" class="w-full h-full object-cover rounded-lg">
+        <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Tsetserleg City</div>
+      </div>
+
     </div>
 
-    <!-- Specific Activities -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-1">
-        Any Specific Activities or Experiences You Want to Include?
-      </label>
-      <input
-        type="text"
-        placeholder="e.g. camel riding, horseback riding, reindeer herding, etc."
-        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
-    </div>
+    <!-- Right Arrow Button -->
+    <button id="nextBtn" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white text-gray-700 rounded-full p-2 shadow-md hover:bg-gray-200">
+      ➤
+    </button>
+  </div>
+  <!-- JavaScript -->
+  <script>
+    const slider = document.getElementById('slider');
+    const nextBtn = document.getElementById('nextBtn');
 
-    <!-- Dietary Preferences -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-1">
-        Dietary Preferences or Restrictions
-      </label>
-      <input
-        type="text"
-        placeholder="Please let us know if you or anyone in your group has any dietary preferences or allergies"
-        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
-    </div>
+    nextBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
 
-    <!-- Additional Comments -->
-    <div>
-      <label class="block text-sm font-medium text-gray-700 mb-1">
-        Any Additional Comments or Questions?
-      </label>
-      <input
-        type="text"
-        placeholder="Feel free to share anything else you’d like us to know!"
-        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-      />
-    </div>
-
-    <!-- Submit Button -->
-    <div>
-      <button
-        type="submit"
-        class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-medium py-2 rounded-md shadow hover:from-blue-600 hover:to-blue-700 transition"
-      >
-        Submit Inquiry
-      </button>
-    </div>
-  </form>
 </body>
 </html>
