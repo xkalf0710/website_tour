@@ -7,10 +7,10 @@
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://cdn.tailwindcss.com"></script>
    <style>
-    .scrollbar-hide::-webkit-scrollbar {
+    .hide-scrollbar::-webkit-scrollbar{
       display: none;
     }
-    .scrollbar-hide {
+    .hide-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
@@ -20,8 +20,7 @@
 </head>
 <body class="font-sans">
 
-    <header class="bg-[#0e3b78] text-white px-6 py-2"
-    style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
+    <header class="bg-[#0e3b78] text-white px-6 py-2">
         <div class="max-w-7xl mx-auto w-full flex items-center">
           
           <!-- Left: Logo -->
@@ -95,7 +94,7 @@
     <div class=" bg-blue-50">
       <h2 class="text-2xl mb-6">Day Trips</h2>
 
-      <div class="grid grid-cols-4 grid-rows-2 gap-4 max-w-7xl mx-auto">
+      <div class="grid grid-cols-4 grid-rows-2 gap-4 max-w-6xl mx-auto">
         <!-- Terelj National Park (2 cols, 1 row) -->
         <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden">
           <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park"
@@ -120,7 +119,7 @@
         <!-- Khustai NP (1 col, 1 row) -->
         <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
           <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP"
-            class="w-full h-full object-cover" />
+            class="w-550px h-550px object-cover" />
           <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md"><a href="terelj_khustai_nuruu.html">Khustai NP</a></div>
         </div>
 
@@ -128,31 +127,36 @@
         <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
           <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliin Khiid"
             class="w-full h-full object-cover" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md"><a href="aglag_bvteel.html">Aglag Buteeliin Khid</a></div>
+          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md"><a href="aglag_bvteel.html">Aglag Buteeliin Khiid</a></div>
         </div>
       </div>
     </div>
 
       <h2 class="text-2xl mb-6">Central Mongolia</h2>
 
-      <div class="grid grid-cols-5 auto-rows-[200px] gap-4 max-w-6xl mx-auto">
-         <div class="col-span-2 row-span-1 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-1.jpg" alt="Khogno Tarna NP" class="w-full h-full object-cover rounded-lg">
-          <div class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded">Khogno Tarna NP</div>
-        </div>
+      <div class="relative">
+        <!-- Slider Container -->
 
-        <div class="col-span-1 row-span-2 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-4.jpg" alt="Ulaan Tsutgalan" class="w-full h-full object-cover rounded-lg">
-          <div class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded">Ulaan Tsutgalan</div>
-        </div>
+        <div id="slider" class="flex overflow-x-auto hide-scrollbar gap-4 scroll-smooth">
+          <div class="grid grid-cols-5 auto-rows-[200px] gap-4 max-6xl mx-auto">
+            <div class="col-span-2 row-span-1 relative">
+              <img src="img/thumbnails/Central Mongolia/Central-1.jpg" alt="Khogno Tarana NP" class="w-full h-full object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Khogno Tarna NP</div>
+            </div>
 
+            
+          <div class="col-span-1 row-span-2 relative">
+            <img src="img/thumbnails/Central Mongolia/Central-4.jpg" alt="Ulaan Tsutgalan" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Ulaan Tsutgalan</div>
+          </div>
 
-        <div class="col-span-1 row-span-1 relative">
-          <img src="img/thumbnails/Central Mongolia/Central-5.jpg" alt="Khuisiin Naiman Lake" class="w-full h-full object-cover rounded-lg">
-          <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Khuisiin Naiman Lake</div>
-        </div>
-
-        <div class="col-span-1 row-span-1 relative">
+          <div class="col-span-1 row-span-1 relative">
+            <img src="img/thumbnails/Central Mongolia/Central-5.jpg" alt="Khuisin Naiman Nuur" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">
+              Khuisiin Naiman Lake
+            </div>
+          </div>
+          <div class="col-span-1 row-span-1 relative">
           <img src="img/thumbnails/Central Mongolia/Central-7.jpg" alt="Tsenkher" class="w-full h-full object-cover rounded-lg">
           <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Tsenkher Hot Spring</div>
         </div>
@@ -162,7 +166,7 @@
           <div class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded">Ugii Lake</div>
         </div>
 
-        <!-- Tuvkhun Monastery -->
+         <!-- Tuvkhun Monastery -->
         <div class="col-span-1 row-span-1 relative">
           <img src="img/thumbnails/Central Mongolia/Central-2.jpg" alt="Tuvkhun Monastery" class="w-full h-full object-cover rounded-lg">
           <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Kharkhorin</div>
@@ -179,18 +183,175 @@
           <img src="img/thumbnails/Central Mongolia/Central-8.jpg" alt="Tuvkhun Monastery" class="w-full h-full object-cover rounded-lg">
           <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Tsetserleg City</div>
         </div>
-      </div> 
+
+
+          </div>
+        </div>
+
+        
+      <!-- Left Arrow -->
+      <button onclick="scrollSlider(-300)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Right Arrow -->
+      <button onclick="scrollSlider(300)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+
+      </div>
       <div class="bg-blue-50">
        <h2 class="text-2xl  mb-6">Southern Mongolia</h2>
+       <div class="relative">
+      <!-- Slider Container -->
+      <div id="slider" class="flex overflow-x-auto hide-scrollbar gap-4 scroll-smooth">
+        <!-- Card Items -->
 
-    
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-10 gap-4">
+      <!-- 1 -->
+          <div class="col-span-2 row-span-1 relative">
+            <img src="img/thumbnails/Southern/Southern-1.jpg" alt="Khogno Tarana NP" class="w-full h-full object-cover rounded-xl">
+            <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Baga Gazariin Chuluu</div>
+          </div>
+      <!-- 2 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?cliff,mongolia" alt="Tsagaan Suvarga" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Tsagaan Suvarga</div>
+      </div>
+      <!-- 3 (wide) -->
+      <div class="col-span-2 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/600x200/?desert,dunes" alt="Khongor Sand Dunes" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Khongor Sand Dunes</div>
+      </div>
+      <!-- 4 (tall) -->
+      <div class="row-span-2 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x400/?valley,mongolia" alt="Yolyn Am" class="w-full h-64 object-cover">
+        <div class="p-2 text-sm font-medium">Yolyn Am</div>
+      </div>
+      <!-- 5 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?mountain,green" alt="Mukhar Shivert Am" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Mukhar Shivert Am</div>
+      </div>
+      <!-- 6 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?temple,mongolia" alt="Monastery of Bulgan" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Monastery of Bulgan</div>
+      </div>
+      <!-- 7 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?sand,camel" alt="Moltsog Sand Dunes" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Moltsog Sand Dunes</div>
+      </div>
+      <!-- 8 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?monastery,ruins" alt="Ongi Monastery" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Ongi Monastery</div>
+      </div>
+      <!-- 9 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?rocks,desert" alt="Khermen Tsav" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Khermen Tsav</div>
+      </div>
+      <!-- 10 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?canyon,mongolia" alt="Ikh Gazariin Chuluu" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Ikh Gazariin Chuluu</div>
+      </div>
+      <!-- 11 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?red,cliff" alt="Flaming Cliffs" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Flaming Cliffs</div>
+      </div>
+      <!-- 12 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?city,mongolia" alt="Dalanzadgad" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Dalanzadgad</div>
+      </div>
+      <!-- 13 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?valley" alt="Dungenee Am" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Dungenee Am</div>
+      </div>
+      <!-- 14 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?town,river" alt="Bulgan" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Bulgan</div>
+      </div>
+      <!-- 15 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?petroglyph" alt="Petroglyphs of Khavtsgait" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Petroglyphs of Khavtsgait</div>
+      </div>
+      <!-- 16 -->
+      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?mountain,ridge" alt="Khanan Khets" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Khanan Khets</div>
+      </div>
+      <!-- 17 -->
+      <div class="col-span-1 bg-white rounded-xl shadow overflow-hidden">
+        <img src="https://source.unsplash.com/300x200/?monk,mongolia" alt="Khamriin Khiid" class="w-full h-32 object-cover">
+        <div class="p-2 text-sm font-medium">Khamriin Khiid</div>
+      </div>
+    </div>
+      
+
+
+      <!-- Left Arrow -->
+      <button onclick="scrollSlider(-300)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Right Arrow -->
+      <button onclick="scrollSlider(300)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
       </div>
 
     <div class="bg-blue-50">
       <h2 class="text-2xl  mb-6">Western Mongolia</h2>
+       <div class="grid grid-cols-5 auto-rows-[200px] gap-4 max-w-6xl mx-auto">
+        <!-- Top row: 3 images across the full row -->
+        <div class="relative col-span-3">
+          <img src="img/thumbnails/Western/Western-1.jpg" alt="Lake & Dock" class="w-full h-full object-cover rounded-lg" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Ulaagchnii Khar Lake</div>
+        </div>
+        <div class="relative col-span-2">
+          <img src="img/thumbnails/Western/Western-3.jpg" alt="Crater Forest" class="w-full h-full object-cover rounded-lg" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Mukhart River</div>
+        </div>
+        <div class="relative col-span-1 row-span-2">
+          <img src="img/thumbnails/Western/Western-7.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Baga Turgen's Waterfall</div>
+        </div>
 
-      
-    </div>
+        <div class="col-span-1 row-span-1 relative">
+            <img src="img/thumbnails/Central Mongolia/Central-5.jpg" alt="Khuisiin Naiman Lake" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Khuisiin Naiman Lake</div>
+          </div>
+
+        <!-- Bottom row -->
+        <div class="relative col-span-2">
+          <img src="img/thumbnails/Western/Western-2.jpg" alt="City View" class="w-full h-full object-cover rounded-lg" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Senjit Khad</div>
+        </div>
+        <div class="relative col-span-3">
+          <img src="img/thumbnails/Western/Western-6.jpg" alt="People with Reindeer" class="w-full h-full object-cover rounded-lg" />
+          <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Altai Tavan Bogd</div>
+        </div>
+      </div>
+        </div>
 
     <div class="bg-blue-50">
       <h2 class="text-2xl  mb-6">Eastern Mongolia</h2>
@@ -216,6 +377,7 @@
     <!-- Bottom row -->
     <div class="relative col-span-2">
       <img src="img/Northern/Erdenet.jpg" alt="City View" class="w-full h-full object-cover rounded-lg" />
+      
     </div>
     <div class="relative col-span-3">
       <img src="img/Northern/TaigaWeb.jpg" alt="People with Reindeer" class="w-full h-full object-cover rounded-lg" />
@@ -314,12 +476,22 @@
   </div>
 </footer>
  <script>
-  const slider = document.getElementById('slider');
-    const nextBtn = document.getElementById('nextBtn');
 
-    nextBtn.addEventListener('click', () => {
-      slider.scrollBy({ left: 300, behavior: 'smooth' });
-    });
+  function scrollSlider(amount){
+    const slider = document.getElementById('slider');
+    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+    //Scroll with wrapping logic
+
+    if(slider.scrollLeft + amount >= maxScrollLeft){
+      slider.scrollTo({ left: 0, behavior: 'smooth'});
+
+    } else if(slider.scrollLeft + amount < 0){
+      slider.scrollTo({ left: maxScrollLeft, behavior: 'smooth'});
+    } else{
+      slider.scrollBy({ left: amount, behavior: 'smooth'});
+    }
+  }
   </script>
 </body>
 </html>
