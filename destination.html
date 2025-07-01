@@ -6,15 +6,16 @@
   <title>Destination</title>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://cdn.tailwindcss.com"></script>
-   <style>
-    .hide-scrollbar::-webkit-scrollbar{
+    <style>
+    .hide-scrollbar::-webkit-scrollbar {
       display: none;
     }
     .hide-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
     }
   </style>
+
 
   
 </head>
@@ -137,7 +138,7 @@
       <div class="relative">
         <!-- Slider Container -->
 
-        <div id="slider" class="flex overflow-x-auto hide-scrollbar gap-4 scroll-smooth">
+        <div id="slider" class="flex overflow-x-auto hide-scrollbar gap-4 scroll-smooth px-4">
           <div class="grid grid-cols-5 auto-rows-[200px] gap-4 max-6xl mx-auto">
             <div class="col-span-2 row-span-1 relative">
               <img src="img/thumbnails/Central Mongolia/Central-1.jpg" alt="Khogno Tarana NP" class="w-full h-full object-cover rounded-xl">
@@ -207,116 +208,134 @@
       </div>
       <div class="bg-blue-50">
        <h2 class="text-2xl  mb-6">Southern Mongolia</h2>
-       <div class="relative">
-      <!-- Slider Container -->
-      <div id="slider" class="flex overflow-x-auto hide-scrollbar gap-4 scroll-smooth">
-        <!-- Card Items -->
+       <div class="relative w-full">
+    <!-- Wrapper with horizontal scroll -->
+      <div id="slider-wrapper" class="overflow-x-auto hide-scrollbar scroll-smooth">
+       <div
+        id="slider"
+        class="grid grid-cols-11 grid-rows-2 gap-4 w-[3500px]">
 
-        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-10 gap-4">
-      <!-- 1 -->
-          <div class="col-span-2 row-span-1 relative">
-            <img src="img/thumbnails/Southern/Southern-1.jpg" alt="Khogno Tarana NP" class="w-full h-full object-cover rounded-xl">
-            <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Baga Gazariin Chuluu</div>
+            <!-- CARD 1 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-1.jpg" alt="Baga Gazariin Chuluu" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded">Baga Gazariin Chuluu</div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-2.jpg" alt="Tsagaan Suvarga" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Tsagaan Suvarga</div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-8.jpg" alt="Khongor Sand Dunes" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Khongor Sand Dunes</div>
+            </div>
+
+            <!-- CARD 4 - Yolyn Am (Tall) -->
+            <div class="col-span-1 row-span-2 relative">
+              <img src="img/thumbnails/Southern/Southern-6.jpg" alt="Yolyn Am" class="w-full h-80 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Yolyn Am</div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-5.jpg" alt="Mukhar Shivert Am" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Mukhar Shivert Am</div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern2.jpg" alt="Monastery of Bulgan" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Monastery of Bulgan</div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-11.jpg" alt="Moltsog Sand Dunes" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Moltsog Sand Dunes</div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-12.jpg" alt="Ongi Monastery" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Ongi Monastery</div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-15.jpg" alt="Khermen Tsav" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Khermen Tsav</div>
+            </div>
+
+            <!-- CARD 10 -->
+            <div class="col-span-1 row-span-1 relative">
+              <img src="img/thumbnails/Southern/Southern-2.jpg" alt="Ikh Gazariin Chuluu" class="w-full h-40 object-cover rounded-xl">
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Ikh Gazariin Chuluu</div>
+            </div>
+
+              <!-- CARD 11 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern-9.jpg" alt="Flaming Cliffs" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Flaming Cliffs</div>
+              </div>
+
+              <!-- CARD 12 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern-4.jpg" alt="Dalanzadgad" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Dalanzadgad</div>
+              </div>
+
+              <!-- CARD 13 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern-7.jpg" alt="Dungenee Am" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Dungenee Am</div>
+              </div>
+
+              <!-- CARD 14 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern13.jpg" alt="Bulgan" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Bulgan</div>
+              </div>
+
+              <!-- CARD 15 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern-10.jpg" alt="Petroglyphs of Khavtsgait" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Petroglyphs of Khavtsgait</div>
+              </div>
+
+              <!-- CARD 16 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern-14.jpg" alt="Khanan Khets" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Khanan Khets</div>
+              </div>
+
+              <!-- CARD 17 -->
+              <div class="col-span-1 row-span-1 relative">
+                <img src="img/thumbnails/Southern/Southern-16.jpg" alt="Khamriin Khiid" class="w-full h-40 object-cover rounded-xl">
+                <div class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1">Khamriin Khiid</div>
+              </div>
+
+            </div>
           </div>
-      <!-- 2 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?cliff,mongolia" alt="Tsagaan Suvarga" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Tsagaan Suvarga</div>
-      </div>
-      <!-- 3 (wide) -->
-      <div class="col-span-2 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/600x200/?desert,dunes" alt="Khongor Sand Dunes" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Khongor Sand Dunes</div>
-      </div>
-      <!-- 4 (tall) -->
-      <div class="row-span-2 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x400/?valley,mongolia" alt="Yolyn Am" class="w-full h-64 object-cover">
-        <div class="p-2 text-sm font-medium">Yolyn Am</div>
-      </div>
-      <!-- 5 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?mountain,green" alt="Mukhar Shivert Am" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Mukhar Shivert Am</div>
-      </div>
-      <!-- 6 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?temple,mongolia" alt="Monastery of Bulgan" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Monastery of Bulgan</div>
-      </div>
-      <!-- 7 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?sand,camel" alt="Moltsog Sand Dunes" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Moltsog Sand Dunes</div>
-      </div>
-      <!-- 8 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?monastery,ruins" alt="Ongi Monastery" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Ongi Monastery</div>
-      </div>
-      <!-- 9 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?rocks,desert" alt="Khermen Tsav" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Khermen Tsav</div>
-      </div>
-      <!-- 10 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?canyon,mongolia" alt="Ikh Gazariin Chuluu" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Ikh Gazariin Chuluu</div>
-      </div>
-      <!-- 11 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?red,cliff" alt="Flaming Cliffs" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Flaming Cliffs</div>
-      </div>
-      <!-- 12 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?city,mongolia" alt="Dalanzadgad" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Dalanzadgad</div>
-      </div>
-      <!-- 13 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?valley" alt="Dungenee Am" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Dungenee Am</div>
-      </div>
-      <!-- 14 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?town,river" alt="Bulgan" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Bulgan</div>
-      </div>
-      <!-- 15 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?petroglyph" alt="Petroglyphs of Khavtsgait" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Petroglyphs of Khavtsgait</div>
-      </div>
-      <!-- 16 -->
-      <div class="col-span-1 bg-white text-black rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?mountain,ridge" alt="Khanan Khets" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Khanan Khets</div>
-      </div>
-      <!-- 17 -->
-      <div class="col-span-1 bg-white rounded-xl shadow overflow-hidden">
-        <img src="https://source.unsplash.com/300x200/?monk,mongolia" alt="Khamriin Khiid" class="w-full h-32 object-cover">
-        <div class="p-2 text-sm font-medium">Khamriin Khiid</div>
-      </div>
-    </div>
-      
 
+          <!-- Left Arrow -->
+          <button onclick="scrollSlider(-300)"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
 
-      <!-- Left Arrow -->
-      <button onclick="scrollSlider(-300)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <!-- Right Arrow -->
-      <button onclick="scrollSlider(300)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
-  </div>
+          <!-- Right Arrow -->
+          <button onclick="scrollSlider(300)"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
       </div>
 
     <div class="bg-blue-50">
@@ -475,23 +494,22 @@
     Copyright © 2025 Brave New Mongolia
   </div>
 </footer>
+
  <script>
+    function scrollSlider(amount) {
+      const wrapper = document.getElementById('slider-wrapper');
+      const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
 
-  function scrollSlider(amount){
-    const slider = document.getElementById('slider');
-    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-
-    //Scroll with wrapping logic
-
-    if(slider.scrollLeft + amount >= maxScrollLeft){
-      slider.scrollTo({ left: 0, behavior: 'smooth'});
-
-    } else if(slider.scrollLeft + amount < 0){
-      slider.scrollTo({ left: maxScrollLeft, behavior: 'smooth'});
-    } else{
-      slider.scrollBy({ left: amount, behavior: 'smooth'});
+      if (wrapper.scrollLeft + amount >= maxScrollLeft) {
+        wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+      } else if (wrapper.scrollLeft + amount < 0) {
+        wrapper.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: amount, behavior: 'smooth' });
+      }
     }
-  }
   </script>
+
+
 </body>
 </html>
