@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Custom Grid Layout</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Northern Mongolia</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+      },
+      plugins: [tailwindcss.plugin(function ({ addUtilities }) {
+        addUtilities({
+          '.aspect-square': {
+            aspectRatio: '1 / 1',
+          },
+        });
+      })]
+    }
+  </script>
 </head>
-<body class="bg-blue-100 p-6">
+<body class="bg-gray-100 p-6">
+  <div class="grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto">
 
-  <h2 class="text-xl font-bold mb-4">Northern Mongolia</h2>
-
-  <div class="grid grid-cols-6 gap-4">
-
-    <!-- Image 1: spans 3 cols -->
-    <div class="col-span-1 row-span-2 relative">
-      <img src="img/Northern/KhuvsgulWeb.jpg" alt="Buir Lake" class="w-full h-full object-cover rounded-lg" />
-      <p class="text-white bg-opacity-50 px-2 py-1 absolute mt-[-2.5rem] ml-2 rounded">Buir Lake</p>
+    <!-- Terelj National Park (2 cols x 1 row) -->
+    <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+      <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park" class="w-550 h-267 object-cover" />
+      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Terelj National Park</div>
     </div>
 
-    <!-- Image 2: spans 2 cols -->
-    <div class="col-span-2 row-span-1 relative">
-      <img src="img/Eastern/BinderWeb.jpg" alt="Crater" class="w-full h-full object-cover rounded-lg" />
+    <!-- Genghis Khan Statue Complex (1 col x 2 rows) -->
+    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-square">
+      <img src="img/thumbnails/Day trips/Nearby-2.jpg" alt="Genghis Khan Statue Complex" class="w-267 h-550 object-cover" />
+      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Genghis Khan Statue Complex</div>
     </div>
 
-    <!-- Image 3: spans 1 col and 2 rows -->
-    <div class="col-span-1 row-span-2 relative">
-      <img src="img/Northern/AmarbaysgalantWeb.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg" />
+    <!-- Chinggis Khaanli Khuree (1 col x 2 rows) -->
+    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-square">
+      <img src="img/thumbnails/Day trips/Nearby-5.jpg" alt="Chinggis Khaanli Khuree" class="w-267 h-550 object-cover" />
+      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Chinggis Khaanli Khuree</div>
     </div>
 
-    <!-- Image 4: spans 2 cols -->
-    <div class="col-span-2 row-span-1 relative">
-      <img src="img/Northern/Erdenet.jpg" alt="City" class="w-full h-full object-cover rounded-lg" />
+    <!-- Khustai NP -->
+    <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+      <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP" class="w-267 h-267 object-cover" />
+      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Khustai NP</div>
     </div>
 
-    <!-- Image 5: spans 3 cols -->
-    <div class="col-span-1 row-span-2 relative">
-      <img src="img/Northern/TaigaWeb.jpg" alt="Reindeer" class="w-full h-full object-cover rounded-lg" />
+    <!-- Aglag Buteeliiin Khiid -->
+    <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+      <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliiin Khiid" class="w-267 h-267 object-cover" />
+      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Aglag Buteeliiin Khiid</div>
     </div>
 
   </div>
-
 </body>
 </html>
