@@ -2,329 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tour Inquiry Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .hide-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .hide-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;     /* Firefox */
-    }
-  </style>
+  <title>Northern Mongolia</title>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-blue-100 p-6">
 
-  <div class="bg-blue-50">
-  <h2 class="text-2xl mb-6">Southern Mongolia</h2>
-  <div class="relative w-full">
-    <!-- Wrapper with horizontal scroll -->
-    <div id="slider-wrapper" class="overflow-x-auto hide-scrollbar scroll-smooth">
-      <div
-        id="slider"
-        class="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] auto-rows-fr gap-4 p-4 min-w-full"
-      >
-        <!-- CARD 1 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-1.jpg"
-            alt="Baga Gazariin Chuluu"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Baga Gazariin Chuluu
-          </div>
-        </div>
+  <h2 class="text-xl font-bold mb-4">Northern Mongolia</h2>
 
-        <!-- CARD 2 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-2.jpg"
-            alt="Tsagaan Suvarga"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Tsagaan Suvarga
-          </div>
-        </div>
+  <div class="grid grid-cols-6 gap-4">
 
-        <!-- CARD 3 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-8.jpg"
-            alt="Khongor Sand Dunes"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Khongor Sand Dunes
-          </div>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="relative row-span-2">
-          <img
-            src="img/thumbnails/Southern/Southern-6.jpg"
-            alt="Yolyn Am"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Yolyn Am
-          </div>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-5.jpg"
-            alt="Mukhar Shivert Am"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Mukhar Shivert Am
-          </div>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern2.jpg"
-            alt="Monastery of Bulgan"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Monastery of Bulgan
-          </div>
-        </div>
-
-        <!-- CARD 7 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-11.jpg"
-            alt="Moltsog Sand Dunes"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Moltsog Sand Dunes
-          </div>
-        </div>
-
-        <!-- CARD 8 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-12.jpg"
-            alt="Ongi Monastery"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Ongi Monastery
-          </div>
-        </div>
-
-        <!-- CARD 9 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-15.jpg"
-            alt="Khermen Tsav"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Khermen Tsav
-          </div>
-        </div>
-
-        <!-- CARD 10 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-2.jpg"
-            alt="Ikh Gazariin Chuluu"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Ikh Gazariin Chuluu
-          </div>
-        </div>
-
-        <!-- CARD 11 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-9.jpg"
-            alt="Flaming Cliffs"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Flaming Cliffs
-          </div>
-        </div>
-
-        <!-- CARD 12 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-4.jpg"
-            alt="Dalanzadgad"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Dalanzadgad
-          </div>
-        </div>
-
-        <!-- CARD 13 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-7.jpg"
-            alt="Dungenee Am"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Dungenee Am
-          </div>
-        </div>
-
-        <!-- CARD 14 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern13.jpg"
-            alt="Bulgan"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Bulgan
-          </div>
-        </div>
-
-        <!-- CARD 15 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-10.jpg"
-            alt="Petroglyphs of Khavtsgait"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Petroglyphs of Khavtsgait
-          </div>
-        </div>
-
-        <!-- CARD 16 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-14.jpg"
-            alt="Khanan Khets"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Khanan Khets
-          </div>
-        </div>
-
-        <!-- CARD 17 -->
-        <div class="relative">
-          <img
-            src="img/thumbnails/Southern/Southern-16.jpg"
-            alt="Khamriin Khiid"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white font-semibold bg-black bg-opacity-50 px-2 py-1 rounded"
-          >
-            Khamriin Khiid
-          </div>
-        </div>
-      </div>
+    <!-- Image 1: spans 3 cols -->
+    <div class="col-span-1 row-span-2 relative">
+      <img src="img/Northern/KhuvsgulWeb.jpg" alt="Buir Lake" class="w-full h-full object-cover rounded-lg" />
+      <p class="text-white bg-opacity-50 px-2 py-1 absolute mt-[-2.5rem] ml-2 rounded">Buir Lake</p>
     </div>
 
-    <!-- Left Arrow -->
-    <button
-      onclick="scrollSlider(-300)"
-      class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 text-gray-700"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-    </button>
+    <!-- Image 2: spans 2 cols -->
+    <div class="col-span-2 row-span-1 relative">
+      <img src="img/Eastern/BinderWeb.jpg" alt="Crater" class="w-full h-full object-cover rounded-lg" />
+    </div>
 
-    <!-- Right Arrow -->
-    <button
-      onclick="scrollSlider(300)"
-      class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 text-gray-700"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </button>
+    <!-- Image 3: spans 1 col and 2 rows -->
+    <div class="col-span-1 row-span-2 relative">
+      <img src="img/Northern/AmarbaysgalantWeb.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg" />
+    </div>
+
+    <!-- Image 4: spans 2 cols -->
+    <div class="col-span-2 row-span-1 relative">
+      <img src="img/Northern/Erdenet.jpg" alt="City" class="w-full h-full object-cover rounded-lg" />
+    </div>
+
+    <!-- Image 5: spans 3 cols -->
+    <div class="col-span-1 row-span-2 relative">
+      <img src="img/Northern/TaigaWeb.jpg" alt="Reindeer" class="w-full h-full object-cover rounded-lg" />
+    </div>
+
   </div>
-</div>
-
-<script>
-  function scrollSlider(amount) {
-    const wrapper = document.getElementById("slider-wrapper");
-    const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
-
-    if (wrapper.scrollLeft + amount >= maxScrollLeft) {
-      wrapper.scrollTo({ left: 0, behavior: "smooth" });
-    } else if (wrapper.scrollLeft + amount < 0) {
-      wrapper.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
-    } else {
-      wrapper.scrollBy({ left: amount, behavior: "smooth" });
-    }
-  }
-</script>
-
 
 </body>
 </html>

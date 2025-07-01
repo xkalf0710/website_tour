@@ -275,7 +275,7 @@
 
        <div class="relative w-full">
           <!-- Wrapper with horizontal scroll -->
-          <div id="slider-wrapper3" class="overflow-x-auto hide-scrollbar scroll-smooth">
+          <div id="slider-wrapper" class="overflow-x-auto hide-scrollbar scroll-smooth">
             <div
               id="slider"
               class="grid grid-cols-9 grid-rows-2 gap-4 w-[1500px]">
@@ -456,7 +456,7 @@
 
           <!-- Left Arrow -->
           <button
-            onclick="scrollSlider3(-300)"
+            onclick="scrollSlider(-300)"
             aria-label="Scroll left"
             class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
@@ -467,7 +467,7 @@
 
           <!-- Right Arrow -->
           <button
-            onclick="scrollSlider3(300)"
+            onclick="scrollSlider(300)"
             aria-label="Scroll right"
             class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
@@ -688,9 +688,30 @@
       </div>
 
   
-      <h1 class="text-2xl mb-6">Northern Mongolia</h1>
+      <h1 class="text-2xl font-bold mb-6">Northern Mongolia</h1>
 
-        
+      <div class="grid grid-rows-2 grid-cols-6 gap-4 min-w-[250px]">
+      
+        <div class="relative col-span-3">
+          <img src="img/Northern/KhuvsgulWeb.jpg" alt="Lake & Dock" class="w-full h-full object-cover rounded-lg" />
+        </div>
+        <div class="relative col-span-2">
+          <img src="img/Eastern/BinderWeb.jpg" alt="Crater Forest" class="w-full h-full object-cover rounded-lg" />
+        </div>
+        <div class="relative col-span-1 row-span-2">
+          <img src="img/Northern/AmarbaysgalantWeb.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg" />
+        </div>
+
+        <!-- Bottom row -->
+        <div class="relative col-span-2">
+          <img src="img/Northern/Erdenet.jpg" alt="City View" class="w-full h-full object-cover rounded-lg" />
+        </div>
+        <div class="relative col-span-3 row-span-1">
+          <img src="img/Northern/TaigaWeb.jpg" alt="People with Reindeer" class="w-full h-full object-cover rounded-lg" />
+        </div>
+      </div>
+
+  
 
     <!-- Newsletter Section -->
     <div class="bg-blue-100 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
