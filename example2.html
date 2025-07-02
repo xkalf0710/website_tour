@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Custom Grid Layout</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day Trips Grid</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {},
-      },
-      plugins: [tailwindcss.plugin(function ({ addUtilities }) {
-        addUtilities({
-          '.aspect-square': {
-            aspectRatio: '1 / 1',
-          },
-        });
-      })]
-    }
-  </script>
 </head>
 <body class="bg-gray-100 p-6">
-  <div class="grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto">
 
-    <!-- Terelj National Park (2 cols x 1 row) -->
-    <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park" class="w-550 h-267 object-cover" />
-      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Terelj National Park</div>
+  <div class="grid grid-cols-4 grid-rows-2 gap-4 max-w-7xl mx-auto">
+
+    <!-- Terelj National Park (2 cols x 1 row, aspect 2.05:1) -->
+    <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
+      <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park"
+        class="w-full h-full object-cover" />
+      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+        <a href="terelj_natural.html">Terelj National Park</a>
+      </div>
     </div>
 
-    <!-- Genghis Khan Statue Complex (1 col x 2 rows) -->
-    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-2.jpg" alt="Genghis Khan Statue Complex" class="w-267 h-550 object-cover" />
-      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Genghis Khan Statue Complex</div>
+    <!-- Genghis Khan Statue Complex (1 col x 2 rows, aspect 1:2.05) -->
+    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+      <img src="img/thumbnails/Day trips/Nearby-2.jpg" alt="Genghis Khan Statue Complex"
+        class="w-full h-full object-cover" />
+      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+        Genghis Khan<br />Statue Complex
+      </div>
     </div>
 
-    <!-- Chinggis Khaanli Khuree (1 col x 2 rows) -->
-    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-5.jpg" alt="Chinggis Khaanli Khuree" class="w-267 h-550 object-cover" />
-      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Chinggis Khaanli Khuree</div>
+    <!-- Chinggis Khaanii Khuree (1 col x 2 rows, aspect 1:2.05) -->
+    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+      <img src="img/thumbnails/Day trips/Nearby-5.jpg" alt="Chinggis Khaanii Khuree"
+        class="w-full h-full object-cover" />
+      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+        Chinggis Khaanii<br />Khuree
+      </div>
     </div>
 
-    <!-- Khustai NP -->
+    <!-- Khustai NP (1 col x 1 row, square) -->
     <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP" class="w-267 h-267 object-cover" />
-      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Khustai NP</div>
+      <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP"
+        class="w-full h-full object-cover" />
+      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+        <a href="terelj_khustai_nuruu.html">Khustai NP</a>
+      </div>
     </div>
 
-    <!-- Aglag Buteeliiin Khiid -->
+    <!-- Aglag Buteeliin Khiid (1 col x 1 row, square) -->
     <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliiin Khiid" class="w-267 h-267 object-cover" />
-      <div class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md">Aglag Buteeliiin Khiid</div>
+      <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliin Khiid"
+        class="w-full h-full object-cover" />
+      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+        <a href="aglag_bvteel.html">Aglag Buteeliin Khiid</a>
+      </div>
     </div>
 
   </div>
+
 </body>
 </html>
