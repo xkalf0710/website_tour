@@ -8,54 +8,87 @@
 </head>
 <body class="bg-gray-100 p-6">
 
-  <div class="grid grid-cols-4 grid-rows-2 gap-4 max-w-7xl mx-auto">
+ <div id="slider" class="grid grid-cols-8 grid-rows-2 gap-[15px] w-[1100px]">
 
-    <!-- Terelj National Park (2 cols x 1 row, aspect 2.05:1) -->
-    <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
-      <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park"
-        class="w-full h-full object-cover" />
-      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
-        <a href="terelj_natural.html">Terelj National Park</a>
-      </div>
-    </div>
-
-    <!-- Genghis Khan Statue Complex (1 col x 2 rows, aspect 1:2.05) -->
-    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
-      <img src="img/thumbnails/Day trips/Nearby-2.jpg" alt="Genghis Khan Statue Complex"
-        class="w-full h-full object-cover" />
-      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
-        Genghis Khan<br />Statue Complex
-      </div>
-    </div>
-
-    <!-- Chinggis Khaanii Khuree (1 col x 2 rows, aspect 1:2.05) -->
-    <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
-      <img src="img/thumbnails/Day trips/Nearby-5.jpg" alt="Chinggis Khaanii Khuree"
-        class="w-full h-full object-cover" />
-      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
-        Chinggis Khaanii<br />Khuree
-      </div>
-    </div>
-
-    <!-- Khustai NP (1 col x 1 row, square) -->
-    <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP"
-        class="w-full h-full object-cover" />
-      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
-        <a href="terelj_khustai_nuruu.html">Khustai NP</a>
-      </div>
-    </div>
-
-    <!-- Aglag Buteeliin Khiid (1 col x 1 row, square) -->
-    <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
-      <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliin Khiid"
-        class="w-full h-full object-cover" />
-      <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
-        <a href="aglag_bvteel.html">Aglag Buteeliin Khiid</a>
-      </div>
-    </div>
-
+  <!-- 2.05:1 Харьцаатай Хэвтээ -->
+  <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
+    <img src="img/thumbnails/Central Mongolia/Central-1.jpg" alt="Khogno Tarna National Park"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Khogno Tarna NP</div>
   </div>
+
+  <!-- 1:2.05 Босоо зураг -->
+  <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+    <img src="img/thumbnails/Central Mongolia/Central-4.jpg" alt="Ulaan Tsutgalan Waterfall"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Ulaan Tsutgalan</div>
+  </div>
+
+  <!-- 1:1 Зурагнууд -->
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-5.jpg" alt="Khuisiin Naiman Lake"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Khuisiin Naiman Lake</div>
+  </div>
+
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-7.jpg" alt="Tsenkher Hot Spring"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Tsenkher Hot Spring</div>
+  </div>
+
+  <!-- Босоо зураг -->
+  <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+    <img src="img/thumbnails/Central Mongolia/Central-10.jpg" alt="Chuluut Valley"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Chuluut Valley</div>
+  </div>
+
+  <!-- 1:1 зургууд үргэлжлэл -->
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-9.jpg" alt="Taikhar Rock"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Taikhar Rock</div>
+  </div>
+
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-13.jpg" alt="Hujirt"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Hujirt</div>
+  </div>
+
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-2.jpg" alt="Kharkhorin"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Kharkhorin</div>
+  </div>
+
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-3.jpg" alt="Ugii Lake"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Ugii Lake</div>
+  </div>
+
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-6.jpg" alt="Tuvkhun Monastery"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Tuvkhun Monastery</div>
+  </div>
+
+  <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+    <img src="img/thumbnails/Central Mongolia/Central-8.jpg" alt="Tsetserleg City"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Tsetserleg City</div>
+  </div>
+
+  <!-- Хэвтээ зураг -->
+  <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
+    <img src="img/thumbnails/Central Mongolia/Central-11.jpg" alt="Khorgo Terkhiin Tsagaan Nuur NP"
+      class="object-cover w-full h-full transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+    <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">Khorgo Terkhiin Tsagaan Nuur NP</div>
+  </div>
+</div>
+
 
 </body>
 </html>
