@@ -1102,5 +1102,72 @@
   </div>
 </footer>
 
+
+
+
+
+<script>
+    function scrollSlider(amount) {
+      const wrapper = document.getElementById('slider-wrapper');
+      const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+
+      if (wrapper.scrollLeft + amount >= maxScrollLeft) {
+        wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+      } else if (wrapper.scrollLeft + amount < 0) {
+        wrapper.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    }
+  </script>
+
+
+
+  <script>
+    function scrollSlider1(amount) {
+      const wrapper = document.getElementById('slider-wrapper1');
+      const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+
+      if (wrapper.scrollLeft + amount >= maxScrollLeft) {
+        wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+      } else if (wrapper.scrollLeft + amount < 0) {
+        wrapper.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    }
+  </script>
+
+  <script>
+    function scrollSlider2(amount) {
+      const wrapper = document.getElementById('slider-wrapper2');
+      const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+
+      if (wrapper.scrollLeft + amount >= maxScrollLeft) {
+        wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+      } else if (wrapper.scrollLeft + amount < 0) {
+        wrapper.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    }
+  </script>
+
+   <script>
+    function scrollSlider3(amount) {
+      const wrapper = document.getElementById('slider-wrapper3');
+      const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+
+      if (wrapper.scrollLeft + amount >= maxScrollLeft) {
+        wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+      } else if (wrapper.scrollLeft + amount < 0) {
+        wrapper.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+      } else {
+        wrapper.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    }
+  </script>
+
+  
 </body>
 </html>
