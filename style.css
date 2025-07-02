@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: 'Authenia';
+  src: url('/fonts/Authenia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    font-family: 'Authenia', cursive;
+  }
+}
+
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
