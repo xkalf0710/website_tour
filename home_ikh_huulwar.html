@@ -7,53 +7,41 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#eaf0fb]">
-  <div class="max-w-6xl mx-auto py-10 px-4">
-    <h2 class="text-2xl font-bold text-center mb-8">Recommended Tours</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      
-      <!-- Card 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="img/recommended tours/Desert Peaks Odyssey.jpg" alt="Gobi Odyssey" class="w-398 h-348 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold mb-2">Gobi Odyssey</h3>
-          <p class="text-sm mb-1">
-            <span class="text-blue-600">🗓 Duration:</span> 3 days, 2nights
-          </p>
-          <p class="text-sm">
-            <span class="text-blue-600">💲 Starting from:</span> $ 1050
-          </p>
-        </div>
-      </div>
+  <section class="flex flex-col md:flex-row items-center justify-center gap-12 p-8 w-[1224px] h-[704px]">
 
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="img/recommended tours/Naiman Lake Horseback Harmony.jpg" alt="Desert Waves" class="w-398 h-348 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold mb-2">Desert Waves</h3>
-          <p class="text-sm mb-1">
-            <span class="text-blue-600">🗓 Duration:</span> 3 days, 2nights
-          </p>
-          <p class="text-sm">
-            <span class="text-blue-600">💲 Starting from:</span> $ 1050
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="img/recommended tours/Taiga to Peaks Expedition.jpg" alt="Western Horizon Wings" class="w-398 h-348 object-cover">
-        <div class="p-4">
-          <h3 class="text-lg font-semibold mb-2">Western Horizon Wings</h3>
-          <p class="text-sm mb-1">
-            <span class="text-blue-600">🗓 Duration:</span> 3 days, 2nights
-          </p>
-          <p class="text-sm">
-            <span class="text-blue-600">💲 Starting from:</span> $ 1050
-          </p>
-        </div>
-      </div>
-
-    </div>
+    <div class="relative w-fit ml-0">
+  <!-- Том оваль зураг -->
+  <div class="w-[320px] h-[440px] overflow-hidden rounded-[50%/40%] shadow-lg border-4 border-white">
+    <img 
+      src="img/ToursBig.jpg" 
+      alt="Main Tour" 
+      class="w-full h-full object-cover" 
+    />
   </div>
+
+  <!-- Жижиг дугуй зураг -->
+  <div class="w-[200px] h-[260px]  overflow-hidden rounded-[50%/40%] border-4 border-white shadow-md absolute -bottom-12 -right-24 bg-white">
+    <img 
+      src="img/ToursSmall.jpg" 
+      alt="Secondary" 
+      class="w-full h-full object-cover" 
+    />
+  </div>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- Text -->
+      <div class="text-center md:text-left max-w-md ml-0">
+          <h2 class="text-3xl font-semibold">
+              Your Adventure Awaits<br />
+             <span class="text-blue-800">Let</span>
+             <span class="text-red-600 font-bold">Brave New Mongolia</span>
+             <span class="text-blue-800">Tours</span>
+          </h2>
+          <p class="text-sm mt-2 text-gray-600">Guide You to the Land of Stories!</p>
+
+          <a href="tours_forms.html"><button class="mt-4 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Explore Tours</button></a>
+      </div>
+  </section>
 </body>
 </html>
