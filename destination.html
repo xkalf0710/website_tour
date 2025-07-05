@@ -203,11 +203,11 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]">
               <img
                 src="img/thumbnails/Central Mongolia/Central-4.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
-                class="w-266 h-548 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
                 class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
@@ -996,7 +996,7 @@
               <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Uran Togoo Extinct Volcano
               </div>
             </div>
-            <div class="relative col-span-1 row-span-2">
+            <div class="relative col-span-1 row-span-2 aspect-auto">
               <img src="img/Northern/AmarbaysgalantWeb.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
               <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Amarbaysgalant Monastery
               </div>
@@ -1019,55 +1019,67 @@
       &nbsp; &nbsp;
 
     <!-- Newsletter Section -->
-    <div class="bg-blue-100 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6 pl-20">
-      <div class="max-w-xl">
-        <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
-        <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
-          <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
-        </form>
-        <p class="text-xs text-gray-600 mb-4">
-          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
-        </p>
-        <p class="text-xs"><span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
-          <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
-        </p>
-      </div>
-
-      <!-- Cartoon Character -->
-      <div class="relative">
-        <img src="img/Component 65.png" alt="Mongolian Character" class="w-267 h-459 object-contain transform scale-x-[-1]" />
-      </div>
-
-
-      <!-- WhatsApp QR Code -->
-    <div class="bg-white p-4 rounded-lg shadow-lg text-center max-w-xs">
-      <!-- SVG болон текст төвд зэрэгцэж харагдах -->
-      <div class="flex flex-col items-center mb-2">
-        <!-- <svg class="w-6 h-6 text-blue-400 mb-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"> -->
-          <img src="img/footer/bnm round.png" class="w-6 h-6 text-blue-400 mb-1"/>
-          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
-          <path d="M16 11c0 2-2 4-4 4s-3-2-3-4a3 3 0 1 1 6 0z" stroke="currentColor" stroke-width="2" />
-        </svg>
-        <span class="text-sm font-semibold">Connect via WhatsApp</span>
-      </div>
-      <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="mx-auto mb-2 w-242 h-313 object-contain" />
-      <p class="font-semibold text-sm">+976 8001 4904</p>
-    </div>
-
-    </div>
+    
   </div>
+
+  <div class="bg-blue-100 rounded-lg p-2 flex flex-col md:flex-row items-center justify-center gap-2">
+          
+          <!-- Newsletter Form -->
+          <div class="max-w-xl text-left pl-20">
+            <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
+            <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
+              <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
+            </form>
+            <p class="text-xs text-gray-600 mb-4">
+              Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
+            </p>
+            <p class="text-xs">
+              <span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
+              <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
+            </p>
+          </div>
+
+          <!-- Cartoon Character -->
+          <div class="relative">
+            <img src="img/Component 65.png" alt="Mongolian Character"
+              class="w-[400px] h-[680px] object-contain transform scale-x-[-1]" />
+          </div>
+
+
+          <!-- WhatsApp QR Code -->
+          <div class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+            <!-- Top Icon -->
+            <div class="w-10 h-10 rounded-full overflow-hidden -mt-6">
+              <img src="img/footer/bnm round.png" alt="Logo" class="w-54 h-54 object-contain" />
+            </div>
+
+            <!-- Title -->
+            <span class="text-sm font-medium text-gray-700">Connect via WhatsApp</span>
+
+            <!-- QR Code -->
+            <div class="bg-white p-2 rounded-lg shadow">
+              <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="bg-white w-full rounded-b-lg py-2 text-center font-semibold text-gray-800 shadow-sm">
+              +976 8001 4904
+            </div>
+          </div>
+        </div>
   
-<footer class="bg-[#0B2B6C] text-white">
-  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        &nbsp;
+      <footer class="bg-[#0B2B6C] text-white">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
-    <!-- Column 1: Logo -->
-    <div class="w-full text-center">
-  <div class="flex justify-center items-center space-x-2 mt-4">
-    <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
-    <span class="text-2xl font-bold">BNM</span>
-  </div>
-</div>
+          <!-- Column 1: Logo -->
+          <div class="w-full text-center">
+        <div class="flex justify-center items-center space-x-2 mt-4">
+          <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
+          <span class="text-2xl font-bold">BNM</span>
+        </div>
+      </div>
 
 
 
