@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Destination</title>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+   <style>
     .hide-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -15,29 +14,28 @@
       scrollbar-width: none;     /* Firefox */
     }
   </style>
-
-
-  
 </head>
 <body class="font-sans">
-
-    <header class="bg-[#0e3b78] text-white px-6 py-2" style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
-        <div class="max-w-7xl mx-auto w-full flex items-center">
-          
-          <!-- Left: Logo -->
-          <div class="flex items-center space-x-2 flex-1">
-            <span class="font-bold text-sm">BNM</span>
+  
+ <header class="relative bg-cover bg-center w-[1920px] h-[410px]" style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
+    <div class="max-w-7xl mx-auto w-full flex items-center justify-between py-2 px-4 space-x-4">
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <a href="index.html"> 
+            <div class="flex items-center space-x-2">
+            <span class="font-bold text-sm text-white text-[20px]">BNM</span>
             <img src="img/footer/bnm round.png" class="w-8 h-8" alt="globe" />
+            </div>
+          </a>
+
+          &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+          &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+           <div class="flex-1 flex justify-center items-center space-x-4">
+            <a href="about_us.html" class="text-sm text-white hover:underline">About us</a>
           </div>
 
-          <!-- About -->
-          <div class="flex-1 flex justify-center items-center space-x-4">
-            <a href="about_us.html" class="text-sm hover:underline">About us</a>
-          </div>
-
-          <!-- Search -->
-          <div class="flex justify-center flex-1">
-            <div class="relative w-full max-w-sm">
+            <div class="relative w-full max-w-xs">
               <input type="text" placeholder="Search"
                 class="w-full pl-10 pr-4 py-1.5 rounded-md text-sm text-black focus:outline-none" />
               <div class="absolute left-3 top-2.5">
@@ -48,17 +46,11 @@
                 </svg>
               </div>
             </div>
-          </div>
-
-        <!-- Right: User + Language -->
-        <div class="flex justify-end items-center space-x-3 flex-1">
-          <button class="bg-blue-600 hover:bg-blue-500 p-2 rounded-md">
-            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-            </svg>
+          
+        <div class="flex justify-end items-center space-x-6 flex-1">
+          <button class="bg-blue-600 hover:bg-blue-500 text-white text-sm px-3 py-1 rounded-md">
+            <a href="login.html">Login</a>
           </button>
-
           <button class="bg-[#123765] hover:bg-[#17437d] text-white text-sm px-3 py-1 rounded-md flex items-center">
             EN
             <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
@@ -66,149 +58,193 @@
             </svg>
           </button>
         </div>
-
       </div>
-</header>
 
-  <!-- Hero -->
-  <section class="relative bg-cover bg-center h-[350px]" style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
-    <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
-      <h2 class="text-3xl font-semibold">Welcome to the Land of Stories</h2>
-      <h1 class="text-5xl font-extrabold mt-2">MONGOLIA !</h1>
+      <!-- <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
+      <h2 class="text-3xl font-semibold text-center text-[44px]">Welcome <br> to the Land of Stories</h2>
+      &nbsp;
+      <h1 class="text-5xl font-semibold text-[44px] mt-2">MONGOLIA !</h1>
+     </div> -->
+
+     </header>
+
+
+     
+      <!-- Зургийн контейнер -->
+      <div class="relative">
+        <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
+        
+      </div>
+
+
+      
+
+      <!-- Nav-ийг зураг дээр байрлуулах -->
+      <nav class="absolute bottom-[-110px]  flex justify-start space-x-6 px-4  h-[132px]">
+        <a href="visit_ulaanbaatar.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Visit Ulaanbaatar
+        </a>
+        <a href="destination.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Destinations
+        </a>
+        <a href="accommodation.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Accommodation
+        </a>
+        <a href="tours.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          BNM Tours
+        </a>
+        <a href="#"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Events
+        </a>
+        <a href="#"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Info
+        </a>
+        <a href="commercial.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out">
+          Commercial
+        </a>
+      </nav>
     </div>
-  </section>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="max-w-7xl mx-auto p-6 space-y-8">
+    <div class="mt-32">
 
-  <!-- Tabs -->
-  <nav class="flex justify-center space-x-4 mt-4 px-4">
-    <a href="visit_ulaanbaatar.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Visit Ulaanbaatar</a>
-    <a href="destination.html" class="bg-white rounded-lg px-4 py-2 shadow text-blue-700 border-b-2 border-blue-600">Destinations</a>
-    <a href="accommodation.html" class="bg-white rounded-lg px-4 py-2 shadow">Accommodation</a>
-    <a href="tours.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Tour Operators</a>
-    <a href="#" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Events</a>
-    <a href="#" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Info</a>
-    <a href="commercial.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Commercial</a>
-  </nav>
-
-
-  <div class="max-w-6xl mx-auto p-6 space-y-8">
-
-    <h2 class="text-2xl mb-6">
+     <h2 class="text-2xl  mb-6 pl-20">
       <a href="index.html" class="hover:underline">Home</a> &nbsp; &gt; &nbsp;
       <span class="text-blue-700">Destinations</span>
-    </h2>
-
-
-    <div class=" bg-blue-50">
-      <h2 class="text-2xl mb-6">Day Trips</h2>
-
-      <div class="grid grid-cols-4 grid-rows-2 gap-4 max-w-6xl mx-auto">
-        <!-- Terelj National Park (2 cols, 1 row) -->
-        <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden">
-          <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park"
-            class="w-full h-full object-cover" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md"><a href="terelj_natural.html">Terelj National Park</a></div>
-        </div>
-
-        <!-- Genghis Khan Statue Complex (1 col, 2 rows) -->
-        <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden">
-          <img src="img/thumbnails/Day trips/Nearby-2.jpg" alt="Genghis Khan Statue Complex"
-            class="w-full h-full object-cover" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">Genghis Khan<br />Statue Complex</div>
-        </div>
-
-        <!-- Chinggis Khaanii Khuree (1 col, 2 rows) -->
-        <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden">
-          <img src="img/thumbnails/Day trips/Nearby-5.jpg" alt="Chinggis Khaanii Khuree"
-            class="w-full h-full object-cover" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">Chinggis Khaanii<br />Khuree</div>
-        </div>
-
-        <!-- Khustai NP (1 col, 1 row) -->
-        <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
-          <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP"
-            class="w-550px h-550px object-cover" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md"><a href="terelj_khustai_nuruu.html">Khustai NP</a></div>
-        </div>
-
-        <!-- Aglag Buteeliin Khiid (1 col, 1 row) -->
-        <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden">
-          <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliin Khiid"
-            class="w-full h-full object-cover" />
-          <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md"><a href="aglag_bvteel.html">Aglag Buteeliin Khiid</a></div>
-        </div>
-      </div>
+     </h2>
     </div>
 
-      <h2 class="text-2xl mb-6">Central Mongolia</h2>
-      <div class="relative w-full">
+    <div class="bg-blue-50">
+      <h2 class="text-2xl font-semibold text-[40px] mb-6 pl-20">Day Trips</h2>
+
+    <div class="grid grid-cols-4 grid-rows-2 gap-4 max-w-7xl mx-auto w-[1124px] pl-[21px]">
+          <!-- Terelj National Park -->
+          <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
+            <img src="img/thumbnails/Day trips/Nearby-1.jpg" alt="Terelj National Park" class="w-full h-full object-cover" />
+            <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+              <a href="terelj_natural.html">Terelj National Park</a>
+            </div>
+          </div>
+
+          <!-- Genghis Khan Statue Complex -->
+          <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+            <img src="img/thumbnails/Day trips/Nearby-2.jpg" alt="Genghis Khan Statue Complex" class="w-full h-full object-cover" />
+            <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+              Genghis Khan<br />Statue Complex
+            </div>
+          </div>
+
+          <!-- Chinggis Khaanii Khuree -->
+          <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
+            <img src="img/thumbnails/Day trips/Nearby-5.jpg" alt="Chinggis Khaanii Khuree" class="w-full h-full object-cover" />
+            <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+              Chinggis Khaanii<br />Khuree
+            </div>
+          </div>
+
+          <!-- Khustai NP -->
+          <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+            <img src="img/thumbnails/Day trips/Nearby-3.jpg" alt="Khustai NP" class="w-full h-full object-cover" />
+            <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+              <a href="terelj_khustai_nuruu.html">Khustai NP</a>
+            </div>
+          </div>
+
+          <!-- Aglag Buteeliin Khiid -->
+          <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+            <img src="img/thumbnails/Day trips/Nearby-4.jpg" alt="Aglag Buteeliin Khiid" class="w-full h-full object-cover" />
+            <div class="absolute bottom-2 left-2 text-white font-semibold drop-shadow-md">
+              <a href="aglag_bvteel.html">Aglag Buteeliin Khiid</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-2xl font-semibold text-[40px] mb-6 pl-20">Central Mongolia</h2>
+
+    <div class="relative w-full pl-22">
         <!-- Wrapper with horizontal scroll -->
         <div id="slider-wrapper1" class="overflow-x-auto hide-scrollbar scroll-smooth">
           <div
             id="slider"
-            class="grid grid-cols-8 grid-rows-2 gap-4 w-[1100px]">
+            class="grid grid-cols-8 grid-rows-2 gap-[15px] w-[2241px]  pl-20">
 
-            <div class="col-span-2 row-span-1 relative">
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.09/1">
               <img
                 src="img/thumbnails/Central Mongolia/Central-1.jpg"
                 alt="Khogno Tarna National Park"
-                class="w-548 h-267 object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-548 h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded w-157 h-28"
+                class="absolute bottom-9 left-2 text-white font-semibold drop-shadow-md"
               >
                 Khogno Tarna NP
               </div>
             </div>
 
-            <div class="col-span-1 row-span-2 relative">
+            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]">
               <img
                 src="img/thumbnails/Central Mongolia/Central-4.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
-                class="w-266 h-548 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded w-150 h-28"
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
               >
                 Ulaan Tsutgalan
               </div>
             </div> 
             
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-5.jpg"
                 alt="Khuisiin Naiman Lake"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded w-194 h-28"
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
               >
                 Khuisiin Naiman Lake
               </div>
             </div>
 
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-7.jpg"
                 alt="Tsenkher Hot Spring"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-196 h-28"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Tsenkher Hot Spring
               </div>
             </div>
 
-            <div class="col-span-1 row-span-2 relative">
+            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]">
               <img
                 src="img/thumbnails/Central Mongolia/Central-10.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
                 class="w-267 h-548 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded w-150 h-28"
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
               >
                 Chuluut Valley
               </div>
@@ -216,27 +252,26 @@
             
              
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-9.jpg"
                 alt="Tsenkher Hot Spring"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-196 h-28"
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
               >
                 Taikhar Rock
               </div>
             </div>
-             <div class="col-span-1 row-span-1 relative">
+             <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-13.jpg"
                 alt="Tsenkher Hot Spring"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-196 h-28"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Hujirt
               </div>
             </div>
@@ -244,68 +279,60 @@
          
 
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-2.jpg"
                 alt="Ugii Lake"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-0  left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded w-101 h-28"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Kharkhorin
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-3.jpg"
                 alt="Kharkhorin Town"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-              />
-              <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-83 h-28"
-              >
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"/>
+              <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Ugii Lake
               </div>
             </div>
               
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-6.jpg"
                 alt="Tuvkhun Monastery"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
-              <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-181 h-28"
-              >
+              <div class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Tuvkhun Monastery
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Central Mongolia/Central-8.jpg"
                 alt="Tsetserleg City"
                 class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-278 h-113"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Tsetserleg City
               </div>
             </div>
 
-            <div class="col-span-2 row-span-1 relative">
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
               <img
                 src="img/thumbnails/Central Mongolia/Central-11.jpg"
                 alt="Tsetserleg City"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-548 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded w-278 h-113"
-              >
+                class="absolute bottom-6 left-2 text-white font-semibold drop-shadow-md">
                 Khorgo Terkhiin Tsagaan Nuur NP
               </div>
             </div>
@@ -314,59 +341,53 @@
           </div>
         </div>
 
-        <!-- Left Arrow -->
-        <button
-          onclick="scrollSlider1(-300)"
-          aria-label="Scroll left"
-          class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
+       
 
         <!-- Right Arrow -->
         <button
           onclick="scrollSlider1(300)"
           aria-label="Scroll right"
-          class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>
+
+
+
       <div class="bg-blue-50">
-       <h2 class="text-2xl  mb-6">Southern Mongolia</h2>
+       <h2 class="text-2xl font-semibold text-[40px] mb-6 pl-20">Southern Mongolia</h2>
 
        <div class="relative w-full">
           <!-- Wrapper with horizontal scroll -->
           <div id="slider-wrapper" class="overflow-x-auto hide-scrollbar scroll-smooth">
             <div
               id="slider"
-              class="grid grid-cols-11  grid-rows-2 gap-4 w-[2000px]">
+              class="grid grid-cols-11  grid-rows-2 gap-[15px] w-[3108px] pl-20">
 
-              <div class="col-span-1 row-span-1 relative">
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
                 <img
                   src="img/thumbnails/Southern/Southern-1.jpg"
-                  alt="Khalkh Gol"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                  alt="Baga Gazarin Chuluu"
+                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
                 />
                 <div
-                  class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
+                  class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
                 >
                   Baga Gazariin Chuluu
                 </div>
               </div>
 
-              <div class="col-span-1 row-span-1 relative">
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
                 <img
                   src="img/thumbnails/Southern/Southern-3.jpg"
-                  alt="Khalkh Gol"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                  alt="Tsagaan Suvraga"
+                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
                 />
                 <div
-                  class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
+                  class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
                 >
                   Tsagaan Suvraga
                 </div>
@@ -374,224 +395,201 @@
 
 
 
-              <div class="col-span-2 row-span-1 relative">
+              <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden 
+              aspect-[2.05/1]">
                 <img
                   src="img/thumbnails/Southern/Southern-8.jpg"
                   alt="Buir Lake"
-                  class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                  class="w-548 h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
                 />
                 <div
-                  class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
+                  class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
                 >
                 Khongor Sand Dunes
                 </div>
               </div>
              
 
-              <div class="col-span-1 row-span-2 relative">
+              <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]">
                 <img
                   src="img/thumbnails/Southern/Southern-6.jpg"
                   alt="Ulaan Tsutgalan Waterfall"
                   class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
                 />
                 <div
-                  class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-                >
+                  class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                   Yolyn Am
                 </div>
               </div>
 
-              <div class="col-span-1 row-span-1 relative">
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-5.jpg"
                 alt="Khogno Tarna National Park"
-                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
               >
                 Mukhart Shivert Am
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern2.jpg"
                 alt="Ugii Lake"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Monastery of Bulgan
               </div>
             </div>
 
-            <div class="col-span-2 row-span-1 relative">
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden 
+            aspect-[2.09/1]">
               <img
                 src="img/thumbnails/Southern/Southern-11.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-548 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md"
               >
                 Moltsog Sand Dunes
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-12.jpg"
                 alt="Khuisiin Naiman Lake"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Ongi Monastery
               </div>
             </div>
-                 <div class="col-span-1 row-span-1 relative">
+                 <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
                   <img
                     src="img/thumbnails/Southern/Southern-15.jpg"
                     alt="Khuisiin Naiman Lake"
-                    class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                    class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
                   />
                   <div
-                    class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-                  >
+                    class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                     Khermen Tsew
                   </div>
                 </div>
            
-              <div class="col-span-1 row-span-1 relative">
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-2.jpg"
                 alt="Khuisiin Naiman Lake"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Ikh Gazariin Chuluu
               </div>
             </div>
 
-            <div class="col-span-2 row-span-1 relative">
+            <div class="col-span-2 row-span-1 relative
+            rounded-xl overflow-hidden aspect-[2.05/1]">
               <img
                 src="img/thumbnails/Southern/Southern-9.jpg"
                 alt="Tsenkher Hot Spring"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-548.49 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Flaming Cliffs
               </div>
             </div>
             
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-4.jpg"
                 alt="Khuisiin Naiman Lake"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Dalanzadgad
               </div>
             </div>
 
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-7.jpg"
                 alt="Tuvkhun Monastery"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                Dungenee Am
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative overflow-hidden rounded-xl aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern13.jpg"
                 alt="Tsetserleg City"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Bulgan
               </div>
             </div>
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-10.jpg"
                 alt="Tsetserleg City"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Petroglyphs of Khavtsgalt
               </div>
             </div>
 
-            <div class="col-span-2 row-span-1 relative">
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
               <img
                 src="img/thumbnails/Southern/Southern-14.jpg"
                 alt="Tsenkher Hot Spring"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-548 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Khanan Khets
               </div>
             </div>
-             <div class="col-span-1 row-span-1 relative">
+             <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Southern/Southern-16.jpg"
                 alt="Khuisiin Naiman Lake"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
-              >
+                class="absolute bottom-4 left-2 text-white font-semibold drop-shadow-md">
                 Khamriin Khiid
               </div>
             </div>
-            
-            
-
-
-
-           
             </div>
           </div>
 
           <!-- Left Arrow -->
-          <button
-            onclick="scrollSlider(-300)"
-            aria-label="Scroll left"
-            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+        
 
           <!-- Right Arrow -->
           <button
             onclick="scrollSlider(300)"
             aria-label="Scroll right"
-            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -601,32 +599,37 @@
 
       </div>
 
+
+
       <div class="bg-blue-50">
-        <h2 class="text-2xl  mb-6">Western Mongolia</h2>
+        <h2 class="text-2xl font-semibold text-[40px] mb-6 pl-20">
+          Western Mongolia
+        </h2>
 
-         <div class="relative w-full">
-          <!-- Wrapper with horizontal scroll -->
+
+        <div class="relative w-full">
           <div id="slider-wrapper2" class="overflow-x-auto hide-scrollbar scroll-smooth">
-            <div
-              id="slider"
-              class="grid grid-cols-8 grid-rows-2 gap-4 w-[1500px]">
+            <div id="slider" class="grid grid-cols-8 grid-rows-2 gap-4 w-[2285px] pl-20">
 
-
-              <div class="col-span-2 row-span-1 relative">
+              
+              <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]">
                 <img src="img/thumbnails/Western/Western-1.jpg" alt="Ulaagchni" class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"/>
                 <div class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded">
                   Ulaagchnii Khar Lake
                 </div>
               </div>
 
-              <div class="col-span-1 row-span-1 relative">
+
+
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hiiden aspect-square">
                 <img src="img/thumbnails/Western/Western-3.jpg" alt="Mukhart Lake" class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"/>
                 <div class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded">
                   Mukhart Lake
                 </div>
               </div>
 
-            <div class="col-span-1 row-span-2 relative">
+            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden 
+            aspect-[1/2.08]">
               <img
                 src="img/thumbnails/Western/Western-7.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
@@ -640,9 +643,8 @@
             </div>
 
 
-            
-
-            <div class="col-span-2 row-span-1 relative">
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden 
+            aspect-[2.05/1]">
               <img
                 src="img/thumbnails/Western/Western-11.jpg"
                 alt="Kharkhorin Town"
@@ -654,7 +656,8 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-2 relative">
+            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden 
+            aspect-[1/2.08]">
               <img
                 src="img/thumbnails/Western/Western-10.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
@@ -666,8 +669,10 @@
                 Otgontenger
               </div>
             </div>
-            
-            <div class="col-span-1 row-span-1 relative">
+
+
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Western/western11.jpg"
                 alt="Kharkhorin Town"
@@ -679,7 +684,7 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Western/Western-2.jpg"
                 alt="Kharkhorin Town"
@@ -690,9 +695,10 @@
                 Senjit Khad
               </div>
             </div>
-            
 
-            <div class="col-span-2 row-span-1 relative">
+
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden 
+            aspect-[2.05/1]">
               <img
                 src="img/thumbnails/Western/Western-6.jpg"
                 alt="Tuvkhun Monastery"
@@ -705,7 +711,7 @@
               </div>
             </div>
 
-              <div class="col-span-1 row-span-1 relative">
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Western/Western-4.jpg"
                 alt="Tsetserleg City"
@@ -718,7 +724,9 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Western/Western-5.jpg"
                 alt="Tsetserleg City"
@@ -731,48 +739,36 @@
               </div>
             </div>
 
-           
-
-
             </div>
-          <!-- Left Arrow -->
-          <button
-            onclick="scrollSlider2(-300)"
-            aria-label="Scroll left"
-            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+
+            <!-- Left Arrow -->
+         
 
           <!-- Right Arrow -->
           <button
             onclick="scrollSlider2(300)"
             aria-label="Scroll right"
-            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
+
+
+          </div>
         </div>
       </div>
 
 
-      
-
       <div class="bg-blue-50">
-        <h2 class="text-2xl  mb-6">Eastern Mongolia</h2>
 
-         <div class="relative w-full">
-          <!-- Wrapper with horizontal scroll -->
+        <h2 class="text-2xl font-semibold text-[40px] mb-6 pl-20">Eastern Mongolia</h2>
+        <div class="relative w-full">
           <div id="slider-wrapper3" class="overflow-x-auto hide-scrollbar scroll-smooth">
-            <div
-              id="slider"
-              class="grid grid-cols-9 grid-rows-2 gap-4 w-[1500px]">
-
-              <div class="col-span-1 row-span-2 relative">
+            <div id="slider" class="grid grid-cols-9 grid-rows-2 gap-4 w-[2525px] pl-20">
+              <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden 
+              aspect-[1/2.08]">
                 <img
                   src="img/thumbnails/Eastern/Eastern-10.jpg"
                   alt="Khalkh Gol"
@@ -786,7 +782,8 @@
               </div>
 
 
-              <div class="col-span-2 row-span-1 relative">
+              <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden 
+            aspect-[2.05/1]">
                 <img
                   src="img/thumbnails/Eastern/Eastern-9.jpg"
                   alt="Buir Lake"
@@ -798,9 +795,11 @@
                   Buir Lake
                 </div>
               </div>
-             
 
-              <div class="col-span-1 row-span-2 relative">
+
+
+              <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden 
+            aspect-[1/2.09]">
                 <img
                   src="img/thumbnails/Eastern/Eastern-11.jpg"
                   alt="Ulaan Tsutgalan Waterfall"
@@ -813,7 +812,7 @@
                 </div>
               </div>
 
-              <div class="col-span-1 row-span-1 relative">
+              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-2.jpg"
                 alt="Khogno Tarna National Park"
@@ -822,11 +821,13 @@
               <div
                 class="absolute bottom-2 left-2 text-white font-semibold  bg-opacity-50 px-2 py-1 rounded"
               >
-                Ulaagchnii Khar Lake
+                Chinggis City
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-4.jpg"
                 alt="Ugii Lake"
@@ -839,7 +840,9 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-2 relative">
+
+            <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden 
+              aspect-[1/2.08]">
               <img
                 src="img/thumbnails/Eastern/Eastern-5.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
@@ -852,7 +855,8 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-7.jpg"
                 alt="Khuisiin Naiman Lake"
@@ -864,7 +868,9 @@
                 Choibalsan City
               </div>
             </div>
-              <div class="col-span-1 row-span-1 relative">
+
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern12.jpg"
                 alt="Khuisiin Naiman Lake"
@@ -877,7 +883,8 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-1.jpg"
                 alt="Tsenkher Hot Spring"
@@ -890,9 +897,7 @@
               </div>
             </div>
 
-            
-
-            <div class="col-span-1 row-span-1 relative">
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-6.jpg"
                 alt="Kharkhorin Town"
@@ -905,7 +910,9 @@
               </div>
             </div>
 
-            <div class="col-span-2 row-span-1 relative">
+
+            <div class="col-span-2 row-span-1 relative rounded-xl overflow-hidden 
+            aspect-[2.05/1]">
               <img
                 src="img/thumbnails/Eastern/Eastern-3.jpg"
                 alt="Tuvkhun Monastery"
@@ -918,7 +925,8 @@
               </div>
             </div>
 
-            <div class="col-span-1 row-span-1 relative">
+
+            <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-8.jpg"
                 alt="Tsetserleg City"
@@ -930,7 +938,9 @@
                 Menen Steppe
               </div>
             </div>
-            <div class="col-span-1 row-span-1 relative">
+
+
+             <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
               <img
                 src="img/thumbnails/Eastern/Eastern-13.jpg"
                 alt="Tsetserleg City"
@@ -942,106 +952,187 @@
                 Binder Soum
               </div>
             </div>
-            
-            </div>
-          </div>
 
-          <!-- Left Arrow -->
-          <button
-            onclick="scrollSlider3(-300)"
-            aria-label="Scroll left"
-            class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+
+            </div>
+
 
           <!-- Right Arrow -->
           <button
             onclick="scrollSlider3(300)"
             aria-label="Scroll right"
-            class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white rounded-full shadow p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>
+
+          </div>
         </div>
       </div>
 
-  
-      <h1 class="text-2xl font-bold mb-6">Northern Mongolia</h1>
+        <h2 class="text-2xl font-semibold text-[40px] mb-6 pl-20">
+          Northern Mongolia
+        </h2>
 
-      <div class="grid grid-rows-2 grid-cols-6 gap-4 w-[1000px]">
+        <div class="relative w-full">
+          <div class="grid grid-cols-5 grid-rows-2 gap-[15px] w-[1115px] h-[550px]">
+            <div class="grid grid-rows-2 grid-cols-6 gap-4 w-[1115px] h-[550px] pl-20">
       
-        <div class="relative col-span-3">
-          <img src="img/Northern/KhuvsgulWeb.jpg" alt="Lake & Dock" class="w-full h-full object-cover rounded-lg" />
-        </div>
-        <div class="relative col-span-2">
-          <img src="img/Eastern/BinderWeb.jpg" alt="Crater Forest" class="w-full h-full object-cover rounded-lg" />
-        </div>
-        <div class="relative col-span-1 row-span-2">
-          <img src="img/Northern/AmarbaysgalantWeb.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg" />
-        </div>
+            <div class="relative col-span-3">
+              <img src="img/Northern/KhuvsgulWeb.jpg" alt="Lake & Dock" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Khuvsgul Lake
+              </div>
+            </div>
+            <div class="relative col-span-2">
+              <img src="img/Eastern/BinderWeb.jpg" alt="Crater Forest" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Uran Togoo Extinct Volcano
+              </div>
+            </div>
+            <div class="relative col-span-1 row-span-2 aspect-auto">
+              <img src="img/Northern/AmarbaysgalantWeb.jpg" alt="Monk" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Amarbaysgalant Monastery
+              </div>
+            </div>
 
-        <!-- Bottom row -->
-        <div class="relative col-span-2">
-          <img src="img/Northern/Erdenet.jpg" alt="City View" class="w-full h-full object-cover rounded-lg" />
-        </div>
-        <div class="relative col-span-3 row-span-1">
-          <img src="img/Northern/TaigaWeb.jpg" alt="People with Reindeer" class="w-full h-full object-cover rounded-lg" />
+            <!-- Bottom row -->
+            <div class="relative col-span-2">
+              <img src="img/Northern/Erdenet.jpg" alt="City View" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Erdenet City
+              </div>
+            </div>
+            <div class="relative col-span-3 row-span-1">
+              <img src="img/Northern/TaigaWeb.jpg" alt="People with Reindeer" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+              <div class="absolute bottom-2 left-2 text-white font-semibold bg-opacity-50 px-2 py-1 rounded">Taiga
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      &nbsp; &nbsp;
 
-  
-
-      &nbsp;
-             <!-- Newsletter Section -->
-    <div class="bg-blue-100 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="max-w-xl">
-        <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
-        <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
-          <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
-        </form>
-        <p class="text-xs text-gray-600 mb-4">
-          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
-        </p>
-        <p class="text-xs"><span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
-          <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
-        </p>
-      </div>
-
-      <!-- Cartoon Character -->
-      <div class="w-60 h-68 relative">
-        <img src="img/Component 65.png" alt="Mongolian Character" class="w-full h-full object-contain" />
-      </div>
-
-      <!-- WhatsApp QR Code -->
-      <div class="bg-white p-4 rounded-lg shadow-lg text-center max-w-xs">
-        <div class="mb-2 flex items-center justify-center space-x-2">
-          <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
-            <path d="M16 11c0 2-2 4-4 4s-3-2-3-4a3 3 0 1 1 6 0z" stroke="currentColor" stroke-width="2" />
-          </svg>
-          <span class="text-sm font-semibold">Connect via WhatsApp</span>
-        </div>
-        <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="mx-auto mb-2 w-32 h-32 object-contain" />
-        <p class="font-semibold text-sm">+976 8001 4904</p>
-      </div>
-    </div>
-  </div>
-  
-  <footer class="bg-[#0B2B6C] text-white">
-    <div class="max-w-7xl mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-      rhhdfh
-    </div>
-  </footer>
-
+    <!-- Newsletter Section -->
     
+  </div>
 
- <script>
+  <div class="bg-blue-100 rounded-lg p-2 flex flex-col md:flex-row items-center justify-center gap-2">
+          
+          <!-- Newsletter Form -->
+          <div class="max-w-xl text-left pl-20">
+            <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
+            <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
+              <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
+            </form>
+            <p class="text-xs text-gray-600 mb-4">
+              Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
+            </p>
+            <p class="text-xs">
+              <span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
+              <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
+            </p>
+          </div>
+
+          <!-- Cartoon Character -->
+          <div class="relative">
+            <img src="img/Component 65.png" alt="Mongolian Character"
+              class="w-[400px] h-[680px] object-contain transform scale-x-[-1]" />
+          </div>
+
+
+          <!-- WhatsApp QR Code -->
+          <div class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+            <!-- Top Icon -->
+            <div class="w-10 h-10 rounded-full overflow-hidden -mt-6">
+              <img src="img/footer/bnm round.png" alt="Logo" class="w-54 h-54 object-contain" />
+            </div>
+
+            <!-- Title -->
+            <span class="text-sm font-medium text-gray-700">Connect via WhatsApp</span>
+
+            <!-- QR Code -->
+            <div class="bg-white p-2 rounded-lg shadow">
+              <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="bg-white w-full rounded-b-lg py-2 text-center font-semibold text-gray-800 shadow-sm">
+              +976 8001 4904
+            </div>
+          </div>
+        </div>
+  
+        &nbsp;
+      <footer class="bg-[#0B2B6C] text-white">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+          <!-- Column 1: Logo -->
+          <div class="w-full text-center">
+        <div class="flex justify-center items-center space-x-2 mt-4">
+          <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
+          <span class="text-2xl font-bold">BNM</span>
+        </div>
+      </div>
+
+
+
+    <!-- Column 2: Description -->
+    <div>
+      <h4 class="font-bold">Brave New Mongolia</h4>
+      <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
+
+      <div class="flex space-x-4 mt-4">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+      </div>
+
+      <div class="mt-4 text-sm">
+        <p>Phone: +976 8625-6868</p>
+        <p>Email: bnmtours@gmail.com</p>
+        <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
+      </div>
+    </div>
+
+    <!-- Column 3: Support Links -->
+    <div>
+      <h4 class="font-bold mb-2">Support</h4>
+      <ul class="text-sm space-y-2">
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Package information</a></li>
+        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: App Downloads -->
+    <div>
+      <h4 class="font-bold mb-4">Download our mobile app</h4>
+      <div class="space-y-4">
+        <a href="#">
+          <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+        &nbsp;
+        <a href="#">
+          <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
+    Copyright © 2025 Brave New Mongolia
+  </div>
+</footer>
+
+
+
+
+
+
+<script>
     function scrollSlider(amount) {
       const wrapper = document.getElementById('slider-wrapper');
       const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
@@ -1102,6 +1193,7 @@
       }
     }
   </script>
+
 
 </body>
 </html>
