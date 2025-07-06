@@ -3,134 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tours Home</title>
+  <title>Tours Page</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-        body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        }
-        .navbar {
-        background-color: #15407b;
-        color: white;
-        }
-
-        .navbar-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 40px;
-        background-color: #174a8b;
-        }
-
-        .brand {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        }
-
-        .brand .logo {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        }
-
-        .nav-links-top a {
-        color: white;
-        text-decoration: none;
-        margin-right: 20px;
-        font-weight: 500;
-        }
-
-        .search-bar {
-        display: flex;
-        align-items: center;
-        position: relative;
-        flex: 1;
-        max-width: 400px;
-        margin: 0 40px;
-        }
-
-        .search-bar input {
-        width: 100%;
-        padding: 8px 40px 8px 15px;
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        }
-
-        .search-bar i {
-        position: absolute;
-        right: 15px;
-        color: #2e76ff;
-        }
-
-        .nav-buttons {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        }
-
-        .user-btn {
-        background-color: #2e76ff;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 8px 10px;
-        font-size: 16px;
-        cursor: pointer;
-        }
-
-        .lang-selector {
-        background-color: #1c3c70;
-        color: white;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 6px 10px;
-        cursor: pointer;
-        }
-
-        .navbar-bottom {
-        /* background-color: #0f3367; */
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-        }
-
-        .navbar-bottom a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-        font-weight: 500;
-        position: relative;
-        }
-
-        .navbar-bottom a:hover,
-        .navbar-bottom a:focus {
-        text-decoration: underline;
-        }
-
-     </style>
 </head>
 <body class="font-sans">
-  <header class="bg-[#0e3b78] text-white px-6 py-2"
-    style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
-        <div class="max-w-7xl mx-auto w-full flex items-center">
-          
-          <!-- Left: Logo -->
-          <div class="flex items-center space-x-2 flex-1">
-            <span class="font-bold text-sm">BNM</span>
+
+    <header class="relative bg-cover bg-center w-[1920px] h-[410px]" style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
+    <div class="max-w-7xl mx-auto w-full flex items-center justify-between py-2 px-4 space-x-4">
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <a href="index.html"> 
+            <div class="flex items-center space-x-2">
+            <span class="font-bold text-sm text-white text-[20px]">BNM</span>
             <img src="img/footer/bnm round.png" class="w-8 h-8" alt="globe" />
+            </div>
+          </a>
+
+          &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+          &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+           <div class="flex-1 flex justify-center items-center space-x-4">
+            <a href="about_us.html" class="text-sm text-white hover:underline">About us</a>
           </div>
 
-          <!-- About -->
-          <div class="flex-1 flex justify-center items-center space-x-4">
-            <a href="about_us.html" class="text-sm hover:underline">About us</a>
-          </div>
-
-          <!-- Search -->
-          <div class="flex justify-center flex-1">
-            <div class="relative w-full max-w-sm">
+            <div class="relative w-full max-w-xs">
               <input type="text" placeholder="Search"
                 class="w-full pl-10 pr-4 py-1.5 rounded-md text-sm text-black focus:outline-none" />
               <div class="absolute left-3 top-2.5">
@@ -141,17 +38,11 @@
                 </svg>
               </div>
             </div>
-          </div>
-
-        <!-- Right: User + Language -->
-        <div class="flex justify-end items-center space-x-3 flex-1">
-          <button class="bg-blue-600 hover:bg-blue-500 p-2 rounded-md">
-            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-            </svg>
+          
+        <div class="flex justify-end items-center space-x-6 flex-1">
+          <button class="bg-blue-600 hover:bg-blue-500 text-white text-sm px-3 py-1 rounded-md">
+            <a href="login.html">Login</a>
           </button>
-
           <button class="bg-[#123765] hover:bg-[#17437d] text-white text-sm px-3 py-1 rounded-md flex items-center">
             EN
             <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
@@ -159,459 +50,181 @@
             </svg>
           </button>
         </div>
-
       </div>
 
     
-  </header>
+
+     </header>
 
 
-  <section class="relative bg-cover bg-center h-[350px]" style="background-image: url('img/Home/HomepageHeaderPhoto.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
-      <h2 class="text-3xl font-semibold">Welcome to the Land of Stories</h2>
-      <h1 class="text-5xl font-extrabold mt-2">MONGOLIA !</h1>
-    </div>
-  </section>
-
-  <!-- Tabs -->
-  <nav class="flex justify-center space-x-4 mt-4 px-4">
-    <a href="visit_ulaanbaatar.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Visit Ulaanbaatar</a>
-    <a href="destination.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Destinations</a>
-    <a href="accommodation.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Accommodation</a>
-    <a href="tours.html" class="bg-white rounded-lg px-4 py-2 shadow text-blue-700 border-b-2 border-blue-600">Tour Operators</a>
-    <a href="#" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Events</a>
-    <a href="#" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Info</a>
-    <a href="commercial.html" class="bg-white rounded-lg px-4 py-2 shadow text-gray-700">Commercial</a>
-  </nav>
-
-   <section class="max-w-6xl mx-auto py-16 px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
-
-    <!-- Left Content -->
-    <div class="flex flex-col items-start lg:w-1/2 space-y-6">
-      <div class="overflow-hidden ">
-        <img src="img/medeelel.png" alt="Image 1" class="w-65 h-60 object-cover">
+     
+      <!-- Зургийн контейнер -->
+      <div class="relative">
+        <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
+        
       </div>
-      <h2 class="text-3xl font-bold text-blue-800">Directional Discoveries Tour</h2>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        Unlock the essence of Mongolia with our uniquely crafted directional tours. Each tour is a gateway to unparalleled experiences, offering the most efficient and comprehensive exploration of Mongolia’s diverse landscapes, cultures, and wonders. Choose your direction, and let the adventure unfold.
-      </p>
-    </div>
-
-    <!-- Right Content: 2-Image Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-1 gap-2 lg:w-1/2">
-      
-      <div class="overflow-hidden ">
-        <img src="img/4n zugiin aylal.png" alt="Image 2" class="w-450 h-150 object-cover">
-      </div>
-    </div>
-
-  </section>
-  &nbsp;   &nbsp;   &nbsp;   &nbsp; 
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-    
-    <!-- Card 1 -->
-    <div class="bg-blue-50 rounded-2xl shadow-md p-6 text-center">
-      <div class="flex justify-center mb-4">
-        <img src="icon-travel.svg" alt="Travel Icon" class="w-8 h-8" />
-      </div>
-      <h3 class="text-lg font-bold mb-2">Exclusive, Immersive Travel Experiences</h3>
-      <p class="text-sm text-gray-600 leading-relaxed">
-        Step into a one-of-a-kind journey, crafted with care by a family-run business that offers only one tour at a time. Experience Mongolia’s heart and soul through cultural immersion, eco-friendly practices, and personalized attention.
-      </p>
+      <!-- Nav-ийг зураг дээр байрлуулах -->
+      <nav class="absolute bottom-[-110px]  flex justify-start space-x-6 px-4  h-[132px]">
+        <a href="visit_ulaanbaatar.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Visit Ulaanbaatar
+        </a>
+        <a href="destination.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Destinations
+        </a>
+        <a href="accommodation.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Accommodation
+        </a>
+        <a href="tours.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          BNM Tours
+        </a>
+        <a href="#"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Events
+        </a>
+        <a href="#"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out ">
+          Info
+        </a>
+        <a href="commercial.html"
+          class="w-[241px] h-[132px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center
+                  transition duration-300 ease-in-out">
+          Commercial
+        </a>
+      </nav>
     </div>
 
-    <!-- Card 2 -->
-    <div class="bg-blue-50 rounded-2xl shadow-md p-6 text-center">
-      <div class="flex justify-center mb-4">
-        <img src="icon-camera.svg" alt="Camera Icon" class="w-8 h-8" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div class="max-w-7xl mx-auto py-16 px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+      <div class="flex items-start space-x-4">
+
+        <div class="overflow-hidden">
+          <img src="img/medeelel.png" alt="Image 1" class="w-[283px] h-[513px] object-cover transform -scale-x-100">
+        </div>
+
+        <div class="overflow-hidden mt-16">
+          <img src="img/Compass 1.png" alt="Image 1" class="w-[117px] h-[117px] object-cover">
+        </div>
+
       </div>
-      <h3 class="text-lg font-bold mb-2">Personalized Storytelling in Real Time</h3>
-      <p class="text-sm text-gray-600 leading-relaxed">
-        Your journey, your story—professionally captured by our expert cameraguide. Receive stunning, edited visuals delivered daily, turning every moment of your adventure into a shareable masterpiece.
-      </p>
     </div>
 
-    <!-- Card 3 -->
-    <div class="bg-blue-50 rounded-2xl shadow-md p-6 text-center">
-      <div class="flex justify-center mb-4">
-        <img src="img/footer/bnm round.png" alt="Globe Icon" class="w-8 h-8" />
-      </div>
-      <h3 class="text-lg font-bold mb-2">A Journey That Lasts Beyond the Adventure</h3>
-      <p class="text-sm text-gray-600 leading-relaxed">
-        Every tour you take contributes to our growing global database, sharing Mongolia’s breathtaking landscapes, rich culture, and unique stories with the world. Together, we preserve and showcase the beauty of this extraordinary land.
-      </p>
-    </div>
-  </div>
-   <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-4">SIGNATURE TOURS</h2>
-    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-      Explore our 6 Main Tours, each a unique 6–8 day adventure. Immerse yourself in diverse experiences,
-      discovering the treasures of Mongolia with every step for an unforgettable journey.
-    </p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card -->
-      <a href="tours_page.html">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">May 23 – May 30, 2024 | 13 Days</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div></a>
-
-      <!-- Repeat 5 more cards (copy/paste or use loops in frameworks like React/Vue) -->
-      <!-- Example second card -->
-      <a href="tours_page1.html">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div></a>
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-4">SKYBOUND ESCAPES</h2>
-    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-      Fly into a world of wonders with our 3 Short Tours. These 3-4 day expeditions offer quick yet immersive experiences, allowing you to witness the 
-      best of Mongolia from the sky and on the ground.
-    </p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-   <section class="text-center px-4 py-10 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-4">DAYLIGHT DISCOVERIES</h2>
-    <p class="text-gray-600 max-w-2xl mx-auto mb-10">
-      Enhance your adventure with our optional 1-Day Tours, perfect for a quick, immersive experience.
-      While designed as standalone delights, these day trips can be seamlessly added to most tours,
-      creating a richer, more flavorful journey. Highly recommended to make the most of your Mongolian exploration.
-    </p>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 justify-center">
-      <!-- Repeat this block for each tour -->
-      <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
-        <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-5@2x.png" alt="City tour" class="w-24 h-24 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">City tour</p>
-      </div>
-
-      <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
-        <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-4@2x.png" alt="Terelj & Genghis Khan" class="w-24 h-24 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Terelj & Genghis<br>Khan Statue</p>
-      </div>
-
-      <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
-        <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-3@2x.png" alt="Khustai" class="w-24 h-24 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Khustai</p>
-      </div>
-
-      <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
-        <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-2@2x.png" alt="Aglag" class="w-24 h-24 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Aglag</p>
-      </div>
-
-      <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
-        <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-1@2x.png" alt="Manzushiriin Khiid" class="w-24 h-24 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Manzushiriin<br>Khiid</p>
-      </div>
-
-      <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
-        <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1@2x.png" alt="Shaman Session" class="w-24 h-24 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Shaman<br>Session</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-4">CROSS-ROUTE EXPEDITIONS</h2>
-    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-     Can't decide between the mountains and the desert? You don't have to. Our Hybrid Tours let you experience Mongolia's diverse landscapes in one 
-     seamless expedition.
-    </p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="img/Singing Southern Dunes.jpg" alt="Tour Image" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-1">Nomadic Vagabond Venture</h3>
-          <p class="text-sm text-gray-500 mb-2">13 Days, 12 Nights</p>
-          <p class="text-sm font-semibold text-gray-800">Starting from: <span class="text-blue-600">$1050</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-      <section class="py-12 px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">WHAT TRAVELERS SAY</h2>
-        <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">
-          Every journey leaves a story. Here's what some of our guests had to say after experiencing Mongolia with us—unfiltered, heartfelt, and in their own words.
-        </p>
-
-        <div class="grid gap-6 md:grid-cols-3 max-w-7xl mx-auto">
-          <!-- Testimonial Card -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
-            <img src="img/review/review (3).png" alt="Traveler 1" class="w-full h-64 object-cover">
-            <div class="p-6">
-              <span class="text-blue-600 text-3xl leading-none">“</span>
-              <p class="text-gray-700 mt-2">
-                Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
-              </p>
-              <p class="mt-4 font-semibold">Luke Walter</p>
-            </div>
-          </div>
-
-          <!-- Duplicate card with different image/text if desired -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
-            <img src="img/review/review (1).png" alt="Traveler 2" class="w-full h-64 object-cover">
-            <div class="p-6">
-              <span class="text-blue-600 text-3xl leading-none">“</span>
-              <p class="text-gray-700 mt-2">
-                Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
-              </p>
-              <p class="mt-4 font-semibold">Luke Walter</p>
-            </div>
-          </div>
-
-          <!-- Third Testimonial -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden text-left">
-            <img src="img/review/review (2).png" alt="Traveler 3" class="w-full h-64 object-cover">
-            <div class="p-6">
-              <span class="text-blue-600 text-3xl leading-none">“</span>
-              <p class="text-gray-700 mt-2">
-                Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
-              </p>
-              <p class="mt-4 font-semibold">Luke Walter</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="max-w-7xl mx-auto px-4 py-10">
-       
-        <!-- Call to Action -->
-        <div class="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl p-6 md:p-10 shadow-lg">
-          <!-- Left: Image -->
-          <div class="mb-6 md:mb-0 md:mr-10">
-            <img src="img/review/bichih.png" alt="Character" class="w-60 md:w-62">
-          </div>
-
-          <!-- Right: Text Content -->
-          <div class="text-center md:text-left max-w-xl">
-            <h2 class="text-2xl md:text-3xl font-semibold leading-snug mb-3">
-              Discover Mongolia the right way<br class="hidden md:block" />
-              guided by those who know it best.
-            </h2>
-            <p class="text-sm md:text-base mb-5">
-              Let’s talk about how your adventure could unfold in the land of eternal blue sky. From remote
-              mountains to nomadic camps, we offer flexible routes and authentic experiences designed just for you.
-            </p>
-            <a href="tours_forms.html" class="inline-flex items-center bg-white text-blue-600 font-medium px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
-              Start Your Journey
-              <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        &nbsp; &nbsp;
-
-        <div class="bg-blue-100 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="max-w-xl">
-              <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
-              <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
-                <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
-              </form>
-              <p class="text-xs text-gray-600 mb-4">
-                Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
-              </p>
-              <p class="text-xs"><span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
-                <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
-              </p>
-            </div>
-
-            <!-- Cartoon Character -->
-            <div class="w-70 h-60 relative">
-              <img src="img/Component 65.png" alt="Mongolian Character" class="w-full h-full object-contain" />
-            </div>
-
-            <!-- WhatsApp QR Code -->
-            <div class="bg-white p-4 rounded-lg shadow-lg text-center max-w-xs">
-              <div class="mb-2 flex items-center justify-center space-x-2">
-                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
-                  <path d="M16 11c0 2-2 4-4 4s-3-2-3-4a3 3 0 1 1 6 0z" stroke="currentColor" stroke-width="2" />
-                </svg>
-                <span class="text-sm font-semibold">Connect via WhatsApp</span>
-              </div>
-              <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="mx-auto mb-2 w-32 h-32 object-contain" />
-              <p class="font-semibold text-sm">+976 8001 4904</p>
-            </div>
-          </div>
-    </div>
-
-      </section>
-   
-
-               
-
-     <footer class="bg-[#0B2B6C] text-white">
-        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Newsletter Section -->
+        <div class="bg-blue-100 rounded-lg p-2 flex flex-col md:flex-row items-center justify-center gap-2">
           
-          <!-- Left Column -->
-          <div>
-            <div class="flex items-center space-x-2">
-            <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-8 h-8" />
-            <span class="text-xl font-bold">BNM</span>
+          <!-- Newsletter Form -->
+          <div class="max-w-xl text-left pl-20">
+            <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
+            <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
+              <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
+            </form>
+            <p class="text-xs text-gray-600 mb-4">
+              Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
+            </p>
+            <p class="text-xs">
+              <span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
+              <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
+            </p>
           </div>
-            <h4 class="font-bold">Brave New Mongolia</h4>
-            <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
 
-            <div class="flex space-x-4 mt-4">
-              <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
-              <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
-              <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+          <!-- Cartoon Character -->
+          <div class="relative">
+            <img src="img/Component 65.png" alt="Mongolian Character"
+              class="w-[400px] h-[680px] object-contain transform scale-x-[-1]" />
+          </div>
+
+
+          <!-- WhatsApp QR Code -->
+          <div class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+            <!-- Top Icon -->
+            <div class="w-10 h-10 rounded-full overflow-hidden -mt-6">
+              <img src="img/footer/bnm round.png" alt="Logo" class="w-54 h-54 object-contain" />
             </div>
 
-            <div class="mt-4 text-sm">
-              <p>Phone: +976 8625-6868</p>
-              <p>Email: bnmtours@gmail.com</p>
-              <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
+            <!-- Title -->
+            <span class="text-sm font-medium text-gray-700">Connect via WhatsApp</span>
+
+            <!-- QR Code -->
+            <div class="bg-white p-2 rounded-lg shadow">
+              <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
             </div>
-          </div>
 
-          <!-- Middle Column -->
-          <div>
-            <h4 class="font-bold mb-2">Support</h4>
-            <ul class="text-sm space-y-2">
-              <li><a href="#" class="hover:underline">About us</a></li>
-              <li><a href="#" class="hover:underline">Package information</a></li>
-              <li><a href="#" class="hover:underline">Terms of Service</a></li>
-            </ul>
-          </div>
-
-          <!-- Right Column -->
-          <div>
-            <h4 class="font-bold mb-4">Download our mobile app</h4>
-            <div class="space-y-4">
-              <a href="#">
-                <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-              </a>
-
-              <br>
-              <a href="#">
-                <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-              </a>
+            <!-- Phone Number -->
+            <div class="bg-white w-full rounded-b-lg py-2 text-center font-semibold text-gray-800 shadow-sm">
+              +976 8001 4904
             </div>
           </div>
         </div>
+        <footer class="bg-[#0B2B6C] text-white">
+            <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
-        <!-- Bottom Bar -->
-        <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
-          Copyright © 2025 Brave New Mongolia
-        </div>
-      </footer>
+              <!-- Column 1: Logo -->
+              <div class="w-full text-center">
+                <div class="flex justify-center items-center space-x-2 mt-4">
+                    <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
+                    <span class="text-2xl font-bold">BNM</span>
+                </div>
+            </div>
+              <!-- Column 2: Description -->
+              <div>
+                <h4 class="font-bold">Brave New Mongolia</h4>
+                <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
 
+                <div class="flex space-x-4 mt-4">
+                  <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+                  <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+                  <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+                </div>
+
+                <div class="mt-4 text-sm">
+                  <p>Phone: +976 8625-6868</p>
+                  <p>Email: bnmtours@gmail.com</p>
+                  <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
+                </div>
+              </div>
+
+              <!-- Column 3: Support Links -->
+              <div>
+                <h4 class="font-bold mb-2">Support</h4>
+                <ul class="text-sm space-y-2">
+                  <li><a href="#" class="hover:underline">About us</a></li>
+                  <li><a href="#" class="hover:underline">Package information</a></li>
+                  <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                </ul>
+              </div>
+
+              <!-- Column 4: App Downloads -->
+              <div>
+                <h4 class="font-bold mb-4">Download our mobile app</h4>
+                <div class="space-y-4">
+                  <a href="#">
+                    <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+                  </a>
+                  &nbsp;
+                  <a href="#">
+                    <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
+              Copyright © 2025 Brave New Mongolia
+            </div>
+          </footer>
   </body>
-  </html>
-  
+</html>
