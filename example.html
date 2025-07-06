@@ -3,50 +3,297 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Western Mongolia Grid</title>
+  <title>About Us</title>
+  <link rel="stylesheet" href="test.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-50 p-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">Western Mongolia</h2>
-    <div class="grid grid-cols-6 gap-4 auto-rows-[200px]">
-      
-      <!-- Ulaagchnii Khar Lake -->
-      <div class="col-span-2 row-span-1 bg-cover bg-center rounded-lg relative" style="background-image: url('img/thumbnails/Western/Western-1.jpg')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Ulaagchnii Khar Lake</div>
-      </div>
-      
-      <!-- Mukhart River -->
-      <div class="col-span-2 row-span-1 bg-cover bg-center rounded-lg relative" style="background-image: url('img/thumbnails/Western/Western-3.jpg')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Mukhart River</div>
-      </div>
-      
-      <!-- Ulgii / Ulaangom View -->
-      <div class="col-span-1 row-span-2 bg-cover bg-center rounded-lg relative" style="background-image: url('https://source.unsplash.com/602x802/?mountain,city')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Ulgii / Ulaangom</div>
-      </div>
-      
-      <!-- Senjit Khad -->
-      <div class="col-span-1 row-span-1 bg-cover bg-center rounded-lg relative" style="background-image: url('img/thumbnails/Western/Western-2.jpg')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Senjit Khad</div>
-      </div>
-      
-      <!-- Altai Tavan Bogd -->
-      <div class="col-span-2 row-span-1 bg-cover bg-center rounded-lg relative" style="background-image: url('img/thumbnails/Western/Western-6.jpg')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Altai Tavan Bogd</div>
-      </div>
+<body class="bg-white font-sans">
 
-      <!-- Baga Turgen Waterfall -->
-      <div class="col-span-2 row-span-1 bg-cover bg-center rounded-lg relative" style="background-image: url('img/thumbnails/Western/Western-7.jpg')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Baga Turgen’s Waterfall</div>
-      </div>
+  <header class="bg-[#0e3b78] text-white px-6 py-2">
+  <div class="max-w-7xl mx-auto w-full flex items-center">
+    
+    <!-- Left: Logo -->
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+    <div class="flex-1 flex items-center space-x-4 pl-20">
+      <span class="font-bold text-sm">BNM</span>
+      <img src="img/footer/bnm round.png" class="w-8 h-8" alt="globe" />
+    </div>
 
-      <!-- Khyargas Lake -->
-      <div class="col-span-1 row-span-2 bg-cover bg-center rounded-lg relative" style="background-image: url('https://source.unsplash.com/606x806/?cliff,lake')">
-        <div class="absolute bottom-2 left-2 text-white font-semibold">Khyargas Lake</div>
+    <!-- About -->
+    <a href="about_us.html">
+      <div class="flex-1 flex justify-center items-center space-x-4">
+      
+        <h2 class="text-sm hover:underline">About us</a>
+      
       </div>
+    </a>
+
+    <!-- Search -->
+    <div class="flex justify-center flex-1">
+      <div class="relative w-full max-w-sm">
+        <input type="text" placeholder="Search"
+          class="w-full pl-10 pr-4 py-1.5 rounded-md text-sm text-black focus:outline-none" />
+        <div class="absolute left-3 top-2.5">
+          <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: User + Language -->
+    <div class="flex justify-end items-center space-x-3 flex-1">
+      <button class="bg-blue-600 hover:bg-blue-500 p-2 rounded-md">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path
+            d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        </svg>
+      </button>
+
+      <button class="bg-[#123765] hover:bg-[#17437d] text-white text-sm px-3 py-1 rounded-md flex items-center">
+        EN
+        <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- Text Content -->
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold">
+        <span class="text-red-600">Discover Mongolia,</span><br />
+        Contribute To Its Story
+      </h1>
+      <p class="text-gray-700 mt-4">
+        Brave New Mongolia Tours doesn’t just guide you through Mongolia—we capture and share its soul with the world.
+        Every traveler becomes part of a growing tapestry of stories that celebrate the beauty and culture of Mongolia.
+      </p>
+      <button class="mt-6 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">
+        Star Your Story Today →
+      </button>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="grid grid-cols-3 grid-rows-2 gap-4">
+      <!-- Existing images -->
+      <img src="img/Aboutus/MeetTheTeam-12.jpg" alt="Image 1" class="col-span-2 row-span-1 relative rounded-xl shadow-md object-cover w-full h-full" />
+      <img src="img/Aboutus/MeetTheTeam-17.jpg" alt="Image 2" class="col-span-1 row-span-1 relative  rounded-xl shadow-md object-cover w-full h-full" />
+    
+      <img src="img/Aboutus/MeetTheTeam-17.jpg" alt="Image 3" class="col-span-2 row-span-1 relative  rounded-xl shadow-md object-cover w-full h-full" />
+      <img src="img/Aboutus/MeetTheTeam-10.jpg" alt="Image 4" class="col-span-1 row-span-1 relative  rounded-xl shadow-md object-cover w-full h-full" />
+    </div>
 
     </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+
+    <!-- Top Row -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <img src="img/Aboutus/MeetTheTeam-9.jpg" alt="Best Pricing" class="w-full h-full object-cover">
+        <div class="absolute bottom-8 left-8 text-white font-semibold drop-shadow-md space-y-1">
+          <h1 class="text-[20px]">Nomadic Vagabond Venture</h1>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <img src="img/Aboutus/MeetTheTeam-6.jpg" alt="Professional Cameraguide Service" class="w-full h-full object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Professional Cameraguide Service</h3>
+          <p class="text-sm mt-2">Your journey could be captured in real time with stunning visuals delivered daily, making your adventure a visual diary.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Text -->
+    <div class="text-center">
+      <h2 class="text-2xl font-bold mb-2">Why Choose Us?</h2>
+      <p class="max-w-2xl mx-auto text-gray-600">Brave New Mongolia Tours combines immersive travel experiences with cutting-edge storytelling and a growing global impact. Here’s what makes us unique:</p>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="col-span-1 row-span-1 rounded-xl overflow-hidden aspes">
+        <img src="img/Aboutus/MeetTheTeam-14.jpg" alt="Growing Database" class="w-full h-full object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Growing Database</h3>
+          <p class="text-sm mt-2">Every tour contributes to our collection of Mongolia’s landscapes and culture, helping to share its beauty with the world.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <img src="img/Aboutus/MeetTheTeam-11.jpg" alt="Cultural Immersion" class="w-full h-full object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Cultural Immersion</h3>
+          <p class="text-sm mt-2">Experience Mongolia’s heart—stay with nomadic families, partake in their traditions, and enjoy authentic feasts like Khorkhog.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+        <img src="img/Aboutus/MeetTheTeam-11.jpg" alt="Eco-Friendly Adventures" class="w-full h-full object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Eco-Friendly Adventures</h3>
+          <p class="text-sm mt-2">Explore responsibly, preserving Mongolia’s pristine landscapes for future generations.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto grid grid-cols-12 gap-6 items-center">
+    
+    <!-- Left Image Grid -->
+    <div class="col-span-12 lg:col-span-6 grid grid-cols-5 grid-rows-5 gap-4 relative">
+      
+      <img src="img/Aboutus/MeetTheTeam-3.jpg" alt="Top Left" class="col-span-2
+      row-span-2 rounded-xl shadow-md object-cover"/>
+
+      
+      <img src="img/Aboutus/MeetTheTeam-15.jpg" alt="Bottom Left" class="col-span-2 row-start-4 row-span-2 rounded-xl shadow-md object-cover"/>
+
+     
+      <img src="img/Aboutus/MeetTheTeam-2.jpg" alt="Bottom Right" class="col-span-3 row-start-3 row-span-3 col-start-3 rounded-xl shadow-md object-cover"/>
+    </div>
+
+   
+    <div class="col-span-12 lg:col-span-6 flex flex-col items-right lg:items-start text-center lg:text-left space-y-2">
+      <!-- Character Image -->
+      <img src="img/tailbarlagch.png" alt="Character" class="w-28 h-28 top-10" />
+
+      <!-- Headings -->
+      <h2 class="text-red-600 text-2xl font-semibold">Meet The Team:</h2>
+      <h3 class="text-3xl font-bold">A Family At The Heart Of Adventure</h3>
+
+      <!-- Paragraph -->
+      <p class="text-gray-700 max-w-xl">
+        Brave New Mongolia Tours is a family-run business with a deeply personal touch. Led by Anar, a seasoned guide and photographer, and his son Tenun every tour feels like traveling with family. Our close-knit approach ensures every traveler feels welcome and cared for, experiencing Mongolia in a way few others can.
+      </p>
+    </div>
+  </section>
+
+  <div class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold mb-2">Our Travelers' Stories</h2>
+    <p class="text-gray-600 mb-8 max-w-2xl">
+      Every traveler becomes part of Mongolia's story. Here's what some of them have to say about their journey with us
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Testimonial Card 1 -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="img/Aboutus/MeetTheTeam-14.jpg" alt="Traveler 1" class="rounded-lg mb-4 w-full h-60 object-cover"/>
+        <div class="text-blue-600 text-3xl leading-none mb-2">“</div>
+        <p class="text-sm text-gray-700 mb-4">
+          Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
+        </p>
+        <p class="font-semibold text-gray-800">Luke Walter</p>
+      </div>
+
+      <!-- Testimonial Card 2 -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="img/Aboutus/MeetTheTeam-13.jpg" alt="Traveler 2" class="rounded-lg mb-4 w-full h-60 object-cover"/>
+        <div class="text-blue-600 text-3xl leading-none mb-2">“</div>
+        <p class="text-sm text-gray-700 mb-4">
+          Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
+        </p>
+        <p class="font-semibold text-gray-800">Luke Walter</p>
+      </div>
+
+      <!-- Testimonial Card 3 -->
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="img/Aboutus/MeetTheTeam-8.jpg" alt="Traveler 3" class="rounded-lg mb-4 w-full h-60 object-cover"/>
+        <div class="text-blue-600 text-3xl leading-none mb-2">“</div>
+        <p class="text-sm text-gray-700 mb-4">
+          Traveling with Brave New Mongolia Tours and having a personal cameraman was a game-changer. The professionalism and skill of the cameraman elevated my travel experience. Every frame captured told a story, making my journey through Mongolia not only memorable but visually stunning. Highly recommend this unique service
+        </p>
+        <p class="font-semibold text-gray-800">Luke Walter</p>
+      </div>
+    </div>
   </div>
+
+   <!-- Hero Section -->
+  <section class="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto py-20 px-6">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Be Part Of Mongolia’s Story</h1>
+      <p class="mb-6 text-gray-600">
+        Join Brave New Mongolia Tours for an experience unlike any other.
+        Explore the land of stories, contribute to our growing database,
+        and share the beauty of Mongolia with the world.
+      </p>
+      <a href="#" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+        Start Your Exclusive Adventure →
+      </a>
+    </div>
+    <div class="md:w-1/2">
+      <img src="img/Aboutus/MeetTheTeam-7.jpg" alt="Group of travelers in forest" class="rounded-xl shadow-lg" />
+    </div>
+  </section>
+  </div>
+
+ <footer class="bg-[#0B2B6C] text-white">
+  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Left Column -->
+    <div>
+     <div class="flex items-center space-x-2">
+      <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-8 h-8" />
+      <span class="text-xl font-bold">BNM</span>
+    </div>
+      <h4 class="font-bold">Brave New Mongolia</h4>
+      <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
+
+      <div class="flex space-x-4 mt-4">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+      </div>
+
+      <div class="mt-4 text-sm">
+        <p>Phone: +976 8625-6868</p>
+        <p>Email: bnmtours@gmail.com</p>
+        <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
+      </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div>
+      <h4 class="font-bold mb-2">Support</h4>
+      <ul class="text-sm space-y-2">
+        <li><a href="#" class="hover:underline">About us</a></li>
+        <li><a href="#" class="hover:underline">Package information</a></li>
+        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Column -->
+    <div>
+      <h4 class="font-bold mb-4">Download our mobile app</h4>
+      <div class="space-y-4">
+        <a href="#">
+          <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+        </a>
+
+        <br>
+        <a href="#">
+          <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
+    Copyright © 2025 Brave New Mongolia
+  </div>
+</footer>
+
+
 </body>
 </html>
