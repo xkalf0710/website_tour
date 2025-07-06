@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-blue-50">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tours Home</title>
+  <title>Centered Navbar with Logo on Top</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
-<body class="font-sans">
-<section class="max-w-6xl mx-auto px-4 py-10 border-b-2 border-gray-400">
-  <!-- Section Title -->
-  <h2 class="text-xl font-bold mb-2">PRICING OVERVIEW</h2>
-  <p class="text-gray-700 mb-6">
-    We know that every traveler is unique. That’s why we offer flexible pricing options to suit your style and budget—each designed to let you explore Mongolia your way.
-  </p>
+<body>
+  <nav class="bg-[#0f3d7e] px-6 py-2">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+      <!-- Left filler -->
+      <div class="w-1/3"></div>
 
-  <!-- Package Container -->
-  <div class="flex flex-col md:flex-row md:space-x-6 items-start">
-    <!-- Text Content -->
-    <div class="flex-1">
-      <h3 class="font-semibold text-lg mb-2">Adventurer Package | $70–$100 per day</h3>
-      <p class="text-gray-700 leading-relaxed">
-        Perfect for the independent traveler, this option is priced per day so you can decide when to go, where to stop, and how long to linger. Enjoy complete freedom on the road while consulting with our experts on your itinerary. For those who crave a true camping adventure, we also offer tent and sleeping bag rentals, adjusting the rate to the higher end of the range. Choose your vehicle—whether it’s the rugged Uaz Purgon, a versatile 4-wheeled drive like a Landcruiser, or a Starex—and set off on an adventure that’s truly yours.
-      </p>
+      <!-- Center section -->
+      <div class="w-1/3 flex flex-col items-center text-center space-y-2">
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="w-8 h-8" />
+
+        <!-- BNM and About us -->
+        <div class="flex items-center space-x-4">
+          <span class="text-white font-semibold text-sm">BNM</span>
+          <a href="#" class="text-white text-sm">About us</a>
+        </div>
+
+        <!-- Search bar -->
+        <div class="relative w-full max-w-xs">
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-full pl-8 pr-4 py-1 rounded bg-white text-sm focus:outline-none placeholder-blue-600"
+          />
+          <svg
+            class="absolute left-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103 10.5a7.5 7.5 0 0013.15 6.15z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Login button right -->
+      <div class="w-1/3 flex justify-end">
+        <button class="bg-gradient-to-r from-blue-500 to-blue-400 text-white px-4 py-1 rounded text-sm font-medium">
+          Log In
+        </button>
+      </div>
     </div>
-
-    <!-- Image -->
-    <div class="w-full md:w-64 mt-6 md:mt-0">
-      <img src="img/nemelt/els.png" alt="Adventurer Package" class="rounded-lg object-cover w-full h-full">
-    </div>
-  </div>
-</section>
-
-
-
-  </body>
-  </html>
-  
+  </nav>
+</body>
+</html>
