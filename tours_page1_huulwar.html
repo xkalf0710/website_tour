@@ -1,77 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ugii Lake Details</title>
-  <!-- Tailwind CSS CDN -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNM Navbar</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
-  <!-- Details Section with Rotating Arrow -->
-  <details class="bg-white rounded-xl shadow-md p-6 group">
-    <summary class="text-lg font-semibold cursor-pointer flex items-center justify-between">
-      <span>Day 3 Ugii Lake</span>
-      <!-- Arrow Icon -->
-      <span id="arrow-icon" class="transform transition-transform duration-300 w-6 h-6">
-        <img src="img/down-arrow.png" class="w-full h-full object-contain">
-      </span>
-    </summary>
-
-    <div class="mt-4 grid md:grid-cols-2 gap-6">
-
-      <!-- Left Column -->
-      <div class="space-y-4">
-        <h2 class="text-gray-700 text-base">
-          <p><b>Overview</b></p>
-          Journey to Ugii Lake, a serene destination perfect for birdwatching, boating, or simply relaxing by the water. Capture the tranquility of the lake through photography or take part in optional fishing activities.
-        </h2>
-
-        <div class="text-sm text-gray-600 space-y-1">
-          <p>📍 <strong>Travel Distance:</strong> ~100 KM</p>
-          <p>🕒 <strong>Driving Time:</strong> ~3 Hours 30 Minutes</p>
-          <b><hr></b>
-          <p> <strong>Activities:</strong> 🎯 Trek to Altai Tavan Bogd Base Camp</p>
-          <p> <strong>Explore wildlife:</strong> on route to Altai Tavan Bogd</p>
-          <p> <strong>Local Market Exploration:</strong> Visit local markets</p>
-          <b><hr></b>
-          <p> <strong>Meals:</strong></p>
-          <ul class="ml-4 list-disc">
-            <li>Breakfast ~ Khustai Nuruu National Park</li>
-            <li>Lunch ~ Ugii Lake</li>
-            <li>Dinner ~ Ugii Lake (Overnight near the lake)</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Right Column: 3x1 Image Row -->
-      <div class="grid grid-cols-3 gap-2">
-        <iframe src="https://www.youtube.com/embed/8qcIkSWgGFQ?si=cSh-BFh3TH1YOAmv" class="rounded-lg row-span-2 object-cover w-full h-full"
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <img src="img/day1/Copy of Genghis Khan Statue Complex (3 of 6).jpg" class="rounded-lg object-cover w-full h-full" alt="Image 1" />
-          <img src="img/day1/Copy of Genghis Khan Statue Complex (5 of 6).jpg" class="rounded-lg object-cover w-full h-full" alt="Image 2" />
-          <img src="img/day1/Copy of TereljNP 1.jpg" class="rounded-lg object-cover w-full h-full" alt="Image 3" />
-      </div>
-
+  <!-- Top Navbar -->
+  <nav class="bg-[#0f3d7e] px-4 py-2 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="text-white font-bold text-lg">BNM</span>
+      <img src="logo.png" alt="Logo" class="w-5 h-5"> <!-- Replace with actual logo -->
     </div>
-  </details>
+    <div class="flex items-center gap-8">
+      <a href="#" class="text-white text-sm">About us</a>
+      <div class="relative">
+        <input type="text" placeholder="Search" class="pl-8 pr-4 py-1 rounded-full focus:outline-none text-sm" />
+        <svg class="w-4 h-4 absolute left-2 top-1/2 transform -translate-y-1/2 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <button class="bg-gradient-to-r from-blue-500 to-indigo-500 p-2 rounded">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 15c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      </button>
+      <div class="relative">
+        <button class="bg-[#1e3a8a] text-white px-2 py-1 rounded flex items-center text-sm">
+          EN
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-  <!-- JavaScript to Handle Arrow Rotation -->
-  <script>
-    document.querySelector('details').addEventListener('toggle', function () {
-      const arrowIcon = document.getElementById('arrow-icon');
-      if (this.open) {
-        // Rotate the arrow when details is open
-        arrowIcon.classList.add('rotate-180');
-      } else {
-        // Reset rotation when details is closed
-        arrowIcon.classList.remove('rotate-180');
-      }
-    });
-  </script>
-
+  <!-- Bottom Menu -->
+  <div class="bg-[#12458d] px-4 py-1">
+    <ul class="flex gap-4 text-white text-sm">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#" class="hover:underline">Visit Ulaanbaatar</a></li>
+      <li><a href="#" class="hover:underline">Destinations</a></li>
+      <li><a href="#" class="hover:underline">Accommodation</a></li>
+      <li><a href="#" class="hover:underline">BNM Tour</a></li>
+      <li><a href="#" class="hover:underline">Events</a></li>
+      <li><a href="#" class="hover:underline">Info</a></li>
+      <li><a href="#" class="hover:underline">Commercial</a></li>
+    </ul>
+  </div>
 </body>
 </html>
