@@ -2,28 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview Section</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services Carousel</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#e9efff] p-8">
+<body class="bg-[#e9edfd] text-gray-900">
 
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-stretch">
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6">Services</h2>
+
+    <div class="relative">
+      <!-- Carousel wrapper -->
+      <div id="carousel" class="flex space-x-4 overflow-x-auto scroll-smooth">
+        <!-- Slides -->
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://via.placeholder.com/320x200?text=Room+1" alt="Room 1" class="w-full h-48 object-cover">
+        </div>
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://via.placeholder.com/320x200?text=Room+2" alt="Room 2" class="w-full h-48 object-cover">
+        </div>
+        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-md overflow-hidden">
+          <img src="https://via.placeholder.com/320x200?text=Room+3" alt="Room 3" class="w-full h-48 object-cover">
+        </div>
+      
+      </div>
+
+      <!-- Navigation Arrow -->
+      <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const nextBtn = document.getElementById('nextBtn');
     
-    <!-- Text Card -->
-    <div class="bg-white p-8 rounded shadow-md">
-      <h2 class="text-xl font-semibold mb-4">Overview</h2>
-      <p class="text-gray-800 leading-relaxed">
-        The Genghis Khan Statue Complex, also known as the Chinggis Khaan Statue Complex, is a prominent tourist attraction located in Tsonjin Boldog, around 54 kilometers (34 miles) east of
-      </p>
-    </div>
-
-    <!-- Image Card -->
-    <div class="rounded overflow-hidden shadow-md">
-      <img src="img/Variant2.png" alt="Hotel building at night" class="w-756 h-426 object-cover rounded">
-    </div>
-
-  </div>
+    nextBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: 340, behavior: 'smooth' });
+    });
+  </script>
 
 </body>
 </html>
