@@ -91,7 +91,7 @@
         }
 
         .navbar-bottom {
-      
+        /* background-color: #0f3367; */
         display: flex;
         justify-content: center;
         padding: 10px 0;
@@ -110,20 +110,11 @@
         text-decoration: underline;
         }
 
-        /* Hide scrollbar */
-        .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-        }
-        .scrollbar-hide {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        }
-
      </style>
     <title>Nightlife Premium</title> 
     </head>
-    <body>
-    <header class="bg-[#0e3b78] text-white px-6 py-2">
+    <body class="bg-blue-100">
+        <header class="bg-[#0e3b78] text-white px-6 py-2">
         <div class="max-w-7xl mx-auto w-full flex items-center">
           
           <!-- Left: Logo -->
@@ -168,313 +159,364 @@
             </svg>
           </button>
         </div>
-      </div>
-    <nav class="navbar-bottom">
-     <a href="index.html">Home</a>
-     <a href="visit_ulaanbaatar.html">Visit Ulaanbaatar</a>
-     <a href="destination.html">Destinations</a>
-     <a href="accommodation.html">Accommodation</a>
-     <a href="tours.html">BNM Tour</a>
-     <a href="#">Events</a>
-     <a href="#">Info</a>
-     <a href="commercial.html">Commercial</a>
-    </nav>
-    </header>
 
-    <div class="max-w-7xl mx-auto p-6 space-y-10">
-        <!-- Back Button -->
+      </div>
+        <nav class="navbar-bottom">
+          <a href="index.html">Home</a>
+              <a href="visit_ulaanbaatar.html">Visit Ulaanbaatar</a>
+              <a href="destination.html">Destinations</a>
+              <a href="accommodation.html">Accommodation</a>
+              <a href="tours.html">BNM Tour</a>
+              <a href="#">Events</a>
+              <a href="#">Info</a>
+              <a href="commercial.html">Commercial</a>
+              </nav>
+          </header>
+    <div class="max-w-7xl mx-auto p-6 space-y-8 w-[1291px]">
+      <div class="p-6 space-y-6">
         <div class="mb-4">
-            <button class="text-sm text-blue-700 hover:underline flex items-center space-x-1">
+          <button class="text-sm text-blue-700 hover:underline flex items-center space-x-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M15 19l-7-7 7-7"/></svg>
-            <span>Back</span>
+            stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 19l-7-7 7-7"/></svg>
+            <a href="nightlife.html"><span>Back</span></a>
+            </button>
+        </div>
+
+        <div class="relative">
+          <img src="img/1.ZU Club/ZUClubCover photo.jpg" alt="Cover" class="w-[1224px] h-[344px] object-cover rounded-2xl"/>
+
+          <div class="absolute left-8 bottom-[-86px] flex items-center space-x-4">
+            <img src="img/1.ZU Club/ZUClubCover photo.jpg" alt="Profile" class="w-32 h-32 rounded-full border-1 border-white shadow-md object-cover">
+            
+              <span style="display: flex; align-items: center;">
+                <h1 class="text-[36px] font-bold">ZU Club</h1>
+                <img src="img/Group 481830.png" class="w-18 h-15 object-cover" style="margin-left: 10px;" />
+              </span>
+            
+          </div>
+        </div>
+
+        <div class="flex justify-end space-x-4 mt-6 mr-8">
+          <button class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">
+            <span style="display: flex; align-items: center;">
+              <img src="img/Frame.png" class="w-18 h-15 object-cover" style="margin-right: 10px;" />
+              Phone Number
+            </span>
+          </button>
+          <button class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">
+            <span style="display: flex; align-items: center;">
+              <img src="img/Frame-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px;" />
+              Facebook Page
+            </span>
           </button>
         </div>
-        <!-- Banner -->
-        <div class="relative">
-            <img src="img/1.ZU Club/ZUClubCover photo.jpg" alt="Novotel Banner" class="w-full h-64 object-cover rounded-b-lg" />
+      </div>
 
-            <!-- Profile Image -->
-            <div class="absolute left-6 -bottom-12">
-            <img src="img/1.ZU Club/ZUClubCover photo.jpg" alt="Novotel Profile" class="w-28 h-28 rounded-full border-4 border-white shadow-lg" />
-            </div>
+      <div class="p-6 space-y-6">
+        <div class="mt-6 border-b border-gray-300">
+          <nav class="flex space-x-6 text-lg font-medium">
+            <a href="#" class="text-blue-700  pb-2">Overview</a>
+            <a href="#" class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2">Services</a>
+            <a href="#" class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2">Menus</a>
+            <a href="#" class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2">Promotional video</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-[1228px]">
+                    
+        <!-- Overview Box -->
+        <div class="bg-white rounded shadow-md p-8 w-[421px] h-[440px]">
+        <h2 class="text-md font-bold mb-2">Overview</h2>
+        <p class="text-sm mb-4">
+          The Genghis Khan Statue Complex, also known as the Chinggis Khaan Statue Complex, is a prominent tourist attraction located in Tsonjin Boldog, around 54 kilometers (34 miles) east of
+        </p>
+        <span style="display: flex; align-items: center;">
+          <img src="img/Frame 1686560586.png" class="w-18 h-15 object-cover" style="margin-right: 10px;"/>
+          NovotelUlaanbaatar@gmail.com
+        </span>
+        <span style="display: flex; align-items: center;">
+          <img src="img/Frame 1686560586-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px;"/>
+          NovotelUlaanbaatar.mn
+        </span>
+        <span style="display: flex; align-items: center;">
+          <img src="img/Frame 1686560586-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px;"/>
+          now open - close 21:00
+        </span>
+        <h2 class="text-md font-bold mb-2">Address</h2>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+            <span style="display: flex; align-items: center;">
+              <img src="img/Frame-3.png" class="w-18 h-15 object-cover" style="margin-right: 10px;"/>
+              Get Directions
+            </span>
+        </button>
         </div>
 
-        <!-- Content Section -->
-        <div class="flex justify-between items-center px-6 pt-16 pb-4">
-            <!-- Hotel Name -->
-            <div class="flex items-center space-x-2">
-            <h1 class="text-2xl font-semibold">ZU Club </h1>
-            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 15l-5.878 3.09L5.64 12.18 1 8.27l6.066-.88L10 2l2.934 5.39 6.066.88-4.64 3.91 1.518 5.91z" />
-            </svg>
-            </div>
-
-            <!-- Buttons -->
-            <div class="flex space-x-4">
-            <button class="flex items-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-                📞 Phone Number
-            </button>
-            <button class="flex items-center px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                🌐 Facebook page
-            </button>
-            </div>
+        <!-- Image Carousel (basic) -->
+        <div class="relative rounded shadow overflow-hidden">
+        <img src="img/1.ZU Club/Top/ZUClubTop-1.jpg" class="w-[759px] h-[440px] object-cover rounded" alt="Building">
+        <div class="absolute top-2 left-2 flex gap-2">
+            <button class="bg-blue-700 p-1 rounded-full shadow"><i class="fas fa-chevron-left"></i></button>
+            <button class="bg-blue-700 p-1 rounded-full shadow"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!-- Thumbnail previews (example) -->
+        <div class="absolute top-2 right-2 flex gap-1">
+            <img src="img/1.ZU Club/Top/ZUClubTop-2.jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover" />
+            <img src="img/1.ZU Club/Top/ZUClubTop-2.jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover" />
+        </div>
         </div>
 
-        <!-- Spacer for overlapping profile -->
-                <div class="h-12"></div>
+    </div>
 
-                <!-- Tabs -->
-                <div class="border-b border-gray-300 px-6">
-                    <nav class="flex gap-6 text-sm font-medium text-gray-700">
-                    <a href="#" class="border-b-2 border-blue-600 text-blue-600 pb-2">Overview</a>
-                    <a href="#">Rooms</a>
-                    <a href="#">Food</a>
-                    <a href="#">Facilities</a>
-                    <a href="#">Promotional video</a>
-                    </nav>
+    <div class="p-6 space-y-6">
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Products Section -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6">Services</h2>
+          <div class="relative w-[400px] h-[500px] overflow-hidden rounded-xl shadow-lg bg-white">
+            <!-- Scrollable Wrapper -->
+            <div id="sliderContent" class="flex flex-col transition-transform duration-700 ease-in-out h-full">
+              <!-- Slide -->
+                <div class="grid grid-cols-2 gap-4 p-4 h-[500px] box-border">
+                  <img class="rounded-xl object-cover w-full h-full" src="img/1.ZU Club/Service/Service1/ZUClubService-1.jpg" alt="Product 1" />
+                  <img class="rounded-xl object-cover w-full h-full" src="img/1.ZU Club/Service/Service1/ZUClubService-2.jpg" alt="Product 2" />
                 </div>
 
-                <!-- Main Grid Content -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
-                    
-                    <!-- Overview Box -->
-                    <div class="bg-white rounded shadow p-5">
-                    <h2 class="text-md font-bold mb-2">Overview</h2>
-                    <p class="text-sm mb-4">
-                        The Genghis Khan Statue Complex, also known as the Chinggis Khaan Statue Complex, is a prominent tourist attraction located in Tsonjin Boldog, around 54 kilometers (34 miles) east of
-                    </p>
-                    <p class="text-sm mb-4"> NovotelUlaanbaatar@gmail.com</p>
-                    <p class="text-sm mb-4"> NovotelUlaanbaatar.mn</p>
-                    <p class="text-sm mb-4"> now open-close 21:00</p>
-                    <h2 class="text-md font-bold mb-2">Address</h2>
-                    
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
-                        <i class="fas fa-map-marker-alt"></i> Get Directions
-                    </button>
-                    </div>
-
-                    <!-- Image Carousel (basic) -->
-                    <div class="relative bg-white rounded shadow overflow-hidden">
-                    <img src="img/1.ZU Club/Top/ZUClubTop-1.jpg" class="w-full h-64 object-cover rounded" alt="Building">
-                    <div class="absolute top-2 left-2 flex gap-2">
-                        <button class="bg-white p-1 rounded-full shadow"><i class="fas fa-chevron-left"></i></button>
-                        <button class="bg-white p-1 rounded-full shadow"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <!-- Thumbnail previews (example) -->
-                    <div class="absolute top-2 right-2 flex gap-1">
-                        <img src="img/1.ZU Club/Top/ZUClubTop-2.jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover" />
-                        <img src="img/1.ZU Club/Top/ZUClubTop-2.jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover" />
-                    </div>
-                    </div>
-
+                <div class="grid grid-cols-2 gap-4 p-4 h-[500px] box-border">
+                  <img class="rounded-xl object-cover w-full h-full" src="img/1.ZU Club/Service/Service1/ZUClubService-Thumbnail.jpg" alt="Product 3" />
+                  <img class="rounded-xl object-cover w-full h-full" src="img/1.ZU Club/Service/Service2/ZUClubService-4.jpg" alt="Product 4" />
                 </div>
 
-          <!-- Products Menu -->
-
-          <div class="max-w-7xl mx-auto">
-              <div class="grid md:grid-cols-2 gap-8">
-                <!-- Products Section -->
-                <div>
-                  <h2 class="text-2xl font-semibold mb-4">Services</h2>
-                  <div id="slider" class="grid grid-cols-2 gap-4 overflow-hidden">
-                    <!-- Slide Items -->
-                    <div class="rounded-xl overflow-hidden border border-gray-300">
-                      <img src="img/1.ZU Club/Service/Service1/ZUClubService-1.jpg" alt="Dish 1" class="w-full h-auto object-cover"/>
-                    </div>
-                    <div class="rounded-xl overflow-hidden border border-gray-300">
-                      <img src="img/1.ZU Club/Service/Service1/ZUClubService-2.jpg" alt="Dish 2" class="w-full h-auto object-cover"/>
-                    </div>
-                    <div class="rounded-xl overflow-hidden border border-gray-300">
-                      <img src="img/1.ZU Club/Service/Service1/ZUClubService-Thumbnail.jpg" alt="Dish 3" class="w-full h-auto object-cover"/>
-                    </div>
-                    <div class="rounded-xl overflow-hidden border border-gray-300">
-                      <img src="img/1.ZU Club/Service/Service2/ZUClubService-4.jpg" alt="Dish 4" class="w-full h-auto object-cover"/>
-                    </div>
-
-                  </div>
-
-                  <button onclick="slideNext()" class="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-
-                </div>
-
-                <!-- Menu Section -->
-                <div class="w-full lg:w-1/2">
-                  <h2 class="text-xl font-semibold mb-4">Menu</h2>
-                  <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="img/medeelel-5.png" alt="Menu Poster" />
-                 </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-            <div class="bg-white-50 p-6">
-            <h2 class="text-base font-semibold text-gray-800 mb-2">Promotional video</h2>
-            <div class="rounded-2xl overflow-hidden shadow-md max-w-3xl">
-                <div class="relative aspect-video">
-                <iframe width="1000" height="515" src="https://www.youtube.com/embed/nw8pJFkGXsk?si=MV25X5-Y0vQv_xJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            </div>
-           <!-- banner -->
-
-                  <div class="w-[1200px] h-[300px] bg-gradient-to-r from-[#2d3dcf] via-[#92419b] to-[#3475f1] rounded-[30px] flex items-center justify-between px-10 relative overflow-hidden">
-                <!-- Left Characters and Signpost -->
-                <div class="flex space-x-6 items-end">
-                <!-- Character with Binoculars -->
-                <img src="img/medeelel.png" alt="Character with binoculars" class="h-[180px] object-contain" />
-                
-                <!-- Character with Signpost -->
-                <img src="img/tailbarlagch.png" alt="Character with signpost" class="h-[220px] object-contain" />
-                </div>
-
-                <!-- Right Content -->
-                <div class="text-white text-right space-y-4">
-                <h1 class="text-4xl font-semibold leading-tight">Escape to<br />the Land of Stories</h1>
-                <button class="bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-semibold py-2 px-6 rounded-full flex items-center space-x-2 transition duration-200">
-                    <span>VISIT BNM TOURS</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
+                <div class="grid grid-cols-2 gap-4 p-4 h-[500px] box-border">
+                  <img class="rounded-xl object-cover w-full h-full" src="img/1.ZU Club/Service/Service2/ZUClubService-3.jpg" alt="Product 5" />
+                  <img class="rounded-xl object-cover w-full h-full" src="img/1.ZU Club/Service/Service2/ZUClubService-Thumbnail.jpg" alt="Product 6" />
                 </div>
             </div>
 
-          <!-- Newsletter Section -->
-          <div class="bg-blue-100 rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="max-w-xl">
-              <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
-              <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
-                <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
-              </form>
-              <p class="text-xs text-gray-600 mb-4">
-                Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
-              </p>
-              <p class="text-xs"><span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
-                <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
-              </p>
+             <!-- Controls -->
+            
+
+            <button onclick="slide(1)" 
+              class="absolute bottom-2 left-1/2 -translate-x-1/2 transition">
+              <!-- Down Arrow SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div>
+          <div>
+            <h2 class="text-2xl font-semibold mb-6">Menu</h2>
+            <img src="img/1.ZU Club/Menu/ZUClubMenu-1.jpg" class="w-[453px] h-[567px] object-cover"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+      
+
+      <div class="p-6 space-y-6">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-6">Promotional Video</h2>
+          <div class="rounded-2xl overflow-hidden shadow-md max-w-6xl">
+            <div class="relative aspect-[16/9]">
+              <iframe width="1224" height="645" src="https://www.youtube.com/embed/nw8pJFkGXsk?si=MV25X5-Y0vQv_xJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="p-16 space-y-6">
+        <div class="relative rounded-xl overflow-hidden w-[1120px] translate-y-8">
+          <img src="img/visit bnm tour cta.png" alt="Tour Character" class="w-full h-auto object-cover">
+          <!-- Text content moved upward -->
+          <div class="absolute top-[45%] right-8 transform -translate-y-1/2 text-white text-left">
+            <h2 class="text-xl text-[50px] md:text-2xl font-bold drop-shadow-md">
+              Escape to<br>the Land of Stories
+            </h2>
+      
+            <button class="mt-4 px-4 py-2 bg-yellow-400 text-black font-semibold rounded-full text-sm shadow hover:bg-yellow-300 transition">
+              VISIT BNM TOURS →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
+  
+      <!-- Newsletter Form -->
+      <div class="max-w-xl text-left md:pl-20">
+        <h3 class="font-bold text-2xl mb-4">Subscribe to our Newsletter!</h3>
+        
+        <form class="flex flex-col sm:flex-row gap-2 mb-4" onsubmit="event.preventDefault()">
+          <input 
+            type="email" 
+            placeholder="Email Here..." 
+            class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+          />
+          <button 
+            type="submit" 
+            class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+            SUBSCRIBE
+          </button>
+        </form>
+    
+        <p class="text-sm text-gray-700 mb-4">
+          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
+        </p>
+        
+        <p class="text-sm">
+          <span class="font-semibold">Phone:</span> +976 8001-4904<br />
+          <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
+        </p>
+      </div>
+    
+      <!-- Cartoon Character -->
+      <div class="relative">
+        <img 
+          src="img/Component 65.png" 
+          alt="Mongolian Character"
+          class="w-[300px] md:w-[400px] h-auto object-contain transform scale-x-[-1]" 
+        />
+      </div>
+    
+      <!-- WhatsApp QR Code -->
+      <div class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+        
+        <!-- Top Icon -->
+        <div class="w-12 h-12 rounded-full overflow-hidden -mt-6 border border-gray-200 shadow-sm">
+          <img src="img/footer/bnm round.png" alt="Logo" class="w-full h-full object-contain" />
+        </div>
+    
+        <!-- Title -->
+        <span class="text-sm font-medium text-gray-700">Connect via WhatsApp</span>
+    
+        <!-- QR Code -->
+        <div class="bg-white p-2 rounded-lg shadow">
+          <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+        </div>
+    
+        <!-- Phone Number -->
+        <div class="bg-white w-full rounded-b-lg py-2 text-center font-semibold text-gray-800 shadow-sm">
+          +976 8001 4904
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto p-6 space-y-8">
+      <div>
+      <hr class="mb-4 border-gray-400" />
+      <div class="flex items-center space-x-2">
+          <!-- Back Button -->
+          <a href="accommodation.html">
+            <button class="flex items-center space-x-2 px-4 py-2 rounded-full border border-gray-300 shadow text-gray-700 bg-white hover:bg-gray-100">
+            <span style="display: flex; align-items: center;">
+              <img src="img/keyboard_backspace.png" class="w-18 h-15 object-cover" style="margin-right: 10px;" />
+              Back
+            </span>
+          </button>
+          </a>
+
+          <!-- Home Button -->
+          <a href="index.html">
+            <button class="flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600 text-white shadow hover:bg-blue-700">
+            <span style="display: flex; align-items: center;">
+              <img src="img/sr-home.png" class="w-18 h-15 object-cover" style="margin-right: 10px;" />
+              Home
+            </span>
+          </button>
+          </a>
+
+          
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="bg-[#0B2B6C] text-white">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+          <!-- Column 1: Logo -->
+          <div class="w-full text-center">
+            <div class="flex justify-center items-center space-x-2 mt-4">
+                <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
+                <span class="text-2xl font-bold">BNM</span>
+            </div>
+        </div>
+          <!-- Column 2: Description -->
+          <div>
+            <h4 class="font-bold">Brave New Mongolia</h4>
+            <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
+
+            <div class="flex space-x-4 mt-4">
+              <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+              <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
             </div>
 
-            <!-- Cartoon Character -->
-            <div class="w-70 h-60 relative">
-              <img src="img/Component 65.png" alt="Mongolian Character" class="w-full h-full object-contain" />
-            </div>
-
-            <!-- WhatsApp QR Code -->
-            <div class="bg-white p-4 rounded-lg shadow-lg text-center max-w-xs">
-              <div class="mb-2 flex items-center justify-center space-x-2">
-                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
-                  <path d="M16 11c0 2-2 4-4 4s-3-2-3-4a3 3 0 1 1 6 0z" stroke="currentColor" stroke-width="2" />
-                </svg>
-                <span class="text-sm font-semibold">Connect via WhatsApp</span>
-              </div>
-              <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="mx-auto mb-2 w-32 h-32 object-contain" />
-              <p class="font-semibold text-sm">+976 8001 4904</p>
+            <div class="mt-4 text-sm">
+              <p>Phone: +976 8625-6868</p>
+              <p>Email: bnmtours@gmail.com</p>
+              <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
             </div>
           </div>
 
-          <div class=" p-6">
-            <div class="flex items-center space-x-4 border-t pt-4">
-                
-                <!-- Back Button -->
-                <button class="flex items-center space-x-2 px-4 py-2 border rounded-full shadow-sm hover:bg-gray-100 transition">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                </svg>
-                <a href="hotels.html"><span>Back</span></a>
-                </button>
+          <!-- Column 3: Support Links -->
+          <div>
+            <h4 class="font-bold mb-2">Support</h4>
+            <ul class="text-sm space-y-2">
+              <li><a href="#" class="hover:underline">About us</a></li>
+              <li><a href="#" class="hover:underline">Package information</a></li>
+              <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            </ul>
+          </div>
 
-                <!-- Home Button -->
-                <button class="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M4 10v10h16V10" />
-                </svg>
-                <a href="index.html"><span class="font-semibold">Home</span></a>
-                </button>
-
+          <!-- Column 4: App Downloads -->
+          <div>
+            <h4 class="font-bold mb-4">Download our mobile app</h4>
+            <div class="space-y-4">
+              <a href="#">
+                <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+              </a>
+              &nbsp;
+              <a href="#">
+                <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+              </a>
             </div>
-            </div>
+          </div>
 
         </div>
 
-        
-    </div>
-</div>
-           
+        <!-- Bottom Bar -->
+        <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
+          Copyright © 2025 Brave New Mongolia
+        </div>
+      </footer>
 
-<footer class="bg-[#0B2B6C] text-white">
-  <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- JavaScript -->
+    <script>
+      let currentIndex = 0;
+      const slider = document.getElementById("sliderContent");
+      const totalSlides = slider.children.length;
+
+      function slide(direction) {
+        currentIndex += direction;
+        currentIndex = Math.max(0, Math.min(currentIndex, totalSlides - 1));
+        slider.style.transform = `translateY(-${currentIndex * 500}px)`;
+      }
+    </script>
+
     
-    <!-- Left Column -->
-    <div>
-     <div class="flex items-center space-x-2">
-      <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-8 h-8" />
-      <span class="text-xl font-bold">BNM</span>
-    </div>
-      <h4 class="font-bold">Brave New Mongolia</h4>
-      <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
-
-      <div class="flex space-x-4 mt-4">
-        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
-        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
-        <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
-      </div>
-
-      <div class="mt-4 text-sm">
-        <p>Phone: +976 8625-6868</p>
-        <p>Email: bnmtours@gmail.com</p>
-        <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
-      </div>
-    </div>
-
-    <!-- Middle Column -->
-    <div>
-      <h4 class="font-bold mb-2">Support</h4>
-      <ul class="text-sm space-y-2">
-        <li><a href="#" class="hover:underline">About us</a></li>
-        <li><a href="#" class="hover:underline">Package information</a></li>
-        <li><a href="#" class="hover:underline">Terms of Service</a></li>
-      </ul>
-    </div>
-
-    <!-- Right Column -->
-    <div>
-      <h4 class="font-bold mb-4">Download our mobile app</h4>
-      <div class="space-y-4">
-        <a href="#">
-          <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-        </a>
-
-        <br>
-        <a href="#">
-          <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
-    Copyright © 2025 Brave New Mongolia
-  </div>
-</footer>
-
-<script>
-   function slideNext() {
-      const slider = document.getElementById('slider');
-      slider.scrollBy({ left: 270, behavior: 'smooth' });
-    }
-</script>
-
+    
 </body>
 </html>
