@@ -2,48 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Filter - Tailwind</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#e9edfd] text-gray-900">
+<body class="bg-gray-100 p-6">
 
-  <section class="max-w-6xl mx-auto px-4 py-10">
-    <h2 class="text-2xl font-bold mb-6">Services</h2>
+  <!-- Filter Buttons -->
+  <div class="mb-6 space-x-4">
+    <button onclick="filterHotels('all')" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">All</button>
+    <button onclick="filterHotels('luxurious')" class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-500">Luxurious</button>
+    <button onclick="filterHotels('premium')" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500">Premium</button>
+    <button onclick="filterHotels('affordable')" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-500">Affordable</button>
+  </div>
 
-    <div class="relative">
-      <!-- Carousel wrapper -->
-      <div id="carousel" class="flex space-x-4 overflow-x-auto scroll-smooth">
-        <!-- Slides -->
-        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="https://via.placeholder.com/320x200?text=Room+1" alt="Room 1" class="w-full h-48 object-cover">
-        </div>
-        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="https://via.placeholder.com/320x200?text=Room+2" alt="Room 2" class="w-full h-48 object-cover">
-        </div>
-        <div class="flex-shrink-0 w-80 bg-white rounded-xl shadow-md overflow-hidden">
-          <img src="https://via.placeholder.com/320x200?text=Room+3" alt="Room 3" class="w-full h-48 object-cover">
-        </div>
-      
-      </div>
-
-      <!-- Navigation Arrow -->
-      <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+  <!-- Hotel Cards -->
+  <div id="hotelList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Luxurious -->
+    <div class="hotel-card luxurious bg-white rounded-lg shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Tuushin+Hotel" alt="Tuushin Hotel" class="rounded mb-3">
+      <h3 class="text-xl font-semibold">Best Western Premier Tuushin Hotel</h3>
+      <span class="text-sm bg-yellow-200 text-yellow-800 px-2 py-1 rounded">Luxurious</span>
     </div>
-  </section>
 
+    <!-- Premium -->
+    <div class="hotel-card premium bg-white rounded-lg shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Puma+Imperial" alt="Puma Imperial" class="rounded mb-3">
+      <h3 class="text-xl font-semibold">Puma Imperial Hotel</h3>
+      <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">Premium</span>
+    </div>
+
+    <!-- Premium -->
+    <div class="hotel-card premium bg-white rounded-lg shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Novotel" alt="Novotel" class="rounded mb-3">
+      <h3 class="text-xl font-semibold">Novotel Ulaanbaatar</h3>
+      <span class="text-sm bg-blue-200 text-blue-800 px-2 py-1 rounded">Premium</span>
+    </div>
+
+    <!-- Affordable -->
+    <div class="hotel-card affordable bg-white rounded-lg shadow p-4">
+      <img src="https://via.placeholder.com/400x200?text=Premium+Hotel+UB" alt="Premium Hotel UB" class="rounded mb-3">
+      <h3 class="text-xl font-semibold">Premium Hotel Ulaanbaatar</h3>
+      <span class="text-sm bg-green-200 text-green-800 px-2 py-1 rounded">Affordable</span>
+    </div>
+  </div>
+
+  <!-- JS Filter Logic -->
   <script>
-    const carousel = document.getElementById('carousel');
-    const nextBtn = document.getElementById('nextBtn');
-    
-    nextBtn.addEventListener('click', () => {
-      carousel.scrollBy({ left: 340, behavior: 'smooth' });
-    });
+    function filterHotels(category) {
+      const cards = document.querySelectorAll('.hotel-card');
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          if (card.classList.contains(category)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        }
+      });
+    }
   </script>
-
 </body>
 </html>
