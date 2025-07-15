@@ -219,24 +219,25 @@
         <div class="border-l h-5 border-gray-300"></div>
         
         <div class="flex space-x-2" id="filterButtons">
-          <button onclick="filterFood('all')" class="filter-btn bg-blue-500 text-white px-4 py-1 rounded-full text-sm">All</button>
-          <button onclick="filterFood('traditional')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Traditional</button>
-          <button onclick="filterFood('international')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">International</button>
-          <button onclick="filterFood('coffee')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Coffee Shop & Bakeries</button>
+          <button onclick="filterFashion('all')" class="filter-btn bg-blue-500 text-white px-4 py-1 rounded-full text-sm">All</button>
+          <button onclick="filterFashion('cashmere')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Cashmere</button>
+          <button onclick="filterFashion('traditional')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Traditional</button>
+          <button onclick="filterFashion('tailor')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Tailor Shops</button>
+          <button onclick="filterFashion('brands')" class="filter-btn border border-blue-200 text-gray-700 px-4 py-1 rounded-full text-sm">Brands</button>
         </div>
       </div>
 
-      <div id="foodList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div id="fashionList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Luxurious -->
-        <div class="food-card traditional bg-white rounded-lg shadow p-4 aspect-square">
-          <a href="food_preimum.html">
+        <div class="fashion-card brands bg-white rounded-lg shadow p-4 aspect-square">
+          <a href="fashion_premium.html">
             <div class="relative">
-              <img src="img/Food/4.MongolianRestaurant/Thumbnail/MongolianRestaurantthumbnail-1.jpg" alt="Mongolia's Restaurant" class="rounded mb-3 w-[357px] h-[375px] object-cover">
-              <div class="absolute bottom-2 left-2  font-semibold [20px] px-2 py-1 rounded text-sm">
-                Mongolian's Restaurant
+              <img src="img/fashion home/Copy of DandyThumbnail-1.jpg" alt="Mongolia's Restaurant" class="rounded mb-3 w-[357px] h-[375px] object-cover">
+              <div class="absolute bottom-2 left-2  font-semibold text-white text-[20px] py-1 rounded text-sm">
+                Dandy Atelier
                 <span style="display: flex; align-items: center;">
-                  <img src="img/line-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                  Traditional Food
+                  <img src="img/Badge.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
+                  Brand
                 </span>
               </div>
             </div>
@@ -244,15 +245,15 @@
         </div>
 
         <!-- Premium -->
-        <div class="food-card international bg-white rounded-lg shadow p-4 aspect-square">
-          <a href="food_preimum.html">
+        <div class="fashion-card cashmere bg-white rounded-lg shadow p-4 aspect-square">
+          <a href="fashion_preimum.html">
             <div class="relative">
-              <img src="img/Food/1.Rosewood/Thumbnail/RoseWoodThumbnail-1.jpg" alt="Rosewood" class="rounded mb-3 w-[357px] h-[375px] object-cover">
+              <img src="img/fashion home/Copy of GobiThumbnail-1.jpg" alt="Rosewood" class="rounded mb-3 w-[357px] h-[375px] object-cover">
               <div class="absolute bottom-2 left-2  font-semibold [20px] bg-opacity-50 text-white px-2 py-1 rounded text-sm">
-                Rosewood Kitchen+Enoteca
+                Gobi
                 <span style="display: flex; align-items: center;">
-                  <img src="img/line-3.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                   International
+                  <img src="img/Vector-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
+                   Cashmere
                 </span>
               </div>
             </div>
@@ -262,16 +263,16 @@
         
 
         <!-- Premium -->
-        <div class="food-card international bg-white rounded-lg shadow p-4 aspect-square">
+        <div class="fashion-card cashmere bg-white rounded-lg shadow p-4 aspect-square">
           
-          <a href="food_preimum.html">
+          <a href="fashion_preimum.html">
             <div class="relative">
-              <img src="img/Food/2.La Rosa/Thumbnail/LaRosaThumbnail-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
-              <div class="absolute bottom-2 left-2  font-semibold [20px] bg-opacity-50 px-2 py-1 rounded text-sm">
-                La Rosa Restaurant
+              <img src="img/fashion home/Copy of EvsegThumbnail-16.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
+              <div class="absolute bottom-2 left-2  font-semibold text-[20px] text-black bg-opacity-50 px-2 py-1 rounded text-sm">
+                Evseg
                 <span style="display: flex; align-items: center;">
-                  <img src="img/line-3.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                  International
+                  <img src="img/Vector-2.png" class="w-18 h-15 object-cover " style="margin-right: 10px;">
+                  Cashmere
                 </span>
               </div>
             </div>
@@ -280,16 +281,16 @@
         </div>
 
         <!-- Affordable -->
-        <div class="food-card international bg-white rounded-lg shadow p-4 aspect-square">
+        <div class="fashion-card traditional bg-white rounded-lg shadow p-4 aspect-square">
           
-          <a href="food_preimum.html">
+          <a href="fashion_free.html">
             <div class="relative">
-              <img src="img/Food/6.Lira/Thumbnail/LiraThumbnail-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
+              <img src="img/fashion home/Copy of BodiosMongoliaThumbnail-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
               <div class="absolute bottom-2 left-2  font-semibold [20px] bg-opacity-50 px-2 py-1 rounded text-sm">
-                Lira Restaurant
+                Bodios Mongolia
                 <span style="display: flex; align-items: center;">
-                  <img src="img/line-3.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                  International
+                  <img src="img/Group 481815 2.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
+                  Traditional
                 </span>
               </div>
             </div>
@@ -297,58 +298,22 @@
           
         </div>
 
-        <div class="food-card international bg-white rounded-lg shadow p-4 aspect-square">
+        <div class="fashion-card tailor bg-white rounded-lg shadow p-4 aspect-square">
           
-          <a href="food_preimum.html">
+          <a href="fashion_preimum.html">
             <div class="relative">
-              <img src="img/Food/3.WallStreet/Thumbnail/WallstreetThumbnail-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
+              <img src="img/fashion home/Copy of AmaraThumbnail-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
               <div class="absolute bottom-2 left-2  font-semibold [20px] bg-opacity-50 text-white px-2 py-1 rounded text-sm">
-                Wall Street Restaurant & Lounge
+                Amara
                 <span style="display: flex; align-items: center;">
-                  <img src="img/line-3.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                  International
+                  <img src="img/Group 481832.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
+                   Tailor Shop
                 </span>
               </div>
             </div>
           </a>
           
         </div>
-
-
-        <div class="food-card international bg-white rounded-lg shadow p-4 aspect-square">
-          
-          <a href="food_free.html">
-            <div class="relative">
-              <img src="img/Food/7.Fat Hen Chicken/Thumbnail/FatHenThumbnail-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
-              <div class="absolute bottom-2 left-2  font-semibold [20px] bg-opacity-50 text-white px-2 py-1 rounded text-sm">
-                Fat Hen Chicken
-                <span style="display: flex; align-items: center;">
-                  <img src="img/line-3.png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                  International
-                </span>
-              </div>
-            </div>
-          </a>
-          
-        </div>
-
-        <div class="food-card coffee bg-white rounded-lg shadow p-4 aspect-square">
-          
-          <a href="food_preimum.html">
-            <div class="relative">
-              <img src="img/NovotelTop-1.jpg" alt="Puma Imperial" class="rounded mb-3 w-[357px] h-[375px] object-cover">
-              <div class="absolute bottom-2 left-2  font-semibold [20px] bg-opacity-50 text-white px-2 py-1 rounded text-sm">
-                Novotel Ulaanbaatar
-                <span style="display: flex; align-items: center;">
-                  <img src="img/image 372 (Traced).png" class="w-18 h-15 object-cover" style="margin-right: 10px;">
-                  Coffee Shop & Bakeries
-                </span>
-              </div>
-            </div>
-          </a>
-          
-        </div>
-
       </div>
 
       <h2 class="text-2xl font-semibold text-[40px] mb-6">Commercial</h2>
@@ -623,8 +588,8 @@
       });
 
 
-      function filterFood(category){
-        const cards = document.querySelectorAll('.food-card');
+      function filterFashion(category){
+        const cards = document.querySelectorAll('.fashion-card');
         cards.forEach(card => {
           if(category === 'all'){
             card.classList.remove('hidden');
