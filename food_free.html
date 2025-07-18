@@ -1,4 +1,4 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
 
     <title>Food Free</title>
   </head>
-  <body class="bg-blue-100 min-h-screen">
+  <body class="min-h-screen bg-blue-100">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
       <div class="max-w-7xl mx-auto w-full flex items-center justify-center">
         <div class="flex items-center space-x-4 pl-28">
@@ -121,9 +121,9 @@
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-            <a href="food.html"
+            <a href="hotels.html"
               ><span
-                class="text-[16px] font-semibold"
+                class="font-semibold text-[16px]"
                 style="font-family: 'SF Pro Display'"
                 >Back</span
               ></a
@@ -142,7 +142,7 @@
             class="absolute left-8 bottom-[-86px] flex items-center space-x-4"
           >
             <img
-              src="img/7.Fat Hen Chicken/fatHenChickenCoverphoto.jpg"
+              src="img/7.Fat Hen Chicken/FatHenprofile.jpg"
               alt="Profile"
               class="w-32 h-32 rounded-full border-1 border-white shadow-md object-cover"
             />
@@ -194,110 +194,72 @@
       <div class="p-6 space-y-6">
         <div class="mt-6 border-b border-gray-300">
           <nav class="flex space-x-6 text-lg font-medium">
+            <a href="#" class="text-blue-700 pb-2">Overview</a>
             <a
               href="#"
-              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-[24px] font-semibold"
-              style="font-family: 'SF Pro Display'"
-              >Overview</a
-            >
-            <a
-              href="#"
-              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-[24px] font-semibold"
+              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-[16px] font-semibold"
               style="font-family: 'SF Pro Display'"
               >Products</a
             >
+            
+            
           </nav>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-start pl-4">
         <!-- Overview Box -->
-        <div class="bg-white rounded shadow-md p-8 h-[440px]">
-          <h2
-            class="text-md font-bold mb-2 text-[24px] font-semibold"
-            style="font-family: 'SF Pro Display'"
-          >
-            Overview
-          </h2>
-          <p
-            class="text-sm mb-4 font-normal text-[20px]"
-            style="font-family: 'SF Pro Display'"
-          >
+        <div class="bg-white rounded shadow-md p-8">
+          <h2 class="text-[24px] font-bold mb-2" style="font-family: 'SF Pro Display'">Overview</h2>
+          <p class="text-[20px] mb-4 font-normal" style="font-family: 'SF Pro Display'">
             The Genghis Khan Statue Complex, also known as the Chinggis Khaan
             Statue Complex, is a prominent tourist attraction located in Tsonjin
             Boldog, around 54 kilometers (34 miles) east of
           </p>
-          <span
-            style="
-              display: flex;
-              align-items: center;
-              font-family: 'SF Pro Display';
-            "
-          >
-            <img
-              src="img/Frame 1686560586.png"
-              class="w-18 h-15 object-cover"
-              style="margin-right: 10px"
-            />
+      
+          <div class="flex items-center mb-2" style="font-family: 'SF Pro Display'">
+            <img src="img/Frame 1686560586.png" class="w-6 h-6 object-cover mr-2" />
             NovotelUlaanbaatar@gmail.com
-          </span>
-          <span
-            style="
-              display: flex;
-              align-items: center;
-              font-family: 'SF Pro Display';
-            "
-          >
-            <img
-              src="img/Frame 1686560586-2.png"
-              class="w-18 h-15 object-cover"
-              style="margin-right: 10px"
-            />
+          </div>
+      
+          <div class="flex items-center mb-4" style="font-family: 'SF Pro Display'">
+            <img src="img/Frame 1686560586-2.png" class="w-6 h-6 object-cover mr-2" />
             NovotelUlaanbaatar.mn
-          </span>
-          <span
-            style="
-              display: flex;
-              align-items: center;
-              font-family: 'SF Pro Display';
-            "
-          >
-            <img
-              src="img/Frame 1686560586-2.png"
-              class="w-18 h-15 object-cover"
-              style="margin-right: 10px"
-            />
-            NovotelUlaanbaatar.mn
-          </span>
+          </div>
+      
+          <h2 class="text-[20px] font-bold mb-2" style="font-family: 'SF Pro Display'">Address</h2>
+      
+          <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+            <img src="img/Frame-3.png" class="w-5 h-5 object-cover" />
+            Get Directions
+          </button>
         </div>
-
-        <!-- Image Carousel (basic) -->
+      
+        <!-- Image Carousel -->
         <div class="relative bg-white rounded shadow overflow-hidden">
           <img
             src="img/7.Fat Hen Chicken/fatHenChickenCoverphoto.jpg"
-            class="w-[759px] h-[440px] object-cover rounded"
+            class="w-full h-[426px] object-cover rounded"
             alt="Building"
           />
-
-          <!-- Thumbnail previews (example) -->
+      
+          
         </div>
       </div>
 
       <div class="p-6 space-y-6">
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
           <!-- Products Section -->
-          <div>
-            <h2 class="text-2xl font-semibold mb-6">Products</h2>
-            <div
-              class="relative h-[500px] overflow-hidden rounded-xl shadow-lg bg-white"
-            >
+          <div class="flex flex-col">
+            <h2 class="text-2xl font-semibold mb-9">Products</h2>
+            <div class="relative h-[565px] overflow-hidden rounded-xl shadow-lg bg-white flex-1">
               <!-- Scrollable Wrapper -->
               <div
                 id="sliderContent"
                 class="flex flex-col transition-transform duration-700 ease-in-out h-full"
               >
-                <!-- Slide -->
-                <div class="grid grid-cols-2 gap-4 p-4 h-[500px] box-border">
+                <!-- Slide 1 -->
+                <div class="grid grid-cols-2 gap-4 p-4  box-border">
                   <img
                     class="rounded-xl object-cover w-full h-full"
                     src="img/7.Fat Hen Chicken/Product/FatHenChickenProduct-1.jpg"
@@ -309,8 +271,9 @@
                     alt="Product 2"
                   />
                 </div>
-
-                <div class="grid grid-cols-2 gap-4 p-4 h-[500px] box-border">
+      
+                <!-- Slide 2 -->
+                <div class="grid grid-cols-2 gap-4 p-4 box-border">
                   <img
                     class="rounded-xl object-cover w-full h-full"
                     src="img/7.Fat Hen Chicken/Product/FatHenChickenProduct-3.jpg"
@@ -322,23 +285,31 @@
                     alt="Product 4"
                   />
                 </div>
+      
+                <!-- Slide 3 -->
+               
               </div>
+      
+              <!-- Scroll Button -->
+             
             </div>
           </div>
-
+      
           <!-- Menu Section -->
-          <div>
-            <img
-              src="img/medeelel-5.png"
-              class="w-[619] h-[619] object-cover"
-            />
-          </div>
+          <div class="flex flex-col">
+           
+            <img src="img/medeelel-5.png" class="object-cover mt-6"/>
+        
         </div>
       </div>
+      </div>
+      
 
-      <div class="p-16 space-y-6">
+      
+
+      <div class="p-6 space-y-6">
         <div
-          class="relative mx-auto rounded-xl overflow-hidden min-h-[247px] translate-y-[-8px]"
+          class="relative mx-auto rounded-xl overflow-hidden min-h-[247px] translate-y-[-8px] w-full"
         >
           <!-- Left side tour characters -->
           <img
@@ -349,7 +320,7 @@
 
           <!-- Right side text and button -->
           <div
-            class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white text-right text-center"
+            class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white  text-center"
           >
             <h2
               class="text-[40px] leading-tight font-bold"
@@ -360,7 +331,7 @@
             </h2>
 
             <button
-              class="mt-4 px-2 py-2 bg-yellow-400 text-black font-bold text-[18px] rounded-full text-sm shadow hover:bg-yellow-300 transition flex items-center"
+              class="mt-8 px-5 py-2 bg-yellow-400 text-black font-bold text-[18px] rounded-full text-sm shadow hover:bg-yellow-300 transition flex items-center"
             >
               VISIT BNM TOURS
               <img
@@ -378,7 +349,7 @@
       class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10"
     >
       <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-20">
+      <div class="max-w-xl text-left md:pl-32">
         <h3
           class="font-bold text-2xl mb-4 font-semibold text-[24px]"
           style="font-family: 'SF Pro Display'"
@@ -479,7 +450,7 @@
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto p-6 space-y-8">
+    <div class="max-w-6xl mx-auto p-6 space-y-6 pl-20">
       <div>
         <hr class="mb-4 border-gray-400" />
         <div class="flex items-center space-x-2">
@@ -651,12 +622,20 @@
     </footer>
 
     <script>
-      const carousel = document.getElementById("carousel");
-      const nextBtn = document.getElementById("nextBtn");
-
-      nextBtn.addEventListener("click", () => {
-        carousel.scrollBy({ left: 340, behavior: "smooth" });
-      });
+      let currentSlide = 0;
+    
+      function slide(direction) {
+        const slider = document.getElementById("sliderContent");
+        const slideHeight = 500; // px — нэг слайдын өндөр
+        const totalSlides = slider.children.length;
+    
+        // Шинэ индексийг тооцоолно
+        currentSlide = (currentSlide + direction) % totalSlides;
+    
+        // Слайдыг гулсуулна
+        slider.style.transform = `translateY(-${currentSlide * slideHeight}px)`;
+      }
     </script>
+    
   </body>
 </html>
