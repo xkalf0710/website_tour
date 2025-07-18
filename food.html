@@ -9,6 +9,13 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+      .text-shadow-white {
+        text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+      }
+    </style>
+    
+
     <title>Food</title>
   </head>
   <body class="min-h-screen bg-blue-100">
@@ -130,7 +137,7 @@
         <div class="relative">
           <button
             id="dropdownBtn"
-            class="border border-blue-200 px-4 py-1 rounded-full text-sm text-gray-700 flex items-center font-medium text-[24px]"
+            class="border border-blue-200 px-4 py-1 rounded-full text-sm text-gray-700 flex items-center font-medium text-[16px]"
             style="font-family: 'SF Pro Display'"
           >
             Food
@@ -155,7 +162,7 @@
             <ul class="text-sm text-gray-700">
               <a href="hotels.html"
                 ><li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Hotel
@@ -163,7 +170,7 @@
               >
               <a href="food.html"
                 ><li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Food
@@ -171,7 +178,7 @@
               >
               <a href="fashion.html"
                 ><li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Fashion
@@ -179,7 +186,7 @@
               >
               <a href="nightlife.html"
                 ><li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Nightlife
@@ -187,7 +194,7 @@
               >
               <a href="shopping.html">
                 <li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Shopping
@@ -195,7 +202,7 @@
               </a>
               <a href="wellness.html"
                 ><li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Wellness
@@ -203,7 +210,7 @@
               >
               <a href="activities.html">
                 <li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Activities
@@ -211,7 +218,7 @@
               </a>
               <a href="guesthouse.html">
                 <li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Guesthouses & Rentals
@@ -219,7 +226,7 @@
               </a>
               <a href="hospital_home.html">
                 <li
-                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[24px]"
+                  class="px-4 py-2 hover:bg-gray-100 cursor-pointer font-medium text-[16px]"
                   style="font-family: 'SF Pro Display'"
                 >
                   Hospitials
@@ -279,10 +286,10 @@
                 class="rounded mb-3 w-[357px] h-[375px] object-cover"
               />
               <div
-                class="absolute bottom-2 left-2 font-semibold text-[20px] text-white px-2 py-1 rounded text-sm"
-                style="font-family: 'SF Pro Display'"
-              >
-                Mongolian's Restaurant
+              class="absolute bottom-2 left-2 font-semibold text-[20px] px-2 py-1 rounded text-sm  text-shadow-white"
+              style="font-family: 'SF Pro Display'"
+            >
+              Mongolian's Restaurant
                 <span style="display: flex; align-items: center">
                   <img
                     src="img/line-2.png"
@@ -646,41 +653,41 @@
         </div>
       </div>
 
-      <div class="p-6 space-y-6">
-        <div
-          class="relative mx-auto rounded-xl overflow-hidden min-h-[247px] translate-x-[0.8px]"
+      
+      <div
+      class="relative mx-auto rounded-xl overflow-hidden min-h-[247px] translate-y-[15px]"
+    >
+      <!-- Left side tour characters -->
+      <img
+        src="img/visit bnm tour cta.png"
+        alt="Tour Character"
+        class="w-full h-auto object-cover"
+      />
+
+      <!-- Right side text and button -->
+      <div
+        class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white text-right text-center"
+      >
+        <h2
+          class="text-[40px] leading-tight font-bold"
+          style="font-family: 'Mulish'"
         >
-          <!-- Left side tour characters -->
+          <span class="block">Escape to</span>
+          <span class="block">the Land of Stories</span>
+        </h2>
+
+        <button
+          class="mt-8 px-5 py-2 bg-yellow-400 text-black font-bold text-[18px] rounded-full text-sm shadow hover:bg-yellow-300 transition flex items-center"
+        >
+          VISIT BNM TOURS
           <img
-            src="img/visit bnm tour cta.png"
-            alt="Tour Character"
-            class="w-full h-auto object-cover"
+            src="img/sr-arrow-circle-right 2.png"
+            class="w-6 h-6 object-cover ml-2"
           />
-
-          <!-- Right side text and button -->
-          <div
-            class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white text-right text-center"
-          >
-            <h2
-              class="text-[40px] leading-tight font-bold"
-              style="font-family: 'Mulish'"
-            >
-              <span class="block">Escape to</span>
-              <span class="block">the Land of Stories</span>
-            </h2>
-
-            <button
-              class="mt-8 px-5 py-2 bg-yellow-400 text-black font-bold text-[18px] rounded-full text-sm shadow hover:bg-yellow-300 transition flex items-center"
-            >
-              VISIT BNM TOURS
-              <img
-                src="img/sr-arrow-circle-right 2.png"
-                class="w-6 h-6 object-cover ml-2"
-              />
-            </button>
-          </div>
-        </div>
+        </button>
       </div>
+    </div>
+      
     </div>
 
     <!-- Newsletter Section -->
@@ -688,9 +695,9 @@
       class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10"
     >
       <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-20">
+      <div class="max-w-xl text-left md:pl-32">
         <h3
-          class="font-bold text-2xl mb-4 font-semibold text-[24px]"
+          class="font-bold text-2xl mb-4  text-[24px]"
           style="font-family: 'SF Pro Display'"
         >
           Subscribe to our Newsletter!
@@ -789,7 +796,7 @@
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto p-8 space-y-8">
+    <div class="max-w-6xl mx-auto p-8 space-y-8 pl-20">
       <div>
         <hr class="mb-4 border-gray-400" />
         <div class="flex items-center space-x-2">
