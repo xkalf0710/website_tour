@@ -9,42 +9,80 @@
     <title>Tours</title> 
     </head>
     <body>
-      <header class="bg-[#0e3b78] text-white px-6 py-2">
-         <div class="max-w-7xl mx-auto w-full flex items-center justify-between py-2 px-4 space-x-4 pl-32">
-          &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
-        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <a href="index.html"> 
-            <div class="flex items-center space-x-2">
-            <span class="font-bold text-sm text-white text-[20px]">BNM</span>
-            <img src="img/footer/bnm round.png" class="w-8 h-8" alt="globe" />
-            </div>
-          </a>
-          
-           <div class="flex-1 flex justify-center items-center space-x-4">
-            <a href="about_us.html" class="text-sm text-white hover:underline">About us</a>
+        <header class="bg-[#0e3b78] text-white px-6 py-3">
+        <div class="max-w-7xl mx-auto w-full flex items-center justify-center">
+          <div class="flex items-center space-x-4 pl-28">
+            <span class="font-bold text-white text-base text-[16px]">BNM</span>
+            <img
+              src="img/footer/bnm round.png"
+              class="w-7 h-7 rounded-full"
+              alt="BNM Logo"
+            />
           </div>
-
-            <div class="relative w-full max-w-xs">
-              <input type="text" placeholder="Search"
-                class="w-full pl-10 pr-4 py-1.5 rounded-md text-sm text-black focus:outline-none" />
+  
+          <!-- Center: About us + Search -->
+          <div class="flex items-center space-x-6 flex-1 justify-center">
+            <a
+              href="about_us.html"
+              class="text-sm hover:underline whitespace-nowrap text-white text-[16px] text-semibold"
+            >
+              About us
+            </a>
+  
+            <!-- Search bar -->
+            <div class="relative w-full max-w-md">
+              <input
+                type="text"
+                placeholder="Search"
+                class="w-full pl-10 pr-4 py-2 rounded-lg text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
               <div class="absolute left-3 top-2.5">
-                <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd"
+                <svg
+                  class="w-5 h-5 text-blue-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
                     d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
-                    clip-rule="evenodd"></path>
+                    clip-rule="evenodd"
+                  ></path>
                 </svg>
               </div>
             </div>
-          
-        <div class="flex justify-end items-center space-x-6 flex-1">
-          <button class="bg-blue-600 hover:bg-blue-500 text-white text-sm px-3 py-1 rounded-md">
-            <a href="login.html">Login</a>
-          </button>
-          
+          </div>
+  
+          <!-- Right: User icon + Language -->
+          <div class="flex items-center space-x-3">
+            <!-- User icon -->
+            <button class="bg-[#4185f4] hover:bg-[#5a95f7] p-2 rounded-md">
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+                />
+              </svg>
+            </button>
+  
+            <!-- Language -->
+            <button
+              class="border border-white px-3 py-1 rounded-md text-sm flex items-center font-semibold text-[16px]"
+            >
+              EN
+              <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+              </svg>
+            </button>
+          </div>
         </div>
-         </div>
+  
+        
       </header>
-      <div class="max-w-6xl mx-auto px-4 py-8 space-y-10">
+      
+      <div class="max-w-6xl mx-auto px-4 py-6 space-y-6 pl-10">
         <!-- Banner Images -->
         <div class="grid grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
@@ -64,36 +102,34 @@
 
         <!-- Breadcrumb -->
         <nav class="text-sm text-gray-600 space-x-1">
-            <a href="index.html" class="hover:underline text-blue-600 font-medium text-[18px]">Home</a> &lt;
-            <a href="tours.html" class="hover:underline text-blue-600 font-medium text-[18px]">BNM Tours</a> &lt;
-            <span class="text-gray-800 font-medium text-[18px]">Scheduled Tours</span>
+            <a href="index.html" class="hover:underline text-blue-600 font-medium text-[18px]" style="font-family: 'SF Pro Display';">Home</a> &lt;
+            <a href="tours.html" class="hover:underline text-blue-600 font-medium text-[18px]" style="font-family: 'SF Pro Display';">BNM Tours</a> &lt;
+            <span class="text-gray-800 font-medium text-[18px]" style="font-family: 'SF Pro Display';">Scheduled Tours</span>
         </nav>
 
         <!-- Title and Dates -->
         <div class="flex flex-wrap items-center text-sm text-gray-800 space-x-2">
-            <span class="font-semibold text-[40px]">KharaKhorum Tour</span>
+            <span class="font-semibold text-[40px]" style="font-family: 'SF Pro Display';">KharaKhorum Tour</span>
             <span class="text-gray-600 text-2xl">|</span>
-            <span class="text-[36px] font-semibold">07 Days 06 Nights</span>
+            <span class="text-[36px] font-semibold" style="font-family: 'SF Pro Display';">07 Days 06 Nights</span>
             <span class="text-gray-600 text-2xl">|</span>
-            <a href="#" class="text-blue-600 hover:underline font-semibold text-[36px]">May 23 – May 30, 2024</a>
+            <a href="#" class="text-blue-600 hover:underline font-semibold text-[36px]" style="font-family: 'SF Pro Display';">May 23 – May 30, 2024</a>
         </div>
 
         <!-- Overview and Media -->
-        <div class="grid md:grid-cols-2 gap-6 w-[1390px] h-[820px]">
+        <div class="grid md:grid-cols-2 gap-6">
             <!-- Overview -->
             <div>
-              <h2 class="text-2xl text-[36px] font-semibold text-blue-700 mb-2">Overview</h2>
+              <h2 class="text-2xl text-[36px] font-semibold text-blue-700 mb-2" style="font-family: 'SF Pro Display';">Overview</h2>
               &nbsp;
-              <p class="text-gray-700 text-[20px] mb-4">
+              <p class="text-gray-700 font-normal text-[20px] mb-4" style="font-family: 'SF Pro Display';">
                 Embark on a 12-day expedition into the heart of Southern Mongolia with the Singing Southern Dunes tour.
                 This immersive experience brings together cultural landmarks, breathtaking natural wonders, and the unique thrill of camel riding.
                 You’ll explore the awe-inspiring <strong>Khongoryn Els sand dunes</strong> and the legendary <strong>Flaming Cliffs</strong>,
                 promising an unforgettable journey through the <strong>Gobi Desert</strong>.
               </p>
-
-              
               <!-- Map -->
-              <img src="img/Capture.PNG" alt="Itinerary Map" class="rounded shadow-md mt-32" />
+              <img src="img/Capture.PNG" alt="Itinerary Map" class="rounded shadow-md" />
 
             </div>
 
@@ -102,7 +138,7 @@
           <div class="relative aspect-w-16 aspect-h-9">
             <iframe
               src="https://www.youtube.com/embed/8qcIkSWgGFQ?si=cSh-BFh3TH1YOAmv"
-              class="rounded-lg w-full h-full"
+              class="rounded-lg w-full h-full aspect-video"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -116,12 +152,12 @@
         <div class="max-w-7xl mx-auto">
           <div class="flex items-center space-x-2 mb-6">
            <img src="img/streamlinehq-travel-map-_          solid-48-ico_h6Bxhe8ITRMt9OtM.png">
-            <h2 class="text-blue-700 font-semibold text-[36px] text-2xl">Tour itinerary</h2>
+            <h2 class="text-blue-700 font-semibold text-[36px] text-2xl" style="font-family: 'SF Pro Display';">Tour itinerary</h2>
           </div>
 
           <div id="accordion-collapse">
             <h2 id="accordion-collapse-heading-1" class="text-black">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1 font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 <span><strong>Day 1</strong> Genghis Khan Statue Complex & Terelj National Park</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -130,7 +166,8 @@
             </h2>
 
             <h2 id="accordion-collapse-heading-2">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2 font\
+               text-[20px]" style="font-family: 'SF Pro Display';">
                 <span><strong>Day 2</strong> Khustai Nuruu National Park</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -139,7 +176,8 @@
             </h2>
 
             <h2 id="accordion-collapse-heading-3">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3
+              font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 <span><strong>Day 3</strong> Ugii Lake</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -148,7 +186,8 @@
             </h2>
 
             <h2 id="accordion-collapse-heading-4">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4
+              font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 <span><strong>Day 4</strong> Erdenezuu Monastery & Kharkhorin</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -157,7 +196,8 @@
             </h2>
 
             <h2 id="accordion-collapse-heading-5">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800  hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5
+              font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 <span><strong>Day 5</strong> Nomadic Family & Elsen Tasarkhai</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -166,7 +206,8 @@
             </h2>
 
             <h2 id="accordion-collapse-heading-6">
-              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+              <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6
+              font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 <span><strong>Day 6</strong> Return to Ulaanbaatar</span>
                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -181,20 +222,20 @@
         <section class="max-w-6xl mx-auto px-4 py-12 text-gray-800 space-y-12">
           <div class="flex items-center space-x-2 mb-6">
            <img src="img/streamlinehq-interface-text-formatting-paragraph-bullets-_          solid-48-ico_itTmmpLAnjQdl2R7.png">
-            <h2 class="text-blue-700 font-semibold text-[36px] text-2xl">Tour itinerary</h2>
+            <h2 class="text-blue-700 font-semibold text-[36px] text-2xl" style="font-family: 'SF Pro Display';">Pricing & Inclusions</h2>
           </div>
           
-          <div class="text-left items-start pl-12">
-            <h2 class="text-lg font-bold mb-2">PRICING OVERVIEW</h2>
-            <p>
+          <div class="text-left items-start">
+            <h2 class="text-lg font-semibold mb-2 text-[25px]" style="font-family: 'SF Pro Display';">PRICING OVERVIEW</h2>
+            <p class="text-[20px] font-normal" style="font-family: 'SF Pro Display';">
               We know that every traveler is unique. That’s why we offer flexible pricing options to suit your style and budget—each designed to let you explore Mongolia your way.
             </p>
           </div>
 
           <div class="flex flex-col md:flex-row justify-between items-center border-b pb-4 pl-12 gap-4">
             <div class="flex-1">
-              <h3 class="font-semibold text-lg mb-2">Adventurer Package | $70–$100 per day</h3>
-              <p>
+              <h3 class="font-semibold text-lg mb-2 text-[22px]" style="font-family: 'SF Pro Display';">Adventurer Package | $70–$100 per day</h3>
+              <p class="font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 Perfect for the independent traveler, this option is priced per day so you can decide when to go, where to stop, and how long to linger. Enjoy complete freedom on the road while consulting with our experts on your itinerary. For those who crave a true camping adventure, we also offer tent and sleeping bag rentals, adjusting the rate to the higher end of the range. Choose your vehicle—whether it’s the rugged Uaz Purgon, a versatile 4-wheeled drive like a Landcruiser, or a Starex—and set off on an adventure that’s truly yours.
               </p>
             </div>
@@ -206,11 +247,11 @@
 
           <!-- Budget Explorer Package -->
           <div class="flex flex-col md:flex-row justify-between items-start gap-4 border-b pb-8">
-            <img src="img/nemelt/mashin.png" alt="Van in the mountains" class="w-full md:w-60 rounded-md pl-15">
+            <img src="img/nemelt/mashin.png" alt="Van in the mountains" class="w-full md:w-60 rounded-md">
             <div class="flex-1">
               <div class="flex-1">
-              <h3 class="font-semibold text-lg mb-4 pl-20">Budget Explorer Package | $110–$160 per day</h3>
-              <p class="pl-20">
+              <h3 class="font-semibold text-[22px] text-lg mb-4 pl-20" style="font-family: 'SF Pro Display';">Budget Explorer Package | $110–$160 per day</h3>
+              <p class="pl-20 font-normal text-[20px]" style="font-family: 'SF Pro Display';">
                 Ideal for travelers seeking a well-curated journey on a budget, this package follows a static, thoughtfully designed itinerary covering all the essentials. It includes your driver, fuel, vehicle, entry tickets, and budget-friendly accommodations that ensure a comfortable experience without overspending. Every detail is planned to keep your Mongolian tour affordable while still capturing the magic of the land.
               </p>
             </div>
@@ -220,8 +261,8 @@
           <!-- Signature Experience -->
           <div class="flex flex-col md:flex-row justify-between items-center pb-4 pl-12 gap-4">
             <div class="flex-1">
-              <h3 class="font-semibold text-lg mb-2">Signature Experience | $180–$230 per day</h3>
-              <p>
+              <h3 class="font-semibold text-[22px] text-lg mb-2" style="font-family: 'SF Pro Display';">Signature Experience | $180–$230 per day</h3>
+              <p class="text-[20px]" style="font-family: 'SF Pro Display';">
                 Our top recommendation for those who want the complete, worry-free experience. This package adds a professional guide to the mix, along with a driver, fuel, vehicle, entry tickets, and accommodations at a recommended service level. Enjoy a balanced journey that combines expert guidance with exceptional service—ensuring every moment of your Mongolian adventure is memorable.
               </p>
             </div>
@@ -229,14 +270,14 @@
           </div>
 
           <!-- Footer Note -->
-          <p class="text-lg text-semibold text-[20px] pl-20">
+          <p class="text-lg text-semibold text-[20px] pl-8" style="font-family: 'SF Pro Display';">
             No matter which package you choose, our fleet options—ranging from Uaz Purgon to Landcruisers and Starex—ensure we can match the perfect vehicle to your tour and budget. And remember, anything is possible! With open communication, we can fine-tune the itinerary and pricing to create the exact tour you envision.
           </p>
         </section>
 
 
         <div class="flex justify-center">
-          <div class="relative flex flex-col md:flex-row items-center justify-between text-white rounded-xl w-[1420px] h-[260px] shadow-lg"
+          <div class="relative flex flex-col md:flex-row items-center justify-between text-white rounded-xl h-[260px] shadow-lg"
           style="
           background-image: url('img/Group\ 48270.png');
           background-size: cover;
@@ -248,16 +289,16 @@
           <img src="img/bichih.png" alt="Character" class="w-[480px] h-auto md:static absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:translate-x-0 md:translate-y-0">
           <!-- Баруун талын текст -->
           <div class="relative text-center md:text-left max-w-xl ml-auto px-6 md:px-0">
-            <h2 class="text-2xl md:text-3xl font-semibold leading-snug mb-3">
+            <h2 class="text-2xl md:text-3xl font-semibold leading-snug mb-3 text-[32px]" style="font-family: 'Lato';">
               Discover Mongolia the right way<br class="hidden md:block" />
               guided by those who know it best.
             </h2>
-            <p class="text-sm md:text-base mb-4">
+            <p class="text-sm md:text-base font-semibold mb-4 text-[16px]" style="font-family: 'Lato';">
               Let’s talk about how your adventure could unfold in the land of eternal blue sky. From remote
               mountains to nomadic camps, we offer flexible routes and <br>
               authentic experiences designed just for you.
             </p>
-            <a href="tours_forms.html" class="inline-flex items-center bg-white text-blue-600 font-medium px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">
+            <a href="tours_forms.html" class="inline-flex items-center bg-white text-blue-600 font-bold text-[19px] px-5 py-2 rounded-full shadow hover:bg-gray-100 transition" style="font-family: 'SF Pro Display';">
               Start Your Journey
               <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
@@ -269,11 +310,11 @@
       <div class="max-w-7xl mx-auto">
     <!-- Inclusions Section -->
     <section class="mb-10">
-      <h2 class="text-2xl font-bold mb-4">TOUR PACKAGE INCLUSIONS</h2>
+      <h2 class="text-2xl font-semibold text-[25px] mb-4" style="font-family: 'SF Pro Display';">TOUR PACKAGE INCLUSIONS</h2>
       <ul class="space-y-3">
         <li class="flex items-start">
           <span class="text-green-600 mr-3 text-xl">✔</span>
-          <p>Airport Pickup and Departure Transfers – We ensure a hassle-free start and end to your journey, with transportation provided to and from the airport.</p>
+          <p class="text-[20px] font-normal" style="font-family: 'SF Pro Display';">Airport Pickup and Departure Transfers – We ensure a hassle-free start and end to your journey, with transportation provided to and from the airport.</p>
         </li>
         <li class="flex items-start">
           <span class="text-green-600 mr-3 text-xl">✔</span>
@@ -281,19 +322,19 @@
         </li>
         <li class="flex items-start">
           <span class="text-green-600 mr-3 text-xl">✔</span>
-          <p>Accommodation – Stay in traditional Ger camps in rural areas and comfortable hotels in cities.</p>
+          <p class="text-[20px] font-normal" style="font-family: 'SF Pro Display';">Accommodation – Stay in traditional Ger camps in rural areas and comfortable hotels in cities.</p>
         </li>
         <li class="flex items-start">
           <span class="text-green-600 mr-3 text-xl">✔</span>
-          <p>Meals – All meals throughout your journey are included, and fresh water will be provided daily to keep you hydrated on your adventure.</p>
+          <p class="text-[20px] font-normal" style="font-family: 'SF Pro Display';">Meals – All meals throughout your journey are included, and fresh water will be provided daily to keep you hydrated on your adventure.</p>
         </li>
         <li class="flex items-start">
           <span class="text-green-600 mr-3 text-xl">✔</span>
-          <p>All Activity Fees – From camel riding and horseback adventures to boating, all activity fees are included to provide a fully immersive experience.</p>
+          <p class="text-[20px] font-normal" style="font-family: 'SF Pro Display';">All Activity Fees – From camel riding and horseback adventures to boating, all activity fees are included to provide a fully immersive experience.</p>
         </li>
         <li class="flex items-start">
           <span class="text-green-600 mr-3 text-xl">✔</span>
-          <p>Professional Camera Guide – Every tour is led by me, your personal guide and photographer. I’ll capture your journey in high-quality photos and videos, delivered daily so you can share your experiences with friends and family in real-time.</p>
+          <p class="text-[20px] font-normal" style="font-family: 'SF Pro Display';">Professional Camera Guide – Every tour is led by me, your personal guide and photographer. I’ll capture your journey in high-quality photos and videos, delivered daily so you can share your experiences with friends and family in real-time.</p>
         </li>
       </ul>
     </section>
@@ -303,31 +344,31 @@
     <!-- Exclusions and Image -->
     <div class="grid md:grid-cols-2 gap-8 items-start">
       <section>
-        <h2 class="text-2xl font-bold mb-4">TOUR PACKAGE EXCLUSIONS</h2>
+        <h2 class="text-2xl font-semibold text-[25px] mb-4" style="font-family: 'SF Pro Display';">TOUR PACKAGE EXCLUSIONS</h2>
         <ul class="space-y-3">
           <li class="flex items-start">
             <span class="text-red-600 mr-3 text-xl">❌</span>
-            <p>International Airfare – You'll need to arrange your own flights to and from Mongolia.</p>
+            <p class="font-mixed text-[20px]" style="font-family: 'SF Pro Display';">International Airfare – You'll need to arrange your own flights to and from Mongolia.</p>
           </li>
           <li class="flex items-start">
             <span class="text-red-600 mr-3 text-xl">❌</span>
-            <p>Personal Expenses – This includes souvenirs, snacks, and beverages beyond those provided.</p>
+            <p class="font-mixed text-[20px]" style="font-family: 'SF Pro Display';">Personal Expenses – This includes souvenirs, snacks, and beverages beyond those provided.</p>
           </li>
           <li class="flex items-start">
             <span class="text-red-600 mr-3 text-xl">❌</span>
-            <p>Optional Activities – Any activities outside the listed itinerary may have an additional cost.</p>
+            <p class="font-mixed text-[20px]" style="font-family: 'SF Pro Display';">Optional Activities – Any activities outside the listed itinerary may have an additional cost.</p>
           </li>
           <li class="flex items-start">
             <span class="text-red-600 mr-3 text-xl">❌</span>
-            <p>Camera Fees in Museums/Monasteries – Some locations may charge additional fees for photography.</p>
+            <p class="font-mixed text-[20px]" style="font-family: 'SF Pro Display';">Camera Fees in Museums/Monasteries – Some locations may charge additional fees for photography.</p>
           </li>
           <li class="flex items-start">
             <span class="text-red-600 mr-3 text-xl">❌</span>
-            <p>Travel Insurance – We highly recommend travel insurance, but it is not included in the price.</p>
+            <p class="font-mixed text-[20px]" style="font-family: 'SF Pro Display';">Travel Insurance – We highly recommend travel insurance, but it is not included in the price.</p>
           </li>
           <li class="flex items-start">
             <span class="text-red-600 mr-3 text-xl">❌</span>
-            <p>Single Supplement – For those who prefer private accommodation, a single supplement fee applies.</p>
+            <p class="font-mixed text-[20px]" style="font-family: 'SF Pro Display';">Single Supplement – For those who prefer private accommodation, a single supplement fee applies.</p>
           </li>
         </ul>
       </section>
@@ -338,8 +379,8 @@
   </div>
 
   <section class="text-center px-4 py-10 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-medium text-[40px] text-center mb-4">DAYLIGHT DISCOVERIES</h2>
-    <p class="font-medium text-[20px] text-gray-600 mb-10 mx-auto">
+    <h2 class="text-3xl font-medium text-[40px] text-center mb-4" style="font-family: 'SF Pro Display';">DAYLIGHT DISCOVERIES</h2>
+    <p class="font-medium text-[20px] text-gray-600 mb-10 mx-auto" style="font-family: 'SF Pro Display';">
       Enhance your adventure with our optional 1-Day Tours, perfect for a quick, immersive experience.
       While designed as standalone delights, these day trips can be seamlessly added to most tours,
       creating a richer, more flavorful journey. Highly recommended to make the most of your Mongolian exploration.
@@ -349,32 +390,32 @@
       <!-- Repeat this block for each tour -->
       <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
         <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-5@2x.png" alt="City tour" class="w-32 h-32 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">City tour</p>
+        <p class="text-sm font-semibold  text-[24px] text-center" style="font-family: 'SF Pro Display';">City tour</p>
       </div>
 
       <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
         <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-4@2x.png" alt="Terelj & Genghis Khan" class="w-32 h-32 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Terelj & Genghis<br>Khan Statue</p>
+        <p class="text-sm font-semibold  text-[24px] text-center" style="font-family: 'SF Pro Display';">Terelj & Genghis<br>Khan Statue</p>
       </div>
 
       <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
         <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-3@2x.png" alt="Khustai" class="w-32 h-32 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Khustai</p>
+        <p class="text-sm font-semibold  text-[24px] text-center" style="font-family: 'SF Pro Display';">Khustai</p>
       </div>
 
       <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
         <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-2@2x.png" alt="Aglag" class="w-32 h-32 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Aglag</p>
+        <p class="text-sm font-semibold  text-[24px] text-center" style="font-family: 'SF Pro Display';">Aglag</p>
       </div>
 
       <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
         <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1-1@2x.png" alt="Manzushiriin Khiid" class="w-32 h-32 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Manzushiriin<br>Khiid</p>
+        <p class="text-sm font-semibold  text-[24px] text-center" style="font-family: 'SF Pro Display';">Manzushiriin<br>Khiid</p>
       </div>
 
       <div class="flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
         <img src="https://c.animaapp.com/vkYqbqlS/img/dsc00131-1@2x.png" alt="Shaman Session" class="w-32 h-32 rounded-full object-cover mb-2">
-        <p class="text-sm font-medium text-center">Shaman<br>Session</p>
+        <p class="text-sm font-semibold  text-[24px] text-center" style="font-family: 'SF Pro Display';">Shaman<br>Session</p>
       </div>
     </div>
   </section>
@@ -382,112 +423,237 @@
     </div>
 
      <!-- Newsletter Section -->
-        <div class="bg-blue-100 rounded-lg p-2 flex flex-col md:flex-row items-center justify-center gap-2">
-          
-          <!-- Newsletter Form -->
-          <div class="max-w-xl text-left pl-20">
-            <h3 class="font-bold text-lg mb-4">Subscribe to our Newsletter!</h3>
-            <form class="flex gap-2 mb-4" onsubmit="event.preventDefault()">
-              <input type="email" placeholder="Email Here..." class="flex-grow rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-              <button type="submit" class="bg-blue-600 text-white px-4 rounded hover:bg-blue-700 transition">SUBSCRIBE</button>
-            </form>
-            <p class="text-xs text-gray-600 mb-4">
-              Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter, and embark on a journey filled with captivating Destination highlights, intriguing Event updates, deep dives into Nomadic Culture, and fascinating nuggets of History. Stay connected with the heart of Mongolia – your gateway to a world of enriching experiences. Don't miss out – subscribe now for a regular dose of Mongolian magic!
-            </p>
-            <p class="text-xs">
-              <span class="font-semibold">Phone:</span> + 976 8001 - 4904<br />
-              <span class="font-semibold">Email:</span> BraveNewMongoliaTours@gmail.com
-            </p>
+        <div
+      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0"
+    >
+      <!-- Newsletter Form -->
+      <div class="max-w-xl text-left md:pl-20">
+        <h3
+          class="font-bold text-2xl  text-[24px] mb-4"
+          style="font-family: 'SF Pro Display'"
+        >
+          Subscribe to our Newsletter!
+        </h3>
+
+        <form
+          class="flex flex-col sm:flex-row gap-2 mb-4"
+          onsubmit="event.preventDefault()"
+        >
+          <input
+            type="email"
+            placeholder="Email Here..."
+            class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            class="bg-blue-600 text-white px-6 py-2 font-bold text-[12px] rounded hover:bg-blue-700 transition"
+            style="font-family: 'Open Sans'"
+          >
+            SUBSCRIBE
+          </button>
+        </form>
+
+        <p class="text-sm font-normal text-[16px] text-gray-700 mb-4">
+          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
+          and embark on a journey filled with captivating Destination
+          highlights, intriguing Event updates, deep dives into Nomadic Culture,
+          and fascinating nuggets of History. Stay connected with the heart of
+          Mongolia – your gateway to a world of enriching experiences. Don't
+          miss out – subscribe now for a regular dose of Mongolian magic!
+        </p>
+
+        <p class="text-sm">
+          <span
+            class="font-mixed text-[14px]"
+            style="font-family: 'SF Pro Display'"
+            >Phone:</span
+          >
+          +976 8001-4904<br />
+          <span
+            class="font-mixed text-[14px]"
+            style="font-family: 'SF Pro Display'"
+            >Email:</span
+          >
+          BraveNewMongoliaTours@gmail.com
+        </p>
+      </div>
+
+      <!-- Cartoon Character -->
+      <div class="relative">
+        <img
+          src="img/Component 65.png"
+          alt="Mongolian Character"
+          class="w-[300px] md:w-[400px] h-auto object-contain transform scale-x-[-1]"
+        />
+      </div>
+
+      <!-- WhatsApp QR Code -->
+      <div
+        class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md"
+      >
+        <!-- Top Icon -->
+        <div
+          class="w-12 h-12 rounded-full overflow-hidden -mt-6 border border-gray-200 shadow-sm"
+        >
+          <img
+            src="img/footer/bnm round.png"
+            alt="Logo"
+            class="w-full h-full object-contain"
+          />
+        </div>
+
+        <!-- Title -->
+        <span
+          class="text-sm font-medium text-[19px] text-gray-700"
+          style="font-family: 'SF Pro Display'"
+          >Connect via WhatsApp</span
+        >
+
+        <!-- QR Code -->
+        <div class="bg-white p-2 rounded-lg shadow">
+          <img
+            src="img/footer/BNM WebWhatsappQR.png"
+            alt="WhatsApp QR"
+            class="w-[200px] h-[200px] object-contain"
+          />
+        </div>
+
+        <!-- Phone Number -->
+        <div
+          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-[18px] text-gray-800 shadow-sm"
+          style="font-family: 'SF Pro Display'"
+        >
+          +976 8001 4904
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[#0B2B6C] text-white">
+      <div
+        class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+      >
+        <!-- Column 1: Logo -->
+        <div class="w-full text-center">
+          <div class="flex justify-center items-center space-x-2 mt-4">
+            <img
+              src="img/footer/bnm round.png"
+              alt="BNM Logo"
+              class="w-20 h-20 mt-1"
+            />
+            <span class="text-2xl font-bold">BNM</span>
+          </div>
+        </div>
+        <!-- Column 2: Description -->
+        <div>
+          <h4
+            class="font-bold text-[16px]"
+            style="font-family: 'SF Pro Display'"
+          >
+            Brave New Mongolia
+          </h4>
+          <p class="text-sm mt-2 text-[16px] font-medium">
+            Good day to everybody who is interested in our tours. We are a team
+            of Mongolians that love nature and traveling.
+          </p>
+
+          <div class="flex space-x-4 mt-4">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png"
+                alt="YouTube"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png"
+                alt="Instagram"
+            /></a>
           </div>
 
-          <!-- Cartoon Character -->
-          <div class="relative">
-            <img src="img/Component 65.png" alt="Mongolian Character"
-              class="w-[400px] h-[680px] object-contain transform scale-x-[-1]" />
-          </div>
-
-
-          <!-- WhatsApp QR Code -->
-          <div class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
-            <!-- Top Icon -->
-            <div class="w-10 h-10 rounded-full overflow-hidden -mt-6">
-              <img src="img/footer/bnm round.png" alt="Logo" class="w-54 h-54 object-contain" />
-            </div>
-
-            <!-- Title -->
-            <span class="text-sm font-medium text-gray-700">Connect via WhatsApp</span>
-
-            <!-- QR Code -->
-            <div class="bg-white p-2 rounded-lg shadow">
-              <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
-            </div>
-
-            <!-- Phone Number -->
-            <div class="bg-white w-full rounded-b-lg py-2 text-center font-semibold text-gray-800 shadow-sm">
-              +976 8001 4904
-            </div>
+          <div class="mt-4 text-sm">
+            <p>Phone: +976 8625-6868</p>
+            <p>Email: bnmtours@gmail.com</p>
+            <p>
+              Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
+              Mongolia
+            </p>
           </div>
         </div>
 
-        <footer class="bg-[#0B2B6C] text-white">
-            <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Column 3: Support Links -->
+        <div>
+          <h4
+            class="font-bold text-[16px] mb-2"
+            style="font-family: 'SF Pro Display'"
+          >
+            Support
+          </h4>
+          <ul class="text-sm space-y-2">
+            <li>
+              <a
+                href="#"
+                class="hover:underline font-bold text-[16px] mb-2"
+                style="font-family: 'SF Pro Display'"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline font-bold text-[16px] mb-2"
+                style="font-family: 'SF Pro Display'"
+                >Package information</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                cclass="hover:underline font-bold text-[16px] mb-2"
+                style="font-family: 'SF Pro Display'"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </div>
 
-              <!-- Column 1: Logo -->
-              <div class="w-full text-center">
-                <div class="flex justify-center items-center space-x-2 mt-4">
-                    <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
-                    <span class="text-2xl font-bold">BNM</span>
-                </div>
-            </div>
-              <!-- Column 2: Description -->
-              <div>
-                <h4 class="font-bold">Brave New Mongolia</h4>
-                <p class="text-sm mt-2">Good day to everybody who is interested in our tours. We are a team of Mongolians that love nature and traveling.</p>
+        <!-- Column 4: App Downloads -->
+        <div>
+          <h4
+            class="font-semibold text-[16px] mb-4"
+            style="font-family: 'SF Pro Display'"
+          >
+            Download our mobile app
+          </h4>
+          <div class="space-y-4">
+            <a href="#">
+              <img
+                class="h-12"
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="App Store"
+              />
+            </a>
+            &nbsp;
+            <a href="#">
+              <img
+                class="h-12"
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
 
-                <div class="flex space-x-4 mt-4">
-                  <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
-                  <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
-                  <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
-                </div>
-
-                <div class="mt-4 text-sm">
-                  <p>Phone: +976 8625-6868</p>
-                  <p>Email: bnmtours@gmail.com</p>
-                  <p>Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar, Mongolia</p>
-                </div>
-              </div>
-
-              <!-- Column 3: Support Links -->
-              <div>
-                <h4 class="font-bold mb-2">Support</h4>
-                <ul class="text-sm space-y-2">
-                  <li><a href="#" class="hover:underline">About us</a></li>
-                  <li><a href="#" class="hover:underline">Package information</a></li>
-                  <li><a href="#" class="hover:underline">Terms of Service</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 4: App Downloads -->
-              <div>
-                <h4 class="font-bold mb-4">Download our mobile app</h4>
-                <div class="space-y-4">
-                  <a href="#">
-                    <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-                  </a>
-                  &nbsp;
-                  <a href="#">
-                    <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]">
-              Copyright © 2025 Brave New Mongolia
-            </div>
-          </footer>
+      <!-- Bottom Bar -->
+      <div
+        class="text-center text-sm font-medium text-[16px] py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]"
+      >
+        Copyright © 2025 Brave New Mongolia
+      </div>
+    </footer>
           
     </body>
 </html>
