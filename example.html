@@ -2,89 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Travel Grid Updated</title>
-  <style>
-  .triangle-north {
-        clip-path: polygon(50% 0%, 100% 50%, 0% 50%);
-      }
-      .triangle-east {
-        clip-path: polygon(100% 0%, 100% 100%, 50% 50%);
-      }
-      .triangle-south {
-        clip-path: polygon(0% 50%, 100% 50%, 50% 100%);
-      }
-      .triangle-west {
-        clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
-      }
-</style>
-
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose Us?</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#e6ecfb] flex items-center justify-center min-h-screen relative overflow-hidden">
+<body class="bg-[#e4e9f2] text-gray-800 font-sans relative">
 
-  <!-- Diamond Grid Container -->
-  <div class="relative w-72 h-72 sm:w-96 sm:h-96">
-    <!-- Diamond Grid -->
-   
-  <!-- North -->
-        <div class="relative w-full h-full">
-  <!-- North -->
-  <img src="img/Polygon 14.png" alt="North"
-    class="absolute top-0 left-1/2 transform -translate-x-1/2 object-cover mb-2" />
+  <section class="py-12 max-w-6xl mx-auto px-4 relative">
+    <!-- Connecting Lines -->
+    <!-- Төв босоо зураас -->
+    <div class="absolute left-1/2 top-[220px] w-px h-[140px] bg-gray-400 z-0"></div>
 
-  <!-- East -->
-  <img src="img/east.png" alt="East" class="object-cover mb-9 float-right" />
+    <!-- Дээд хөндлөн зураас -->
+    <div class="absolute top-[220px] left-[25%] w-1/2 h-px bg-gray-400 z-0"></div>
 
-  <!-- South -->
-  <img src="img/Vector 1279.png" alt="South"
-    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 object-cover mt-2" />
+    <!-- Доод хөндлөн зураас -->
+    <div class="absolute bottom-[370px] left-[16.66%] w-2/3 h-px bg-gray-400 z-0"></div>
 
-  <!-- West -->
-  <img src="img/wester-removebg-preview.png" alt="West"
-    class="absolute top-1/2 left-0 transform -translate-y-1/2 object-cover mr-2" />
-</div>
+    <!-- Доод 3 карт руу буух босоо зураасууд -->
+    <div class="absolute bottom-[370px] left-[25%] w-px h-[40px] bg-gray-400 z-0"></div>
+    <div class="absolute bottom-[370px] left-1/2 w-px h-[40px] bg-gray-400 z-0"></div>
+    <div class="absolute bottom-[370px] left-[75%] w-px h-[40px] bg-gray-400 z-0"></div>
 
+    <!-- Top Section -->
+    <div class="grid md:grid-cols-2 gap-6 mb-12 relative z-10">
+      <!-- Best Pricing -->
+      <div class="text-center">
+        <h3 class="font-bold mb-2">Best Pricing</h3>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gobi-desert_mongolia.JPG/800px-Gobi-desert_mongolia.JPG" alt="Best Pricing" class="w-full h-48 object-cover" />
+          <p class="p-4 bg-white text-sm">
+            We’re on a mission to make travel accessible to everyone. By using our advanced database system, we keep costs low and pass the savings on to you!
+          </p>
+        </div>
+      </div>
 
-
-    <!-- North Text -->
-    <div class="absolute top-[-9rem] left-1/2 -translate-x-1/2 text-center text-[#0a1a3f] w-64">
-      <h3 class="font-semibold">
-        <span class="text-blue-600 font-bold">N</span>orthern Lights Trail
-      </h3>
-      <p class="text-sm">June 1 – June 10, 2024 | 10 Days</p>
-      <p class="text-sm font-medium">Starting from: <span class="font-bold">$1100</span></p>
+      <!-- Professional Cameraguide -->
+      <div class="text-center">
+        <h3 class="font-bold mb-2">Professional Cameraguide Service</h3>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Photographer_in_Namibia.jpg/800px-Photographer_in_Namibia.jpg" alt="Cameraguide" class="w-full h-48 object-cover" />
+          <p class="p-4 bg-white text-sm">
+            Your journey could be captured in real time with stunning visuals delivered daily, making your adventure a visual diary.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <!-- South Text -->
-    <div class="absolute bottom-[-9rem] left-1/2 -translate-x-1/2 text-center text-[#0a1a3f] w-64">
-      <h3 class="font-semibold">
-        <span class="text-blue-600 font-bold">S</span>outh Desert Echo
-      </h3>
-      <p class="text-sm">June 12 – June 22, 2024 | 11 Days</p>
-      <p class="text-sm font-medium">Starting from: <span class="font-bold">$1200</span></p>
+    <!-- Why Choose Us Title -->
+    <div class="text-center mb-12 relative z-10">
+      <h2 class="text-2xl font-extrabold mb-4">Why Choose Us?</h2>
+      <p class="text-sm max-w-3xl mx-auto text-gray-700">
+        Brave New Mongolia Tours combines immersive travel experiences with cutting-edge storytelling and a growing global impact. Here’s what makes us unique:
+      </p>
     </div>
 
-    <!-- West Text -->
-    <div class="absolute left-[-19rem] top-1/2 -translate-y-1/2 text-left text-[#0a1a3f] w-64">
-      <h3 class="font-semibold">
-        <span class="text-blue-600 font-bold">W</span>est Coast Adventure
-      </h3>
-      <p class="text-sm">June 5 – June 15, 2024 | 11 Days</p>
-      <p class="text-sm font-medium">Starting from: <span class="font-bold">$1150</span></p>
-    </div>
+    <!-- Bottom Section -->
+    <div class="grid md:grid-cols-3 gap-6 relative z-10">
+      <!-- Growing Database -->
+      <div class="text-center">
+        <h3 class="font-bold mb-2">Growing Database</h3>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mongolia_-_panoramio_%2827%29.jpg/800px-Mongolia_-_panoramio_%2827%29.jpg" alt="Database" class="w-full h-48 object-cover" />
+          <p class="p-4 bg-white text-sm">
+            Every tour contributes to our collection of Mongolia’s landscapes and culture, helping to share its beauty with the world.
+          </p>
+        </div>
+      </div>
 
-    <!-- East Text -->
-    <div class="absolute right-[-19rem] top-1/2 -translate-y-1/2 text-right text-[#0a1a3f] w-64">
-      <h3 class="font-semibold">
-        <span class="text-blue-600 font-bold">E</span>astern Sunrise Trek
-      </h3>
-      <p class="text-sm">June 18 – June 28, 2024 | 10 Days</p>
-      <p class="text-sm font-medium">Starting from: <span class="font-bold">$1250</span></p>
+      <!-- Cultural Immersion -->
+      <div class="text-center">
+        <h3 class="font-bold mb-2">Cultural Immersion</h3>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mongolian_nomads_with_camels.jpg/800px-Mongolian_nomads_with_camels.jpg" alt="Cultural" class="w-full h-48 object-cover" />
+          <p class="p-4 bg-white text-sm">
+            Experience Mongolia’s heart—stay with nomadic families, partake in their traditions, and enjoy authentic feasts like Khorkhog.
+          </p>
+        </div>
+      </div>
+
+      <!-- Eco-Friendly Adventures -->
+      <div class="text-center">
+        <h3 class="font-bold mb-2">Eco-Friendly Adventures</h3>
+        <div class="rounded-xl overflow-hidden shadow-md">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Mongolia-goat.jpg/800px-Mongolia-goat.jpg" alt="Eco-Friendly" class="w-full h-48 object-cover" />
+          <p class="p-4 bg-white text-sm">
+            Explore responsibly, preserving Mongolia’s pristine landscapes for future generations.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
 </body>
 </html>
