@@ -15,7 +15,7 @@
       }
     </style>
   </head>
-  <body class="min-h-screen overflow-x-auto">
+  <body class="min-h-screen overflow-x-auto w-full bg-blue-100">
     <header
       class="relative bg-cover bg-center min-h-[410px] object-cover"
       style="background-image: url('img/Home/HomepageHeaderPhoto.jpg')"
@@ -27,7 +27,7 @@
 
         <a href="index.html">
           <div class="flex items-center space-x-2">
-            <span class="text-white font-semibold [16px]">BNM</span>
+            <span class="font-bold text-white text-xl">BNM</span>
             <img src="img/footer/bnm round.png" class="w-8 h-8" alt="logo" />
           </div>
         </a>
@@ -37,7 +37,7 @@
           <!-- About Link -->
           <a
             href="about_us.html"
-            class="text-sm text-white font-semibold text-[16px] hover:underline"
+            class="text-sm text-white font-semibold hover:underline"
             >About Us</a
           >
 
@@ -69,12 +69,12 @@
         <div class="flex items-center space-x-4">
           <a
             href="login.html"
-            class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-[16px] px-4 py-1.5 rounded-md"
+            class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-4 py-1.5 rounded-md"
             >Log In</a
           >
           <!-- Language Dropdown -->
           <button
-            class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-[16px] px-3 py-1.5 rounded-md flex items-center"
+            class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-sm px-3 py-1.5 rounded-md flex items-center"
           >
             EN
             <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
@@ -89,20 +89,20 @@
           class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
         >
           <h1
-            class="text-3xl md:text-5xl font-semibold"
+            class="text-5xl md:text-5xl font-semibold"
             style="font-family: 'Segoe UI', sans-serif"
           >
             Welcome
           </h1>
           &nbsp;
           <p
-            class="text-3xl md:text-5xl font-semibold"
+            class="text-5xl md:text-5xl font-semibold"
             style="font-family: 'Segoe UI', sans-serif"
           >
             to the Land of Stories
           </p>
           <h1
-            class="text-4xl md:text-6xl font-normal italic mt-2"
+            class="text-white text-8xl font-normal italic mt-2"
             style="font-family: 'Authenia', cursive"
           >
             Mongolia
@@ -168,126 +168,109 @@
 
     <div class="max-w-6xl mx-auto py-6 space-y-6">
       <div class="mt-32">
-        <h2 class="text-2xl font-semibold text-[16px] pl-20">
-          <a href="index.html" class="hover:underline">Home</a> &nbsp; &gt;
+        <h2 class="text-xl font-['SF_Pro_Display']">
+          <a href="index.html" class="hover:underline">Home</a> &nbsp; &lt;
           &nbsp;
-          <span class="text-blue-700 font-semibold text-[16px]"
+          <span class="text-blue-700 text-xl font-['SF_Pro_Display']"
             >Destinations</span
           >
         </h2>
       </div>
 
-      <div class="bg-blue-50">
-        <h2
-          class="text-2xl font-semibold text-[40px] mb-6 pl-20"
-          style="font-family: 'SF Pro Display'"
+      <h2 class="text-4xl mb-6 font-['SF_Pro_Display']">Day Trips</h2>
+
+      <div class="grid grid-cols-4 grid-rows-2 gap-4 mx-auto w-[112.4%]">
+        <!-- Terelj National Park -->
+        <div
+          class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
         >
-          Day Trips
-        </h2>
-
-        <div class="grid grid-cols-4 grid-rows-2 gap-4 mx-auto pl-20">
-          <!-- Terelj National Park -->
-          <div
-            class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-          >
-            <a href="terelj_natural.html">
-              <img
-                src="img/thumbnails/Day trips/Nearby-1.jpg"
-                alt="Terelj National Park"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
-              >
-                Terelj National Park
-              </div>
-            </a>
-          </div>
-
-          <!-- Genghis Khan Statue Complex -->
-          <div
-            class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]"
-          >
+          <a href="terelj_natural.html">
             <img
-              src="img/thumbnails/Day trips/Nearby-2.jpg"
-              alt="Genghis Khan Statue Complex"
+              src="img/thumbnails/Day trips/Nearby-1.jpg"
+              alt="Terelj National Park"
               class="w-full h-full object-cover"
             />
             <div
-              class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-              style="font-family: 'SF Pro Display'"
+              class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
             >
-              Genghis Khan<br />Statue Complex
+              Terelj National Park
             </div>
-          </div>
+          </a>
+        </div>
 
-          <!-- Chinggis Khaanii Khuree -->
+        <!-- Genghis Khan Statue Complex -->
+        <div
+          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]"
+        >
+          <img
+            src="img/thumbnails/Day trips/Nearby-2.jpg"
+            alt="Genghis Khan Statue Complex"
+            class="w-full h-full object-cover"
+          />
           <div
-            class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]"
+            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
           >
+            Genghis Khan <br />Statue Complex
+          </div>
+        </div>
+
+        <!-- Chinggis Khaanii Khuree -->
+        <div
+          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]"
+        >
+          <img
+            src="img/thumbnails/Day trips/Nearby-5.jpg"
+            alt="Chinggis Khaanii Khuree"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
+          >
+            Chinggis Khaanii<br />Khuree
+          </div>
+        </div>
+
+        <!-- <a href="terelj_khustai_nuruu.html">Khustai NP</a> -->
+        <!-- Khustai NP -->
+        <div
+          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+        >
+          <a href="terelj_khustai_nuruu.html">
             <img
-              src="img/thumbnails/Day trips/Nearby-5.jpg"
-              alt="Chinggis Khaanii Khuree"
+              src="img/thumbnails/Day trips/Nearby-3.jpg"
+              alt="Khustai NP"
               class="w-full h-full object-cover"
             />
             <div
-              class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-              style="font-family: 'SF Pro Display'"
+              class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
             >
-              Chinggis Khaanii<br />Khuree
+              Khustai NP
             </div>
-          </div>
+          </a>
+        </div>
 
-          <!-- <a href="terelj_khustai_nuruu.html">Khustai NP</a> -->
-          <!-- Khustai NP -->
-          <div
-            class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-          >
-            <a href="terelj_khustai_nuruu.html">
-              <img
-                src="img/thumbnails/Day trips/Nearby-3.jpg"
-                alt="Khustai NP"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="absolute bottom-2 left-2 text-white font-semibold text-[20px] drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
-              >
-                Khustai NP
-              </div>
-            </a>
-          </div>
-
-          <!-- Aglag Buteeliin Khiid -->
-          <div
-            class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-          >
-            <a href="aglag_bvteel.html">
-              <img
-                src="img/thumbnails/Day trips/Nearby-4.jpg"
-                alt="Aglag Buteeliin Khiid"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="absolute bottom-2 left-2 text-white font-semibold text-[20px] drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
-              >
-                Aglag Buteeliin Khiid
-              </div>
-            </a>
-          </div>
+        <!-- Aglag Buteeliin Khiid -->
+        <div
+          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+        >
+          <a href="aglag_bvteel.html">
+            <img
+              src="img/thumbnails/Day trips/Nearby-4.jpg"
+              alt="Aglag Buteeliin Khiid"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
+            >
+              Aglag Buteeliin Khiid
+            </div>
+          </a>
         </div>
       </div>
 
-      <h2
-        class="text-2xl font-semibold text-[40px] mb-6 pl-20"
-        style="font-family: 'SF Pro Display'"
-      >
-        Central Mongolia
-      </h2>
+      <h2 class="text-4xl mb-6 font-['SF_Pro_Display']">Central Mongolia</h2>
 
-      <div class="relative w-full pl-22">
+      <div class="relative w-full">
         <!-- Wrapper with horizontal scroll -->
         <div
           id="slider-wrapper1"
@@ -295,26 +278,25 @@
         >
           <div
             id="slider"
-            class="grid grid-cols-8 grid-rows-2 gap-[15px] w-[2241px] pl-20"
+            class="grid grid-cols-8 grid-rows-2 gap-[15px] w-[224.1%]"
           >
             <div
-              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.09/1"
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1"
             >
               <img
                 src="img/thumbnails/Central Mongolia/Central-1.jpg"
                 alt="Khogno Tarna National Park"
-                class="w-548 h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
                 Khogno Tarna NP
               </div>
             </div>
 
             <div
-              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]"
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]"
             >
               <img
                 src="img/thumbnails/Central Mongolia/Central-4.jpg"
@@ -322,8 +304,7 @@
                 class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
                 Ulaan Tsutgalan
               </div>
@@ -335,11 +316,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-5.jpg"
                 alt="Khuisiin Naiman Lake"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
                 Khuisiin Naiman Lake
               </div>
@@ -351,11 +331,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-7.jpg"
                 alt="Tsenkher Hot Spring"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Tsenkher Hot Spring
               </div>
@@ -367,11 +346,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-10.jpg"
                 alt="Ulaan Tsutgalan Waterfall"
-                class="w-267 h-548 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Chuluut Valley
               </div>
@@ -383,11 +361,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-9.jpg"
                 alt="Tsenkher Hot Spring"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Taikhar Rock
               </div>
@@ -398,11 +375,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-13.jpg"
                 alt="Tsenkher Hot Spring"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Hujirt
               </div>
@@ -414,11 +390,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-2.jpg"
                 alt="Ugii Lake"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Kharkhorin
               </div>
@@ -430,11 +405,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-3.jpg"
                 alt="Kharkhorin Town"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Ugii Lake
               </div>
@@ -446,11 +420,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-6.jpg"
                 alt="Tuvkhun Monastery"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Tuvkhun Monastery
               </div>
@@ -462,11 +435,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-8.jpg"
                 alt="Tsetserleg City"
-                class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Tsetserleg City
               </div>
@@ -478,11 +450,10 @@
               <img
                 src="img/thumbnails/Central Mongolia/Central-11.jpg"
                 alt="Tsetserleg City"
-                class="w-548 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
                 Khorgo Terkhiin Tsagaan Nuur NP
               </div>
@@ -513,291 +484,455 @@
         </button>
       </div>
 
-      <div class="bg-blue-50">
-        <h2
-          class="text-2xl font-semibold text-[40px] mb-6 pl-20"
-          style="font-family: 'SF Pro Display'"
-        >
-          Southern Mongolia
-        </h2>
+      <h2 class="text-4xl mb-6 font-['SF_Pro_Display']">Southern Mongolia</h2>
 
-        <div class="relative w-full">
-          <!-- Wrapper with horizontal scroll -->
+      <div class="relative w-full">
+        <!-- Wrapper with horizontal scroll -->
+        <div
+          id="slider-wrapper"
+          class="overflow-x-auto hide-scrollbar scroll-smooth"
+        >
           <div
-            id="slider-wrapper"
-            class="overflow-x-auto hide-scrollbar scroll-smooth"
+            id="slider"
+            class="grid grid-cols-11 grid-rows-2 gap-[15px] w-[310.8%]"
           >
             <div
-              id="slider"
-              class="grid grid-cols-11 grid-rows-2 gap-[15px] w-[3108px] pl-20"
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
             >
+              <img
+                src="img/thumbnails/Southern/Southern-1.jpg"
+                alt="Baga Gazarin Chuluu"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-1.jpg"
-                  alt="Baga Gazarin Chuluu"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Baga Gazariin Chuluu
-                </div>
+                Baga Gazariin Chuluu
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-3.jpg"
+                alt="Tsagaan Suvraga"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-3.jpg"
-                  alt="Tsagaan Suvraga"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Tsagaan Suvraga
-                </div>
+                Tsagaan Suvraga
               </div>
+            </div>
 
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-8.jpg"
+                alt="Buir Lake"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-8.jpg"
-                  alt="Buir Lake"
-                  class="w-548 h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khongor Sand Dunes
-                </div>
+                Khongor Sand Dunes
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-6.jpg"
+                alt="Ulaan Tsutgalan Waterfall"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-6.jpg"
-                  alt="Ulaan Tsutgalan Waterfall"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Yolyn Am
-                </div>
+                Yolyn Am
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-5.jpg"
+                alt="Khogno Tarna National Park"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-5.jpg"
-                  alt="Khogno Tarna National Park"
-                  class="w-267 h-267 object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Mukhart Shivert Am
-                </div>
+                Mukhart Shivert Am
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern2.jpg"
+                alt="Ugii Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern2.jpg"
-                  alt="Ugii Lake"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Monastery of Bulgan
-                </div>
+                Monastery of Bulgan
               </div>
+            </div>
 
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-11.jpg"
+                alt="Ulaan Tsutgalan Waterfall"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-11.jpg"
-                  alt="Ulaan Tsutgalan Waterfall"
-                  class="w-548 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Moltsog Sand Dunes
-                </div>
+                Moltsog Sand Dunes
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-12.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-12.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Ongi Monastery
-                </div>
+                Ongi Monastery
               </div>
+            </div>
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-15.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-15.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khermen Tsew
-                </div>
+                Khermen Tsew
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-2.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-2.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Ikh Gazariin Chuluu
-                </div>
+                Ikh Gazariin Chuluu
               </div>
+            </div>
 
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-9.jpg"
+                alt="Tsenkher Hot Spring"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-9.jpg"
-                  alt="Tsenkher Hot Spring"
-                  class="w-548.49 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Flaming Cliffs
-                </div>
+                Flaming Cliffs
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-4.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-4.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Dalanzadgad
-                </div>
+                Dalanzadgad
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-7.jpg"
+                alt="Tuvkhun Monastery"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-7.jpg"
-                  alt="Tuvkhun Monastery"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Dungenee Am
-                </div>
+                Dungenee Am
               </div>
+            </div>
 
+            <div
+              class="col-span-1 row-span-1 relative overflow-hidden rounded-xl aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern13.jpg"
+                alt="Tsetserleg City"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative overflow-hidden rounded-xl aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern13.jpg"
-                  alt="Tsetserleg City"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Bulgan
-                </div>
+                Bulgan
               </div>
+            </div>
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-10.jpg"
+                alt="Tsetserleg City"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-10.jpg"
-                  alt="Tsetserleg City"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Petroglyphs of Khavtsgalt
-                </div>
+                Petroglyphs of Khavtsgalt
               </div>
+            </div>
 
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-14.jpg"
+                alt="Tsenkher Hot Spring"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-14.jpg"
-                  alt="Tsenkher Hot Spring"
-                  class="w-548 h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khanan Khets
-                </div>
+                Khanan Khets
               </div>
+            </div>
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Southern/Southern-16.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
               >
-                <img
-                  src="img/thumbnails/Southern/Southern-16.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-267 h-267 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khamriin Khiid
-                </div>
+                Khamriin Khiid
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Arrow -->
+
+        <!-- Right Arrow -->
+        <button
+          onclick="scrollSlider(300)"
+          aria-label="Scroll right"
+          class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-700"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <h2 class="text-4xl mb-6 font-['SF_Pro_Display']">Western Mongolia</h2>
+
+      <div class="relative w-full">
+        <div
+          id="slider-wrapper2"
+          class="overflow-x-auto hide-scrollbar scroll-smooth"
+        >
+          <div
+            id="slider"
+            class="grid grid-cols-8 grid-rows-2 gap-[15px] w-[228.5%]"
+          >
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Western/Western-1.jpg"
+                alt="Ulaagchni"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
+              >
+                Ulaagchnii Khar Lake
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hiiden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Western/Western-3.jpg"
+                alt="Mukhart Lake"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Mukhart Lake
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
+            >
+              <img
+                src="img/thumbnails/Western/Western-7.jpg"
+                alt="Ulaan Tsutgalan Waterfall"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Baga Turgen's Waterfall
+              </div>
+            </div>
+
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Western/Western-11.jpg"
+                alt="Kharkhorin Town"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Uilastai
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
+            >
+              <img
+                src="img/thumbnails/Western/Western-10.jpg"
+                alt="Ulaan Tsutgalan Waterfall"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Otgontenger
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Western/western11.jpg"
+                alt="Kharkhorin Town"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Khovd City
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Western/Western-2.jpg"
+                alt="Kharkhorin Town"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Senjit Khad
+              </div>
+            </div>
+
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Western/Western-6.jpg"
+                alt="Tuvkhun Monastery"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Altai Tavan Bogd
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Western/Western-4.jpg"
+                alt="Tsetserleg City"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Khyrgas Lake
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Western/Western-5.jpg"
+                alt="Tsetserleg City"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Ulgii City
               </div>
             </div>
           </div>
@@ -806,7 +941,7 @@
 
           <!-- Right Arrow -->
           <button
-            onclick="scrollSlider(300)"
+            onclick="scrollSlider2(300)"
             aria-label="Scroll right"
             class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
@@ -828,470 +963,240 @@
         </div>
       </div>
 
-      <div class="bg-blue-50">
-        <h2
-          class="text-2xl font-semibold text-[40px] mb-6 pl-20"
-          style="font-family: 'SF Pro Display'"
+      <h2 class="text-4xl mb-6 font-['SF_Pro_Display']">Eastern Mongolia</h2>
+      <div class="relative w-full">
+        <div
+          id="slider-wrapper3"
+          class="overflow-x-auto hide-scrollbar scroll-smooth"
         >
-          Western Mongolia
-        </h2>
-
-        <div class="relative w-full">
           <div
-            id="slider-wrapper2"
-            class="overflow-x-auto hide-scrollbar scroll-smooth"
+            id="slider"
+            class="grid grid-cols-9 grid-rows-2 gap-[15px] w-[252.5%]"
           >
             <div
-              id="slider"
-              class="grid grid-cols-8 grid-rows-2 gap-4 w-[2285px] pl-20"
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
             >
+              <img
+                src="img/thumbnails/Eastern/Eastern-10.jpg"
+                alt="Khalkh Gol"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
-                <img
-                  src="img/thumbnails/Western/Western-1.jpg"
-                  alt="Ulaagchni"
-                  class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Ulaagchnii Khar Lake
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hiiden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-3.jpg"
-                  alt="Mukhart Lake"
-                  class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Mukhart Lake
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-7.jpg"
-                  alt="Ulaan Tsutgalan Waterfall"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Baga Turgen's Waterfall
-                </div>
-              </div>
-
-              <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-11.jpg"
-                  alt="Kharkhorin Town"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Uilastai
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-10.jpg"
-                  alt="Ulaan Tsutgalan Waterfall"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Otgontenger
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Western/western11.jpg"
-                  alt="Kharkhorin Town"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khovd City
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-2.jpg"
-                  alt="Kharkhorin Town"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Senjit Khad
-                </div>
-              </div>
-
-              <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-6.jpg"
-                  alt="Tuvkhun Monastery"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Altai Tavan Bogd
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-4.jpg"
-                  alt="Tsetserleg City"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khyrgas Lake
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Western/Western-5.jpg"
-                  alt="Tsetserleg City"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Ulgii City
-                </div>
+                Khalkh Gol
               </div>
             </div>
 
-            <!-- Left Arrow -->
-
-            <!-- Right Arrow -->
-            <button
-              onclick="scrollSlider2(300)"
-              aria-label="Scroll right"
-              class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-gray-700"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-blue-50">
-        <h2
-          class="text-2xl font-semibold text-[40px] mb-6 pl-20"
-          style="font-family: 'SF Pro Display'"
-        >
-          Eastern Mongolia
-        </h2>
-        <div class="relative w-full">
-          <div
-            id="slider-wrapper3"
-            class="overflow-x-auto hide-scrollbar scroll-smooth"
-          >
             <div
-              id="slider"
-              class="grid grid-cols-9 grid-rows-2 gap-4 w-[2525px] pl-20"
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
             >
+              <img
+                src="img/thumbnails/Eastern/Eastern-9.jpg"
+                alt="Buir Lake"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
               <div
-                class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-10.jpg"
-                  alt="Khalkh Gol"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Khalkh Gol
-                </div>
-              </div>
-
-              <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-9.jpg"
-                  alt="Buir Lake"
-                  class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Buir Lake
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-11.jpg"
-                  alt="Ulaan Tsutgalan Waterfall"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Ikh Burkhant Complex
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-2.jpg"
-                  alt="Khogno Tarna National Park"
-                  class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Chinggis City
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-4.jpg"
-                  alt="Ugii Lake"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Uglugchiin kherem
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-5.jpg"
-                  alt="Ulaan Tsutgalan Waterfall"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Yarguin Khavtsal
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-7.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Choibalsan City
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern12.jpg"
-                  alt="Khuisiin Naiman Lake"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Narsan Oin Khureelen
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-1.jpg"
-                  alt="Tsenkher Hot Spring"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Baldan Bereeven Monastery
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-6.jpg"
-                  alt="Kharkhorin Town"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Dadal Soum
-                </div>
-              </div>
-
-              <div
-                class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-3.jpg"
-                  alt="Tuvkhun Monastery"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Andlaliin Urguu
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-8.jpg"
-                  alt="Tsetserleg City"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Menen Steppe
-                </div>
-              </div>
-
-              <div
-                class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-              >
-                <img
-                  src="img/thumbnails/Eastern/Eastern-13.jpg"
-                  alt="Tsetserleg City"
-                  class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-                />
-                <div
-                  class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-                  style="font-family: 'SF Pro Display'"
-                >
-                  Binder Soum
-                </div>
+                Buir Lake
               </div>
             </div>
 
-            <!-- Right Arrow -->
-            <button
-              onclick="scrollSlider3(300)"
-              aria-label="Scroll right"
-              class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            <div
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.09]"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-gray-700"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              <img
+                src="img/thumbnails/Eastern/Eastern-11.jpg"
+                alt="Ulaan Tsutgalan Waterfall"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
+                Ikh Burkhant Complex
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-2.jpg"
+                alt="Khogno Tarna National Park"
+                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Chinggis City
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-4.jpg"
+                alt="Ugii Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Uglugchiin kherem
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-5.jpg"
+                alt="Ulaan Tsutgalan Waterfall"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Yarguin Khavtsal
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-7.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Choibalsan City
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern12.jpg"
+                alt="Khuisiin Naiman Lake"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Narsan Oin Khureelen
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-1.jpg"
+                alt="Tsenkher Hot Spring"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Baldan Bereeven Monastery
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-6.jpg"
+                alt="Kharkhorin Town"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Dadal Soum
+              </div>
+            </div>
+
+            <div
+              class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-3.jpg"
+                alt="Tuvkhun Monastery"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Andlaliin Urguu
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-8.jpg"
+                alt="Tsetserleg City"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Menen Steppe
+              </div>
+            </div>
+
+            <div
+              class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
+            >
+              <img
+                src="img/thumbnails/Eastern/Eastern-13.jpg"
+                alt="Tsetserleg City"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
+              >
+                Binder Soum
+              </div>
+            </div>
           </div>
+
+          <!-- Right Arrow -->
+          <button
+            onclick="scrollSlider3(300)"
+            aria-label="Scroll right"
+            class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-700"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
-      <h2
-        class="text-2xl font-semibold text-[40px] mb-6 pl-20"
-        style="font-family: 'SF Pro Display'"
-      >
-        Northern Mongolia
-      </h2>
+      <h2 class="text-4xl mb-6 font-['SF_Pro_Display']">Northern Mongolia</h2>
 
       <div
-        class="grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto w-[1224px] pl-20"
+        class="grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto w-[122.4%]"
       >
         <div
           class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
@@ -1302,8 +1207,7 @@
             class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
           />
           <div
-            class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-            style="font-family: 'SF Pro Display'"
+            class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
           >
             Khuvsgul Lake
           </div>
@@ -1318,8 +1222,7 @@
             class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
           />
           <div
-            class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-            style="font-family: 'SF Pro Display'"
+            class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
           >
             Uran Togoo <br />Extinct Volcano
           </div>
@@ -1334,8 +1237,7 @@
             class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
           />
           <div
-            class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-            style="font-family: 'SF Pro Display'"
+            class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
           >
             Amarbaysgalant Monastery
           </div>
@@ -1350,8 +1252,7 @@
             class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
           />
           <div
-            class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-            style="font-family: 'SF Pro Display'"
+            class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
           >
             Erdenet City
           </div>
@@ -1366,8 +1267,7 @@
             class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
           />
           <div
-            class="absolute bottom-2 left-2 text-white text-[20px] font-semibold drop-shadow-md"
-            style="font-family: 'SF Pro Display'"
+            class="absolute bottom-2 left-2 text-white text-xl font-['SF_Pro_Display'] drop-shadow-md"
           >
             Taiga
           </div>
@@ -1381,11 +1281,8 @@
       class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-[-8%]"
     >
       <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-32">
-        <h3
-          class="font-bold text-2xl text-[24px] mb-4"
-          style="font-family: 'SF Pro Display'"
-        >
+      <div class="max-w-xl text-left md:pl-20">
+        <h3 class="font-bold text-4xl mb-4 font-['SF_Pro_Display']">
           Subscribe to our Newsletter!
         </h3>
 
@@ -1400,14 +1297,15 @@
           />
           <button
             type="submit"
-            class="bg-blue-600 text-white px-6 py-2 font-bold text-[12px] rounded hover:bg-blue-700 transition"
-            style="font-family: 'Open Sans'"
+            class="bg-blue-600 text-white px-6 py-2 font-bold text-lg rounded hover:bg-blue-700 transition font-['Open Sans']"
           >
             SUBSCRIBE
           </button>
         </form>
 
-        <p class="text-sm font-normal text-[16px] text-gray-700 mb-4">
+        <p
+          class="font-normal text-xl text-gray-700 mb-4 font-['SF_Pro_Display']"
+        >
           Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
           and embark on a journey filled with captivating Destination
           highlights, intriguing Event updates, deep dives into Nomadic Culture,
@@ -1417,18 +1315,10 @@
         </p>
 
         <p class="text-sm">
-          <span
-            class="font-mixed text-[14px]"
-            style="font-family: 'SF Pro Display'"
-            >Phone:</span
-          >
-          +976 8001-4904<br />
-          <span
-            class="font-mixed text-[14px]"
-            style="font-family: 'SF Pro Display'"
-            >Email:</span
-          >
-          BraveNewMongoliaTours@gmail.com
+          <span class="font-mixed text-xl font-['SF_Pro_Display']">Phone:</span>
+          <span class="text-lg"> 8001-4904<br /> </span>
+          <span class="font-mixed text-xl font-['SF_Pro_Display']">Email:</span>
+          <span class="text-lg">BraveNewMongoliaTours@gmail.com</span>
         </p>
       </div>
 
@@ -1457,9 +1347,7 @@
         </div>
 
         <!-- Title -->
-        <span
-          class="text-sm font-medium text-[19px] text-gray-700"
-          style="font-family: 'SF Pro Display'"
+        <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']"
           >Connect via WhatsApp</span
         >
 
@@ -1474,8 +1362,7 @@
 
         <!-- Phone Number -->
         <div
-          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-[18px] text-gray-800 shadow-sm"
-          style="font-family: 'SF Pro Display'"
+          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']"
         >
           +976 8001 4904
         </div>
@@ -1484,7 +1371,7 @@
 
     <footer class="bg-[#0B2B6C] text-white">
       <div
-        class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+        class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
       >
         <!-- Column 1: Logo -->
         <div class="w-full text-center">
@@ -1500,13 +1387,10 @@
 
         <!-- Column 2: Description -->
         <div>
-          <h4
-            class="font-bold text-[16px]"
-            style="font-family: 'SF Pro Display'"
-          >
+          <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
             Brave New Mongolia
           </h4>
-          <p class="text-sm mt-2 text-[16px] font-medium">
+          <p class="text-xl mt-2 font-medium font-['SF_Pro_Display']">
             Good day to everybody who is interested in our tours. We are a team
             of Mongolians that love nature and traveling.
           </p>
@@ -1529,7 +1413,7 @@
             /></a>
           </div>
 
-          <div class="mt-4 text-sm">
+          <div class="mt-4 text-lg">
             <p>Phone: +976 8625-6868</p>
             <p>Email: bnmtours@gmail.com</p>
             <p>
@@ -1541,34 +1425,28 @@
 
         <!-- Column 3: Support Links -->
         <div>
-          <h4
-            class="font-bold text-[16px] mb-2"
-            style="font-family: 'SF Pro Display'"
-          >
+          <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
             Support
           </h4>
           <ul class="text-sm space-y-2">
             <li>
               <a
                 href="#"
-                class="hover:underline ont-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
                 >About us</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="hover:underline ont-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
                 >Package information</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="hover:underline ont-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
                 >Terms of Service</a
               >
             </li>
@@ -1577,10 +1455,7 @@
 
         <!-- Column 4: App Downloads -->
         <div>
-          <h4
-            class="font-semibold text-[16px] mb-4"
-            style="font-family: 'SF Pro Display'"
-          >
+          <h4 class="font-semibold text-2xl mb-4 font-['SF_Pro_Display']">
             Download our mobile app
           </h4>
           <div class="space-y-4">
@@ -1605,7 +1480,7 @@
 
       <!-- Bottom Bar -->
       <div
-        class="text-center text-sm font-medium text-[16px] bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]"
+        class="text-center text-xl bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']"
       >
         Copyright © 2025 Brave New Mongolia
       </div>
