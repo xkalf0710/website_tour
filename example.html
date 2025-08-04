@@ -3,94 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mongolia Travel App</title>
+    <title>Accommodations Grid</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#0b4c8c]">
-    <!-- Container -->
-    <div class="relative bg-[#0b4c8c] text-white">
-      <!-- Background Image (optional blur/overlay) -->
-      <div class="absolute inset-0">
-        <img
-          src="your-background-image.jpg"
-          alt="Background"
-          class="w-full h-full object-cover opacity-30"
-        />
-      </div>
-
-      <div class="relative max-w-6xl mx-auto px-4 py-6">
-        <!-- Three Columns -->
-        <div class="grid md:grid-cols-3 gap-10 text-center md:text-left">
-          <!-- Column 1 -->
-          <div>
-            <h2 class="text-xl font-semibold mb-4">
-              Confident Travel with Expertise
-            </h2>
-            <p class="text-sm leading-relaxed">
-              Explore Mongolia confidently, backed by our app – a showcase of
-              our extensive knowledge, making us your trusted travel companion.
-            </p>
-          </div>
-
-          <!-- Column 2 -->
-          <div>
-            <h2 class="text-xl font-semibold mb-4">
-              Discover Mongolia at Your Fingertips:
-            </h2>
-            <p class="text-sm leading-relaxed">
-              Browse through our app's wealth of data: tourist destinations,
-              events, cultural insights, and history, empowering you to plan
-              your journey effortlessly.
-            </p>
-          </div>
-
-          <!-- Column 3 -->
-          <div>
-            <h2 class="text-xl font-semibold mb-4">
-              Essential Travel Tips Unveiled
-            </h2>
-            <p class="text-sm leading-relaxed">
-              Access all the tourist information you need – FAQs, preparation
-              tips, and travel insights – ensuring a seamless and informed
-              adventure in Mongolia.
-            </p>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+        <div
+          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden shadow-md"
+        >
+          <img
+            src="img/pamukResortProfile.jpg"
+            alt="Pamuk Resort"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded"
+          >
+            Pamuk Resort
           </div>
         </div>
 
-        <!-- Phone Mockups -->
-        <div class="relative flex justify-center mt-16">
-          <div class="flex gap-6">
-            <img
-              src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro-1.png"
-              alt="Phone 1"
-              class="w-36 md:w-40 rounded-xl shadow-xl"
-            />
-            <img
-              src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro.png"
-              alt="Phone 2"
-              class="w-36 md:w-40 rounded-xl shadow-xl"
-            />
+        <!-- Card 2 -->
+        <div
+          class="relative rounded-xl overflow-hidden shadow-md aspect-[2.05/1]"
+        >
+          <img
+            src="img/EagleHunterTouristcampWebTop.jpg"
+            alt="Eagle Hunter Tourist Camp"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded"
+          >
+            Eagle Hunter Tourist Camp
           </div>
         </div>
 
-        <!-- Download Section -->
-        <div class="mt-10 text-left">
-          <h3 class="text-lg font-semibold mb-4">Download app</h3>
-          <div class="flex justify-start gap-4">
-            <a href="#">
-              <img
-                src="https://c.animaapp.com/vkYqbqlS/img/badge-ios.svg"
-                alt="App Store"
-                class="h-12"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="https://c.animaapp.com/vkYqbqlS/img/badge-android.svg"
-                alt="Google Play"
-                class="h-12"
-              />
-            </a>
+        <!-- Card 3 -->
+        <div
+          class="relative rounded-xl overflow-hidden shadow-md aspect-square"
+        >
+          <img
+            src="img/AltaiLodgeProfile.jpg"
+            alt="Altai Lodge"
+            class="w-full h-full object-cover"
+          />
+          <div
+            class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded"
+          >
+            Altai Lodge
           </div>
         </div>
       </div>
