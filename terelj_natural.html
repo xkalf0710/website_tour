@@ -12,13 +12,13 @@
 
     <title>Terelj National Park</title>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen w-full bg-blue-100">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
       <div
         class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
       >
         <div class="flex items-center space-x-4 pl-28">
-          <span class="font-bold text-base">BNM</span>
+          <span class="font-bold text-white text-base text-[16px]">BNM</span>
           <img
             src="img/footer/bnm round.png"
             class="w-7 h-7 rounded-full"
@@ -29,7 +29,7 @@
         <div class="flex items-center space-x-6 flex-1 justify-center">
           <a
             href="about_us.html"
-            class="text-sm hover:underline whitespace-nowrap"
+            class="text-sm hover:underline whitespace-nowrap text-white text-[16px] text-semibold"
           >
             About us
           </a>
@@ -74,7 +74,7 @@
 
           <!-- Language -->
           <button
-            class="border border-white px-3 py-1 rounded-md text-sm flex items-center"
+            class="border border-white px-3 py-1 rounded-md text-sm flex items-center font-semibold text-[16px]"
           >
             EN
             <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
@@ -86,7 +86,7 @@
 
       <!-- Bottom Navigation -->
       <nav
-        class="flex justify-center space-x-6 text-sm mt-0 border-t border-blue-800 mr-104"
+        class="flex justify-start max-w-6xl space-x-6 text-sm mt-0 border-t mx-auto border-blue-800 pl-28"
       >
         <a href="index.html" class="hover:underline">Home</a>
         <a href="visit_ulaanbaatar.html" class="hover:underline"
@@ -123,8 +123,8 @@
           </svg>
           <a href="destination.css"
             ><span
-              class="text-[16px] font-semibold"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm font-['SF_Pro_Display'] font-semibold"
+             
               >Back</span
             ></a
           >
@@ -132,20 +132,19 @@
       </div>
 
       <h1
-        class="text-3xl font-semibold text-[36px]"
-        style="font-family: 'SF Pro Display'"
+        class="text-3xl font-semibold font-['SF_Pro_Display']"
       >
         Terelj Natural Park
       </h1>
 
-      <div class="flex items-center gap-2 mt-1">
+      <div class="flex items-center gap-2 mt-2">
         <img src="img/sr-placemarker.png" class="w-6 h-6 aspect-square" />
         Day Trips
       </div>
 
       <div class="grid md:grid-cols-12 gap-6 mt-3">
         <div class="space-y-4 col-span-8">
-          <p class="text-[20px]" style="font-family: 'SF Pro Display'">
+          <p class="text-lg font-['SF_Pro_Display']" >
             If you're looking for a place to get out of Ulaanbaatar and really
             see some of Mongolia's natural beauty, Terelj National Park is the
             perfect spot.It's only about an hour and a half drive from the city,
@@ -166,38 +165,39 @@
             Get Directions
           </button>
           <!-- Image gallery -->
-          <div>
-            <div class="aspect-video overflow-hidden rounded-lg mb-2 relative">
-              <div
-                id="slider-wrapper"
-                class="overflow-x-auto hide-scrollbar scroll-smooth"
-              >
-                <div id="slider" class="grid grid-cols-1 grid-rows-1 gap-4">
-                  <img
-                    src="img/TereljNP 1.jpg"
-                    alt="Main landscape"
-                    class="w-full h-full object-cover"
-                  />
-                  <div
-                    class="absolute bottom-2 right-2 bg-white rounded-full p-1 shadow-md"
-                  ></div>
-                </div>
-              </div>
-            </div>
+         <div class="w-full">
+          <!-- Main Image -->
+           <div class="aspect-video overflow-hidden rounded-lg mb-2 relative">
 
-            <div class="flex gap-2">
-              <img
-                src="img/TereljNP 1.jpg"
-                alt="Small 1"
-                class="w-1/3 rounded-md object-cover"
-              />
-              <img
-                src="img/TereljNP 2.jpg"
-                alt="Small 2"
-                class="w-1/3 rounded-md object-cover"
-              />
-            </div>
+            <img id="mainImage" src="img/TereljNP 1.jpg" alt="Main landscape" class="w-full h-full object-cover transition-all duration-500" />
+
+            <!-- Next Button -->
+            <button id="nextBtn"
+              class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/60"
+            >
+              &#10095;
+            </button>
           </div>
+
+
+          <!-- Thumbnails-->
+
+          <div class="flex gap-2">
+            <img
+              src="img/TereljNP 1.jpg"
+              alt="Small 1"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(0)"
+            />
+            <img
+              src="img/TereljNP 2.jpg"
+              alt="Small 2"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(1)"
+            />
+          
+          </div>
+         </div>
         </div>
 
         <!-- Video Thumbnail -->
@@ -221,12 +221,11 @@
         <div class="grid md:grid-cols-2 gap-8 items-start">
           <div>
             <h2
-              class="text-2xl font-bold mb-2 text-[36px]"
-              style="font-family: 'SF Pro Display'"
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
             >
               Turtle Rock
             </h2>
-            <p class="text-[20px]" style="font-family: 'SF Pro Display'">
+            <p class="text-lg font-['SF_Pro_Display']" >
               You can’t visit Terelj without checking out Turtle Rock. Locals
               call it Мэлхий хад, and once you see it, you’ll understand
               why—this giant rock looks just like a turtle! It’s one of those
@@ -245,21 +244,27 @@
             </button>
           </div>
           <div class="grid grid-cols-3 gap-2">
-            <img
+            <img id="mainImage1"
               src="img/TurtleRock/TurtleRock (1 of 4).jpg"
               class="col-span-3 rounded-lg object-cover w-full"
             />
+            
+            <!-- Next Button -->
+            <button id="nextBtn1"
+              class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+              &#10095;
+            </button> 
             <img
               src="img/TurtleRock/TurtleRock (2 of 4).jpg"
-              class="rounded-lg h-24 object-cover"
+              class="thumb rounded-lg h-24 object-cover cursor-pointer"
             />
             <img
               src="img/TurtleRock/TurtleRock (3 of 4).jpg"
-              class="rounded-lg h-24 object-cover"
+              class="thumb rounded-lg h-24 object-cover cursor-pointer"
             />
             <img
               src="img/TurtleRock/TurtleRock (4 of 4).jpg"
-              class="rounded-lg h-24 object-cover"
+              class="thumb rounded-lg h-24 object-cover cursor-pointer"
             />
           </div>
         </div>
@@ -840,18 +845,53 @@
     </footer>
 
     <script>
-      function scrollSlider(amount) {
-        const wrapper = document.getElementById("slider-wrapper");
-        const maxScrollLeft = wrapper.scrollWidth - wrapper.clientWidth;
+      const images = [
+        "img/TereljNP 1.jpg", 
+        "img/TereljNP 2.jpg",
+      ];
 
-        if (wrapper.scrollLeft + amount >= maxScrollLeft) {
-          wrapper.scrollTo({ left: 0, behavior: "smooth" });
-        } else if (wrapper.scrollLeft + amount < 0) {
-          wrapper.scrollTo({ left: maxScrollLeft, behavior: "smooth" });
-        } else {
-          wrapper.scrollBy({ left: amount, behavior: "smooth" });
-        }
+      let currentIndex = 0;
+
+      const mainImage = document.getElementById("mainImage");
+      
+      const nextBtn = document.getElementById("nextBtn");
+
+      function setImage(index){
+        currentIndex = index;
+        mainImage.src = images[currentIndex];
       }
+
+      nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      setImage(currentIndex);
+    });
     </script>
+
+      <script>
+    const mainImage1 = document.getElementById("mainImage1");
+    const thumbnails = document.querySelectorAll(".thumb");
+    const nextBtn1 = document.getElementById("nextBtn1");
+   
+
+    // Array of all image sources
+    const images1 = Array.from(thumbnails).map(img => img.src);
+    let currentIndex1 = 0;
+
+    // Thumbnail click
+    thumbnails.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => {
+        mainImage1.src = thumb.src;
+        currentIndex1 = index;
+      });
+    });
+
+    // Next button
+    nextBtn.addEventListener("click", () => {
+      currentIndex1 = (currentIndex1 + 1) % images1.length;
+      mainImage1.src = images1[currentIndex1];
+    });
+
+   
+  </script>
   </body>
 </html>

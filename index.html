@@ -184,9 +184,19 @@
         top: 106px;
         left: 230px;
       }
+
+       .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
     </style>
   </head>
-  <body class="min-h-screen overflow-x-auto w-full bg-blue-100">
+  
+
+  <body class="min-h-screen w-full bg-blue-100">
     <header
       class="relative bg-cover bg-center min-h-[410px] object-cover"
       style="background-image: url('img/Home/HomepageHeaderPhoto.jpg')"
@@ -203,7 +213,7 @@
           </div>
         </a>
 
-        <!-- Center sectioon -->
+        <!-- Center Sectioon -->
         <div class="flex flex-1 justify-center items-center space-x-6">
           <!-- About Link -->
           <a
@@ -212,7 +222,7 @@
             >About Us</a
           >
 
-          <!-- Search input -->
+          <!-- Search Input -->
           <div class="relative w-[350px] sm:w-[400px] lg:w-[500px]">
             <input
               type="text"
@@ -240,7 +250,7 @@
         <div class="flex items-center space-x-4">
           <a
             href="login.html"
-            class="bg-blue-600 hover:bg-blue-500 text-white text-[16px] font-semibold px-4 py-1.5 rounded-md"
+            class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-4 py-1.5 rounded-md"
             >Log In</a
           >
           <!-- Language Dropdown -->
