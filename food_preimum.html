@@ -8,10 +8,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <style>
+      #sliderContent {
+      transition: transform 0.7s ease-in-out;
+      }
+    </style>
     <title>Food Premium</title>
   </head>
-  <body class="min-h-screen bg-blue-100">
+  <body class="min-h-screen bg-blue-100 w-full">
+   
     <header class="bg-[#0e3b78] text-white px-6 py-3">
       <div
         class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
@@ -24,7 +29,6 @@
             alt="BNM Logo"
           />
         </div>
-
         <!-- Center: About us + Search -->
         <div class="flex items-center space-x-6 flex-1 justify-center">
           <a
@@ -86,7 +90,7 @@
 
       <!-- Bottom Navigation -->
       <nav
-        class="flex justify-center space-x-6 text-sm mt-0 border-t border-blue-800 pt-1"
+        class="flex justify-start max-w-6xl space-x-6 text-sm mt-0 border-t mx-auto border-blue-800 pl-28"
       >
         <a href="index.html" class="hover:underline">Home</a>
         <a href="visit_ulaanbaatar.html" class="hover:underline"
@@ -102,7 +106,6 @@
         <a href="commercial.html" class="hover:underline">Commercial</a>
       </nav>
     </header>
-
     <div class="max-w-6xl mx-auto py-6 space-y-6 pl-28">
       <div class="py-6 space-y-6">
         <div class="mb-4">
@@ -151,8 +154,8 @@
 
             <span style="display: flex; align-items: center">
               <h1
-                class="text-[36px] font-bold"
-                style="font-family: 'SF Pro Display'"
+                class="text-2xl font-['SF_Pro_Display'] font-bold"
+                
               >
                 Rosewood Kitchen + Enotoeca
               </h1>
@@ -195,25 +198,23 @@
 
       <div class="py-6 space-y-6">
         <div class="mt-6 border-b border-gray-300">
-          <nav class="flex space-x-6 text-lg font-medium">
+          <nav class="flex space-x-6 text-lg font-medium font-['SF_Pro_Display']">
             <a href="#" class="text-blue-700 pb-2">Overview</a>
             <a
               href="#"
-              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-[16px] font-semibold"
-              style="font-family: 'SF Pro Display'"
+              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-medium font-['SF_Pro_Display']"
+              
               >Products</a
             >
             <a
               href="#"
-              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-[16px] font-semibold"
-              style="font-family: 'SF Pro Display'"
+              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-medium font-['SF_Pro_Display']"
               >Menus</a
             >
 
             <a
               href="#"
-              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-[16px] font-semibold"
-              style="font-family: 'SF Pro Display'"
+              class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-medium font-['SF_Pro_Display']"
               >Promotional video</a
             >
           </nav>
@@ -224,16 +225,16 @@
         class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-start pl-4"
       >
         <!-- Overview Box -->
-        <div class="bg-white rounded shadow-md p-8">
+        <div class="bg-white rounded shadow-md p-6 w-[421px]">
           <h2
-            class="text-[24px] font-bold mb-2"
-            style="font-family: 'SF Pro Display'"
+            class="text-xl font-['SF_Pro_Display'] font-bold mb-2"
+            
           >
             Overview
           </h2>
           <p
-            class="text-[20px] mb-4 font-normal"
-            style="font-family: 'SF Pro Display'"
+            class="text-lg mb-4 font-normal font-['SF_Pro_Display']" 
+            
           >
             The Genghis Khan Statue Complex, also known as the Chinggis Khaan
             Statue Complex, is a prominent tourist attraction located in Tsonjin
@@ -241,8 +242,8 @@
           </p>
 
           <div
-            class="flex items-center mb-2"
-            style="font-family: 'SF Pro Display'"
+            class="flex items-center mb-2 font-['SF_Pro_Display'] text-lg"
+            
           >
             <img
               src="img/Frame 1686560586.png"
@@ -252,8 +253,7 @@
           </div>
 
           <div
-            class="flex items-center mb-4"
-            style="font-family: 'SF Pro Display'"
+            class="flex items-center mb-2 font-['SF_Pro_Display'] text-lg"
           >
             <img
               src="img/Frame 1686560586-2.png"
@@ -263,8 +263,7 @@
           </div>
 
           <div
-            class="flex items-center mb-4"
-            style="font-family: 'SF Pro Display'"
+            class="flex items-center mb-2 font-['SF_Pro_Display'] text-lg"
           >
             <img src="img/clock.png" class="w-6 h-6 object-cover mr-2" />
             <p class="text-green-700">now open</p>
@@ -275,14 +274,13 @@
           </div>
 
           <h2
-            class="text-[20px] font-bold mb-2"
-            style="font-family: 'SF Pro Display'"
+            class="flex items-center mb-2 font-['SF_Pro_Display'] text-lg"
           >
             Address
           </h2>
 
           <button
-            class="bg-blue-600 text-white px-4 py-2 rounded text-sm flex items-center gap-2"
+            class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center gap-2 font-['SF_Pro_Display']"
           >
             <img src="img/Frame-3.png" class="w-5 h-5 object-cover" />
             Get Directions
@@ -324,96 +322,60 @@
           <!-- Products Section -->
           <div class="flex flex-col">
             <h2
-              class="text-2xl font-semibold text-[32px] mb-9"
-              style="font-family: 'SF Pro Display'"
+              class="text-2xl font-semibold mb-9 font-['SF_Pro_Display']"
+              
             >
               Products
             </h2>
-            <div
-              class="relative h-[565px] overflow-hidden rounded-xl shadow-lg bg-white flex-1"
-            >
-              <!-- Scrollable Wrapper -->
-              <div
-                id="sliderContent"
-                class="flex flex-col transition-transform duration-700 ease-in-out h-full"
-              >
-                <!-- Slide 1 -->
-                <div class="grid grid-cols-2 gap-4 p-4 box-border">
-                  <img
-                    class="rounded-xl object-cover w-full h-full"
-                    src="img/1.Rosewood/Product/RoseWoodProduct-1.jpg"
-                    alt="Product 1"
-                  />
-                  <img
-                    class="rounded-xl object-cover w-full h-full"
-                    src="img/1.Rosewood/Product/RoseWoodProduct-2.jpg"
-                    alt="Product 2"
-                  />
+
+            <div class="relative flex flex-col items-center">
+              <div id="sliderContent" class="grid grid-cols-2 gap-4" style="transform: translateY(0);">
+                
+                <!-- Row 1 -->
+                <div class="w-[240px] h-[240px] p-[10px] rounded-[17.71px] shadow-[0px_4.43px_17.71px_0px_rgba(158,158,158,0.25)] bg-white">
+                  <img src="img/1.Rosewood/Product/RoseWoodProduct-1.jpg" alt="1" class="rounded-xl object-cover w-full h-full" />
+                </div>
+                <div class="w-[240px] h-[240px] p-[10px] rounded-[17.71px] shadow-[0px_4.43px_17.71px_0px_rgba(158,158,158,0.25)] bg-white">
+                  <img src="img/1.Rosewood/Product/RoseWoodProduct-2.jpg" alt="2" class="rounded-xl object-cover w-full h-full" />
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="grid grid-cols-2 gap-4 p-4 box-border">
-                  <img
-                    class="rounded-xl object-cover w-full h-full"
-                    src="img/1.Rosewood/Product/RoseWoodProduct-3.jpg"
-                    alt="Product 3"
-                  />
-                  <img
-                    class="rounded-xl object-cover w-full h-full"
-                    src="img/1.Rosewood/Product/RoseWoodProduct-4.jpg"
-                    alt="Product 4"
-                  />
+                <!-- Row 1 -->
+                <div class="w-[240px] h-[240px] p-[10px] rounded-[17.71px] shadow-[0px_4.43px_17.71px_0px_rgba(158,158,158,0.25)] bg-white">
+                  <img src="img/1.Rosewood/Product/RoseWoodProduct-3.jpg" alt="1" class="rounded-xl object-cover w-full h-full" />
                 </div>
-
-                <!-- Slide 3 -->
-                <div class="grid grid-cols-2 gap-4 p-4 box-border">
-                  <img
-                    class="rounded-xl object-cover w-full h-full"
-                    src="img/1.Rosewood/Product/RoseWoodProduct-5.jpg"
-                    alt="Product 5"
-                  />
-                  <img
-                    class="rounded-xl object-cover w-full h-full"
-                    src="img/1.Rosewood/Product/RoseWoodProduct-6.jpg"
-                    alt="Product 6"
-                  />
+                <div class="w-[240px] h-[240px] p-[10px] rounded-[17.71px] shadow-[0px_4.43px_17.71px_0px_rgba(158,158,158,0.25)] bg-white">
+                  <img src="img/1.Rosewood/Product/RoseWoodProduct-4.jpg" alt="2" class="rounded-xl object-cover w-full h-full" />
                 </div>
               </div>
+            
+            
 
-              <!-- Scroll Button -->
-              <button
-                onclick="slide(1)"
-                class="absolute bottom-2 left-1/2 -translate-x-1/2 transition"
+            <!-- Down Button-->
+             <button onclick="slideNext()" class="absolute bottom-2 left-1/2 -translate-x-1/2 transition p-2">
+               <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-700"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-gray-700"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-            </div>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+             </button>
+            
+          </div>
           </div>
 
           <!-- Menu Section -->
-          <div class="flex flex-col">
+          <div class="relative flex flex-col items-center">
             <h2
-              class="text-2xl font-semibold mb-4 text-[24px]"
-              style="font-family: 'SF Pro Display'"
+              class="text-2xl font-semibold mb-9 font-['SF_Pro_Display']"
             >
               Menu
             </h2>
             <img
               src="img/Food/1.Rosewood/Menu/RoseWoodMenu-1.jpg"
-              class="object-cover mt-6"
+              class="object-cover "
             />
           </div>
         </div>
@@ -421,8 +383,7 @@
 
       <div class="py-6 space-y-6">
         <h2
-          class="text-2xl font-bold mb-6 text-[32px]"
-          style="font-family: 'SF Pro Display'"
+          class="text-2xl font-semibold mb-9 font-['SF_Pro_Display']"
         >
           Promotional Video
         </h2>
@@ -442,53 +403,48 @@
         </div>
       </div>
 
-      <div class="py-6 space-y-6">
+      <div
+        class="relative max-w-6xl mx-auto py-6 rounded-xl overflow-hidden h-[247px] translate-y"
+      >
+        <!-- Left side tour characters -->
+        <img
+          src="img/visit bnm tour cta.png"
+          alt="Tour Character"
+          class="w-full h-auto object-cover"
+        />
+
+        <!-- Right side text and button -->
         <div
-          class="relative mx-auto rounded-xl overflow-hidden min-h-[247px] translate-y-[-8px] w-full"
+          class="absolute top-1/2 left-[55%] transform -translate-y-1/2 text-white text-center"
         >
-          <!-- Left side tour characters -->
-          <img
-            src="img/visit bnm tour cta.png"
-            alt="Tour Character"
-            class="w-full h-auto object-cover"
-          />
-
-          <!-- Right side text and button -->
-          <div
-            class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white text-center"
+          <h2
+            class="text-4xl leading-tight font-bold font-['SF_Pro_Display']"
+            style="font-family: 'Mulish'"
           >
-            <h2
-              class="text-[40px] leading-tight font-bold"
-              style="font-family: 'Mulish'"
-            >
-              <p class="text-left">Escape to</p>
-              <p>the Land of Stories</p>
-            </h2>
+            <p class="text-left">Escape to</p>
+            <p>the Land of Stories</p>
+          </h2>
 
-            <button
-              class="mt-2 px-5 py-2 bg-yellow-400 text-black font-bold text-[18px] rounded-full text-sm shadow hover:bg-yellow-300 transition flex items-center"
-            >
-              VISIT BNM TOURS
-              <img
-                src="img/sr-arrow-circle-right 2.png"
-                class="w-6 h-6 object-cover ml-2"
-              />
-            </button>
-          </div>
+          <button
+            class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['SF_Pro_Display'] shadow hover:bg-yellow-300 transition flex items-center"
+          >
+            VISIT BNM TOURS
+            <img
+              src="img/sr-arrow-circle-right 2.png"
+              class="w-6 h-6 object-cover ml-2"
+            />
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Newsletter Section -->
     <div
-      class="max-w-6xl mx-auto py-6 bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 mt-0"
+      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-4 px-6 py-4 mt-8"
     >
       <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-28">
-        <h3
-          class="font-bold text-2xl font-semibold text-[24px] mb-4"
-          style="font-family: 'SF Pro Display'"
-        >
+      <div class="max-w-xl text-left md:pl-32">
+        <h3 class="font-bold text-2xl mb-4 font-['SF_Pro_Display']">
           Subscribe to our Newsletter!
         </h3>
 
@@ -503,14 +459,15 @@
           />
           <button
             type="submit"
-            class="bg-blue-600 text-white px-6 py-2 font-bold text-[12px] rounded hover:bg-blue-700 transition"
-            style="font-family: 'Open Sans'"
+            class="bg-blue-600 text-white px-6 py-2 font-bold text-sm rounded hover:bg-blue-700 transition font-['SF_Pro_Display']"
           >
             SUBSCRIBE
           </button>
         </form>
 
-        <p class="text-sm font-normal text-[16px] text-gray-700 mb-4">
+        <p
+          class="font-normal text-xl text-gray-700 mb-4 font-['SF_Pro_Display']"
+        >
           Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
           and embark on a journey filled with captivating Destination
           highlights, intriguing Event updates, deep dives into Nomadic Culture,
@@ -520,18 +477,10 @@
         </p>
 
         <p class="text-sm">
-          <span
-            class="font-mixed text-[14px]"
-            style="font-family: 'SF Pro Display'"
-            >Phone:</span
-          >
-          +976 8001-4904<br />
-          <span
-            class="font-mixed text-[14px]"
-            style="font-family: 'SF Pro Display'"
-            >Email:</span
-          >
-          BraveNewMongoliaTours@gmail.com
+          <span class="font-mixed text-xl font-['SF_Pro_Display']">Phone:</span>
+          <span class="text-lg"> 8001-4904<br /> </span>
+          <span class="font-mixed text-xl font-['SF_Pro_Display']">Email:</span>
+          <span class="text-lg">BraveNewMongoliaTours@gmail.com</span>
         </p>
       </div>
 
@@ -546,11 +495,11 @@
 
       <!-- WhatsApp QR Code -->
       <div
-        class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md"
+        class="bg-white p-3 rounded-xl w-fit flex flex-col items-center shadow-md"
       >
         <!-- Top Icon -->
         <div
-          class="w-12 h-12 rounded-full overflow-hidden -mt-6 border border-gray-200 shadow-sm"
+          class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm"
         >
           <img
             src="img/footer/bnm round.png"
@@ -560,11 +509,9 @@
         </div>
 
         <!-- Title -->
-        <span
-          class="text-sm font-medium text-[19px] text-gray-700"
-          style="font-family: 'SF Pro Display'"
-          >Connect via WhatsApp</span
-        >
+        <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">
+          Connect via WhatsApp
+        </span>
 
         <!-- QR Code -->
         <div class="bg-white p-2 rounded-lg shadow">
@@ -577,15 +524,14 @@
 
         <!-- Phone Number -->
         <div
-          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-[18px] text-gray-800 shadow-sm"
-          style="font-family: 'SF Pro Display'"
+          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']"
         >
           +976 8001 4904
         </div>
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6 pl-32">
+    <div class="max-w-6xl mx-auto py-6 space-y-6 pl-20">
       <div>
         <hr class="mb-4 border-gray-400" />
         <div class="flex items-center space-x-2">
@@ -624,13 +570,16 @@
               </span>
             </button>
           </a>
+
+          <!-- Accommodation Button -->
+          
         </div>
       </div>
     </div>
 
     <footer class="bg-[#0B2B6C] text-white">
       <div
-        class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+        class="max-w-8xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
       >
         <!-- Column 1: Logo -->
         <div class="w-full text-center">
@@ -643,15 +592,13 @@
             <span class="text-2xl font-bold">BNM</span>
           </div>
         </div>
+
         <!-- Column 2: Description -->
         <div>
-          <h4
-            class="font-bold text-[16px]"
-            style="font-family: 'SF Pro Display'"
-          >
+          <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
             Brave New Mongolia
           </h4>
-          <p class="text-sm mt-2 text-[16px] font-medium">
+          <p class="text-xl mt-2 font-medium font-['SF_Pro_Display']">
             Good day to everybody who is interested in our tours. We are a team
             of Mongolians that love nature and traveling.
           </p>
@@ -674,7 +621,7 @@
             /></a>
           </div>
 
-          <div class="mt-4 text-sm">
+          <div class="mt-4 text-lg">
             <p>Phone: +976 8625-6868</p>
             <p>Email: bnmtours@gmail.com</p>
             <p>
@@ -686,34 +633,28 @@
 
         <!-- Column 3: Support Links -->
         <div>
-          <h4
-            class="font-bold text-[16px] mb-2"
-            style="font-family: 'SF Pro Display'"
-          >
+          <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
             Support
           </h4>
           <ul class="text-sm space-y-2">
             <li>
               <a
                 href="#"
-                class="hover:underline font-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
                 >About us</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="hover:underline font-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
                 >Package information</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="hover:underline font-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
                 >Terms of Service</a
               >
             </li>
@@ -722,10 +663,7 @@
 
         <!-- Column 4: App Downloads -->
         <div>
-          <h4
-            class="font-semibold text-[16px] mb-4"
-            style="font-family: 'SF Pro Display'"
-          >
+          <h4 class="font-semibold text-2xl mb-4 font-['SF_Pro_Display']">
             Download our mobile app
           </h4>
           <div class="space-y-4">
@@ -750,25 +688,24 @@
 
       <!-- Bottom Bar -->
       <div
-        class="text-center text-sm font-medium text-[16px] py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]"
+        class="text-center text-xl bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']"
       >
         Copyright © 2025 Brave New Mongolia
       </div>
     </footer>
 
     <script>
-      let currentSlide = 0;
+      let currentIndex = 0;
+      const slider = document.getElementById("sliderContent");
+      const rowHeight = 260; 
 
-      function slide(direction) {
-        const slider = document.getElementById("sliderContent");
-        const slideHeight = 500; // px — нэг слайдын өндөр
-        const totalSlides = slider.children.length;
+      const rowsPerSlide = 1; // number of visible rows per slide (you can change if needed)
+      const totalRows = slider.children.length / 2; // 2 columns per row
 
-        // Шинэ индексийг тооцоолно
-        currentSlide = (currentSlide + direction) % totalSlides;
-
-        // Слайдыг гулсуулна
-        slider.style.transform = `translateY(-${currentSlide * slideHeight}px)`;
+      function slideNext() {
+        currentIndex = (currentIndex + 1) % totalRows;
+        const offset = -currentIndex * rowHeight;
+        slider.style.transform = `translateY(${offset}px)`;
       }
     </script>
   </body>
