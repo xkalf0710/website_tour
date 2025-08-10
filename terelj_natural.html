@@ -173,7 +173,7 @@
 
             <!-- Next Button -->
             <button id="nextBtn"
-              class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white p-2 rounded-full hover:bg-black/60"
+              class="absolute right-2 top-1/2 -translate-y-1/2  text-white p-2 rounded-full hover:bg-black/60"
             >
               &#10095;
             </button>
@@ -205,7 +205,7 @@
           class="relative overflow-hidden rounded-xl shadow-lg w-full col-span-4"
         >
           <iframe
-            class="object-cover w-full h-full"
+            class="object-cover w-full h-full aspect-video"
             src="https://www.youtube.com/embed/BXY36CGYikw?si=O5VDH_iTXC5blMdd"
             title="YouTube video player"
             frameborder="0"
@@ -243,34 +243,39 @@
               Get Directions
             </button>
           </div>
-          <div class="grid grid-cols-3 gap-2">
-            <img id="mainImage1"
-              src="img/TurtleRock/TurtleRock (1 of 4).jpg"
-              class="col-span-3 rounded-lg object-cover w-full"
-            />
-            
-            <!-- Next Button -->
-            <button id="nextBtn1"
-              class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="main" src="img/TurtleRock/TurtleRock (1 of 4).jpg" class="w-full object-cover rounded-lg"/>
+
+              <button id="nextBBtn"
+              class="absolute top-1/2 right-2 -translate-y-1/2  bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
               &#10095;
-            </button> 
-            <img
-              src="img/TurtleRock/TurtleRock (2 of 4).jpg"
-              class="thumb rounded-lg h-24 object-cover cursor-pointer"
-            />
-            <img
-              src="img/TurtleRock/TurtleRock (3 of 4).jpg"
-              class="thumb rounded-lg h-24 object-cover cursor-pointer"
-            />
-            <img
-              src="img/TurtleRock/TurtleRock (4 of 4).jpg"
-              class="thumb rounded-lg h-24 object-cover cursor-pointer"
-            />
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/TurtleRock/TurtleRock (2 of 4).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/TurtleRock/TurtleRock (3 of 4).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/TurtleRock/TurtleRock (4 of 4).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <!-- Next Button -->
+            
+              
+            </div>
           </div>
         </div>
         <!-- Aryabal Meditation Temple Section -->
         <div class="grid md:grid-cols-2 gap-8 items-start mt-24">
-          <div class="grid grid-cols-3 gap-2">
+          <!-- <div class="grid grid-cols-3 gap-2">
             <img
               src="img/AryabalMeditationTemple/Aryabal Meditation Temple1.jpg"
               class="col-span-3 rounded-lg w-full object-cover"
@@ -287,15 +292,45 @@
               src="img/AryabalMeditationTemple/Aryabal Meditation Temple 4.jpg"
               class="rounded-lg h-24 object-cover"
             />
+          </div> -->
+
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="mainAryabal" src="img/AryabalMeditationTemple/Aryabal Meditation Temple1.jpg" class="w-full object-cover rounded-lg"/>
+
+              <!-- Next Button -->
+              <button id="nextBtnAryabal"
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+                &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/AryabalMeditationTemple/Aryabal Meditation Temple 2.jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/AryabalMeditationTemple/Aryabal Meditation Temple 3.jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/AryabalMeditationTemple/Aryabal Meditation Temple 4.jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              
+            
+              
+            </div>
           </div>
           <div>
             <h2
-              class="text-2xl font-bold mb-2 text-[36px]"
-              style="font-family: 'SF Pro Display'"
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
             >
               Aryabal Meditation Temple
             </h2>
-            <p class="mb-4 text-[20px]" style="font-family: 'SF Pro Display'">
+            <p  class="text-lg font-['SF_Pro_Display'] mb-4 mt-2">
               If you’re looking for something a bit more spiritual, head over to
               the Aryabal Meditation Temple. It’s tucked away up in the hills,
               and getting there is a bit of a hike, but totally worth it. The
@@ -322,12 +357,11 @@
         <div class="grid md:grid-cols-2 gap-8 items-start mt-24">
           <div>
             <h2
-              class="text-2xl font-bold mb-2 text-[36px]"
-              style="font-family: 'SF Pro Display'"
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
             >
               Cave of the Thousand Monks
             </h2>
-            <p class="mb-4 text-[20px]" style="font-family: 'SF Pro Display'">
+            <p class="text-lg font-['SF_Pro_Display'] mb-4 mt-2">
               Not far from the peaceful landscapes of Terelj, hidden deep in the
               mountains, is the Cave of the Thousand Monks—a site that holds a
               tragic but important part of Mongolian history. Back in the 1930s,
@@ -359,64 +393,77 @@
               Get Directions
             </button>
           </div>
-          <div class="grid grid-cols-3 gap-2">
-            <img
-              src="img/CaveoftheThousandMonks/Cave of the Thousand Monks (1 of 1).jpg"
-              class="col-span-3 rounded-lg w-auto object-cover"
-            />
-            <img
-              src="img/CaveoftheThousandMonks/Cave of the Thousand Monks (1 of 1).jpg"
-              class="rounded-lg h-24 object-cover"
-            />
+          <div class="w-full">
+
+            <div class="relative col-span-3 rounded-lg overflow-hidden mt-24">
+              <img id="mainCave" src="img/CaveoftheThousandMonks/Cave of the Thousand Monks (1 of 1).jpg" class="w-full object-cover rounded-lg"/>
+
+              <!-- Next Button -->
+              <button id="nextBtnCave"
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+                &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/CaveoftheThousandMonks/Cave of the Thousand Monks (1 of 1).jpg"
+                class="thumbCave rounded-lg h-24 object-cover cursor-pointer"
+              />
+             
+            </div>
+
+            
           </div>
         </div>
 
         <!-- Accommodation Section -->
         <div class="mt-24">
           <h2
-            class="text-2xl font-semibold mb-4 text-[36px]"
-            style="font-family: 'SF Pro Display'"
+            class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']"
+            
           >
             Recommended Accommodation
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="relative rounded-xl">
+            <div class="relative rounded-xl aspect-[16/9]">
               <img
                 src="img/MirageTop.jpg"
                 alt="recommended"
                 class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-bold text-[24px] bg-opacity-50 px-2 py-1 rounded"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
               >
                 Mirage tourist camp
               </div>
             </div>
 
-            <div class="relative rounded-xl">
+            <div class="relative rounded-xl aspect-[16/9]">
               <img
                 src="img/LodgeTop.jpg"
                 alt="recommended"
                 class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-bold text-[24px] bg-opacity-50 px-2 py-1 rounded"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+               
               >
                 Lodge
               </div>
             </div>
 
-            <div class="relative rounded-xl">
+            <div class="relative rounded-xl aspect-[16/9]">
               <img
                 src="img/Copy of BaynKhadThumbnail.jpg"
                 alt="recommended"
                 class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
               />
               <div
-                class="absolute bottom-2 left-2 text-white font-bold text-[24px] bg-opacity-50 px-2 py-1 rounded"
-                style="font-family: 'SF Pro Display'"
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
               >
                 Bayankhad tourist camp
               </div>
@@ -430,8 +477,7 @@
           <!-- Nearby Destinations -->
           <div>
             <h2
-              class="text-2xl font-semibold mb-4 text-[28px]"
-              style="font-family: 'SF Pro Display'"
+              class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']"
             >
               Nearby Destinations
             </h2>
@@ -446,21 +492,21 @@
                 <div class="p-4">
                   <div class="flex items-center justify-between">
                     <h3
-                      class="font-semibold text-sm"
-                      style="font-family: 'SF Pro Display'"
+                      class="text-sm font-semibold font-['SF_Pro_Display']"
+                      
                     >
                       Baga gazriin Chuluu
                     </h3>
                     <button
-                      class="text-xs bg-blue-500 text-white px-3 py-1 rounded"
-                      style="font-family: 'SF Pro Display'"
+                      class="text-sm bg-blue-500 text-white px-3 py-1 mt-3 rounded font-['SF_Pro_Display']"
+                      
                     >
                       Details
                     </button>
                   </div>
                   <p
-                    class="text-xs text-gray-500 mt-2"
-                    style="font-family: 'SF Pro Display'"
+                    class="text-sm text-gray-500 mt-2 font-['SF_Pro_Display']"
+                    
                   >
                     Southern Mongolia
                   </p>
@@ -476,20 +522,21 @@
                 <div class="p-4">
                   <div class="flex items-center justify-between">
                     <h3
-                      class="font-semibold text-sm"
-                      style="font-family: 'SF Pro Display'"
+                      class="text-sm font-semibold font-['SF_Pro_Display']"
+                      
                     >
                       Yolyn Am
                     </h3>
                     <button
-                      class="text-xs bg-blue-500 text-white px-3 py-1 rounded"
+                      class="text-sm bg-blue-500 text-white px-3 py-1 mt-3 rounded font-['SF_Pro_Display']"
+                      
                     >
                       Details
                     </button>
                   </div>
                   <p
-                    class="text-xs text-gray-500 mt-2"
-                    style="font-family: 'SF Pro Display'"
+                    class="text-sm text-gray-500 mt-2 font-['SF_Pro_Display']"
+                    
                   >
                     Southern Mongolia
                   </p>
@@ -501,55 +548,53 @@
           <!-- Recommended BNM Tours -->
           <div>
             <h2
-              class="text-2xl font-semibold mb-4 text-[28px]"
-              style="font-family: 'SF Pro Display'"
+              class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']"
             >
               Recommended BNM Tours
             </h2>
             <div class="grid grid-cols-2 gap-4">
-              <!-- Card 1 -->
+             
+
               <div class="bg-white rounded-xl shadow-md overflow-hidden">
                 <img
                   src="img/ToursBig.jpg"
-                  alt="Northern Numinous Reindeers"
+                  alt="Yolyn Am"
                   class="w-full h-48 object-cover"
                 />
-                <div class="p-2">
+                <div class="p-3">
                   <div class="flex items-center justify-between">
-                    <span
-                      style="
-                        display: flex;
-                        align-items: center;
-                        font-family: 'SF Pro Display';
-                      "
-                    >
+                    
+                   <span class="flex items-center font-['SF_Pro_Display']">
                       <img
                         src="img/Frame 1686560678.png"
                         class="w-5 h-5 object-cover"
-                        style="margin-right: 5px"
+                        style="margin-right: 5px;"
                       />
                       Northern Numinous Reindeers
                     </span>
+
                     <button
-                      class="text-xs bg-blue-500 text-white px-3 py-1 rounded"
-                      style="font-family: 'SF Pro Display'"
+                      class="text-sm font-['SF_Pro_Display'] bg-blue-500 text-white px-3 py-1 rounded"
+                     
                     >
                       Tour Details
                     </button>
                   </div>
+                
                 </div>
               </div>
+              
               <!-- Card 2 -->
               <div class="bg-white rounded-xl shadow-md overflow-hidden">
                 <img
                   src="img/ToursBig.jpg"
-                  alt="Gobi Camel Safari"
+                  alt="Yolyn Am"
                   class="w-full h-48 object-cover"
                 />
                 <div class="p-4">
                   <div class="flex items-center justify-between">
-                    <!-- <h3 class="font-semibold text-sm">Gobi Camel Safari</h3> -->
-                    <span
+                    
+                   <span
                       style="
                         display: flex;
                         align-items: center;
@@ -563,13 +608,15 @@
                       />
                       Gobi Camel Safari
                     </span>
+
                     <button
-                      class="text-xs bg-blue-500 text-white px-3 py-1 rounded"
-                      style="font-family: 'SF Pro Display'"
+                      class="text-sm font-['SF_Pro_Display'] bg-blue-500 text-white px-3 py-1 rounded"
+                     
                     >
                       Tour Details
                     </button>
                   </div>
+                
                 </div>
               </div>
             </div>
@@ -579,7 +626,7 @@
       <!-- banner -->
 
       <div
-        class="relative mx-auto rounded-xl overflow-hidden min-h-[247px] translate-y-[15px]"
+        class="relative max-w-6xl mx-auto py-6 rounded-xl overflow-hidden h-[247px] translate-y"
       >
         <!-- Left side tour characters -->
         <img
@@ -590,16 +637,18 @@
 
         <!-- Right side text and button -->
         <div
-          class="absolute top-1/2 right-8 transform -translate-y-1/2 text-white text-center"
+          class="absolute top-1/2 left-[55%] transform -translate-y-1/2 text-white text-center"
         >
           <h2
-            class="text-white text-[40px] font-semibold leading-tight font-['Mulish']"
+            class="text-4xl leading-tight font-bold font-['SF_Pro_Display']"
+            style="font-family: 'Mulish'"
           >
             <p class="text-left">Escape to</p>
             <p>the Land of Stories</p>
           </h2>
+
           <button
-            class="mt-8 px-5 py-2 bg-yellow-400 text-black font-bold text-[18px] rounded-full text-sm shadow hover:bg-yellow-300 transition flex items-center"
+            class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['SF_Pro_Display'] shadow hover:bg-yellow-300 transition flex items-center"
           >
             VISIT BNM TOURS
             <img
@@ -611,12 +660,15 @@
       </div>
     </div>
 
+    <!-- Newsletter Section -->
     <div
-      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0"
+      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-4 px-6 py-4 mt-8"
     >
       <!-- Newsletter Form -->
       <div class="max-w-xl text-left md:pl-32">
-        <h3 class="font-bold text-2xl mb-4">Subscribe to our Newsletter!</h3>
+        <h3 class="font-bold text-2xl mb-4 font-['SF_Pro_Display']">
+          Subscribe to our Newsletter!
+        </h3>
 
         <form
           class="flex flex-col sm:flex-row gap-2 mb-4"
@@ -629,13 +681,15 @@
           />
           <button
             type="submit"
-            class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+            class="bg-blue-600 text-white px-6 py-2 font-bold text-sm rounded hover:bg-blue-700 transition font-['SF_Pro_Display']"
           >
             SUBSCRIBE
           </button>
         </form>
 
-        <p class="text-sm text-gray-700 mb-4">
+        <p
+          class="font-normal text-xl text-gray-700 mb-4 font-['SF_Pro_Display']"
+        >
           Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
           and embark on a journey filled with captivating Destination
           highlights, intriguing Event updates, deep dives into Nomadic Culture,
@@ -645,9 +699,10 @@
         </p>
 
         <p class="text-sm">
-          <span class="font-semibold">Phone:</span> +976 8001-4904<br />
-          <span class="font-semibold">Email:</span>
-          BraveNewMongoliaTours@gmail.com
+          <span class="font-mixed text-xl font-['SF_Pro_Display']">Phone:</span>
+          <span class="text-lg"> 8001-4904<br /> </span>
+          <span class="font-mixed text-xl font-['SF_Pro_Display']">Email:</span>
+          <span class="text-lg">BraveNewMongoliaTours@gmail.com</span>
         </p>
       </div>
 
@@ -662,11 +717,11 @@
 
       <!-- WhatsApp QR Code -->
       <div
-        class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md"
+        class="bg-white p-3 rounded-xl w-fit flex flex-col items-center shadow-md"
       >
         <!-- Top Icon -->
         <div
-          class="w-12 h-12 rounded-full overflow-hidden -mt-6 border border-gray-200 shadow-sm"
+          class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm"
         >
           <img
             src="img/footer/bnm round.png"
@@ -676,9 +731,9 @@
         </div>
 
         <!-- Title -->
-        <span class="text-sm font-medium text-gray-700"
-          >Connect via WhatsApp</span
-        >
+        <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">
+          Connect via WhatsApp
+        </span>
 
         <!-- QR Code -->
         <div class="bg-white p-2 rounded-lg shadow">
@@ -691,14 +746,14 @@
 
         <!-- Phone Number -->
         <div
-          class="bg-white w-full rounded-b-lg py-2 text-center font-semibold text-gray-800 shadow-sm"
+          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']"
         >
           +976 8001 4904
         </div>
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto p-8 space-y-8 pl-20">
+    <div class="max-w-6xl mx-auto py-6 space-y-6 pl-20">
       <div>
         <hr class="mb-4 border-gray-400" />
         <div class="flex items-center space-x-2">
@@ -707,7 +762,9 @@
             <button
               class="flex items-center space-x-2 px-4 py-2 rounded-full border border-gray-300 shadow text-gray-700 bg-white hover:bg-gray-100"
             >
-              <span style="display: flex; align-items: center">
+              <span
+                style="display: flex; align-items: center; font-family: 'Inter'"
+              >
                 <img
                   src="img/keyboard_backspace.png"
                   class="w-18 h-15 object-cover"
@@ -723,7 +780,9 @@
             <button
               class="flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600 text-white shadow hover:bg-blue-700"
             >
-              <span style="display: flex; align-items: center">
+              <span
+                style="display: flex; align-items: center; font-family: 'Inter'"
+              >
                 <img
                   src="img/sr-home.png"
                   class="w-18 h-15 object-cover"
@@ -734,11 +793,14 @@
             </button>
           </a>
 
+          <!-- Accommodation Button -->
           <a href="index.html">
             <button
               class="flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600 text-white shadow hover:bg-blue-700"
             >
-              <span style="display: flex; align-items: center">
+              <span
+                style="display: flex; align-items: center; font-family: 'Inter'"
+              >
                 <img
                   src="img/image 380 (Traced).png"
                   class="w-18 h-15 object-cover"
@@ -754,7 +816,7 @@
 
     <footer class="bg-[#0B2B6C] text-white">
       <div
-        class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
+        class="max-w-8xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
       >
         <!-- Column 1: Logo -->
         <div class="w-full text-center">
@@ -767,10 +829,13 @@
             <span class="text-2xl font-bold">BNM</span>
           </div>
         </div>
+
         <!-- Column 2: Description -->
         <div>
-          <h4 class="font-bold">Brave New Mongolia</h4>
-          <p class="text-sm mt-2">
+          <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+            Brave New Mongolia
+          </h4>
+          <p class="text-xl mt-2 font-medium font-['SF_Pro_Display']">
             Good day to everybody who is interested in our tours. We are a team
             of Mongolians that love nature and traveling.
           </p>
@@ -793,7 +858,7 @@
             /></a>
           </div>
 
-          <div class="mt-4 text-sm">
+          <div class="mt-4 text-lg">
             <p>Phone: +976 8625-6868</p>
             <p>Email: bnmtours@gmail.com</p>
             <p>
@@ -805,17 +870,39 @@
 
         <!-- Column 3: Support Links -->
         <div>
-          <h4 class="font-bold mb-2">Support</h4>
+          <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
+            Support
+          </h4>
           <ul class="text-sm space-y-2">
-            <li><a href="#" class="hover:underline">About us</a></li>
-            <li><a href="#" class="hover:underline">Package information</a></li>
-            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
+                >Package information</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
+                >Terms of Service</a
+              >
+            </li>
           </ul>
         </div>
 
         <!-- Column 4: App Downloads -->
         <div>
-          <h4 class="font-bold mb-4">Download our mobile app</h4>
+          <h4 class="font-semibold text-2xl mb-4 font-['SF_Pro_Display']">
+            Download our mobile app
+          </h4>
           <div class="space-y-4">
             <a href="#">
               <img
@@ -838,7 +925,7 @@
 
       <!-- Bottom Bar -->
       <div
-        class="text-center text-sm py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]"
+        class="text-center text-xl bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']"
       >
         Copyright © 2025 Brave New Mongolia
       </div>
@@ -865,33 +952,93 @@
       currentIndex = (currentIndex + 1) % images.length;
       setImage(currentIndex);
     });
+ 
+
+      const main = document.getElementById("main");
+      const thumbnails = document.querySelectorAll(".thumb");
+
+      const nextBBtn1 = document.getElementById("nextBBtn");
+
+
+      const imagess = Array.from(thumbnails).map(img => img.src);
+      let currentIndexMain = 0;
+
+      // Thumbnail click
+
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener("click", () =>{
+          main.src = thumb.src;
+          currentIndexMain = index;
+        });
+      });
+
+      //Next Button
+
+      nextBBtn1.addEventListener("click", () => {
+        currentIndexMain = (currentIndexMain + 1) % imagess.length;
+
+        main.src = imagess[currentIndexMain];
+      });
+
+
+
+      const mainAryabal = document.getElementById("mainAryabal");
+
+      const thumbnailsAryabal = document.querySelectorAll(".thumbAryabal");
+
+      const nextBtnAryabal = document.getElementById("nextBtnAryabal");
+
+      const imagesAryabal = Array.from(thumbnailsAryabal).map(img => img.src);
+
+      let currentIndexAryabal = 0;
+
+      // Thumbnail click
+
+      thumbnailsAryabal.forEach((thumbAryabal, index) => {
+        thumbAryabal.addEventListener("click", () =>{
+          mainAryabal.src = thumbAryabal.src;
+          currentIndexAryabal = index;
+        });
+      });
+
+      //Next Button
+
+      nextBtnAryabal.addEventListener("click", () => {
+        currentIndexAryabal = (currentIndexAryabal + 1) % imagesAryabal.length;
+
+        mainAryabal.src = imagesAryabal[currentIndexAryabal];
+      });
+
+
+
+      const mainCave = document.getElementById("mainCave");
+
+      const thumbnailsCave = document.querySelectorAll(".thumbCave");
+
+      const nextBtnCave = document.getElementById("nextBtnCave");
+
+      const imagesCave = Array.from(thumbnailsCave).map(img => img.src);
+
+      let currentIndexCave = 0;
+
+       // Thumbnail click
+
+      thumbnailsCave.forEach((thumbCave, index) => {
+        thumbCave.addEventListener("click", () =>{
+          mainCave.src = thumbCave.src;
+          currentIndexCave = index;
+        });
+      });
+
+      //Next Button
+
+      nextBtnCave.addEventListener("click", () => {
+        currentIndexCave = (currentIndexCave + 1) % imagesCave.length;
+
+        mainCave.src = imagesCave[currentIndexCave];
+      });
     </script>
 
-      <script>
-    const mainImage1 = document.getElementById("mainImage1");
-    const thumbnails = document.querySelectorAll(".thumb");
-    const nextBtn1 = document.getElementById("nextBtn1");
-   
-
-    // Array of all image sources
-    const images1 = Array.from(thumbnails).map(img => img.src);
-    let currentIndex1 = 0;
-
-    // Thumbnail click
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        mainImage1.src = thumb.src;
-        currentIndex1 = index;
-      });
-    });
-
-    // Next button
-    nextBtn.addEventListener("click", () => {
-      currentIndex1 = (currentIndex1 + 1) % images1.length;
-      mainImage1.src = images1[currentIndex1];
-    });
-
-   
-  </script>
+    
   </body>
 </html>
