@@ -11,7 +11,7 @@
 
     <title>Accommodation Free</title>
   </head>
-  <body class="min-h-screen w-full">
+  <body class="min-h-screen w-full bg-blue-100">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
       <div
         class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
@@ -185,27 +185,38 @@
         </div>
       </div>
 
-      <div class="py-1 space-y-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-stretch">
-          <div class="bg-white p-6 rounded shadow-md w-[421px] h-[426px]">
+    
+        <div class="max-w-6xl  grid md:grid-cols-2 gap-0 items-stretch">
+          
+          <!-- Text Card -->
+          <div class="bg-white p-6 rounded shadow-md w-[421px] h-full">
             <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
             <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
               The Genghis Khan Statue Complex, also known as the Chinggis Khaan
               Statue Complex, is a prominent tourist attraction located in
               Tsonjin Boldog, around 54 kilometers (34 miles) east of
             </p>
+
+            <h2 class="font-semibold text-lg mb-2 font-['SF_Pro_Display']">Address</h2>
+              <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
+                Located 3 km east of the Chinggis Khaan<br />
+                Equestrian Statue in Tsonjinboldog,
+              </p>
           </div>
 
-          <div class="rounded overflow-hidden shadow-md">
-           <img
-            src="img/Variant2.png"
-            alt="Hotel"
-            class="w-756 h-full object-cover rounded"
-           />
-         </div>
+          <!-- Image -->
+          <div class="rounded overflow-hidden shadow-md w-[550px] h-full">
+            <img
+              src="img/Variant2.png"
+              alt="Hotel"
+              class="w-full h-full object-cover rounded"
+            />
+          </div>
 
-       </div>
-      </div>
+        </div>
+
+
+
 
       <div class="py-6 space-y-6">
         <section class="max-w-6xl mx-auto px-4 py-10">
@@ -255,6 +266,26 @@
                 />
               </div>
             </div>
+
+             <button
+                id="prevBtn"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
 
             <!-- Navigation Arrow -->
             <button
@@ -586,12 +617,17 @@
       </div>
     </footer>
 
-    <script>
+   <script>
       const carousel = document.getElementById("carousel");
       const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
 
       nextBtn.addEventListener("click", () => {
         carousel.scrollBy({ left: 340, behavior: "smooth" });
+      });
+
+      prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -340, behavior: "smooth" });
       });
     </script>
   </body>

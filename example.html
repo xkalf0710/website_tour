@@ -1,62 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accommodations Grid</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-gray-100 p-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Card 1 -->
-        <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden shadow-md"
-        >
-          <img
-            src="img/pamukResortProfile.jpg"
-            alt="Pamuk Resort"
-            class="w-full h-full object-cover"
-          />
-          <div
-            class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded"
-          >
-            Pamuk Resort
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
 
-        <!-- Card 2 -->
-        <div
-          class="relative rounded-xl overflow-hidden shadow-md aspect-[2.05/1]"
-        >
-          <img
-            src="img/EagleHunterTouristcampWebTop.jpg"
-            alt="Eagle Hunter Tourist Camp"
-            class="w-full h-full object-cover"
-          />
-          <div
-            class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded"
-          >
-            Eagle Hunter Tourist Camp
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="relative rounded-xl overflow-hidden shadow-md aspect-square"
-        >
-          <img
-            src="img/AltaiLodgeProfile.jpg"
-            alt="Altai Lodge"
-            class="w-full h-full object-cover"
-          />
-          <div
-            class="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm px-3 py-1 rounded"
-          >
-            Altai Lodge
-          </div>
-        </div>
+  <div class="flex flex-col md:flex-row w-full h-screen">
+    
+    <!-- Left Text Section -->
+    <div class="flex-1 bg-gradient-to-b from-gray-200 to-gray-800 text-black p-6 md:p-10 flex items-center">
+      <div>
+        <h2 class="text-lg font-bold mb-2">Overview</h2>
+        <p class="text-sm leading-relaxed">
+          The Genghis Khan Statue Complex, also known as the Chinggis Khaan Statue Complex, is a prominent tourist attraction located in Tsonjin Boldog, around 54 kilometers (34 miles) east of
+        </p>
       </div>
     </div>
-  </body>
+
+    <!-- Right Image Section -->
+    <div class="flex-1">
+      <img src="your-image.jpg" alt="Building" class="w-full h-full object-cover" />
+    </div>
+
+  </div>
+
+</body>
 </html>

@@ -11,7 +11,7 @@
 
     <title>Accommodation Premium Details</title>
   </head>
-  <body class="min-h-screen w-full">
+  <body class="min-h-screen w-full bg-blue-100">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
       <div
         class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
@@ -308,6 +308,26 @@
             </div>
 
             <!-- Navigation Arrow -->
+
+            <button
+                id="prevBtn"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
             <button
               id="nextBtn"
               class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2"
@@ -400,6 +420,28 @@
                 />
               </svg>
             </button>
+
+             <button
+                id="prevBtnFood"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+            
           </div>
         </section>
       </div>
@@ -473,6 +515,26 @@
                 />
               </svg>
             </button>
+
+             <button
+                id="prevBtnFacilities"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
           </div>
         </section>
       </div>
@@ -806,26 +868,43 @@
     <script>
       const carousel = document.getElementById("carousel");
       const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
 
       nextBtn.addEventListener("click", () => {
         carousel.scrollBy({ left: 340, behavior: "smooth" });
       });
+
+      prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -340, behavior: "smooth" });
+      });
     </script>
+
+   
     <script>
       const carouselFood = document.getElementById("carouselFood");
       const nextBtnFood = document.getElementById("nextBtnFood");
+      const prevBtnFood = document.getElementById("prevBtnFood");
 
       nextBtnFood.addEventListener("click", () => {
         carouselFood.scrollBy({ left: 340, behavior: "smooth" });
+      });
+
+      prevBtnFood.addEventListener("click", () => {
+        carouselFood.scrollBy({ left: -340, behavior: "smooth" });
       });
     </script>
 
     <script>
       const carouselFacilities = document.getElementById("carouselFacilities");
       const nextBtnFacilities = document.getElementById("nextBtnFacilities");
+      const prevBtnFacilities = document.getElementById("prevBtnFacilities");
 
       nextBtnFacilities.addEventListener("click", () => {
         carouselFacilities.scrollBy({ left: 340, behavior: "smooth" });
+      });
+
+      prevBtnFacilities.addEventListener("click", () => {
+        carouselFacilities.scrollBy({ left: -340, behavior: "smooth" });
       });
     </script>
   </body>
