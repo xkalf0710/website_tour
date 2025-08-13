@@ -1,1575 +1,1152 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-blue-50">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home design</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      :root {
-        --variable-collection-blue-duplicate: #0055aa;
-        --ui-white: #ffffff;
 
-        --header-4-semibold-24-font-family: "Arial", sans-serif;
-        --header-4-semibold-24-font-weight: 600;
-        --header-4-semibold-24-font-size: 24px;
-        --header-4-semibold-24-letter-spacing: 0px;
-        --header-4-semibold-24-line-height: 32px;
-        --header-4-semibold-24-font-style: normal;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .container-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65vh;
+    }
 
-        --header-6-medium-16-font-family: "Arial", sans-serif;
-        --header-6-medium-16-font-weight: 500;
-        --header-6-medium-16-font-size: 16px;
-        --header-6-medium-16-letter-spacing: 0px;
-        --header-6-medium-16-line-height: 24px;
-        --header-6-medium-16-font-style: normal;
-      }
+    .overlap-wrapper {
+      position: relative;
+      width: min(1280px, 90vw);
+      height: min(600px, 45vh);
+      background-color: var(--variable-collection-blue-duplicate);
+      border-radius: 28px;
+      overflow: hidden;
+    }
 
-      .container-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 65vh;
-      }
+    .overlap-3 {
+      position: relative;
+      height: 958px;
+    }
 
-      .overlap-wrapper {
-        position: relative;
-        width: min(1280px, 90vw);
-        height: min(600px, 45vh);
-        background-color: var(--variable-collection-blue-duplicate);
-        border-radius: 28px;
-        overflow: hidden;
-      }
+    .image-3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
 
-      .overlap-3 {
-        position: relative;
-        height: 958px;
-      }
+    .frame-35 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: clamp(20px, 5vw, 80px);
+      padding: 20px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+    }
 
-      .image-3 {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-      }
+    .frame-36 {
+      gap: 8px;
+      flex: 0 0 auto;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
 
+    .text-wrapper-27 {
+      font-family: var(--header-4-semibold-24-font-family);
+      font-weight: var(--header-4-semibold-24-font-weight);
+      color: var(--ui-white);
+      font-size: var(--header-4-semibold-23-font-size);
+      line-height: var(--header-4-semibold-24-line-height);
+      white-space: nowrap;
+    }
+
+    .text-wrapper-28,
+    .browse-through-our,
+    .text-wrapper-29 {
+      font-family: var(--header-6-medium-16-font-family);
+      font-weight: var(--header-6-medium-16-font-weight);
+      color: var(--ui-white);
+      font-size: var(--header-6-medium-15-font-size);
+      line-height: var(--header-6-medium-16-line-height);
+      text-align: justify;
+    }
+
+    .text-wrapper-28 {
+      width: 100%;
+      max-width: 302px;
+    }
+
+    .browse-through-our {
+      width: 100%;
+      max-width: 307px;
+    }
+
+    .text-wrapper-29 {
+      width: 100%;
+      max-width: 244px;
+    }
+
+    .group-21 {
+      position: absolute;
+      width: min(399px, 80vw);
+      height: 128px;
+      top: 50%;
+      right: 5%;
+      transform: translateY(-50%);
+    }
+
+    .text-wrapper-30 {
+      position: absolute;
+      top: 0;
+      left: 95px;
+      font-family: "Arial", sans-serif;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      white-space: nowrap;
+    }
+
+    .group-22 {
+      position: absolute;
+      width: 397px;
+      height: 61px;
+      top: 67px;
+      left: 0;
+    }
+
+    .badge-ios {
+      position: absolute;
+      width: 182px;
+      height: 61px;
+      top: 0;
+      left: 0;
+    }
+
+    .badge-android {
+      position: absolute;
+      width: 205px;
+      height: 61px;
+      top: 0;
+      left: 192px;
+    }
+
+    .group-23 {
+      position: absolute;
+      width: min(590px, 45vw);
+      height: auto;
+      top: 246px;
+      left: 5%;
+    }
+
+    .overlap-group-5 {
+      position: relative;
+      height: 445px;
+    }
+
+    .imockup-google-pixel,
+    .imockup-google-pixel-2 {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    .imockup-google-pixel {
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+    }
+
+    .imockup-google-pixel-2 {
+      width: 60%;
+      height: auto;
+      top: 20%;
+      right: 0;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    @media (max-width: 768px) {
       .frame-35 {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: clamp(20px, 5vw, 80px);
-        padding: 20px;
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-      }
-
-      .frame-36 {
-        gap: 8px;
-        flex: 0 0 auto;
-        display: inline-flex;
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
         position: relative;
-      }
-
-      .text-wrapper-27 {
-        font-family: var(--header-4-semibold-24-font-family);
-        font-weight: var(--header-4-semibold-24-font-weight);
-        color: var(--ui-white);
-        font-size: var(--header-4-semibold-23-font-size);
-        line-height: var(--header-4-semibold-24-line-height);
-        white-space: nowrap;
-      }
-
-      .text-wrapper-28,
-      .browse-through-our,
-      .text-wrapper-29 {
-        font-family: var(--header-6-medium-16-font-family);
-        font-weight: var(--header-6-medium-16-font-weight);
-        color: var(--ui-white);
-        font-size: var(--header-6-medium-15-font-size);
-        line-height: var(--header-6-medium-16-line-height);
-        text-align: justify;
-      }
-
-      .text-wrapper-28 {
-        width: 100%;
-        max-width: 302px;
-      }
-
-      .browse-through-our {
-        width: 100%;
-        max-width: 307px;
-      }
-
-      .text-wrapper-29 {
-        width: 100%;
-        max-width: 244px;
+        top: 20px;
+        padding: 10px;
       }
 
       .group-21 {
-        position: absolute;
-        width: min(399px, 80vw);
-        height: 128px;
-        top: 50%;
-        right: 5%;
-        transform: translateY(-50%);
-      }
-
-      .text-wrapper-30 {
-        position: absolute;
-        top: 0;
-        left: 95px;
-        font-family: "Arial", sans-serif;
-        font-weight: 700;
-        color: #ffffff;
-        font-size: 20px;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
         text-align: center;
-        line-height: 40px;
-        white-space: nowrap;
-      }
-
-      .group-22 {
-        position: absolute;
-        width: 397px;
-        height: 61px;
-        top: 67px;
-        left: 0;
-      }
-
-      .badge-ios {
-        position: absolute;
-        width: 182px;
-        height: 61px;
-        top: 0;
-        left: 0;
-      }
-
-      .badge-android {
-        position: absolute;
-        width: 205px;
-        height: 61px;
-        top: 0;
-        left: 192px;
+        margin-top: 20px;
       }
 
       .group-23 {
-        position: absolute;
-        width: min(590px, 45vw);
-        height: auto;
-        top: 246px;
-        left: 5%;
-      }
-
-      .overlap-group-5 {
         position: relative;
-        height: 445px;
-      }
-
-      .imockup-google-pixel,
-      .imockup-google-pixel-2 {
-        position: absolute;
-        object-fit: cover;
-      }
-
-      .imockup-google-pixel {
+        left: auto;
+        top: auto;
         width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container-center {
         height: auto;
-        top: 0;
-        left: 0;
+        padding: 20px 0;
       }
 
-      .imockup-google-pixel-2 {
-        width: 60%;
+      .overlap-wrapper {
         height: auto;
-        top: 20%;
-        right: 0;
+        min-height: 400px;
       }
 
-       .hide-scrollbar::-webkit-scrollbar {
-        display: none;
+      .overlap-3 {
+        height: auto;
+        min-height: 400px;
       }
-      .hide-scrollbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      }
+    }
+  </style>
+</head>
 
-      @media (max-width: 768px) {
-        .frame-35 {
-          flex-direction: column;
-          gap: 20px;
-          position: relative;
-          top: 20px;
-          padding: 10px;
-        }
-        
-        .group-21 {
-          position: relative;
-          left: auto;
-          right: auto;
-          top: auto;
-          transform: none;
-          width: 100%;
-          text-align: center;
-          margin-top: 20px;
-        }
-        
-        .group-23 {
-          position: relative;
-          left: auto;
-          top: auto;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-        }
-        
-        .container-center {
-          height: auto;
-          padding: 20px 0;
-        }
-        
-        .overlap-wrapper {
-          height: auto;
-          min-height: 400px;
-        }
-        
-        .overlap-3 {
-          height: auto;
-          min-height: 400px;
-        }
-      }
-    </style>
-  </head>
-  
 
-  <body class="min-h-screen w-full bg-blue-100 overflow-x-auto">
-    <header
-      class="relative bg-cover bg-center min-h-[410px] object-cover"
-      style="background-image: url('img/Home/HomepageHeaderPhoto.jpg')"
-    >
-      <div
-        class="max-w-6xl mx-auto w-full flex items-center justify-between py-2 px-4 space-x-4"
-      >
-        <!-- Logo -->
+<body class="min-h-screen w-full bg-blue-100 overflow-x-auto">
+  <header class="relative bg-cover bg-center min-h-[410px] object-cover"
+    style="background-image: url('img/Home/HomepageHeaderPhoto.jpg')">
+    <div class="max-w-6xl mx-auto w-full flex items-center justify-between py-2 px-4 space-x-4">
+      <!-- Logo -->
 
-        <a href="index.html">
-          <div class="flex items-center space-x-2">
-            <span class="font-bold text-white text-xl">BNM</span>
-            <img src="img/footer/bnm round.png" class="w-8 h-8" alt="logo" />
-          </div>
-        </a>
-
-        <!-- Center Sectioon -->
-        <div class="flex flex-1 justify-center items-center space-x-6">
-          <!-- About Link -->
-          <a
-            href="about_us.html"
-            class="text-sm text-white font-semibold hover:underline"
-            >About Us</a
-          >
-
-          <!-- Search Input -->
-          <div class="relative w-[250px] sm:w-[350px] lg:w-[450px] xl:w-[500px]">
-            <input
-              type="text"
-              placeholder="Search"
-              class="w-full pl-10 pr-4 py-2 rounded-md text-sm text-black focus:outline-none"
-            />
-            <div class="absolute left-3 top-2.5">
-              <svg
-                class="w-4 h-4 text-blue-600"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-          </div>
+      <a href="index.html">
+        <div class="flex items-center space-x-2">
+          <span class="font-bold text-white text-xl">BNM</span>
+          <img src="img/footer/bnm round.png" class="w-8 h-8" alt="logo" />
         </div>
+      </a>
 
-        <!-- Right side: Login + Language -->
+      <!-- Center Sectioon -->
+      <div class="flex flex-1 justify-center items-center space-x-6">
+        <!-- About Link -->
+        <a href="about_us.html" class="text-sm text-white font-semibold hover:underline">About Us</a>
 
-        <div class="flex items-center space-x-4">
-          <a
-            href="login.html"
-            class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-4 py-1.5 rounded-md"
-            >Log In</a
-          >
-          <!-- Language Dropdown -->
-          <button
-            class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-sm px-3 py-1.5 rounded-md flex items-center"
-          >
-            EN
-            <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+        <!-- Search Input -->
+        <div class="relative w-[250px] sm:w-[350px] lg:w-[450px] xl:w-[500px]">
+          <input type="text" placeholder="Search"
+            class="w-full pl-10 pr-4 py-2 rounded-md text-sm text-black focus:outline-none" />
+          <div class="absolute left-3 top-2.5">
+            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+                clip-rule="evenodd"></path>
             </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="relative w-full min-h-[400px]">
-        <div
-          class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4"
-        >
-          <h1
-            class="text-5xl md:text-5xl font-semibold"
-            style="font-family: 'Segoe UI', sans-serif"
-          >
-            Welcome
-          </h1>
-          &nbsp;
-          <p
-            class="text-5xl md:text-5xl font-semibold"
-            style="font-family: 'Segoe UI', sans-serif"
-          >
-            to the Land of Stories
-          </p>
-          <h1
-            class="text-white text-8xl font-normal italic mt-2"
-            style="font-family: 'Authenia', cursive"
-          >
-            Mongolia
-          </h1>
-        </div>
-      </div>
-    </header>
-
-    
-
-     <!-- Зургийн контейнер -->
-    <div class="relative">
-      <div
-        class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4"
-      ></div>
-
-      <!-- Nav-ийг зураг дээр байрлуулах -->
-      <nav
-        class="absolute bottom-[-110px] left-1/2 -translate-x-[50%] flex justify-center mx-auto space-x-6 px-4 min-h-[132px]"
-      >
-        <a
-          href="visit_ulaanbaatar.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          Visit Ulaanbaatar
-        </a>
-        <a
-          href="destination.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          Destinations
-        </a>
-        <a
-          href="accommodation.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          Accommodation
-        </a>
-        <a
-          href="tours.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          BNM Tours
-        </a>
-        <a
-          href="#"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          Events
-        </a>
-        <a
-          href="#"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          Info
-        </a>
-        <a
-          href="commercial.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
-        >
-          Commercial
-        </a>
-      </nav>
-    </div>
-
-    <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
-      <div class="mt-32 text-center">
-        <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
-          Destinations
-        </h2>
-        <div class="relative w-full flex justify-center py-4">
-          <div
-            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl mx-auto"
-          >
-            <!-- Day Trip -->
-            <div
-              class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-            >
-              <img
-                src="img/destination/DayTrips.jpg"
-                alt="Day Trip"
-                class="w-full h-full object-cover rounded-lg"
-              />
-              <a href="destination.html">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div
-                    class="px-3 py-1 border rounded-xl w-[119px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-                  >
-                    <span class="text-white text-xl font-['SF_Pro_Display']"
-                      >Day Trips</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Central Mongolia -->
-            <div
-              class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
-            >
-              <img
-                src="img/destination/CentralMongolia.jpg"
-                alt="Central Mongolia"
-                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-              />
-              <a href="destination.html">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div
-                    class="px-3 py-1 border rounded-xl w-[180px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-                  >
-                    <span class="text-white text-xl font-['SF_Pro_Display']"
-                      >Central Mongolia</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Northern Mongolia -->
-            <div
-              class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-            >
-              <img
-                src="img/destination/WesternMongolia.jpg"
-                alt="Northern Mongolia"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-              />
-              <a href="destination.html">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div
-                    class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-                  >
-                    <span class="text-white text-xl font-['SF_Pro_Display']"
-                      >Western Mongolia</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Southern Mongolia -->
-            <div
-              class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
-            >
-              <img
-                src="img/destination/SouthernMongolia.jpg"
-                alt="Southern Mongolia"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-              />
-              <a href="destination.html">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div
-                    class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-                  >
-                    <span class="text-white text-xl font-['SF_Pro_Display']"
-                      >Southern Mongolia</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-            <!-- Western Mongolia -->
-            <div
-              class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-            >
-              <img
-                src="img/Eastern/BinderWeb.jpg"
-                alt="Western Mongolia"
-                class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90"
-              />
-              <a href="destination.html">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div
-                    class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-                  >
-                    <span class="text-white text-xl font-['SF_Pro_Display']"
-                      >Eastern Mongolia</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <!-- Eastern Mongolia -->
-            <div
-              class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-            >
-              <img
-                src="img/Commercial/NorthernDestination.jpg"
-                alt="Eastern Mongolia"
-                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-              />
-              <a href="destination.html">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div
-                    class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-                  >
-                    <span class="text-white text-xl font-['SF_Pro_Display']"
-                      >Northern Mongolia</span
-                    >
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
+      </div>
 
+      <!-- Right side: Login + Language -->
+
+      <div class="flex items-center space-x-4">
+        <a href="login.html"
+          class="bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-4 py-1.5 rounded-md">Log In</a>
+        <!-- Language Dropdown -->
+        <button
+          class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white font-semibold text-sm px-3 py-1.5 rounded-md flex items-center">
+          EN
+          <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="relative w-full min-h-[400px]">
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
+        <h1 class="text-5xl md:text-5xl font-semibold" style="font-family: 'Segoe UI', sans-serif">
+          Welcome
+        </h1>
         &nbsp;
-
-        <img
-          src="img/333089952_1268697987374714_2063728127599991832_n wR.png"
-          class="w-[320px] h-[57px] overflow-hidden mt-10"
-        />
-
-        &nbsp; &nbsp;
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
-          <div class="relative overflow-hidden md:col-span-2">
-            <img
-              src="img/Ulaanbaatar/PlacestoVisit.jpg"
-              alt="Places to visit"
-              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90 backdrop-blur-md"
-            />
-
-            <div
-              class="absolute inset-0 bg-opacity-30 text-white flex flex-col justify-between p-4"
-            >
-              <h2 class="text-left font-bold text-2xl font-['SF_Pro_Display']">
-                Places to visit
-              </h2>
-
-              <div class="space-y-2 ml-auto">
-                <button
-                  class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center"
-                >
-                  Museums <span> ›</span>
-                </button>
-
-                <button
-                  class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center"
-                >
-                  Monasteries <span> ›</span>
-                </button>
-                <button
-                  class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center"
-                >
-                  Places to visit <span> ›</span>
-                </button>
-                <button
-                  class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center"
-                >
-                  Statues & monuments <span> ›</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 2: Virtual City Tour -->
-
-          <div class="relative overflow-hidden md:col-span-1">
-            <img
-              src="img/Ulaanbaatar/VirtualCityTour.jpg"
-              alt="Virtual City Tour"
-              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-            />
-            <div
-              class="absolute inset-0 bg-black bg-opacity-30 text-white flex flex-col justify-between p-4"
-            >
-              <h2 class="text-left font-bold text-2xl font-['SF_Pro_Display']">
-                Virtual City Tour
-              </h2>
-            </div>
-          </div>
-
-          <div class="relative overflow-hidden md:col-span-1">
-            <img
-              src="img/Ulaanbaatar/HistoryoftheCapital.jpg"
-              alt="History of the Capital"
-              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-            />
-            <div
-              class="absolute inset-0 bg-black bg-opacity-30 text-white flex flex-col justify-between p-4"
-            >
-              <h2 class="text-left font-bold text-2xl font-['SF_Pro_Display']">
-                History of the Capital
-              </h2>
-            </div>
-          </div>
-        </div>
+        <p class="text-5xl md:text-5xl font-semibold" style="font-family: 'Segoe UI', sans-serif">
+          to the Land of Stories
+        </p>
+        <h1 class="text-white text-8xl font-normal italic mt-2" style="font-family: 'Authenia', cursive">
+          Mongolia
+        </h1>
       </div>
     </div>
+  </header>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
-      <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
-        Information
-      </h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <!-- Nomadic Culture -->
-        <div
-          class="col-span-1 row-span-2 relative rounded-2xl overflow-hidden aspect-[1/2.05]"
-        >
-          <img
-            src="img/Information/NomadicCulture.jpg"
-            alt="Nomadic Culture"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-          >
-            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-              Nomadic Culture
-            </h3>
-          </div>
-        </div>
 
-        <!-- Tourist Information -->
-        <div
-          class="relative rounded-xl overflow-hidden row-span-1 col-span-2 aspect-[2.05/1]"
-        >
-          <img
-            src="img/Information/TouristInformation.jpg"
-            alt="Tourist information"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-          >
-            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-              Tourist information
-            </h3>
-          </div>
-        </div>
-
-        <!-- Religion -->
-        <div
-          class="col-span-1 row-span-2 relative group rounded-2xl overflow-hidden aspect-[1/2.05]"
-        >
-          <img
-            src="img/Information/Religion.jpg"
-            alt="Religion"
-            class="w-294 h-604 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-          >
-            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-              Religion
-            </h3>
-          </div>
-        </div>
-
-        <!-- History -->
-        <div
-          class="relative rounded-2xl overflow-hidden col-span-1 row-span-1 aspect-square"
-        >
-          <img
-            src="img/Information/History.jpg"
-            alt="History"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-          >
-            <h3 class="text-white text-2xl font-['SF_Pro_Display']">History</h3>
-          </div>
-        </div>
-
-        <!-- Content -->
-        <div
-          class="relative rounded-2xl overflow-hidden col-span-1 row-span-1 aspect-square"
-        >
-          <img
-            src="img/Information/Content.jpg"
-            alt="Content"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-          >
-            <h3 class="text-white text-2xl font-['SF_Pro_Display']">Content</h3>
-          </div>
-        </div>
-      </div>
+  <!-- Зургийн контейнер -->
+  <div class="relative">
+    <div class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
     </div>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
-      <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
+    <!-- Nav-ийг зураг дээр байрлуулах -->
+    <nav
+      class="absolute bottom-[-110px] left-1/2 -translate-x-[50%] flex justify-center mx-auto space-x-6 px-4 min-h-[132px]">
+      <a href="visit_ulaanbaatar.html"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
+        Visit Ulaanbaatar
+      </a>
+      <a href="destination.html"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
+        Destinations
+      </a>
+      <a href="accommodation.html"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
         Accommodation
+      </a>
+      <a href="tours.html"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
+        BNM Tours
+      </a>
+      <a href="#"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
+        Events
+      </a>
+      <a href="#"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
+        Info
+      </a>
+      <a href="commercial.html"
+        class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out">
+        Commercial
+      </a>
+    </nav>
+  </div>
+
+  <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
+    <div class="mt-32 text-center">
+      <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
+        Destinations
       </h2>
-
-      <div
-        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl mx-auto mt-10"
-      >
-        <!-- Day Trip -->
-        <div
-          class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/accommodation/AccDaytrips.jpg"
-            alt="Day Trip"
-            class="w-full h-full object-cover rounded-lg"
-          />
-          <a href="accommodation.html">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="px-3 py-1 border rounded-xl w-[119px] h-[50px] flex justify-center items-center backdrop-blur-sm"
-              >
-                <span class="text-white text-xl font-['SF_Pro_Display']"
-                  >Day Trips</span
-                >
+      <div class="relative w-full flex justify-center py-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl mx-auto">
+          <!-- Day Trip -->
+          <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+            <img src="img/destination/DayTrips.jpg" alt="Day Trip" class="w-full h-full object-cover rounded-lg" />
+            <a href="destination.html">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="px-3 py-1 border rounded-xl w-[119px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+                  <span class="text-white text-xl font-['SF_Pro_Display']">Day Trips</span>
+                </div>
               </div>
+            </a>
+          </div>
+
+          <!-- Central Mongolia -->
+          <div class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]">
+            <img src="img/destination/CentralMongolia.jpg" alt="Central Mongolia"
+              class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+            <a href="destination.html">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="px-3 py-1 border rounded-xl w-[180px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+                  <span class="text-white text-xl font-['SF_Pro_Display']">Central Mongolia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Northern Mongolia -->
+          <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+            <img src="img/destination/WesternMongolia.jpg" alt="Northern Mongolia"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+            <a href="destination.html">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+                  <span class="text-white text-xl font-['SF_Pro_Display']">Western Mongolia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Southern Mongolia -->
+          <div class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]">
+            <img src="img/destination/SouthernMongolia.jpg" alt="Southern Mongolia"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+            <a href="destination.html">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+                  <span class="text-white text-xl font-['SF_Pro_Display']">Southern Mongolia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Western Mongolia -->
+          <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+            <img src="img/Eastern/BinderWeb.jpg" alt="Western Mongolia"
+              class="w-full h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+            <a href="destination.html">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+                  <span class="text-white text-xl font-['SF_Pro_Display']">Eastern Mongolia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Eastern Mongolia -->
+          <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+            <img src="img/Commercial/NorthernDestination.jpg" alt="Eastern Mongolia"
+              class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+            <a href="destination.html">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                  class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+                  <span class="text-white text-xl font-['SF_Pro_Display']">Northern Mongolia</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      &nbsp;
+
+      <img src="img/333089952_1268697987374714_2063728127599991832_n wR.png"
+        class="w-[320px] h-[57px] overflow-hidden mt-10" />
+
+      &nbsp; &nbsp;
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+        <div class="relative overflow-hidden md:col-span-2">
+          <img src="img/Ulaanbaatar/PlacestoVisit.jpg" alt="Places to visit"
+            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90 backdrop-blur-md" />
+
+          <div class="absolute inset-0 bg-opacity-30 text-white flex flex-col justify-between p-4">
+            <h2 class="text-left font-bold text-2xl font-['SF_Pro_Display']">
+              Places to visit
+            </h2>
+
+            <div class="space-y-2 ml-auto">
+              <button
+                class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center">
+                Museums <span> ›</span>
+              </button>
+
+              <button
+                class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center">
+                Monasteries <span> ›</span>
+              </button>
+              <button
+                class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center">
+                Places to visit <span> ›</span>
+              </button>
+              <button
+                class="text-right bg-white text-black px-3 py-1 text-lg rounded-full shadow flex justify-end gap-2 ml-auto items-center">
+                Statues & monuments <span> ›</span>
+              </button>
             </div>
-          </a>
+          </div>
         </div>
 
-        <!-- Central Mongolia -->
-        <div
-          class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
-        >
-          <img
-            src="img/accommodation/AccCentral.jpg"
-            alt="Central Mongolia"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <a href="accommodation.html">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="px-3 py-1 border rounded-xl w-[180px] h-[50px] flex justify-center items-center backdrop-blur-md"
-              >
-                <span class="text-white text-xl font-['SF_Pro_Display']"
-                  >Central Mongolia</span
-                >
-              </div>
-            </div>
-          </a>
+        <!-- Card 2: Virtual City Tour -->
+
+        <div class="relative overflow-hidden md:col-span-1">
+          <img src="img/Ulaanbaatar/VirtualCityTour.jpg" alt="Virtual City Tour"
+            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+          <div class="absolute inset-0 bg-black bg-opacity-30 text-white flex flex-col justify-between p-4">
+            <h2 class="text-left font-bold text-2xl font-['SF_Pro_Display']">
+              Virtual City Tour
+            </h2>
+          </div>
         </div>
 
-        <!-- Northern Mongolia -->
-        <div
-          class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/accommodation/AccNorthern.jpg"
-            alt="Northern Mongolia"
-            class="w-full h-full object-cover rounded-lg"
-          />
-          <a href="accommodation.html">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md"
-              >
-                <span class="text-white text-xl font-['SF_Pro_Display']"
-                  >Northern Mongolia</span
-                >
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Western Mongolia -->
-        <div
-          class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/accommodation/AccWestern.jpg"
-            alt="Western Mongolia"
-            class="w-full h-full object-cover rounded-xl"
-          />
-          <a href="accommodation.html">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md"
-              >
-                <span class="text-white text-xl font-['SF_Pro_Display']"
-                  >Western Mongolia</span
-                >
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Southern Mongolia -->
-        <div
-          class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
-        >
-          <img
-            src="img/accommodation/AccSouthern.jpg"
-            alt="Southern Mongolia"
-            class="w-full h-full object-cover rounded-lg"
-          />
-          <a href="accommodation.html">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md"
-              >
-                <span class="text-white text-xl font-['SF_Pro_Display']"
-                  >Southern Mongolia</span
-                >
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Eastern Mongolia -->
-        <div
-          class="col-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/accommodation/AccEastern.jpg"
-            alt="Eastern Mongolia"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="accommodation.html">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div
-                class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md"
-              >
-                <span class="text-white text-xl font-['SF_Pro_Display']"
-                  >Eastern Mongolia</span
-                >
-              </div>
-            </div>
-          </a>
+        <div class="relative overflow-hidden md:col-span-1">
+          <img src="img/Ulaanbaatar/HistoryoftheCapital.jpg" alt="History of the Capital"
+            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+          <div class="absolute inset-0 bg-black bg-opacity-30 text-white flex flex-col justify-between p-4">
+            <h2 class="text-left font-bold text-2xl font-['SF_Pro_Display']">
+              History of the Capital
+            </h2>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <h2 class="font-bold text-4xl text-center mt-8 font-['SF_Pro_Display']">
-      Commercial
+  <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
+    <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
+      Information
     </h2>
 
-    <div class="relative w-full mt-8 px-4">
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-auto gap-[15px] w-full h-full max-w-6xl mx-auto py-6"
-      >
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- Nomadic Culture -->
+      <div class="col-span-1 row-span-2 relative rounded-2xl overflow-hidden aspect-[1/2.05]">
+        <img src="img/Information/NomadicCulture.jpg" alt="Nomadic Culture"
+          class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
         <div
-          class="col-span-1 sm:row-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[1/2.08]"
-        >
-          <img
-            src="img/Commercial/Hotels.jpg"
-            alt="hotel"
-            class="w-294 h-604 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="hotels.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">Hotel</h3>
-            </div>
-          </a>
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+          <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+            Nomadic Culture
+          </h3>
         </div>
+      </div>
 
+      <!-- Tourist Information -->
+      <div class="relative rounded-xl overflow-hidden row-span-1 col-span-2 aspect-[2.05/1]">
+        <img src="img/Information/TouristInformation.jpg" alt="Tourist information"
+          class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
         <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/Commercial/Activities.jpg"
-            alt="hotel"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="activities.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Activities
-              </h3>
-            </div>
-          </a>
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+          <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+            Tourist information
+          </h3>
         </div>
+      </div>
 
+      <!-- Religion -->
+      <div class="col-span-1 row-span-2 relative group rounded-2xl overflow-hidden aspect-[1/2.05]">
+        <img src="img/Information/Religion.jpg" alt="Religion"
+          class="w-294 h-604 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
         <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/Commercial/Wellness.jpg"
-            alt="hotel"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="wellness.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Wellness
-              </h3>
-            </div>
-          </a>
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+          <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+            Religion
+          </h3>
         </div>
+      </div>
 
+      <!-- History -->
+      <div class="relative rounded-2xl overflow-hidden col-span-1 row-span-1 aspect-square">
+        <img src="img/Information/History.jpg" alt="History"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
         <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/Commercial/Nightlife.jpg"
-            alt="hotel"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="nightlife.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Nightlife
-              </h3>
-            </div>
-          </a>
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+          <h3 class="text-white text-2xl font-['SF_Pro_Display']">History</h3>
         </div>
+      </div>
 
+      <!-- Content -->
+      <div class="relative rounded-2xl overflow-hidden col-span-1 row-span-1 aspect-square">
+        <img src="img/Information/Content.jpg" alt="Content"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
         <div
-          class="col-span-1 sm:col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
-        >
-          <img
-            src="img/Commercial/Food.jpg"
-            alt="hotel"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="food.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">Food</h3>
-            </div>
-          </a>
-        </div>
-
-        <div
-          class="col-span-1 sm:row-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[1/2.05]"
-        >
-          <img
-            src="img/Commercial/fashion.jpg"
-            alt="hotel"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="fashion.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Fashion
-              </h3>
-            </div>
-          </a>
-        </div>
-
-        <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/Commercial/Shopping.jpg"
-            alt="Shopping"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="shopping.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Shopping
-              </h3>
-            </div>
-          </a>
-        </div>
-
-        <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/Commercial/Guesthouse.jpg"
-            alt="Shopping"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="guesthouse.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Guesthouse
-              </h3>
-            </div>
-          </a>
-        </div>
-
-        <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/Commercial/Hospitals.jpg"
-            alt="Shopping"
-            class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <a href="hospital_home.html">
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100"
-            >
-              <h3 class="text-white text-2xl font-['SF_Pro_Display']">
-                Hospitals
-              </h3>
-            </div>
-          </a>
+          class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+          <h3 class="text-white text-2xl font-['SF_Pro_Display']">Content</h3>
         </div>
       </div>
     </div>
+  </div>
 
-    &nbsp; &nbsp;
-    <div class="relative py-6 px-4 overflow-hidden">
-      <img
-        src="img/Frame 48345.png"
-        alt="Background Frame"
-        class="absolute top-1/2 left-1/2 w-[100%] h-[40%] max-w-6xl -translate-x-1/2 -translate-y-1/2 opacity-80 z-0 pointer-events-none py-6"
-      />
+  <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
+    <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
+      Accommodation
+    </h2>
 
-      <div class="text-center mb-12">
-        <h2
-          class="font-semibold text-4xl text-gray-800 font-['SF_Pro_Display']"
-        >
-          Events
-        </h2>
-      </div>
-
-      <div class="flex justify-center gap-8 flex-wrap">
-        <!-- Naadam -->
-        <div class="text-center">
-          <img
-            src="img/event/Naadam.jpg"
-            alt="Naadam Festival"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-4"
-          />
-          <h3 class="text-xl font-semibold font-['SF_Pro_Display']">Naadam</h3>
-          <p class="text-sm font-medium font-['SF_Pro_Display']">Mid-July</p>
-        </div>
-        <!-- Tenger Festival -->
-        <div class="text-center">
-          <img
-            src="img/event/TengerFestival.jpg"
-            alt="Tenger Festival"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-4"
-          />
-          <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
-            Tenger Festival
-          </h3>
-          <p class="text-sm font-medium font-['SF_Pro_Display']">Mid-May</p>
-        </div>
-        <!-- Golden Eagle Festival -->
-        <div class="text-center">
-          <img
-            src="img/event/GoldenEagleFestival.jpg"
-            alt="Golden Eagle Festival"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-4"
-          />
-          <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
-            Golden Eagle Festival
-          </h3>
-          <p class="text-sm font-medium font-['SF_Pro_Display']">
-            Early-October
-          </p>
-        </div>
-      </div>
-
-      <div class="flex justify-center gap-8">
-        <!-- Deeltei Mongol -->
-        <div class="text-center">
-          <img
-            src="img/event/DeelteiMongol-159.jpg"
-            alt="Deeltei Mongol"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-4"
-          />
-          <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
-            Deeltei Mongol
-          </h3>
-          <p class="text-sm font-medium font-['SF_Pro_Display']">Early-July</p>
-        </div>
-        <!-- Danshig Naadam -->
-        <div class="text-center">
-          <img
-            src="img/event/DanshigNaadam.jpg"
-            alt="Danshig Naadam"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-4"
-          />
-          <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
-            Danshig Naadam
-          </h3>
-          <p class="text-sm font-medium font-['SF_Pro_Display']">
-            Early-August
-          </p>
-        </div>
-      </div>
-
-      <div class="text-center mt-8">
-        <a
-          href="tours_forms.html"
-          class="text-white bg-blue-500 hover:bg-blue-600 font-semibold text-xl py-2 px-6 rounded-full transition duration-300 font-['SF_Pro_Display']"
-          >See all Events</a
-        >
-      </div>
-    </div>
-
-    <div class="container-center">
-      <div class="overlap-wrapper">
-        <div class="overlap-3">
-          <img
-            class="image-3"
-            src="https://c.animaapp.com/vkYqbqlS/img/image-34.png"
-          />
-          <div class="frame-35">
-            <div class="frame-36">
-              <div class="text-wrapper-27">Confident Travel with Expertise</div>
-              <p class="text-wrapper-28">
-                Explore Mongolia confidently, backed by our app – a showcase of
-                our extensive knowledge, making us your trusted travel
-                companion.
-              </p>
-            </div>
-
-            <div class="frame-36">
-              <div class="text-wrapper-27">
-                Discover Mongolia at Your Fingertips:
-              </div>
-              <p class="text-wrapper-29">
-                Browse through our app's wealth of data: tourist destinations,
-                events, cultural insights, and history, empowering you to plan
-                your journey effortlessly.
-              </p>
-            </div>
-
-            <div class="frame-36">
-              <div class="text-wrapper-27">Essential Travel Tips Unveiled</div>
-              <p class="text-wrapper-29">
-                Access all the tourist information you need – FAQs, preparation
-                tips, and travel insights – ensuring a seamless and informed
-                adventure in Mongolia.
-              </p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl mx-auto mt-10">
+      <!-- Day Trip -->
+      <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/accommodation/AccDaytrips.jpg" alt="Day Trip" class="w-full h-full object-cover rounded-lg" />
+        <a href="accommodation.html">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="px-3 py-1 border rounded-xl w-[119px] h-[50px] flex justify-center items-center backdrop-blur-sm">
+              <span class="text-white text-xl font-['SF_Pro_Display']">Day Trips</span>
             </div>
           </div>
-
-          <div class="group-21">
-            <div class="text-wrapper-30">Download app</div>
-            <div class="group-22">
-              <img
-                class="badge-ios"
-                src="https://c.animaapp.com/vkYqbqlS/img/badge-ios.svg"
-              />
-              <img
-                class="badge-android"
-                src="https://c.animaapp.com/vkYqbqlS/img/badge-android.svg"
-              />
-            </div>
-          </div>
-
-          <div class="group-23">
-            <div class="overlap-group-5">
-              <img
-                class="imockup-google-pixel"
-                src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro-1.png"
-              />
-              <img
-                class="imockup-google-pixel-2"
-                src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section
-      class="flex flex-col md:flex-row items-center justify-center gap-12 py-6 w-full mx-auto mt-20"
-    >
-      <div class="relative w-fit ml-0">
-        <div
-          class="w-[320px] h-[440px] overflow-hidden rounded-[60%/40%] shadow-lg"
-        >
-          <img
-            src="img/ToursBig.jpg"
-            alt="Tours Big"
-            class="w-full h-full object-cover"
-          />
-        </div>
-
-        <div
-          class="w-[200px] h-[260px] overflow-hidden rounded-[60%/40%] border-4 border-white shadow-md absolute -bottom-12 -right-24 bg-white"
-        >
-          <img
-            src="img/ToursSmall.jpg"
-            alt="Secondary"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-
-      &nbsp;&nbsp;&nbsp;&nbsp;
-
-      <div class="text-center md:text-left max-w-md ml-0">
-        <h2 class="text-5xl font-semibold font-['SF_Pro_Display']">
-          Your Adventure Awaits <br />
-          <span class="text-blue-800"> Let </span>
-          <span class="text-red-600 font-bold">Brave New Mongolia</span>
-          <span class="text-blue-800">Tours</span>
-        </h2>
-
-        &nbsp;
-        <p
-          class="mt-2 text-gray-600 font-medium text-2xl font-['SF_Pro_Display']"
-        >
-          Guide You to the Land of Stories!
-        </p>
-
-        <a href="tours.html">
-          <button
-            class="mt-4 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-xl font-medium"
-          >
-            Explore Tours
-          </button>
         </a>
       </div>
-    </section>
-    &nbsp; &nbsp;
 
-    <div class="max-w-6xl mx-auto py-6 mt-20 px-4">
-      <h2
-        class="text-4xl font-semibold text-center mb-8 font-['SF_Pro_Display']"
-      >
-        Recommended Tours
+      <!-- Central Mongolia -->
+      <div class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]">
+        <img src="img/accommodation/AccCentral.jpg" alt="Central Mongolia"
+          class="w-full h-full object-cover rounded-xl" />
+        <a href="accommodation.html">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="px-3 py-1 border rounded-xl w-[180px] h-[50px] flex justify-center items-center backdrop-blur-md">
+              <span class="text-white text-xl font-['SF_Pro_Display']">Central Mongolia</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Northern Mongolia -->
+      <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/accommodation/AccNorthern.jpg" alt="Northern Mongolia"
+          class="w-full h-full object-cover rounded-lg" />
+        <a href="accommodation.html">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md">
+              <span class="text-white text-xl font-['SF_Pro_Display']">Northern Mongolia</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Western Mongolia -->
+      <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/accommodation/AccWestern.jpg" alt="Western Mongolia"
+          class="w-full h-full object-cover rounded-xl" />
+        <a href="accommodation.html">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md">
+              <span class="text-white text-xl font-['SF_Pro_Display']">Western Mongolia</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Southern Mongolia -->
+      <div class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]">
+        <img src="img/accommodation/AccSouthern.jpg" alt="Southern Mongolia"
+          class="w-full h-full object-cover rounded-lg" />
+        <a href="accommodation.html">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md">
+              <span class="text-white text-xl font-['SF_Pro_Display']">Southern Mongolia</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Eastern Mongolia -->
+      <div class="col-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/accommodation/AccEastern.jpg" alt="Eastern Mongolia"
+          class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="accommodation.html">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div
+              class="px-3 py-1 border rounded-xl w-[200px] h-[50px] flex justify-center items-center backdrop-blur-md">
+              <span class="text-white text-xl font-['SF_Pro_Display']">Eastern Mongolia</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="font-bold text-4xl text-center mt-8 font-['SF_Pro_Display']">
+    Commercial
+  </h2>
+
+  <div class="relative w-full mt-8 px-4">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-auto gap-[15px] w-full h-full max-w-6xl mx-auto py-6">
+      <div class="col-span-1 sm:row-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[1/2.08]">
+        <img src="img/Commercial/Hotels.jpg" alt="hotel"
+          class="w-294 h-604 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="hotels.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">Hotel</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/Commercial/Activities.jpg" alt="hotel"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="activities.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Activities
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/Commercial/Wellness.jpg" alt="hotel"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="wellness.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Wellness
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/Commercial/Nightlife.jpg" alt="hotel"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="nightlife.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Nightlife
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <div
+        class="col-span-1 sm:col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]">
+        <img src="img/Commercial/Food.jpg" alt="hotel"
+          class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="food.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">Food</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 sm:row-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[1/2.05]">
+        <img src="img/Commercial/fashion.jpg" alt="hotel"
+          class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="fashion.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Fashion
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/Commercial/Shopping.jpg" alt="Shopping"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="shopping.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Shopping
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/Commercial/Guesthouse.jpg" alt="Shopping"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="guesthouse.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Guesthouse
+            </h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+        <img src="img/Commercial/Hospitals.jpg" alt="Shopping"
+          class="w-294 h-294 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <a href="hospital_home.html">
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3 transition-opacity duration-500 opacity-90 group-hover:opacity-100">
+            <h3 class="text-white text-2xl font-['SF_Pro_Display']">
+              Hospitals
+            </h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  &nbsp; &nbsp;
+  <div class="relative py-6 px-4 overflow-hidden">
+    <img src="img/Frame 48345.png" alt="Background Frame"
+      class="absolute top-1/2 left-1/2 w-[100%] h-[40%] max-w-6xl -translate-x-1/2 -translate-y-1/2 opacity-80 z-0 pointer-events-none py-6" />
+
+    <div class="text-center mb-12">
+      <h2 class="font-semibold text-4xl text-gray-800 font-['SF_Pro_Display']">
+        Events
+      </h2>
+    </div>
+
+    <div class="flex justify-center gap-8 flex-wrap">
+      <!-- Naadam -->
+      <div class="text-center">
+        <img src="img/event/Naadam.jpg" alt="Naadam Festival"
+          class="w-72 h-72 object-cover rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold font-['SF_Pro_Display']">Naadam</h3>
+        <p class="text-sm font-medium font-['SF_Pro_Display']">Mid-July</p>
+      </div>
+      <!-- Tenger Festival -->
+      <div class="text-center">
+        <img src="img/event/TengerFestival.jpg" alt="Tenger Festival"
+          class="w-72 h-72 object-cover rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
+          Tenger Festival
+        </h3>
+        <p class="text-sm font-medium font-['SF_Pro_Display']">Mid-May</p>
+      </div>
+      <!-- Golden Eagle Festival -->
+      <div class="text-center">
+        <img src="img/event/GoldenEagleFestival.jpg" alt="Golden Eagle Festival"
+          class="w-72 h-72 object-cover rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
+          Golden Eagle Festival
+        </h3>
+        <p class="text-sm font-medium font-['SF_Pro_Display']">
+          Early-October
+        </p>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-8">
+      <!-- Deeltei Mongol -->
+      <div class="text-center">
+        <img src="img/event/DeelteiMongol-159.jpg" alt="Deeltei Mongol"
+          class="w-72 h-72 object-cover rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
+          Deeltei Mongol
+        </h3>
+        <p class="text-sm font-medium font-['SF_Pro_Display']">Early-July</p>
+      </div>
+      <!-- Danshig Naadam -->
+      <div class="text-center">
+        <img src="img/event/DanshigNaadam.jpg" alt="Danshig Naadam"
+          class="w-72 h-72 object-cover rounded-full mx-auto mb-4" />
+        <h3 class="text-xl font-semibold font-['SF_Pro_Display']">
+          Danshig Naadam
+        </h3>
+        <p class="text-sm font-medium font-['SF_Pro_Display']">
+          Early-August
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="tours_forms.html"
+        class="text-white bg-blue-500 hover:bg-blue-600 font-semibold text-xl py-2 px-6 rounded-full transition duration-300 font-['SF_Pro_Display']">See
+        all Events</a>
+    </div>
+  </div>
+
+  <div class="container-center">
+    <div class="overlap-wrapper">
+      <div class="overlap-3">
+        <img class="image-3" src="https://c.animaapp.com/vkYqbqlS/img/image-34.png" />
+        <div class="frame-35">
+          <div class="frame-36">
+            <div class="text-wrapper-27">Confident Travel with Expertise</div>
+            <p class="text-wrapper-28">
+              Explore Mongolia confidently, backed by our app – a showcase of
+              our extensive knowledge, making us your trusted travel
+              companion.
+            </p>
+          </div>
+
+          <div class="frame-36">
+            <div class="text-wrapper-27">
+              Discover Mongolia at Your Fingertips:
+            </div>
+            <p class="text-wrapper-29">
+              Browse through our app's wealth of data: tourist destinations,
+              events, cultural insights, and history, empowering you to plan
+              your journey effortlessly.
+            </p>
+          </div>
+
+          <div class="frame-36">
+            <div class="text-wrapper-27">Essential Travel Tips Unveiled</div>
+            <p class="text-wrapper-29">
+              Access all the tourist information you need – FAQs, preparation
+              tips, and travel insights – ensuring a seamless and informed
+              adventure in Mongolia.
+            </p>
+          </div>
+        </div>
+
+        <div class="group-21">
+          <div class="text-wrapper-30">Download app</div>
+          <div class="group-22">
+            <img class="badge-ios" src="https://c.animaapp.com/vkYqbqlS/img/badge-ios.svg" />
+            <img class="badge-android" src="https://c.animaapp.com/vkYqbqlS/img/badge-android.svg" />
+          </div>
+        </div>
+
+        <div class="group-23">
+          <div class="overlap-group-5">
+            <img class="imockup-google-pixel"
+              src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro-1.png" />
+            <img class="imockup-google-pixel-2"
+              src="https://c.animaapp.com/vkYqbqlS/img/imockup---google-pixel-8-pro.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="flex flex-col md:flex-row items-center justify-center gap-12 py-6 w-full mx-auto mt-20">
+    <div class="relative w-fit ml-0">
+      <div class="w-[320px] h-[440px] overflow-hidden rounded-[60%/40%] shadow-lg">
+        <img src="img/ToursBig.jpg" alt="Tours Big" class="w-full h-full object-cover" />
+      </div>
+
+      <div
+        class="w-[200px] h-[260px] overflow-hidden rounded-[60%/40%] border-4 border-white shadow-md absolute -bottom-12 -right-24 bg-white">
+        <img src="img/ToursSmall.jpg" alt="Secondary" class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div class="text-center md:text-left max-w-md ml-0">
+      <h2 class="text-5xl font-semibold font-['SF_Pro_Display']">
+        Your Adventure Awaits <br />
+        <span class="text-blue-800"> Let </span>
+        <span class="text-red-600 font-bold">Brave New Mongolia</span>
+        <span class="text-blue-800">Tours</span>
       </h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img
-            src="img/recommended tours/Desert Peaks Odyssey.jpg"
-            alt="Gobi Odyssey"
-            class="w-398 h-348 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
+      &nbsp;
+      <p class="mt-2 text-gray-600 font-medium text-2xl font-['SF_Pro_Display']">
+        Guide You to the Land of Stories!
+      </p>
 
-          <div class="p-4">
-            <h3 class="text-2xl font-semibold mb-2 font-['SF_Pro_Display']">
-              Gobi Odyssey
-            </h3>
-            <p class="text-sm mb-1 flex items-center gap-2">
-              <img src="img/sr-calendar-4x.png" class="w-5 h-5" />
-              <span
-                class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']"
-                >Duration:</span
-              >
-              <span class="text-lg font-['SF_Pro_Display']"
-                >3 days, 2 nights</span
-              >
-            </p>
-            <p class="text-sm flex items-center gap-2">
-              <img src="img/sr-coin-dollar-4x.png" class="w-5 h-5" />
-              <span
-                class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']"
-                >Starting from:</span
-              >
-              <span class="text-lg font-['SF_Pro_Display']">$1050</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img
-            src="img/recommended tours/Naiman Lake Horseback Harmony.jpg"
-            alt="Desert Waves"
-            class="w-398 h-348 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div class="p-4">
-            <h3 class="text-2xl font-semibold mb-2 font-['SF_Pro_Display']">
-              Desert Waves
-            </h3>
-            <p class="text-sm mb-1 flex items-center gap-2">
-              <img src="img/sr-calendar-4x.png" class="w-5 h-5" />
-              <span
-                class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']"
-                >Duration:</span
-              >
-              <span class="text-lg font-['SF_Pro_Display']"
-                >3 days, 2 nights</span
-              >
-            </p>
-            <p class="text-sm flex items-center gap-2">
-              <img src="img/sr-coin-dollar-4x.png" class="w-5 h-5" />
-              <span
-                class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']"
-                >Starting from:</span
-              >
-              <span class="text-lg font-['SF_Pro_Display']">$1050</span>
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-xl shadow-md overflow-hidden">
-          <img
-            src="img/recommended tours/Taiga to Peaks Expedition.jpg"
-            alt="Western Horizon Wings"
-            class="w-398 h-348 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div class="p-4">
-            <h3 class="text-2xl font-semibold mb-2 font-['SF_Pro_Display']">
-              Western Horizon Wings
-            </h3>
-            <p class="text-sm mb-1 flex items-center gap-2">
-              <img src="img/sr-calendar-4x.png" class="w-5 h-5" />
-              <span
-                class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']"
-                >Duration:</span
-              >
-              <span class="text-lg font-['SF_Pro_Display']"
-                >3 days, 2 nights</span
-              >
-            </p>
-            <p class="text-sm flex items-center gap-2">
-              <img src="img/sr-coin-dollar-4x.png" class="w-5 h-5" />
-              <span
-                class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']"
-                >Starting from:</span
-              >
-              <span class="text-lg font-['SF_Pro_Display']">$1050</span>
-            </p>
-          </div>
-        </div>
-      </div>
+      <a href="tours.html">
+        <button class="mt-4 px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-xl font-medium">
+          Explore Tours
+        </button>
+      </a>
     </div>
+  </section>
+  &nbsp; &nbsp;
 
-    <!-- Newsletter Section -->
-    <div
-      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0"
-    >
-      <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-20">
-        <h3 class="font-bold text-3xl mb-4 font-['SF_Pro_Display']">
-          Subscribe to our Newsletter!
-        </h3>
+  <div class="max-w-6xl mx-auto py-6 mt-20 px-4">
+    <h2 class="text-4xl font-semibold text-center mb-8 font-['SF_Pro_Display']">
+      Recommended Tours
+    </h2>
 
-        <form
-          class="flex flex-col sm:flex-row gap-2 mb-4"
-          onsubmit="event.preventDefault()"
-        >
-          <input
-            type="email"
-            placeholder="Email Here..."
-            class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <button
-            type="submit"
-            class="bg-blue-600 text-white px-6 py-2 font-bold text-lg rounded hover:bg-blue-700 transition font-['Open Sans']"
-          >
-            SUBSCRIBE
-          </button>
-        </form>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="img/recommended tours/Desert Peaks Odyssey.jpg" alt="Gobi Odyssey"
+          class="w-398 h-348 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-90" />
 
-        <p
-          class="font-normal text-xl text-gray-700 mb-4 font-['SF_Pro_Display']"
-        >
-          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
-          and embark on a journey filled with captivating Destination
-          highlights, intriguing Event updates, deep dives into Nomadic Culture,
-          and fascinating nuggets of History. Stay connected with the heart of
-          Mongolia – your gateway to a world of enriching experiences. Don't
-          miss out – subscribe now for a regular dose of Mongolian magic!
-        </p>
-
-        <p class="text-sm">
-          <span class="font-mixed text-xl font-['SF_Pro_Display']">Phone:</span>
-          <span class="text-lg"> 8001-4904<br /> </span>
-          <span class="font-mixed text-xl font-['SF_Pro_Display']">Email:</span>
-          <span class="text-lg">BraveNewMongoliaTours@gmail.com</span>
-        </p>
-      </div>
-
-      <!-- Cartoon Character -->
-      <div class="relative">
-        <img
-          src="img/Component 65.png"
-          alt="Mongolian Character"
-          class="w-[300px] md:w-[400px] h-auto object-contain transform scale-x-[-1]"
-        />
-      </div>
-
-      <!-- WhatsApp QR Code -->
-      <div
-        class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md"
-      >
-        <!-- Top Icon -->
-        <div
-          class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm"
-        >
-          <img
-            src="img/footer/bnm round.png"
-            alt="Logo"
-            class="w-full h-full object-contain"
-          />
-        </div>
-
-        <!-- Title -->
-        <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']"
-          >Connect via WhatsApp</span
-        >
-
-        <!-- QR Code -->
-        <div class="bg-white p-2 rounded-lg shadow">
-          <img
-            src="img/footer/BNM WebWhatsappQR.png"
-            alt="WhatsApp QR"
-            class="w-[200px] h-[200px] object-contain"
-          />
-        </div>
-
-        <!-- Phone Number -->
-        <div
-          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']"
-        >
-          +976 8001 4904
-        </div>
-      </div>
-    </div>
-
-    &nbsp;&nbsp;&nbsp;
-    <footer class="bg-[#0B2B6C] text-white">
-      <div
-        class="max-w-8xl mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pr-30"
-      >
-        <!-- Column 1: Logo -->
-        <div class="w-full text-center">
-          <div class="flex justify-center items-center space-x-2 mt-4">
-            <img
-              src="img/footer/bnm round.png"
-              alt="BNM Logo"
-              class="w-20 h-20 mt-1"
-            />
-            <span class="text-2xl font-bold">BNM</span>
-          </div>
-        </div>
-
-        <!-- Column 2: Description -->
-        <div class="pr-30">
-          <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
-            Brave New Mongolia
-          </h4>
-          <p class="text-xl mt-2 font-medium font-['SF_Pro_Display']">
-            Good day to everybody who is interested in our tours. We are a team
-            of Mongolians that love nature and traveling.
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['SF_Pro_Display']">
+            Gobi Odyssey
+          </h3>
+          <p class="text-sm mb-1 flex items-center gap-2">
+            <img src="img/sr-calendar-4x.png" class="w-5 h-5" />
+            <span class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']">Duration:</span>
+            <span class="text-lg font-['SF_Pro_Display']">3 days, 2 nights</span>
           </p>
-
-          <div class="flex space-x-4 mt-4">
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png"
-                alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png"
-                alt="YouTube"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png"
-                alt="Instagram"
-            /></a>
-          </div>
-
-          <div class="mt-4 text-lg">
-            <p>Phone: +976 8625-6868</p>
-            <p>Email: bnmtours@gmail.com</p>
-            <p>
-              Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
-              Mongolia
-            </p>
-          </div>
-        </div>
-
-        <!-- Column 3: Support Links -->
-        <div>
-          <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
-            Support
-          </h4>
-          <ul class="text-sm space-y-2">
-            <li>
-              <a
-                href="#"
-                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
-                >Package information</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
-                >Terms of Service</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Column 4: App Downloads -->
-        <div>
-          <h4 class="font-semibold text-2xl mb-4 font-['SF_Pro_Display']">
-            Download our mobile app
-          </h4>
-          <div class="space-y-4">
-            <a href="#">
-              <img
-                class="h-12"
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="App Store"
-              />
-            </a>
-            &nbsp;
-            <a href="#">
-              <img
-                class="h-12"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Google Play"
-              />
-            </a>
-          </div>
+          <p class="text-sm flex items-center gap-2">
+            <img src="img/sr-coin-dollar-4x.png" class="w-5 h-5" />
+            <span class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']">Starting from:</span>
+            <span class="text-lg font-['SF_Pro_Display']">$1050</span>
+          </p>
         </div>
       </div>
 
-      <!-- Bottom Bar -->
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="img/recommended tours/Naiman Lake Horseback Harmony.jpg" alt="Desert Waves"
+          class="w-398 h-348 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['SF_Pro_Display']">
+            Desert Waves
+          </h3>
+          <p class="text-sm mb-1 flex items-center gap-2">
+            <img src="img/sr-calendar-4x.png" class="w-5 h-5" />
+            <span class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']">Duration:</span>
+            <span class="text-lg font-['SF_Pro_Display']">3 days, 2 nights</span>
+          </p>
+          <p class="text-sm flex items-center gap-2">
+            <img src="img/sr-coin-dollar-4x.png" class="w-5 h-5" />
+            <span class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']">Starting from:</span>
+            <span class="text-lg font-['SF_Pro_Display']">$1050</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="img/recommended tours/Taiga to Peaks Expedition.jpg" alt="Western Horizon Wings"
+          class="w-398 h-348 object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90" />
+        <div class="p-4">
+          <h3 class="text-2xl font-semibold mb-2 font-['SF_Pro_Display']">
+            Western Horizon Wings
+          </h3>
+          <p class="text-sm mb-1 flex items-center gap-2">
+            <img src="img/sr-calendar-4x.png" class="w-5 h-5" />
+            <span class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']">Duration:</span>
+            <span class="text-lg font-['SF_Pro_Display']">3 days, 2 nights</span>
+          </p>
+          <p class="text-sm flex items-center gap-2">
+            <img src="img/sr-coin-dollar-4x.png" class="w-5 h-5" />
+            <span class="text-blue-600 font-regular text-xl font-['SF_Pro_Display']">Starting from:</span>
+            <span class="text-lg font-['SF_Pro_Display']">$1050</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <div
+    class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
+    <!-- Newsletter Form -->
+    <div class="max-w-xl text-left md:pl-20">
+      <h3 class="font-bold text-3xl mb-4 font-['SF_Pro_Display']">
+        Subscribe to our Newsletter!
+      </h3>
+
+      <form class="flex flex-col sm:flex-row gap-2 mb-4" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Email Here..."
+          class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-2 font-bold text-lg rounded hover:bg-blue-700 transition font-['Open Sans']">
+          SUBSCRIBE
+        </button>
+      </form>
+
+      <p class="font-normal text-gray-700 mb-4 font-['SF_Pro_Display']">
+        Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
+        and embark on a journey filled with captivating Destination
+        highlights, intriguing Event updates, deep dives into Nomadic Culture,
+        and fascinating nuggets of History. Stay connected with the heart of
+        Mongolia – your gateway to a world of enriching experiences. Don't
+        miss out – subscribe now for a regular dose of Mongolian magic!
+      </p>
+
+      <p>
+        <span class="font-mixed font-['SF_Pro_Display']">Phone:</span>
+        <span class="text-sm"> 8001-4904<br /> </span>
+        <span class="font-mixed font-['SF_Pro_Display']">Email:</span>
+        <span class="text-sm">BraveNewMongoliaTours@gmail.com</span>
+      </p>
+    </div>
+
+    <!-- Cartoon Character -->
+    <div class="relative">
+      <img src="img/Component 65.png" alt="Mongolian Character"
+        class="h-full object-contain transform scale-x-[-1] w-[300px] md:w-[350px]" />
+    </div>
+
+    <!-- WhatsApp QR Code -->
+    <div class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+      <!-- Top Icon -->
+      <div class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm">
+        <img src="img/footer/bnm round.png" alt="Logo" class="w-full h-full object-contain" />
+      </div>
+
+      <!-- Title -->
+      <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">Connect via WhatsApp</span>
+
+      <!-- QR Code -->
+      <div class="bg-white p-2 rounded-lg shadow">
+        <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+      </div>
+
+      <!-- Phone Number -->
       <div
-        class="text-center text-xl bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']"
-      >
-        Copyright © 2025 Brave New Mongolia
+        class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']">
+        +976 8001 4904
       </div>
-    </footer>
-  </body>
+    </div>
+  </div>
+
+  &nbsp;&nbsp;&nbsp;
+  <footer class="bg-[#0B2B6C] text-white">
+    <div class="max-w-8xl mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pr-30">
+      <!-- Column 1: Logo -->
+      <div class="w-full text-center">
+        <div class="flex justify-center items-center space-x-2 mt-4">
+          <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-20 h-20 mt-1" />
+          <span class="text-2xl font-bold">BNM</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Description -->
+      <div class="pr-30">
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Brave New Mongolia
+        </h4>
+        <p class="text-xl mt-2 font-medium font-['SF_Pro_Display']">
+          Good day to everybody who is interested in our tours. We are a team
+          of Mongolians that love nature and traveling.
+        </p>
+
+        <div class="flex space-x-4 mt-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+        </div>
+
+        <div class="mt-4 text-lg">
+          <p>Phone: +976 8625-6868</p>
+          <p>Email: bnmtours@gmail.com</p>
+          <p>
+            Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
+            Mongolia
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 3: Support Links -->
+      <div>
+        <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
+          Support
+        </h4>
+        <ul class="text-sm space-y-2">
+          <li>
+            <a href="#" class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']">About us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']">Package information</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: App Downloads -->
+      <div>
+        <h4 class="font-semibold text-2xl mb-4 font-['SF_Pro_Display']">
+          Download our mobile app
+        </h4>
+        <div class="space-y-4">
+          <a href="#">
+            <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store" />
+          </a>
+          &nbsp;
+          <a href="#">
+            <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center text-xl bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']">
+      Copyright © 2025 Brave New Mongolia
+    </div>
+  </footer>
+</body>
+
 </html>
