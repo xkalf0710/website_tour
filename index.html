@@ -34,8 +34,8 @@
 
       .overlap-wrapper {
         position: relative;
-        width: 1280px;
-        height: 600px;
+        width: min(1280px, 90vw);
+        height: min(600px, 45vh);
         background-color: var(--variable-collection-blue-duplicate);
         border-radius: 28px;
         overflow: hidden;
@@ -48,22 +48,24 @@
 
       .image-3 {
         position: absolute;
-        width: 1450px;
-        height: 691px;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
+        object-fit: cover;
       }
 
       .frame-35 {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        gap: 80px;
-        padding: 0;
+        gap: clamp(20px, 5vw, 80px);
+        padding: 20px;
         position: absolute;
         top: 30px;
         left: 50%;
         transform: translateX(-50%);
+        width: 90%;
       }
 
       .frame-36 {
@@ -96,23 +98,27 @@
       }
 
       .text-wrapper-28 {
-        width: 302px;
+        width: 100%;
+        max-width: 302px;
       }
 
       .browse-through-our {
-        width: 307px;
+        width: 100%;
+        max-width: 307px;
       }
 
       .text-wrapper-29 {
-        width: 244px;
+        width: 100%;
+        max-width: 244px;
       }
 
       .group-21 {
         position: absolute;
-        width: 399px;
+        width: min(399px, 80vw);
         height: 128px;
-        top: 360px;
-        left: 800px;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
       }
 
       .text-wrapper-30 {
@@ -154,10 +160,10 @@
 
       .group-23 {
         position: absolute;
-        width: 590px;
-        height: 812px;
+        width: min(590px, 45vw);
+        height: auto;
         top: 246px;
-        left: 129px;
+        left: 5%;
       }
 
       .overlap-group-5 {
@@ -172,17 +178,17 @@
       }
 
       .imockup-google-pixel {
-        width: 360px;
-        height: 445px;
+        width: 100%;
+        height: auto;
         top: 0;
         left: 0;
       }
 
       .imockup-google-pixel-2 {
-        width: 360px;
-        height: 339px;
-        top: 106px;
-        left: 230px;
+        width: 60%;
+        height: auto;
+        top: 20%;
+        right: 0;
       }
 
        .hide-scrollbar::-webkit-scrollbar {
@@ -191,6 +197,51 @@
       .hide-scrollbar {
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
+      }
+
+      @media (max-width: 768px) {
+        .frame-35 {
+          flex-direction: column;
+          gap: 20px;
+          position: relative;
+          top: 20px;
+          padding: 10px;
+        }
+        
+        .group-21 {
+          position: relative;
+          left: auto;
+          right: auto;
+          top: auto;
+          transform: none;
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+        }
+        
+        .group-23 {
+          position: relative;
+          left: auto;
+          top: auto;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        
+        .container-center {
+          height: auto;
+          padding: 20px 0;
+        }
+        
+        .overlap-wrapper {
+          height: auto;
+          min-height: 400px;
+        }
+        
+        .overlap-3 {
+          height: auto;
+          min-height: 400px;
+        }
       }
     </style>
   </head>
@@ -223,7 +274,7 @@
           >
 
           <!-- Search Input -->
-          <div class="relative w-[350px] sm:w-[400px] lg:w-[500px]">
+          <div class="relative w-[250px] sm:w-[350px] lg:w-[450px] xl:w-[500px]">
             <input
               type="text"
               placeholder="Search"
@@ -300,61 +351,61 @@
 
       <!-- Nav-ийг зураг дээр байрлуулах -->
       <nav
-        class="absolute bottom-[-110px] left-1/2 -translate-x-[50%] flex justify-center mx-auto space-x-6 px-4 min-h-[132px]"
+        class="absolute bottom-[-110px] left-1/2 -translate-x-[50%] flex flex-wrap justify-center mx-auto gap-4 px-4 min-h-[132px] w-full max-w-7xl"
       >
         <a
           href="visit_ulaanbaatar.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           Visit Ulaanbaatar
         </a>
         <a
           href="destination.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           Destinations
         </a>
         <a
           href="accommodation.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           Accommodation
         </a>
         <a
           href="tours.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           BNM Tours
         </a>
         <a
           href="#"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           Events
         </a>
         <a
           href="#"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           Info
         </a>
         <a
           href="commercial.html"
-          class="p-4 w-[220px] bg-white rounded-xl shadow-md text-black text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
+          class="p-4 w-[200px] sm:w-[220px] bg-white rounded-xl shadow-md text-black text-lg sm:text-[24px] font-semibold flex items-center justify-center text-center transition duration-300 ease-in-out"
         >
           Commercial
         </a>
       </nav>
     </div>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6">
+    <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
       <div class="mt-32 text-center">
         <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
           Destinations
         </h2>
         <div class="relative w-full flex justify-center py-4">
           <div
-            class="grid grid-cols-4 grid-rows-1 gap-4 w-full max-w-6xl mx-auto"
+            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl mx-auto"
           >
             <!-- Day Trip -->
             <div
@@ -380,7 +431,7 @@
 
             <!-- Central Mongolia -->
             <div
-              class="col-span-2 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+              class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
             >
               <img
                 src="img/destination/CentralMongolia.jpg"
@@ -424,7 +475,7 @@
 
             <!-- Southern Mongolia -->
             <div
-              class="col-span-2 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+              class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
             >
               <img
                 src="img/destination/SouthernMongolia.jpg"
@@ -574,7 +625,7 @@
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6">
+    <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
       <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
         Information
       </h2>
@@ -668,13 +719,13 @@
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6">
+    <div class="max-w-6xl mx-auto py-6 space-y-6 px-4">
       <h2 class="font-bold text-4xl text-center mb-8 font-['SF_Pro_Display']">
         Accommodation
       </h2>
 
       <div
-        class="grid grid-cols-4 grid-rows-1 gap-4 w-full max-w-6xl mx-auto mt-10"
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-6xl mx-auto mt-10"
       >
         <!-- Day Trip -->
         <div
@@ -700,7 +751,7 @@
 
         <!-- Central Mongolia -->
         <div
-          class="col-span-2 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+          class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
         >
           <img
             src="img/accommodation/AccCentral.jpg"
@@ -766,7 +817,7 @@
 
         <!-- Southern Mongolia -->
         <div
-          class="col-span-2 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+          class="col-span-1 sm:col-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
         >
           <img
             src="img/accommodation/AccSouthern.jpg"
@@ -814,12 +865,12 @@
       Commercial
     </h2>
 
-    <div class="relative w-full mt-8">
+    <div class="relative w-full mt-8 px-4">
       <div
-        class="grid grid-cols-4 grid-rows-2 gap-[15px] w-full h-full max-w-6xl mx-auto py-6"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-auto gap-[15px] w-full h-full max-w-6xl mx-auto py-6"
       >
         <div
-          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
+          class="col-span-1 sm:row-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[1/2.08]"
         >
           <img
             src="img/Commercial/Hotels.jpg"
@@ -893,7 +944,7 @@
         </div>
 
         <div
-          class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.09/1]"
+          class="col-span-1 sm:col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-square sm:aspect-[2.09/1]"
         >
           <img
             src="img/Commercial/Food.jpg"
@@ -910,7 +961,7 @@
         </div>
 
         <div
-          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.05]"
+          class="col-span-1 sm:row-span-2 relative rounded-xl overflow-hidden aspect-square sm:aspect-[1/2.05]"
         >
           <img
             src="img/Commercial/fashion.jpg"
@@ -1201,14 +1252,14 @@
     </section>
     &nbsp; &nbsp;
 
-    <div class="max-w-6xl mx-auto py-6 mt-20">
+    <div class="max-w-6xl mx-auto py-6 mt-20 px-4">
       <h2
         class="text-4xl font-semibold text-center mb-8 font-['SF_Pro_Display']"
       >
         Recommended Tours
       </h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="bg-white rounded-xl shadow-md overflow-hidden">
           <img
