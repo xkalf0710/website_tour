@@ -6,229 +6,194 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home design</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .container-center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 65vh;
-    }
+ <style>
+      :root {
+        --variable-collection-blue-duplicate: #0055aa;
+        --ui-white: #ffffff;
 
-    .overlap-wrapper {
-      position: relative;
-      width: min(1280px, 90vw);
-      height: min(600px, 45vh);
-      background-color: var(--variable-collection-blue-duplicate);
-      border-radius: 28px;
-      overflow: hidden;
-    }
+        --header-4-semibold-24-font-family: "Arial", sans-serif;
+        --header-4-semibold-24-font-weight: 600;
+        --header-4-semibold-24-font-size: 24px;
+        --header-4-semibold-24-letter-spacing: 0px;
+        --header-4-semibold-24-line-height: 32px;
+        --header-4-semibold-24-font-style: normal;
 
-    .overlap-3 {
-      position: relative;
-      height: 958px;
-    }
-
-    .image-3 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      object-fit: cover;
-    }
-
-    .frame-35 {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: clamp(20px, 5vw, 80px);
-      padding: 20px;
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-    }
-
-    .frame-36 {
-      gap: 8px;
-      flex: 0 0 auto;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-
-    .text-wrapper-27 {
-      font-family: var(--header-4-semibold-24-font-family);
-      font-weight: var(--header-4-semibold-24-font-weight);
-      color: var(--ui-white);
-      font-size: var(--header-4-semibold-23-font-size);
-      line-height: var(--header-4-semibold-24-line-height);
-      white-space: nowrap;
-    }
-
-    .text-wrapper-28,
-    .browse-through-our,
-    .text-wrapper-29 {
-      font-family: var(--header-6-medium-16-font-family);
-      font-weight: var(--header-6-medium-16-font-weight);
-      color: var(--ui-white);
-      font-size: var(--header-6-medium-15-font-size);
-      line-height: var(--header-6-medium-16-line-height);
-      text-align: justify;
-    }
-
-    .text-wrapper-28 {
-      width: 100%;
-      max-width: 302px;
-    }
-
-    .browse-through-our {
-      width: 100%;
-      max-width: 307px;
-    }
-
-    .text-wrapper-29 {
-      width: 100%;
-      max-width: 244px;
-    }
-
-    .group-21 {
-      position: absolute;
-      width: min(399px, 80vw);
-      height: 128px;
-      top: 50%;
-      right: 5%;
-      transform: translateY(-50%);
-    }
-
-    .text-wrapper-30 {
-      position: absolute;
-      top: 0;
-      left: 95px;
-      font-family: "Arial", sans-serif;
-      font-weight: 700;
-      color: #ffffff;
-      font-size: 20px;
-      text-align: center;
-      line-height: 40px;
-      white-space: nowrap;
-    }
-
-    .group-22 {
-      position: absolute;
-      width: 397px;
-      height: 61px;
-      top: 67px;
-      left: 0;
-    }
-
-    .badge-ios {
-      position: absolute;
-      width: 182px;
-      height: 61px;
-      top: 0;
-      left: 0;
-    }
-
-    .badge-android {
-      position: absolute;
-      width: 205px;
-      height: 61px;
-      top: 0;
-      left: 192px;
-    }
-
-    .group-23 {
-      position: absolute;
-      width: min(590px, 45vw);
-      height: auto;
-      top: 246px;
-      left: 5%;
-    }
-
-    .overlap-group-5 {
-      position: relative;
-      height: 445px;
-    }
-
-    .imockup-google-pixel,
-    .imockup-google-pixel-2 {
-      position: absolute;
-      object-fit: cover;
-    }
-
-    .imockup-google-pixel {
-      width: 100%;
-      height: auto;
-      top: 0;
-      left: 0;
-    }
-
-    .imockup-google-pixel-2 {
-      width: 60%;
-      height: auto;
-      top: 20%;
-      right: 0;
-    }
-
-    .hide-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    .hide-scrollbar {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-
-    @media (max-width: 768px) {
-      .frame-35 {
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-        top: 20px;
-        padding: 10px;
-      }
-
-      .group-21 {
-        position: relative;
-        left: auto;
-        right: auto;
-        top: auto;
-        transform: none;
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-      }
-
-      .group-23 {
-        position: relative;
-        left: auto;
-        top: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        --header-6-medium-16-font-family: "Arial", sans-serif;
+        --header-6-medium-16-font-weight: 500;
+        --header-6-medium-16-font-size: 16px;
+        --header-6-medium-16-letter-spacing: 0px;
+        --header-6-medium-16-line-height: 24px;
+        --header-6-medium-16-font-style: normal;
       }
 
       .container-center {
-        height: auto;
-        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
       }
 
       .overlap-wrapper {
-        height: auto;
-        min-height: 400px;
+        position: relative;
+        width: 1280px;
+        height: 600px;
+        background-color: var(--variable-collection-blue-duplicate);
+        border-radius: 28px;
+        overflow: hidden;
       }
 
       .overlap-3 {
-        height: auto;
-        min-height: 400px;
+        position: relative;
+        height: 958px;
       }
-    }
-  </style>
+
+      .image-3 {
+        position: absolute;
+        width: 1450px;
+        height: 691px;
+        top: 0;
+        left: 0;
+      }
+
+      .frame-35 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 80px;
+        padding: 0;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .frame-36 {
+        gap: 8px;
+        flex: 0 0 auto;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      .text-wrapper-27 {
+        font-family: var(--header-4-semibold-24-font-family);
+        font-weight: var(--header-4-semibold-24-font-weight);
+        color: var(--ui-white);
+        font-size: var(--header-4-semibold-23-font-size);
+        line-height: var(--header-4-semibold-24-line-height);
+        white-space: nowrap;
+      }
+
+      .text-wrapper-28,
+      .browse-through-our,
+      .text-wrapper-29 {
+        font-family: var(--header-6-medium-16-font-family);
+        font-weight: var(--header-6-medium-16-font-weight);
+        color: var(--ui-white);
+        font-size: var(--header-6-medium-15-font-size);
+        line-height: var(--header-6-medium-16-line-height);
+        text-align: justify;
+      }
+
+      .text-wrapper-28 {
+        width: 302px;
+      }
+
+      .browse-through-our {
+        width: 307px;
+      }
+
+      .text-wrapper-29 {
+        width: 244px;
+      }
+
+      .group-21 {
+        position: absolute;
+        width: 399px;
+        height: 128px;
+        top: 360px;
+        left: 800px;
+      }
+
+      .text-wrapper-30 {
+        position: absolute;
+        top: 0;
+        left: 95px;
+        font-family: "Arial", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+        white-space: nowrap;
+      }
+
+      .group-22 {
+        position: absolute;
+        width: 397px;
+        height: 61px;
+        top: 67px;
+        left: 0;
+      }
+
+      .badge-ios {
+        position: absolute;
+        width: 182px;
+        height: 61px;
+        top: 0;
+        left: 0;
+      }
+
+      .badge-android {
+        position: absolute;
+        width: 205px;
+        height: 61px;
+        top: 0;
+        left: 192px;
+      }
+
+      .group-23 {
+        position: absolute;
+        width: 590px;
+        height: 812px;
+        top: 246px;
+        left: 129px;
+      }
+
+      .overlap-group-5 {
+        position: relative;
+        height: 445px;
+      }
+
+      .imockup-google-pixel,
+      .imockup-google-pixel-2 {
+        position: absolute;
+        object-fit: cover;
+      }
+
+      .imockup-google-pixel {
+        width: 360px;
+        height: 445px;
+        top: 0;
+        left: 0;
+      }
+
+      .imockup-google-pixel-2 {
+        width: 360px;
+        height: 339px;
+        top: 106px;
+        left: 230px;
+      }
+
+       .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
 </head>
 
 
