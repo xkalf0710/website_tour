@@ -11,18 +11,21 @@
 
     <title>Tours</title>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen w-full">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
-      <div class="max-w-6xl mx-auto w-full flex items-center justify-center">
-        <div class="flex items-center space-x-4 pl-28">
+      <div
+        class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
+      >
+        <a href="index.html">
+         <div class="flex items-center space-x-4 ">
           <span class="font-bold text-white text-base text-[16px]">BNM</span>
           <img
             src="img/footer/bnm round.png"
             class="w-7 h-7 rounded-full"
             alt="BNM Logo"
           />
-        </div>
-
+         </div>
+        </a>
         <!-- Center: About us + Search -->
         <div class="flex items-center space-x-6 flex-1 justify-center">
           <a
@@ -81,6 +84,9 @@
           </button>
         </div>
       </div>
+
+      <!-- Bottom Navigation -->
+    
     </header>
 
     <div class="max-w-6xl mx-auto px-4 py-6 space-y-6 pl-10">
@@ -125,30 +131,30 @@
       </div>
 
       <!-- Breadcrumb -->
-      <nav class="text-sm text-gray-600 space-x-1">
+      <nav class="text-xl text-gray-600 space-x-6">
         <a
           href="index.html"
-          class="hover:underline text-blue-600 font-medium text-[18px]"
+          class="hover:underline text-blue-600 font-medium text-[18px] mt-5"
           style="font-family: 'SF Pro Display'"
-          >Home</a
+          >Home &nbsp;&lt;</a
         >
-        &lt;
+        
         <a
           href="tours.html"
-          class="hover:underline text-blue-600 font-medium text-[18px]"
+          class="hover:underline text-blue-600 font-medium text-[18px] mt-5"
           style="font-family: 'SF Pro Display'"
-          >BNM Tours</a
+          >BNM Tours &nbsp;&lt;</a
         >
-        &lt;
+        
         <span
-          class="text-gray-800 font-medium text-[18px]"
+          class="text-gray-800 font-medium text-[18px] mt-5"
           style="font-family: 'SF Pro Display'"
-          >Scheduled Tours</span
+          >Scheduled Tours </span
         >
       </nav>
 
       <!-- Title and Dates -->
-      <div class="flex flex-wrap items-center text-sm text-gray-800 space-x-2">
+      <div class="flex flex-wrap items-center text-sm text-gray-800 space-x-6">
         <span
           class="font-semibold text-[40px]"
           style="font-family: 'SF Pro Display'"
@@ -170,20 +176,13 @@
       </div>
 
       <!-- Overview and Media -->
-      <div class="grid md:grid-cols-2 gap-6">
+      <div class="grid md:grid-cols-2 gap-6 mt-10">
         <!-- Overview -->
-        <div>
-          <h2
-            class="text-2xl text-[36px] font-semibold text-blue-700 mb-2"
-            style="font-family: 'SF Pro Display'"
-          >
+        <div class="space-y-6 md:space-y-24">
+          <h2 class="text-2xl font-semibold text-blue-700 font-['SF_Pro_Display']">
             Overview
           </h2>
-          &nbsp;
-          <p
-            class="text-gray-700 font-normal text-[20px] mb-4"
-            style="font-family: 'SF Pro Display'"
-          >
+          <p class="text-gray-700 font-normal text-lg font-['SF_Pro_Display'] leading-relaxed">
             Embark on a 12-day expedition into the heart of Southern Mongolia
             with the Singing Southern Dunes tour. This immersive experience
             brings together cultural landmarks, breathtaking natural wonders,
@@ -192,19 +191,23 @@
             legendary <strong>Flaming Cliffs</strong>, promising an
             unforgettable journey through the <strong>Gobi Desert</strong>.
           </p>
+
           <!-- Map -->
-          <img
-            src="img/Capture.PNG"
-            alt="Itinerary Map"
-            class="rounded shadow-md"
-          />
+          <div class="flex justify-center">
+            <img
+              src="img/Capture.PNG"
+              alt="Itinerary Map"
+              class="rounded mt-12 md:mt-72 max-w-full h-auto"
+            />
+          </div>
         </div>
 
+
         <!-- Video / Night Sky Image -->
-        <div class="relative aspect-w-16 aspect-h-9">
+        <div class="relative">
           <iframe
             src="https://www.youtube.com/embed/8qcIkSWgGFQ?si=cSh-BFh3TH1YOAmv"
-            class="rounded-lg w-full h-full aspect-video"
+            class="rounded-lg w-full h-full aspect-[9/16]"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -232,7 +235,7 @@
           <h2 id="accordion-collapse-heading-1" class="text-black">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
               data-accordion-target="#accordion-collapse-body-1"
               aria-expanded="true"
               aria-controls="accordion-collapse-body-1 font-normal text-[20px]"
@@ -264,7 +267,7 @@
           <h2 id="accordion-collapse-heading-2">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
               data-accordion-target="#accordion-collapse-body-2"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-2 font\
@@ -294,7 +297,7 @@
           <h2 id="accordion-collapse-heading-3">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
               data-accordion-target="#accordion-collapse-body-3"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-3
@@ -324,7 +327,7 @@
           <h2 id="accordion-collapse-heading-4">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
               data-accordion-target="#accordion-collapse-body-4"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-4
@@ -356,7 +359,7 @@
           <h2 id="accordion-collapse-heading-5">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
               data-accordion-target="#accordion-collapse-body-5"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-5
@@ -388,7 +391,7 @@
           <h2 id="accordion-collapse-heading-6">
             <button
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 hover:bg-blue-100 dark:hover:bg-gray-800 gap-3"
               data-accordion-target="#accordion-collapse-body-6"
               aria-expanded="false"
               aria-controls="accordion-collapse-body-6
@@ -575,7 +578,7 @@
             class="relative text-center md:text-left max-w-xl ml-auto px-6 md:px-0"
           >
             <h2
-              class="text-2xl md:text-3xl font-semibold leading-snug mb-3 text-[32px]"
+              class="text-xl md:text-2xl font-semibold leading-snug mb-3 text-[32px]"
               style="font-family: 'Lato'"
             >
               Discover Mongolia the right way<br class="hidden md:block" />
@@ -613,9 +616,9 @@
           </div>
         </div>
       </div>
-      <div class="max-w-7xl mx-auto">
+      <div class="max-w-6xl mx-auto">
         <!-- Inclusions Section -->
-        <section class="mb-10">
+        <section class="mt-20">
           <h2
             class="text-2xl font-semibold text-[25px] mb-4"
             style="font-family: 'SF Pro Display'"
@@ -691,11 +694,11 @@
         <hr class="my-8 border-black" />
 
         <!-- Exclusions and Image -->
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="grid md:grid-cols-2 gap-8 items-start  max-w-6xl mx-auto mt-8">
           <section>
             <h2
-              class="text-2xl font-semibold text-[25px] mb-4"
-              style="font-family: 'SF Pro Display'"
+              class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']"
+             
             >
               TOUR PACKAGE EXCLUSIONS
             </h2>
@@ -772,16 +775,16 @@
         </div>
       </div>
 
-      <section class="text-center px-4 py-10 max-w-6xl mx-auto">
+      <section class="text-center px-4 py-10 max-w-6xl mx-auto mt-10">
         <h2
-          class="text-3xl font-medium text-[40px] text-center mb-4"
-          style="font-family: 'SF Pro Display'"
+          class="text-3xl font-medium  text-center mb-4 font-['SF_Pro_Display']"
+          
         >
           DAYLIGHT DISCOVERIES
-        </h2>
+        </h2>   
         <p
-          class="font-medium text-[20px] text-gray-600 mb-10 mx-auto"
-          style="font-family: 'SF Pro Display'"
+          class="font-medium  text-gray-600 mb-10 mx-auto font-['SF_Pro_Display']"
+          
         >
           Enhance your adventure with our optional 1-Day Tours, perfect for a
           quick, immersive experience. While designed as standalone delights,
@@ -803,8 +806,8 @@
               class="w-32 h-32 rounded-full object-cover mb-2"
             />
             <p
-              class="text-sm font-semibold text-[24px] text-center"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm text-center font-['SF_Pro_Display']"
+              
             >
               City tour
             </p>
@@ -819,8 +822,8 @@
               class="w-32 h-32 rounded-full object-cover mb-2"
             />
             <p
-              class="text-sm font-semibold text-[24px] text-center"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm  text-center font-['SF_Pro_Display']"
+              
             >
               Terelj & Genghis<br />Khan Statue
             </p>
@@ -835,8 +838,8 @@
               class="w-32 h-32 rounded-full object-cover mb-2"
             />
             <p
-              class="text-sm font-semibold text-[24px] text-center"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm  font-['SF_Pro_Display'] text-center"
+             
             >
               Khustai
             </p>
@@ -851,8 +854,8 @@
               class="w-32 h-32 rounded-full object-cover mb-2"
             />
             <p
-              class="text-sm font-semibold text-[24px] text-center"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm font-['SF_Pro_Display'] text-center"
+              
             >
               Aglag
             </p>
@@ -867,8 +870,8 @@
               class="w-32 h-32 rounded-full object-cover mb-2"
             />
             <p
-              class="text-sm font-semibold text-[24px] text-center"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm font-['SF_Pro_Display'] text-center"
+             
             >
               Manzushiriin<br />Khiid
             </p>
@@ -883,8 +886,8 @@
               class="w-32 h-32 rounded-full object-cover mb-2"
             />
             <p
-              class="text-sm font-semibold text-[24px] text-center"
-              style="font-family: 'SF Pro Display'"
+              class="text-sm font-['SF_Pro_Display'] text-center"
+              
             >
               Shaman<br />Session
             </p>
@@ -894,236 +897,145 @@
     </div>
 
     <!-- Newsletter Section -->
-    <div
-      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0"
-    >
-      <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-32">
-        <h3
-          class="font-bold text-2xl text-[24px] mb-4"
-          style="font-family: 'SF Pro Display'"
-        >
-          Subscribe to our Newsletter!
-        </h3>
+     <div
+    class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
+    <!-- Newsletter Form -->
+    <div class="max-w-xl text-left md:pl-18">
+      <h3 class="text-3xl mb-4 font-['SF_Pro_Display']">
+        Subscribe to our Newsletter!
+      </h3>
 
-        <form
-          class="flex flex-col sm:flex-row gap-2 mb-4"
-          onsubmit="event.preventDefault()"
-        >
-          <input
-            type="email"
-            placeholder="Email Here..."
-            class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <button
-            type="submit"
-            class="bg-blue-600 text-white px-6 py-2 font-bold text-[12px] rounded hover:bg-blue-700 transition"
-            style="font-family: 'Open Sans'"
-          >
-            SUBSCRIBE
-          </button>
-        </form>
+      <form class="flex flex-col sm:flex-row gap-2 mb-4" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Email Here..."
+          class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-2 font-bold text-lg rounded hover:bg-blue-700 transition font-['Open Sans']">
+          SUBSCRIBE
+        </button>
+      </form>
 
-        <p class="text-sm font-normal text-[16px] text-gray-700 mb-4">
-          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
-          and embark on a journey filled with captivating Destination
-          highlights, intriguing Event updates, deep dives into Nomadic Culture,
-          and fascinating nuggets of History. Stay connected with the heart of
-          Mongolia – your gateway to a world of enriching experiences. Don't
-          miss out – subscribe now for a regular dose of Mongolian magic!
-        </p>
+      <p class="font-normal text-gray-700 mb-4 font-['SF_Pro_Display']">
+        Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
+        and embark on a journey filled with captivating Destination
+        highlights, intriguing Event updates, deep dives into Nomadic Culture,
+        and fascinating nuggets of History. Stay connected with the heart of
+        Mongolia – your gateway to a world of enriching experiences. Don't
+        miss out – subscribe now for a regular dose of Mongolian magic!
+      </p>
 
-        <p class="text-sm">
-          <span
-            class="font-mixed text-[14px]"
-            style="font-family: 'SF Pro Display'"
-            >Phone:</span
-          >
-          +976 8001-4904<br />
-          <span
-            class="font-mixed text-[14px]"
-            style="font-family: 'SF Pro Display'"
-            >Email:</span
-          >
-          BraveNewMongoliaTours@gmail.com
-        </p>
+      <p>
+        <span class="font-mixed font-['SF_Pro_Display']">Phone:</span>
+        <span class="text-sm"> 8001-4904<br /> </span>
+        <span class="font-mixed font-['SF_Pro_Display']">Email:</span>
+        <span class="text-sm">BraveNewMongoliaTours@gmail.com</span>
+      </p>
+    </div>
+
+    <!-- Cartoon Character -->
+    <div class="relative">
+      <img src="img/newsletter.png" alt="Mongolian Character"
+        class="h-full object-contain  w-[200px] md:w-[250px]" />
+    </div>
+
+    <!-- WhatsApp QR Code -->
+    <div class="bg-white translate-x-6 p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+      <!-- Top Icon -->
+      <div class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm">
+        <img src="img/footer/bnm round.png" alt="Logo" class="w-full h-full object-contain" />
       </div>
 
-      <!-- Cartoon Character -->
-      <div class="relative">
-        <img
-          src="img/Component 65.png"
-          alt="Mongolian Character"
-          class="w-[300px] md:w-[400px] h-auto object-contain transform scale-x-[-1]"
-        />
+      <!-- Title -->
+      <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">Connect via WhatsApp</span>
+
+      <!-- QR Code -->
+      <div class="bg-white p-2 rounded-lg shadow">
+        <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
       </div>
 
-      <!-- WhatsApp QR Code -->
+      <!-- Phone Number -->
       <div
-        class="bg-white p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md"
-      >
-        <!-- Top Icon -->
-        <div
-          class="w-12 h-12 rounded-full overflow-hidden -mt-6 border border-gray-200 shadow-sm"
-        >
-          <img
-            src="img/footer/bnm round.png"
-            alt="Logo"
-            class="w-full h-full object-contain"
-          />
+        class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']">
+        +976 8001 4904
+      </div>
+    </div>
+  </div>
+  <footer class="bg-[#0B2B6C] text-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 gap-6 pr-30 flex">
+      <!-- Column 1: Logo -->
+      <div class="text-center pr-20">
+        <div class="flex justify-center items-center space-x-2 mt-8">
+          <span class="text-2xl font-bold">BNM</span>
+          <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-12 h-12 mt-1" />
+        </div>
+      </div>
+
+      <!-- Column 2: Description -->
+      <div class="max-w-6xl">
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Brave New Mongolia
+        </h4>
+        <p class="mt-2 font-medium font-['SF_Pro_Display']">
+          Good day to everybody who is interested in our tours. We are a team
+          of Mongolians that love nature and traveling.
+        </p>
+
+        <div class="flex space-x-4 mt-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
         </div>
 
-        <!-- Title -->
-        <span
-          class="text-sm font-medium text-[19px] text-gray-700"
-          style="font-family: 'SF Pro Display'"
-          >Connect via WhatsApp</span
-        >
-
-        <!-- QR Code -->
-        <div class="bg-white p-2 rounded-lg shadow">
-          <img
-            src="img/footer/BNM WebWhatsappQR.png"
-            alt="WhatsApp QR"
-            class="w-[200px] h-[200px] object-contain"
-          />
+        <div class="mt-4">
+          <p>Phone: +976 8625-6868</p>
+          <p>Email: bnmtours@gmail.com</p>
+          <p>
+            Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
+            Mongolia
+          </p>
         </div>
+      </div>
 
-        <!-- Phone Number -->
-        <div
-          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-[18px] text-gray-800 shadow-sm"
-          style="font-family: 'SF Pro Display'"
-        >
-          +976 8001 4904
+      <!-- Column 3: Support Links -->
+      <div>
+        <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
+          Support
+        </h4>
+        <ul class="text-sm space-y-4 max-w-6xl mx-auto">
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">About us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">Package information</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: App Downloads -->
+      <div>
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Download our mobile app
+        </h4>
+        <div class="space-y-4">
+          <a href="#">
+            <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store" />
+          </a>
+          &nbsp;
+          <a href="#">
+            <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" />
+          </a>
         </div>
       </div>
     </div>
-    <footer class="bg-[#0B2B6C] text-white">
-      <div
-        class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
-      >
-        <!-- Column 1: Logo -->
-        <div class="w-full text-center">
-          <div class="flex justify-center items-center space-x-2 mt-4">
-            <img
-              src="img/footer/bnm round.png"
-              alt="BNM Logo"
-              class="w-20 h-20 mt-1"
-            />
-            <span class="text-2xl font-bold">BNM</span>
-          </div>
-        </div>
-        <!-- Column 2: Description -->
-        <div>
-          <h4
-            class="font-bold text-[16px]"
-            style="font-family: 'SF Pro Display'"
-          >
-            Brave New Mongolia
-          </h4>
-          <p class="text-sm mt-2 text-[16px] font-medium">
-            Good day to everybody who is interested in our tours. We are a team
-            of Mongolians that love nature and traveling.
-          </p>
 
-          <div class="flex space-x-4 mt-4">
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png"
-                alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png"
-                alt="YouTube"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png"
-                alt="Instagram"
-            /></a>
-          </div>
-
-          <div class="mt-4 text-sm">
-            <p>Phone: +976 8625-6868</p>
-            <p>Email: bnmtours@gmail.com</p>
-            <p>
-              Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
-              Mongolia
-            </p>
-          </div>
-        </div>
-
-        <!-- Column 3: Support Links -->
-        <div>
-          <h4
-            class="font-bold text-[16px] mb-2"
-            style="font-family: 'SF Pro Display'"
-          >
-            Support
-          </h4>
-          <ul class="text-sm space-y-2">
-            <li>
-              <a
-                href="#"
-                class="hover:underline font-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:underline font-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
-                >Package information</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                cclass="hover:underline font-bold text-[16px] mb-2"
-                style="font-family: 'SF Pro Display'"
-                >Terms of Service</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Column 4: App Downloads -->
-        <div>
-          <h4
-            class="font-semibold text-[16px] mb-4"
-            style="font-family: 'SF Pro Display'"
-          >
-            Download our mobile app
-          </h4>
-          <div class="space-y-4">
-            <a href="#">
-              <img
-                class="h-12"
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="App Store"
-              />
-            </a>
-            &nbsp;
-            <a href="#">
-              <img
-                class="h-12"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Google Play"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Bar -->
-      <div
-        class="text-center text-sm font-medium text-[16px] py-4 bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4]"
-      >
-        Copyright © 2025 Brave New Mongolia
-      </div>
-    </footer>
+    <!-- Bottom Bar -->
+    <div class="text-center text-lg bg-gradient-to-r py-4 from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']">
+      Copyright © 2025 Brave New Mongolia
+    </div>
+  </footer>
   </body>
 </html>
