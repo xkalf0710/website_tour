@@ -1,129 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Slider</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsagaan Suvarga Camp</title>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .thumb-active {
-      border-color: #1d4ed8; /* Tailwind blue-700 */
-      box-shadow: 0 0 5px rgba(29, 78, 216, 0.8);
-    }
-  </style>
 </head>
-<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+<body class="bg-gray-100">
 
-  <div class="relative shadow-md h-[400px] w-[600px] overflow-hidden rounded-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 py-6 justify-center px-4">
+
+  <!-- Overview Box -->
+  <div class="bg-white rounded shadow-md p-6 max-w-[421px] w-full mx-auto">
+    <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
+    <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
+      The white stupa camp offers a unique retreat next to the limestone cliffs. It's easy for visitors to enjoy stunning views, cultural experiences, and natural wonders of Mongolia such as the Baga Land Stone.
+    </p>
+    
+    <h2 class="font-semibold text-lg mb-2 font-['SF_Pro_Display']">Address</h2>
+    <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
+      From Ulaanbaatar, drive 430 km south to Mandalgovi, then 42 km east on dirt roads to Tsagaan Suvarga camp, following signs for this stunning limestone destination.
+    </p>
+    
+    <div class="flex justify-center mt-4">
+      <button
+        onclick="window.location.href='https://maps.app.goo.gl/zg41r8RLhzBLvZ4N7'"
+        class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center justify-center gap-2 font-['SF_Pro_Display']"
+      >
+        <img src="img/Frame-3.png" class="w-5 h-5 object-cover" alt="Directions Icon" />
+        Get Directions
+      </button>
+    </div>
+  </div>
+
+  <!-- Image Carousel -->
+  <div class="relative w-full max-w-3xl mx-auto aspect-[16/9] overflow-hidden rounded-lg">
     <img
       id="mainImage"
       src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg"
-      class="w-full h-full object-cover rounded-lg"
       alt="Building"
+      class="w-full h-full object-cover object-center transition-all duration-500"
     />
 
     <!-- Navigation buttons -->
     <div class="absolute top-2 left-2 flex gap-2">
-      <button id="prevBtn" class="bg-blue-700 p-2 rounded-full shadow text-white">
+      <button id="prevBtnImage" class="bg-blue-700 p-2 rounded-full shadow text-white">
         <i class="fas fa-chevron-left"></i>
       </button>
-      <button id="nextBtn" class="bg-blue-700 p-2 rounded-full shadow text-white">
+      <button id="nextBtnImage" class="bg-blue-700 p-2 rounded-full shadow text-white">
         <i class="fas fa-chevron-right"></i>
       </button>
     </div>
 
     <!-- Thumbnail previews -->
-    <div id="thumbnails" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 bg-white/70 p-1 rounded">
-      <img
-        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg"
-        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
-      />
-      <img
-        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg"
-        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
-      />
-      <img
-        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg"
-        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
-      />
-      <img
-        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg"
-        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
-      />
-      <img
-        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg"
-        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
-      />
+    <div id="thumbnails" class="absolute top-2 right-2 flex gap-1">
+      <img src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover cursor-pointer" />
+      <img src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover cursor-pointer" />
+      <img src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover cursor-pointer" />
+      <img src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover cursor-pointer" />
     </div>
   </div>
 
-  <script>
-    const images = [
-      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg",
-      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg",
-      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg",
-      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg",
-      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg"
-    ];
+</div>
 
-    let currentIndex = 0;
-    const mainImage = document.getElementById("mainImage");
-    const thumbnails = document.querySelectorAll("#thumbnails img");
-    let autoSlideTimer;
+<!-- JS Carousel functionality -->
+<script>
+  const mainImage = document.getElementById("mainImage");
+  const thumbnails = document.querySelectorAll("#thumbnails img");
+  const prevBtn = document.getElementById("prevBtnImage");
+  const nextBtn = document.getElementById("nextBtnImage");
 
-    function updateImage() {
-      mainImage.src = images[currentIndex];
-      updateActiveThumbnail();
-    }
+  let currentIndex = 0;
+  const images = [
+    "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg",
+    "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg",
+    "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg",
+    "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg",
+    "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg"
+  ];
 
-    function updateActiveThumbnail() {
-      thumbnails.forEach((thumb, index) => {
-        thumb.classList.remove("thumb-active");
-        thumb.classList.remove("border-blue-700");
-        if (index === currentIndex) {
-          thumb.classList.add("thumb-active");
-          thumb.classList.add("border-blue-700");
-        }
-      });
-    }
+  function showImage(index) {
+    mainImage.src = images[index];
+    currentIndex = index;
+  }
 
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      updateImage();
-    }
+  prevBtn.addEventListener("click", () => {
+    let index = currentIndex - 1;
+    if (index < 0) index = images.length - 1;
+    showImage(index);
+  });
 
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      updateImage();
-    }
+  nextBtn.addEventListener("click", () => {
+    let index = (currentIndex + 1) % images.length;
+    showImage(index);
+  });
 
-    function resetAutoSlide() {
-      clearInterval(autoSlideTimer);
-      autoSlideTimer = setInterval(nextImage, 4000); // slide every 4s
-    }
+  thumbnails.forEach((thumb, i) => {
+    thumb.addEventListener("click", () => showImage(i));
+  });
+</script>
 
-    document.getElementById("prevBtn").addEventListener("click", () => {
-      prevImage();
-      resetAutoSlide();
-    });
-
-    document.getElementById("nextBtn").addEventListener("click", () => {
-      nextImage();
-      resetAutoSlide();
-    });
-
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        currentIndex = index;
-        updateImage();
-        resetAutoSlide();
-      });
-    });
-
-    // Initialize
-    updateImage();
-    resetAutoSlide();
-  </script>
 </body>
 </html>
