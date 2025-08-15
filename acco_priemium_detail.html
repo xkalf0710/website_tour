@@ -103,10 +103,10 @@
         <a href="visit_ulaanbaatar.html" class="hover:underline"
           >Visit Ulaanbaatar</a
         >
-        <a href="destination.html" class="underline font-medium"
+        <a href="destination.html" class="hover:underline"
           >Destinations</a
         >
-        <a href="accommodation.html" class="hover:underline">Accommodation</a>
+        <a href="accommodation.html" class="underline font-medium">Accommodation</a>
         <a href="tours.html" class="hover:underline">BNM Tour</a>
         <a href="#" class="hover:underline">Events</a>
         <a href="#" class="hover:underline">Info</a>
@@ -198,10 +198,10 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-1 justify-center py-6 pr-36">
+      <div id="overview" class="grid grid-cols-1 md:grid-cols-2 gap-1 justify-center py-6 pr-80">
 
           <!-- Overview Box -->
-          <div class="bg-white rounded shadow-md p-6 max-w-[421px] w-full mx-auto">
+          <div class="bg-white rounded shadow-md p-6 max-w-[340px] w-full mx-auto">
             <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
             <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
               The white stupa camp offers a unique retreat next to the limestone cliffs. It's easy for visitors to enjoy stunning views, cultural experiences, and natural wonders of Mongolia such as the Baga Land Stone.
@@ -225,7 +225,7 @@
           </div>
 
           <!-- Image Carousel -->
-          <div class="relative  max-w-6xl mx-auto h-full aspect-[16/9] overflow-hidden rounded-lg">
+          <div class="relative max-w-3xl mx-auto aspect-[15/9] overflow-hidden rounded-lg">
             <img
               id="mainImage"
               src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg"
@@ -234,14 +234,53 @@
             />
 
             <!-- Navigation buttons -->
-            <div class="absolute top-2 left-2 flex gap-2">
+            <!-- <div class="absolute top-2 left-2 flex gap-2">
               <button id="prevBtnImage" class="bg-blue-700 p-2 rounded-full shadow text-white">
                 <i class="fas fa-chevron-left"></i>
               </button>
               <button id="nextBtnImage" class="bg-blue-700 p-2 rounded-full shadow text-white">
                 <i class="fas fa-chevron-right"></i>
               </button>
-            </div>
+            </div> -->
+
+            <button
+                id="prevBtnImage"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            <button
+              id="nextBtnImage"
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
 
             <!-- Thumbnail previews -->
             <div id="thumbnails" class="absolute top-2 right-2 flex gap-1">
@@ -255,18 +294,18 @@
         </div>
 
       <div id="rooms" class="py-6 space-y-6">
-        <section class="max-w-6xl mx-auto px-4 py-6">
+        <section class="max-w-6xl mx-auto px-6 py-6">
           <h2 class="text-xl font-semibold mb-6">Rooms</h2>
 
           <div class="relative">
             <!-- Carousel wrapper -->
             <div
               id="carousel"
-              class="flex space-x-4 overflow-x-auto scrollbar-hide"
+              class="flex space-x-6 overflow-x-auto scrollbar-hide"
             >
               <!-- Slides -->
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (1 of 7).jpg"
@@ -275,7 +314,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (2 of 7).jpg"
@@ -284,7 +323,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (3 of 7).jpg"
@@ -293,7 +332,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (4 of 7).jpg"
@@ -302,7 +341,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (5 of 7).jpg"
@@ -311,7 +350,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (6 of 7).jpg"
@@ -320,7 +359,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (7 of 7).jpg"
@@ -375,18 +414,18 @@
       </div>
 
       <div id="food" class="py-1 space-y-6">
-        <section class="max-w-6xl mx-auto px-4">
+        <section class="max-w-6xl mx-auto px-6">
           <h2 class="text-xl font-semibold mb-6">Food</h2>
 
           <div class="relative">
             <!-- Carousel wrapper -->
             <div
               id="carouselFood"
-              class="flex space-x-4 overflow-x-auto scrollbar-hide"
+              class="flex space-x-6 overflow-x-auto scrollbar-hide"
             >
               <!-- Slides -->
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Food/TsagaanSuvargaFo (1 of 4).jpg"
@@ -395,7 +434,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Food/TsagaanSuvargaFo (2 of 4).jpg"
@@ -404,7 +443,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Food/TsagaanSuvargaFo (3 of 4).jpg"
@@ -413,7 +452,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Food/TsagaanSuvargaFo (4 of 4).jpg"
@@ -470,18 +509,18 @@
       </div>
 
       <div id="facilities" class="py-6 space-y-6">
-        <section class="max-w-6xl mx-auto px-4 ">
+        <section class="max-w-6xl mx-auto px-6 ">
           <h2 class="text-xl font-semibold mb-6">Facilities</h2>
 
           <div class="relative">
             <!-- Carousel wrapper -->
             <div
               id="carouselFacilities"
-              class="flex space-x-4 overflow-x-auto scrollbar-hide"
+              class="flex space-x-6 overflow-x-auto scrollbar-hide"
             >
               <!-- Slides -->
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Facilities/TsagaanSuvargaFa (1 of 6).jpg"
@@ -490,7 +529,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Facilities/TsagaanSuvargaFa (2 of 6).jpg"
@@ -499,7 +538,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Facilities/TsagaanSuvargaFa (3 of 6).jpg"
@@ -508,7 +547,7 @@
                 />
               </div>
               <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Facilities/TsagaanSuvargaFa (4 of 6).jpg"
@@ -517,7 +556,7 @@
                 />
               </div>
                <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Facilities/TsagaanSuvargaFa (5 of 6).jpg"
@@ -526,7 +565,7 @@
                 />
               </div>
                <div
-                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[350px] h-[203.75px] mx-auto overflow-hidden"
               >
                 <img
                   src="img/Tsagaan Suvraga Camp/Facilities/TsagaanSuvargaFa (6 of 6).jpg"
@@ -580,7 +619,7 @@
         </section>
       </div>
 
-      <div id="promotional" class="py-6 space-y-6">
+      <div id="promotional" class="max-w-6xl mx-auto py-6 space-y-6">
         <div class="p-6">
           <h2 class="text-xl font-semibold mb-6">Promotional Video</h2>
           <div class="bg-white rounded-lg shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-6xl h-full mx-auto overflow-hidden">
