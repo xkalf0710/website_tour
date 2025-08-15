@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
+     <style>
     /* Scrollbar-ийг бүх браузерт нуух */
     .scrollbar-hide::-webkit-scrollbar {
       display: none; /* Chrome, Safari */
@@ -18,216 +20,373 @@
       scrollbar-width: none; /* Firefox */
     }
   </style>
-  <title>Accommodation Free</title>
-</head>
 
-<body class="min-h-screen w-full bg-blue-100">
-  <header class="bg-[#0e3b78] text-white px-6 py-3">
-    <div class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center">
-      <div class="flex items-center space-x-4 pl-28">
-        <span class="font-bold text-white text-base text-[16px]">BNM</span>
-        <img src="img/footer/bnm round.png" class="w-7 h-7 rounded-full" alt="BNM Logo" />
-      </div>
-      <!-- Center: About us + Search -->
-      <div class="flex items-center space-x-6 flex-1 justify-center">
-        <a href="about_us.html" class="text-sm hover:underline whitespace-nowrap text-white text-[16px] text-semibold">
-          About us
-        </a>
+    <title>Accommodation Free</title>
+  </head>
+  <body class="min-h-screen w-full bg-blue-100">
+    <header class="bg-[#0e3b78] text-white px-6 py-3">
+      <div
+        class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
+      >
+        <div class="flex items-center space-x-4 pl-28">
+          <span class="font-bold text-white text-base text-[16px]">BNM</span>
+          <img
+            src="img/footer/bnm round.png"
+            class="w-7 h-7 rounded-full"
+            alt="BNM Logo"
+          />
+        </div>
+        <!-- Center: About us + Search -->
+        <div class="flex items-center space-x-6 flex-1 justify-center">
+          <a
+            href="about_us.html"
+            class="text-sm hover:underline whitespace-nowrap text-white text-[16px] text-semibold"
+          >
+            About us
+          </a>
 
-        <!-- Search bar -->
-        <div class="relative w-full max-w-md">
-          <input type="text" placeholder="Search"
-            class="w-full pl-10 pr-4 py-2 rounded-lg text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-400" />
-          <div class="absolute left-3 top-2.5">
-            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
-                clip-rule="evenodd"></path>
-            </svg>
+          <!-- Search bar -->
+          <div class="relative w-full max-w-md">
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full pl-10 pr-4 py-2 rounded-lg text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <div class="absolute left-3 top-2.5">
+              <svg
+                class="w-5 h-5 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Right: User icon + Language -->
-      <div class="flex items-center space-x-3">
-        <!-- User icon -->
-        <button class="bg-[#4185f4] hover:bg-[#5a95f7] p-2 rounded-md">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-          </svg>
-        </button>
+        <!-- Right: User icon + Language -->
+        <div class="flex items-center space-x-3">
+          <!-- User icon -->
+          <button class="bg-[#4185f4] hover:bg-[#5a95f7] p-2 rounded-md">
+            <svg
+              class="w-5 h-5 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </button>
 
-        <!-- Language -->
-        <button class="border border-white px-3 py-1 rounded-md text-sm flex items-center font-semibold text-[16px]">
-          EN
-          <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Bottom Navigation -->
-    <nav class="flex justify-start max-w-6xl space-x-6 text-sm mt-0 border-t mx-auto border-blue-800 pl-28">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="visit_ulaanbaatar.html" class="hover:underline">Visit Ulaanbaatar</a>
-      <a href="destination.html" class="underline font-medium">Destinations</a>
-      <a href="accommodation.html" class="hover:underline">Accommodation</a>
-      <a href="tours.html" class="hover:underline">BNM Tour</a>
-      <a href="#" class="hover:underline">Events</a>
-      <a href="#" class="hover:underline">Info</a>
-      <a href="commercial.html" class="hover:underline">Commercial</a>
-    </nav>
-  </header>
-  <div class="max-w-6xl mx-auto py-6 space-y-6 pl-28">
-    <div class="py-6 space-y-6">
-      <div class="mb-4">
-        <button class="text-sm text-blue-700 hover:underline flex items-center space-x-1">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-          <a href="accommodation.html"><span>Back</span></a>
-        </button>
-      </div>
-
-      <div class="relative">
-        <img src="img/1/GoviiShineKhurhreeWebTop.jpg-н хуулбар.jpg" alt="Cover" class="w-full h-full object-cover rounded-2xl" />
-
-        <div class="absolute left-8 bottom-[-86px] flex items-center space-x-4 ">
-          <img src="img/1/GoviinShineKhurkhreeProfile.jpg-н хуулбар.jpg" alt="Profile"
-            class="w-32 h-32 rounded-full border-4 border-white shadow-md object-cover" />
-          <h1 class="text-xl font-bold mt-4">Goviin Shine Khurkhree Tourist Camp</h1>
-        </div>
-      </div>
-
-      <div class="flex justify-end space-x-4 mt-6 mr-8">
-        <button onclick="callPhoneNumber()" class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">
-          <span style="display: flex; align-items: center">
-            <img src="img/Frame.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
-            +976 93040909, +976 8045 0453
-          </span>
-        </button>
-        <button onclick="window.open('https://www.facebook.com/Gobiwaterfall', '_blank')" class="items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">
-          <span style="display: flex; align-items: center">
-            <img src="img/Frame-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
-            Facebook Page
-          </span>
-        </button>
-      </div>
-    </div>
-
-    <div class="py-1 space-y-6">
-      <div class="mt-6 border-b border-black">
-        <nav class="flex space-x-6 text-lg font-medium font-['SF_Pro_Display']">
-          <a href="#overview" class="nav-link text-blue-700 pb-2">Overview</a>
-          <a href="#services" class="nav-link text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2">Services</a>
-        </nav>
-      </div>
-    </div>
-
-
-    <div class="max-w-6xl  grid md:grid-cols-2 gap-4 items-stretch">
-
-      <!-- Text Card -->
-      <div class="bg-white p-6 rounded shadow-md h-full" id="overview">
-        <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
-        <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
-          Goviin Shine Khurkhree camp offers serene accommodations, stunning desert views, and access to natural wonders, perfect for relaxation, exploration, and experiencing Mongolia’s unique Gobi landscape.
-        </p>
-
-        <!-- <h2 class="font-semibold text-lg mb-2 font-['SF_Pro_Display']">Address</h2>
-        <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
-          From Ulaanbaatar, drive 430 km south to Mandalgovi, then 42 km east on dirt roads to Tsagaan Suvarga camp, following signs for this stunning limestone destination.
-        </p> -->
-        <div class="flex justify-center mt-12">
+          <!-- Language -->
           <button
-            onclick="window.location.href='https://maps.app.goo.gl/zg41r8RLhzBLvZ4N7'"
-            class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center justify-center gap-2 font-['SF_Pro_Display']"
+            class="border border-white px-3 py-1 rounded-md text-sm flex items-center font-semibold text-[16px]"
           >
-            <img src="img/Frame-3.png" class="w-5 h-5 object-cover" alt="Directions Icon" />
-            Get Directions
+            EN
+            <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+            </svg>
           </button>
         </div>
-
-
       </div>
 
-      <!-- Image -->
-      <div class="rounded overflow-hidden shadow-md h-full">
-        <img src="img/1/top/GoviinShineKhurhreeT (3 of 4).jpg-н хуулбар.jpg" alt="Hotel" class="w-full h-full object-cover rounded" />
-      </div>
+      <!-- Bottom Navigation -->
+      <nav
+        class="flex justify-start max-w-6xl space-x-6 text-sm mt-0 border-t mx-auto border-blue-800 pl-28"
+      >
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="visit_ulaanbaatar.html" class="hover:underline"
+          >Visit Ulaanbaatar</a
+        >
+        <a href="destination.html" class="underline font-medium"
+          >Destinations</a
+        >
+        <a href="accommodation.html" class="hover:underline">Accommodation</a>
+        <a href="tours.html" class="hover:underline">BNM Tour</a>
+        <a href="#" class="hover:underline">Events</a>
+        <a href="#" class="hover:underline">Info</a>
+        <a href="commercial.html" class="hover:underline">Commercial</a>
+      </nav>
+    </header>
 
-    </div>
-
-
-
-
-    <div class="py-6 space-y-6">
-      <section class="max-w-6xl mx-auto px-4 py-10">
-        <h2 id="services" class="text-xl font-semibold mb-6">Services</h2>
+    <div class="max-w-6xl mx-auto py-6 space-y-6 pl-28">
+      <div class="py-6 space-y-6">
+        <div class="mb-4">
+          <button
+            class="text-sm text-blue-700 hover:underline flex items-center space-x-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            <a href="accommodation.html"><span>Back</span></a>
+          </button>
+        </div>
 
         <div class="relative">
-          <!-- Carousel wrapper -->
-          <div id="carousel" class="flex space-x-4 overflow-x-auto scrollbar-hide">
-            <!-- Slides -->
-            <div
-              class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden">
-              <img src="img/1/service/GoviinShineKhurhreeFa (4 of 4).jpg-н хуулбар.jpg" alt="Room 1" class="w-full h-full object-cover rounded" />
-            </div>
-            <div
-              class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden">
-              <img src="img/1/service/GoviinShineKhurhreeR (2 of 2).jpg-н хуулбар.jpg" alt="Room 2" class="w-full h-full rounded object-cover" />
-            </div>
-            <div
-              class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden">
-              <img src="img/1/service/GoviinShineKhurhreeR (1 of 2).jpg-н хуулбар.jpg" alt="Room 3" class="w-full h-full object-cover  rounded" />
-            </div>
-            <div
-              class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden">
-              <img src="img/1/service/GoviinShineKHurhreeFo (2 of 3).jpg-н хуулбар.jpg" alt="Room 3" class="w-full h-full object-cover rounded" />
+          <img
+            src="img/1/GoviiShineKhurhreeWebTop.jpg-н хуулбар.jpg"
+            alt="Cover"
+            class="w-full h-full object-cover rounded-2xl"
+          />
+
+          <div
+            class="absolute left-8 bottom-[-86px] flex items-center space-x-4"
+          >
+            <img
+              src="img/1/GoviinShineKhurkhreeProfile.jpg-н хуулбар.jpg"
+              alt="Profile"
+              class="w-32 h-32 rounded-full border-2 border-white shadow-md object-cover"
+            />
+            <h1 class="text-xl font-bold mt-4 font-['SF_Pro_Display']">Goviin Shine Khurhree Tourist Camp</h1>
+          </div>
+        </div>
+
+        <div class="flex justify-end items-start space-x-4">
+          <button onclick="callPhoneNumber()" class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">
+            <span style="display: flex; align-items: center">
+              <img src="img/Frame.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
+              +976 93040909 , +976 8045 0453
+            </span>
+          </button>
+          <button onclick="window.open('https://www.facebook.com/Gobiwaterfall', '_blank')" class="items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm">
+            <span style="display: flex; align-items: center">
+              <img src="img/Frame-2.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
+              Facebook Page
+            </span>
+          </button>
+      </div>
+      </div>
+
+      <div class="py-1 space-y-6">
+        <div class="mt-6 border-b border-gray-300">
+          <nav class="flex space-x-6 text-lg font-medium">
+            <a href="#overview" class="nav-link text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2">Overview</a>
+            <a
+              
+              href="#rooms" class="nav-link text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2"
+              >Service</a
+            >
+            
+          </nav>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-1 justify-center py-6 pr-36">
+
+          <!-- Overview Box -->
+          <div class="bg-white rounded shadow-md p-6 w-[421px] h-full mx-auto">
+            <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
+            <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
+             Goviin Shine Khurkhree camp offers serene accommodations, stunning desert views, and access to natural wonders, perfect for relaxation, exploration, and experiencing Mongolia’s unique Gobi landscape.
+            </p>
+
+            
+            <h2 class="font-semibold text-lg mb-2 font-['SF_Pro_Display']">Address</h2>
+            <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
+              From Ulaanbaatar, drive 430 km south to Mandalgovi, then 42 km east on dirt roads to Tsagaan Suvarga camp, following signs for this stunning limestone destination.
+            </p>
+            
+            <div class="flex justify-center mt-4">
+              <button
+                onclick="window.location.href='https://maps.app.goo.gl/zg41r8RLhzBLvZ4N7'"
+                class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center justify-center gap-2 font-['SF_Pro_Display']"
+              >
+                <img src="img/Frame-3.png" class="w-5 h-5 object-cover" alt="Directions Icon" />
+                Get Directions
+              </button>
             </div>
           </div>
 
-          <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600 bg-white rounded-2xl" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+          <!-- Image Carousel -->
+          <div class="relative  max-w-6xl mx-auto h-full aspect-[16/9] overflow-hidden rounded-lg">
+            <img
+              
+              src="img/1/top/GoviinShineKhurhreeT (3 of 4).jpg-н хуулбар.jpg"
+              alt="Building"
+              class="w-full h-full object-cover object-center transition-all duration-500"
+            />
 
-          <!-- Navigation Arrow -->
-          <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600 bg-white rounded-2xl" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+           
+            
+          </div>
+
+        </div>
+
+      <div id="rooms" class="py-6 space-y-6">
+        <section class="max-w-6xl mx-auto px-4 py-6">
+          <h2 class="text-xl font-semibold mb-6">Services</h2>
+
+          <div class="relative">
+            <!-- Carousel wrapper -->
+            <div
+              id="carousel"
+              class="flex space-x-4 overflow-x-auto scrollbar-hide"
+            >
+              <!-- Slides -->
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/1/service/GoviinShineKhurhreeR (1 of 2).jpg-н хуулбар.jpg"
+                  alt="Room 1"
+                  class="w-full h-full object-cover rounded"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (2 of 7).jpg"
+                  alt="Room 2"
+                  class="w-full h-full rounded object-cover"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (3 of 7).jpg"
+                  alt="Room 3"
+                  class="w-full h-full rounded object-cover"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (4 of 7).jpg"
+                  alt="Room 3"
+                  class="w-full h-full rounded object-cover"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (5 of 7).jpg"
+                  alt="Room 3"
+                  class="w-full h-full rounded object-cover"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (6 of 7).jpg"
+                  alt="Room 3"
+                  class="w-full h-full rounded object-cover"
+                />
+              </div>
+              <div
+                class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
+              >
+                <img
+                  src="img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (7 of 7).jpg"
+                  alt="Room 3"
+                  class="w-full h-full rounded object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Navigation Arrow -->
+
+            <button
+                id="prevBtn"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            <button
+              id="nextBtn"
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      
+
+       <div
+        class="relative max-w-6xl mx-auto py-6 rounded-xl overflow-hidden h-[247px] translate-y"
+      >
+        <!-- Left side tour characters -->
+        <img
+          src="img/visit bnm tour cta.png"
+          alt="Tour Character"
+          class="w-full h-auto object-cover"
+        />
+
+        <!-- Right side text and button -->
+        <div
+          class="absolute top-1/2 left-[55%] transform -translate-y-1/2 text-white text-center"
+        >
+          <h2
+            class="text-4xl leading-tight font-bold font-['SF_Pro_Display']"
+            style="font-family: 'Mulish'"
+          >
+            <p class="text-left">Escape to</p>
+            <p>the Land of Stories</p>
+          </h2>
+
+          <button
+            class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['SF_Pro_Display'] shadow hover:bg-yellow-300 transition flex items-center"
+          >
+            VISIT BNM TOURS
+            <img
+              src="img/sr-arrow-circle-right 2.png"
+              class="w-6 h-6 object-cover ml-2"
+            />
           </button>
         </div>
-      </section>
-    </div>
-
-    <div class="relative max-w-6xl mx-auto py-6 rounded-xl overflow-hidden h-[247px] translate-y">
-      <!-- Left side tour characters -->
-      <img src="img/visit bnm tour cta.png" alt="Tour Character" class="w-full h-auto object-cover" />
-
-      <!-- Right side text and button -->
-      <div class="absolute top-1/2 left-[55%] transform -translate-y-1/2 text-white text-center">
-        <h2 class="text-4xl leading-tight font-bold font-['SF_Pro_Display']" style="font-family: 'Mulish'">
-          <p class="text-left">Escape to</p>
-          <p>the Land of Stories</p>
-        </h2>
-
-        <button
-          class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['SF_Pro_Display'] shadow hover:bg-yellow-300 transition flex items-center">
-          VISIT BNM TOURS
-          <img src="img/sr-arrow-circle-right 2.png" class="w-6 h-6 object-cover ml-2" />
-        </button>
       </div>
     </div>
-  </div>
 
-  <!-- Newsletter Section -->
- <div
+    <!-- Newsletter Section -->
+    <div
     class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
     <!-- Newsletter Form -->
     <div class="max-w-xl text-left md:pl-32">
@@ -409,34 +568,123 @@
     </div>
   </footer>
 
-  <script>
-    const carousel = document.getElementById("carousel");
-    const nextBtn = document.getElementById("nextBtn");
-    const prevBtn = document.getElementById("prevBtn");
+    <script>
+      const carousel = document.getElementById("carousel");
+      const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
 
-    nextBtn.addEventListener("click", () => {
-      carousel.scrollBy({left: 340, behavior: "smooth"});
-    });
-
-    prevBtn.addEventListener("click", () => {
-      carousel.scrollBy({left: -340, behavior: "smooth" });
-    });
-
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', function(){
-        navLinks.forEach(l=> {
-          l.classList.remove("text-blue-700");
-          l.classList.add("text-gray-600");
-        });
-
-        this.classList.remove("text-gray-600");
-        this.classList.add("text-blue-700");
+      nextBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: 340, behavior: "smooth" });
       });
-    });
 
-  </script>
-</body>
+      prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -340, behavior: "smooth" });
+      });
+    
+      const carouselFood = document.getElementById("carouselFood");
+      const nextBtnFood = document.getElementById("nextBtnFood");
+      const prevBtnFood = document.getElementById("prevBtnFood");
 
+      nextBtnFood.addEventListener("click", () => {
+        carouselFood.scrollBy({ left: 340, behavior: "smooth" });
+      });
+
+      prevBtnFood.addEventListener("click", () => {
+        carouselFood.scrollBy({ left: -340, behavior: "smooth" });
+      });
+    
+      const carouselFacilities = document.getElementById("carouselFacilities");
+      const nextBtnFacilities = document.getElementById("nextBtnFacilities");
+      const prevBtnFacilities = document.getElementById("prevBtnFacilities");
+
+      nextBtnFacilities.addEventListener("click", () => {
+        carouselFacilities.scrollBy({ left: 340, behavior: "smooth" });
+      });
+
+      prevBtnFacilities.addEventListener("click", () => {
+        carouselFacilities.scrollBy({ left: -340, behavior: "smooth" });
+      });
+
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(){
+          navLinks.forEach(l=> {
+            l.classList.remove("text-blue-700");
+            l.classList.add("text-gray-600");
+          });
+
+          this.classList.remove("text-gray-600");
+          this.classList.add("text-blue-700");
+        });
+      });
+
+      const images = [
+      
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg"
+      ];
+
+
+      let currentIndex = 0;
+      const mainImage = document.getElementById("mainImage");
+      const thumbnails = document.querySelectorAll("#thumbnails img");
+      let autoSlideTimer;
+
+      function updateImage() {
+        mainImage.src = images[currentIndex];
+        updateActiveThumbnail();
+      }
+
+      function updateActiveThumbnail() {
+        thumbnails.forEach((thumb, index) => {
+          thumb.classList.remove("thumb-active");
+          thumb.classList.remove("");
+          if (index === currentIndex) {
+            thumb.classList.add("thumb-active");
+            thumb.classList.add("");
+          }
+        });
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(nextImage, 4000); // slide every 4s
+      }
+
+      document.getElementById("prevBtnImage").addEventListener("click", () => {
+        prevImage();
+        resetAutoSlide();
+      });
+
+      document.getElementById("nextBtnImage").addEventListener("click", () => {
+        nextImage();
+        resetAutoSlide();
+      });
+
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener("click", () => {
+          currentIndex = index;
+          updateImage();
+          resetAutoSlide();
+        });
+      });
+
+      // Initialize
+      updateImage();
+      resetAutoSlide();
+    </script>
+  </body>
 </html>
