@@ -3,29 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overview Section</title>
+  <title>Image Slider</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .thumb-active {
+      border-color: #1d4ed8; /* Tailwind blue-700 */
+      box-shadow: 0 0 5px rgba(29, 78, 216, 0.8);
+    }
+  </style>
 </head>
-<body class="bg-black text-white">
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
 
-  <div class="flex flex-col md:flex-row w-full h-screen">
-    
-    <!-- Left Text Section -->
-    <div class="flex-1 bg-gradient-to-b from-gray-200 to-gray-800 text-black p-6 md:p-10 flex items-center">
-      <div>
-        <h2 class="text-lg font-bold mb-2">Overview</h2>
-        <p class="text-sm leading-relaxed">
-          The Genghis Khan Statue Complex, also known as the Chinggis Khaan Statue Complex, is a prominent tourist attraction located in Tsonjin Boldog, around 54 kilometers (34 miles) east of
-        </p>
-      </div>
+  <div class="relative shadow-md h-[400px] w-[600px] overflow-hidden rounded-lg">
+    <img
+      id="mainImage"
+      src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg"
+      class="w-full h-full object-cover rounded-lg"
+      alt="Building"
+    />
+
+    <!-- Navigation buttons -->
+    <div class="absolute top-2 left-2 flex gap-2">
+      <button id="prevBtn" class="bg-blue-700 p-2 rounded-full shadow text-white">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="nextBtn" class="bg-blue-700 p-2 rounded-full shadow text-white">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
 
-    <!-- Right Image Section -->
-    <div class="flex-1">
-      <img src="your-image.jpg" alt="Building" class="w-full h-full object-cover" />
+    <!-- Thumbnail previews -->
+    <div id="thumbnails" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 bg-white/70 p-1 rounded">
+      <img
+        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg"
+        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
+      />
+      <img
+        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg"
+        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
+      />
+      <img
+        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg"
+        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
+      />
+      <img
+        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg"
+        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
+      />
+      <img
+        src="img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg"
+        class="w-12 h-12 rounded border-2 border-white object-cover cursor-pointer"
+      />
     </div>
-
   </div>
 
+  <script>
+    const images = [
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (1 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (2 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (3 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (4 of 5).jpg",
+      "img/Tsagaan Suvraga Camp/Top/TsagaanSuvargaT (5 of 5).jpg"
+    ];
+
+    let currentIndex = 0;
+    const mainImage = document.getElementById("mainImage");
+    const thumbnails = document.querySelectorAll("#thumbnails img");
+    let autoSlideTimer;
+
+    function updateImage() {
+      mainImage.src = images[currentIndex];
+      updateActiveThumbnail();
+    }
+
+    function updateActiveThumbnail() {
+      thumbnails.forEach((thumb, index) => {
+        thumb.classList.remove("thumb-active");
+        thumb.classList.remove("border-blue-700");
+        if (index === currentIndex) {
+          thumb.classList.add("thumb-active");
+          thumb.classList.add("border-blue-700");
+        }
+      });
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateImage();
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateImage();
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideTimer);
+      autoSlideTimer = setInterval(nextImage, 4000); // slide every 4s
+    }
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+      prevImage();
+      resetAutoSlide();
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+      nextImage();
+      resetAutoSlide();
+    });
+
+    thumbnails.forEach((thumb, index) => {
+      thumb.addEventListener("click", () => {
+        currentIndex = index;
+        updateImage();
+        resetAutoSlide();
+      });
+    });
+
+    // Initialize
+    updateImage();
+    resetAutoSlide();
+  </script>
 </body>
 </html>
