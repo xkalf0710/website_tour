@@ -96,14 +96,14 @@
         <a href="visit_ulaanbaatar.html" class="hover:underline"
           >Visit Ulaanbaatar</a
         >
-        <a href="destination.html" class="underline font-medium"
+        <a href="destination.html" class="hover:underline"
           >Destinations</a
         >
         <a href="accommodation.html" class="hover:underline">Accommodation</a>
         <a href="tours.html" class="hover:underline">BNM Tour</a>
         <a href="#" class="hover:underline">Events</a>
         <a href="#" class="hover:underline">Info</a>
-        <a href="commercial.html" class="hover:underline">Commercial</a>
+        <a href="commercial.html" class="underline font-medium">Commercial</a>
       </nav>
     </header>
 
@@ -155,21 +155,21 @@
 
             <span style="display: flex; align-items: center">
               <h1
-                class="text-2xl font-bold font-['SF_Pro_Display']"
+                class="text-2xl font-bold font-['SF_Pro_Display'] mt-6"
                 
               >
                 Novotel Hotel
               </h1>
               <img
                 src="img/Correct.png"
-                class="w-18 h-15 object-cover"
+                class="w-18 h-15 object-cover mt-6"
                 style="margin-left: 10px"
               />
             </span>
           </div>
         </div>
 
-        <div class="flex justify-end space-x-4 mt-6 mr-8">
+        <div class="flex justify-end space-x-4 ">
           <button
             class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm"
           >
@@ -200,27 +200,27 @@
       <div class="py-6 space-y-6">
         <div class="mt-6 border-b border-gray-300">
           <nav class="flex space-x-6 text-lg font-medium font-['SF_Pro_Display']">
-            <a href="#" class="text-blue-700 pb-2">Overview</a>
+            <a href="#overview" class="text-blue-700 pb-2">Overview</a>
             <a
-              href="#"
+              href="#rooms"
               class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-['SF_Pro_Display']"
              
               >Rooms</a
             >
             <a
-              href="#"
+              href="#conference"
               class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-['SF_Pro_Display']"
              
               >Conference rooms </a
             >
             <a
-              href="#"
+              href="#services"
               class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-['SF_Pro_Display']"
              
               >Services</a
             >
             <a
-              href="#"
+              href="#promotional"
               class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-['SF_Pro_Display']"
               
               >Promotional video</a
@@ -229,27 +229,20 @@
         </div>
       </div>
 
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-start pl-4"
-      >
-        <!-- Overview Box -->
-        <div class="bg-white rounded shadow-md p-8 w-[421px]">
-          <h2
-            class="text-[24px] font-bold mb-2 font-['SF_Pro_Display']"
-            
-          >
-            Overview
-          </h2>
-          <p
-            class="text-[20px] mb-4 font-normal font-['SF_Pro_Display']"
-            
-          >
+   
+
+      <div id="overview" class="grid grid-cols-1 md:grid-cols-2 gap-1 justify-center py-6 pr-80">
+
+          <!-- Overview Box -->
+          <div class="bg-white rounded shadow-md p-6 max-w-[340px] w-full mx-auto">
+            <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
+            <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
             The Genghis Khan Statue Complex, also known as the Chinggis Khaan
             Statue Complex, is a prominent tourist attraction located in Tsonjin
             Boldog, around 54 kilometers (34 miles) east of
-          </p>
+            </p>
 
-          <div
+            <div
             class="flex items-center mb-2 font-['SF_Pro_Display']"
             
           >
@@ -271,62 +264,92 @@
             NovotelUlaanbaatar.mn
           </div>
 
-          <h2
-            class="text-[20px] font-bold mb-2 font-['SF_Pro_Display']"
             
-          >
-            Address
-          </h2>
-
-          <button
-            class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center gap-2 font-['SF_Pro_Display']"
-          >
-            <img src="img/Frame-3.png" class="w-5 h-5 object-cover" />
-            Get Directions
-          </button>
-        </div>
-
-        <!-- Image Carousel -->
-        <div class="relative bg-white rounded shadow overflow-hidden">
-          <img
-            src="img/Premium/Top/PremiumTop-1.jpg"
-            class="w-full h-[426px] object-cover rounded"
-            alt="Building"
-          />
-
-          <div class="absolute top-2 left-2 flex gap-2">
-            <button class="bg-blue-700 p-1 rounded-full shadow text-white">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="bg-blue-700 p-1 rounded-full shadow text-white">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+            <h2 class="font-semibold text-lg mb-2 font-['SF_Pro_Display']">Address</h2>
+           
+            
+            <div class="flex justify-center mt-4">
+              <button
+                onclick="window.location.href='https://maps.app.goo.gl/zg41r8RLhzBLvZ4N7'"
+                class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center justify-center gap-2 font-['SF_Pro_Display']"
+              >
+                <img src="img/Frame-3.png" class="w-5 h-5 object-cover" alt="Directions Icon" />
+                Get Directions
+              </button>
+            </div>
           </div>
 
-          <div class="absolute top-2 right-2 flex gap-1">
+          <!-- Image Carousel -->
+          <div class="relative max-w-3xl mx-auto aspect-[16/9] overflow-hidden rounded-lg">
             <img
-              src="img/Premium/Service/Service2/PremiumServiice2Thumbnail-1.jpg"
-              class="w-10 h-10 rounded shadow border-2 border-white object-cover"
+              id="mainImage"
+              src="img/Premium/Thumbnail/PremiumThumbnail-1.jpg"
+              alt="Building"
+              class="w-full h-full object-cover object-center transition-all duration-500"
             />
-            <img
-              src="img/Premium/Service/Service2/PremiumService2.jpg"
-              class="w-10 h-10 rounded shadow border-2 border-white object-cover"
-            />
+
+           
+
+            <button
+                id="prevBtnImage"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            <button
+              id="nextBtnImage"
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
+            <!-- Thumbnail previews -->
+            <div id="thumbnails" class="absolute top-2 right-2 flex gap-1">
+              <img src="img/Premium/Top/PremiumTop-1.jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover cursor-pointer" />
+              <img src="img/Premium/Top/PremiumTop-2.jpg" class="w-10 h-10 rounded shadow border-2 border-white object-cover cursor-pointer" />
+             
+            </div>
           </div>
+
         </div>
-      </div>
 
       <div class="space-y-6">
-        <section class="max-w-6xl mx-auto px-4 py-6">
+        <section id="rooms" class="max-w-6xl mx-auto px-4 py-6">
           <h2
           class="text-2xl  mb-6 font-['SF_Pro_Display']">
           Rooms
         </h2>
 
           <div class="relative">
-            <!-- Carousel wrapper -->
+          
             <div id="carousel" class="flex space-x-4 overflow-hidden">
-              <!-- Slides -->
+              
               <div
                 class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
               >
@@ -365,14 +388,32 @@
               </div>
             </div>
 
-            <!-- Navigation Arrow -->
+           <button
+                id="prevBtn"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-purple-600 bg-white rounded-2xl"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
             <button
               id="nextBtn"
               class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-purple-600"
+                class="h-6 w-6 text-purple-600 bg-white rounded-xl"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -390,7 +431,7 @@
       </div>
 
 
-      <section class="max-w-6xl mx-auto py-6 px-4">
+      <section id="conference" class="max-w-6xl mx-auto py-6 px-4">
         <h2
           class="text-2xl  mb-6 font-['SF_Pro_Display']">
           Conference Rooms
@@ -399,7 +440,7 @@
         <div class="swiper mySwiper2">
           <div class="swiper-wrapper">
             <div class="swiper-slide flex justify-center">
-              <div class="w-[280px] h-[240px] p-[10px] rounded-[17.71px] shadow-[0px_4.43px_17.71px_0px_rgba(158,158,158,0.25)] bg-white">
+              <div class="w-[280px] h-[240px] p-[10px] rounded-[17.71px] shadow-[0px_4.43px_17.71px_0px_rgba(158,158,158,0.25)] bg-white aspect-square">
                 <img src="img/Premium/Conference Room/Conference Room2/PremiumConferenceRoom-1.jpg" alt="Service" class="w-full h-full rounded-[8.86px] object-cover"/>
 
                 
@@ -431,7 +472,7 @@
       </section>
       
 
-      <section class="max-w-6xl mx-auto py-6 px-4">
+      <section class="max-w-6xl mx-auto py-6 px-4" id="services">
         <h2
           class="text-2xl  mb-6 font-['SF_Pro_Display']">
           Service
@@ -523,25 +564,14 @@
       </section>
       
 
-     
 
-      <div class="py-6 space-y-6">
-        <h2
-          class="text-2xl  mb-6 font-['SF_Pro_Display']">
-          Promotional Video
-        </h2>
-        <div class="rounded-2xl overflow-hidden shadow-md max-w-6xl">
-          <div class="relative aspect-[16/9]">
-            <iframe
-              width="1100"
-              height="645"
-              src="https://www.youtube.com/embed/nw8pJFkGXsk?si=MV25X5-Y0vQv_xJB"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+      <div id="promotional" class="max-w-6xl mx-auto py-1 space-y-6">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-6">Promotional Video</h2>
+          <div class="bg-white rounded-lg shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-6xl h-full mx-auto overflow-hidden">
+            <div class="relative aspect-[16/9]">
+              <iframe width="975" height="560" src="https://www.youtube.com/embed/nw8pJFkGXsk?si=MV25X5-Y0vQv_xJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -585,7 +615,7 @@
     <div
     class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
     <!-- Newsletter Form -->
-    <div class="max-w-xl text-left md:pl-32">
+    <div class="max-w-xl text-left md:pl-24">
       <h3 class="text-3xl mb-4 font-['SF_Pro_Display']">
         Subscribe to our Newsletter!
       </h3>
@@ -768,9 +798,14 @@
     <script>
       const carousel = document.getElementById("carousel");
       const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
 
       nextBtn.addEventListener("click", () => {
         carousel.scrollBy({ left: 340, behavior: "smooth" });
+      });
+
+      prevBtn.addEventListener("click", () => {
+        carousel.scrollBy({ left: -340, behavior: "smooth" });
       });
     </script>
     
@@ -800,6 +835,88 @@
         });
       }
       initSwiper(".mySwiper2");
+
+
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(){
+          navLinks.forEach(l=> {
+            l.classList.remove("text-blue-700");
+            l.classList.add("text-gray-600");
+          });
+
+          this.classList.remove("text-gray-600");
+          this.classList.add("text-blue-700");
+        });
+      });
+
+       const images = [
+      
+      "img/Premium/Top/PremiumTop-1.jpg",
+      "img/Premium/Top/PremiumTop-2.jpg",
+      
+      ];
+
+
+      let currentIndex = 0;
+      const mainImage = document.getElementById("mainImage");
+      const thumbnails = document.querySelectorAll("#thumbnails img");
+      let autoSlideTimer;
+
+      function updateImage() {
+        mainImage.src = images[currentIndex];
+        updateActiveThumbnail();
+      }
+
+      function updateActiveThumbnail() {
+        thumbnails.forEach((thumb, index) => {
+          thumb.classList.remove("thumb-active");
+          thumb.classList.remove("");
+          if (index === currentIndex) {
+            thumb.classList.add("thumb-active");
+            thumb.classList.add("");
+          }
+        });
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(nextImage, 4000); // slide every 4s
+      }
+
+      document.getElementById("prevBtnImage").addEventListener("click", () => {
+        prevImage();
+        resetAutoSlide();
+      });
+
+      document.getElementById("nextBtnImage").addEventListener("click", () => {
+        nextImage();
+        resetAutoSlide();
+      });
+
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener("click", () => {
+          currentIndex = index;
+          updateImage();
+          resetAutoSlide();
+        });
+      });
+
+      // Initialize
+      updateImage();
+      resetAutoSlide();
+
     </script>
   </body>
 </html>
