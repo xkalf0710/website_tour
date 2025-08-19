@@ -9,7 +9,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Fashion Free</title>
+    <title>Fashion Premium</title>
   </head>
   <body class="min-h-screen bg-blue-100 w-full">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
@@ -150,17 +150,11 @@
 
             <span style="display: flex; align-items: center">
               <h1
-                class="text-2xl font-bold font-[
-                SF_Pro_Display]"
-                
+                class="text-2xl font-['SF_Pro_Display']"
               >
                 Bodios Mongolia
               </h1>
-              <img
-                src="img/Group 481815 2.png"
-                class="w-18 h-15 object-cover"
-                style="margin-left: 10px"
-              />
+              
             </span>
           </div>
         </div>
@@ -193,42 +187,36 @@
         </div>
       </div>
 
-      <div class="py-6 space-y-6">
+     <div class="py-6 space-y-6">
         <div class="mt-6 border-b border-gray-300">
           <nav class="flex space-x-6 text-lg font-medium font-['SF_Pro_Display']">
-            <a href="#" class="text-blue-700 pb-2">Overview</a>
-            <a
-              href="#"
+            <a href="#overview" class="text-blue-700 pb-2">Overview</a>
+           
+
+               <a
+              href="#products"
               class="text-gray-600 hover:text-blue-700 hover:border-blue-700 pb-2 text-lg font-['SF_Pro_Display']"
-              
               >Products</a
             >
+           
           </nav>
         </div>
       </div>
 
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-start pl-4"
-      >
-        <!-- Overview Box -->
-        <div class="bg-white rounded shadow-md p-8 w-[421px]">
-          <h2
-            class="text-lg font-['SF_Pro_Display'] font-bold mb-2"
-            
-          >
-            Overview
-          </h2>
-          <p
-            class="text-lg font-['SF_Pro_Display'] mb-4 font-normal"
-           
-          >
-            The Genghis Khan Statue Complex, also known as the Chinggis Khaan
+       <div id="overview" class="grid grid-cols-1 md:grid-cols-2 gap-1 justify-center py-6 pr-80">
+
+          <!-- Overview Box -->
+          <div class="bg-white rounded shadow-md p-6 max-w-[340px] w-full mx-auto">
+            <h2 class="text-xl font-semibold font-['SF_Pro_Display'] mb-4">Overview</h2>
+            <p class="text-gray-800 leading-relaxed font-['SF_Pro_Display'] text-justify">
+           The Genghis Khan Statue Complex, also known as the Chinggis Khaan
             Statue Complex, is a prominent tourist attraction located in Tsonjin
             Boldog, around 54 kilometers (34 miles) east of
-          </p>
+            </p>
 
-          <div
-            class="flex items-center mb-2 text-lg font-['SF_Pro_Display']"
+            <div
+            class="flex items-center mb-2 font-['SF_Pro_Display']"
+            
           >
             <img
               src="img/Frame 1686560586.png"
@@ -238,7 +226,8 @@
           </div>
 
           <div
-            class="flex items-center mb-2 text-lg font-['SF_Pro_Display']"
+            class="flex items-center mb-4 font-['SF_Pro_Display']"
+            
           >
             <img
               src="img/Frame 1686560586-2.png"
@@ -246,10 +235,8 @@
             />
             NovotelUlaanbaatar.mn
           </div>
-
           <div
-            class="flex items-center mb-4 text-lg font-['SF_Pro_Display']"
-            
+            class="flex items-center mb-2 font-['SF_Pro_Display'] text-lg"
           >
             <img src="img/clock.png" class="w-6 h-6 object-cover mr-2" />
             <p class="text-green-700">now open</p>
@@ -259,98 +246,70 @@
             </p>
           </div>
 
-          <h2
-            class="flex items-center mb-2 font-['SF_Pro_Display'] text-lg"
-          >
-            Address
-          </h2>
 
-          <button
-            class="bg-blue-600 text-white px-4 py-2 w-full rounded text-sm flex items-center gap-2 font-['SF_Pro_Display']"
-          >
-            <img src="img/Frame-3.png" class="w-5 h-5 object-cover" />
-            Get Directions
-          </button>
+            
+            
+          </div>
+
+          <!-- Image Carousel -->
+          <div class="relative max-w-3xl mx-auto aspect-[20/10] overflow-hidden rounded-lg">
+            <img
+              id="mainImage"
+              src="img/Bodios Mongolia/BodiosMongolia.jpg"
+              alt="Building"
+              class="w-full h-full object-cover object-center transition-all duration-500"
+            />
+
+           
+
+            
+          </div>
+
         </div>
 
-        <!-- Image Carousel -->
-        <div class="relative bg-white rounded shadow overflow-hidden">
-          <img
-            src="img/Bodios Mongolia/BoodiosMongoliaProfile.jpg"
-            class="w-full h-full object-cover rounded"
-            alt="Building"
-          />
+      <div class="max-w-6xl mx-auto py-1 space-y-6" id="products">
+        <div class="py-6">
+          <h2 class="text-2xl font-semibold mb-9 font-['SF_Pro_Display']">Products</h2>
+
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 items-start">
+            
+           
+            <div class="p-2 rounded-[18px] shadow-md bg-white flex flex-col justify-between">
+              <img src="img/Bodios Mongolia/Product/BodiosMongoliaProduct-1.jpg" alt="1" class="w-full h-full rounded-[8px] object-cover" />
+              <p class="text-lg font-['SF_Pro_Display'] mt-2">V-Neck Sweater</p>
+              <p class="text-lg font-['SF_Pro_Display'] mt-1">€260,10</p>
+            </div>
+
+            
+            <div class="p-2 rounded-[18px] shadow-md bg-white flex flex-col justify-between">
+              <img src="img/Bodios Mongolia/Product/BodiosMongoliaProduct-2.jpg" alt="2" class="w-full h-full rounded-[8px] object-cover" />
+              <p class="text-lg font-['SF_Pro_Display'] mt-2">V-Neck Sweater</p>
+              <p class="text-lg font-['SF_Pro_Display'] mt-1">€260,10</p>
+            </div>
+
+          
+            <div class="p-2 rounded-[18px] shadow-md bg-white flex flex-col justify-between">
+              <img src="img/Bodios Mongolia/Product/BodiosMongoliaProduct-3.jpg" alt="3" class="w-full h-full rounded-[8px] object-cover" />
+              <p class="text-lg font-['SF_Pro_Display'] mt-2">V-Neck Sweater</p>
+              <p class="text-lg font-['SF_Pro_Display'] mt-1">€260,10</p>
+            </div>
+
+            <div class="p-2 rounded-[18px] shadow-md bg-white flex flex-col justify-between">
+              <img src="img/Bodios Mongolia/Product/BodiosMongoliaProduct-4.jpg" alt="3" class="w-full h-full rounded-[8px] object-cover" />
+              <p class="text-lg font-['SF_Pro_Display'] mt-2">V-Neck Sweater</p>
+              <p class="text-lg font-['SF_Pro_Display'] mt-1">€260,10</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="py-6 space-y-6">
-        <div class="py-6">
-          <h2
-            class="text-2xl font-semibold mb-9 font-['SF_Pro_Display']"
-          >
-            Products
-          </h2>
-
-          <!-- Grid: 1 багана (mobile), 2 (sm), 4 (md+) -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            <!-- Product 1 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="img/1.Dandy/Product/DandyProduct-1.jpg"
-                alt="Product 1"
-                class="w-full object-cover"
-              />
-               <div class="p-4">
-                <h2 class="text-sm font-medium text-gray-800 font-['SF_Pro_Display']">
-                  V-Neck Sweater
-                </h2>
-                <p class="text-blue-600 font-['SF_Pro_Display'] font-medium text-sm">€260,10</p>
-              </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="img/1.Dandy/Product/DandyProduct-2.jpg"
-                alt="Product 2"
-                class="w-full object-cover"
-              />
-               <div class="p-4">
-                <h2 class="text-sm font-medium text-gray-800 font-['SF_Pro_Display']">
-                  V-Neck Sweater
-                </h2>
-                <p class="text-blue-600 font-['SF_Pro_Display'] font-medium text-sm">€260,10</p>
-              </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="img/1.Dandy/Product/DandyProduct-3.jpg"
-                alt="Product 3"
-                class="w-full object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-sm font-medium text-gray-800 font-['SF_Pro_Display']">
-                  V-Neck Sweater
-                </h2>
-                <p class="text-blue-600 font-['SF_Pro_Display'] font-medium text-sm">€260,10</p>
-              </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-md">
-              <img
-                src="img/1.Dandy/Product/DandyProduct-4.jpg"
-                alt="Product 4"
-                class="w-full object-cover"
-              />
-              <div class="p-4">
-                <h2 class="text-sm font-medium text-gray-800 font-['SF_Pro_Display']">
-                  V-Neck Sweater
-                </h2>
-                <p class="text-blue-600 font-['SF_Pro_Display'] font-medium text-sm">€260,10</p>
-              </div>
+      <div id="promotional" class="max-w-6xl mx-auto py-1 space-y-6">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-6">Promotional Video</h2>
+          <div class="bg-white rounded-lg shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-6xl h-full mx-auto overflow-hidden">
+            <div class="relative aspect-[16/9]">
+              <iframe width="975" height="560" src="https://www.youtube.com/embed/nw8pJFkGXsk?si=MV25X5-Y0vQv_xJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -393,275 +352,243 @@
 
     <!-- Newsletter Section -->
     <div
-      class="w-full bg-blue-100 rounded-lg flex flex-col md:flex-row items-center justify-center gap-4 px-6 py-4 mt-8"
-    >
-      <!-- Newsletter Form -->
-      <div class="max-w-xl text-left md:pl-32">
-        <h3 class="font-bold text-2xl mb-4 font-['SF_Pro_Display']">
-          Subscribe to our Newsletter!
-        </h3>
+    class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
+    <!-- Newsletter Form -->
+    <div class="max-w-xl text-left md:pl-32">
+      <h3 class="text-3xl mb-4 font-['SF_Pro_Display']">
+        Subscribe to our Newsletter!
+      </h3>
 
-        <form
-          class="flex flex-col sm:flex-row gap-2 mb-4"
-          onsubmit="event.preventDefault()"
-        >
-          <input
-            type="email"
-            placeholder="Email Here..."
-            class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+      <form class="flex flex-col sm:flex-row gap-2 mb-4" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Email Here..."
+          class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-2 font-bold text-lg rounded hover:bg-blue-700 transition font-['Open Sans']">
+          SUBSCRIBE
+        </button>
+      </form>
+
+      <p class="font-normal text-gray-700 mb-4 font-['SF_Pro_Display']">
+        Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
+        and embark on a journey filled with captivating Destination
+        highlights, intriguing Event updates, deep dives into Nomadic Culture,
+        and fascinating nuggets of History. Stay connected with the heart of
+        Mongolia – your gateway to a world of enriching experiences. Don't
+        miss out – subscribe now for a regular dose of Mongolian magic!
+      </p>
+
+      <p>
+        <span class="font-mixed font-['SF_Pro_Display']">Phone:</span>
+        <span class="text-sm"> 8001-4904<br /> </span>
+        <span class="font-mixed font-['SF_Pro_Display']">Email:</span>
+        <span class="text-sm">BraveNewMongoliaTours@gmail.com</span>
+      </p>
+    </div>
+
+    <!-- Cartoon Character -->
+    <div class="relative">
+      <img src="img/newsletter.png" alt="Mongolian Character"
+        class="h-full object-contain  w-[200px] md:w-[250px]" />
+    </div>
+
+    <!-- WhatsApp QR Code -->
+    <div class="bg-white translate-x-6 p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+      <!-- Top Icon -->
+      <div class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm">
+        <img src="img/footer/bnm round.png" alt="Logo" class="w-full h-full object-contain" />
+      </div>
+
+      <!-- Title -->
+      <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">Connect via WhatsApp</span>
+
+      <!-- QR Code -->
+      <div class="bg-white p-2 rounded-lg shadow">
+        <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+      </div>
+
+      <!-- Phone Number -->
+      <div
+        class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']">
+        +976 8001 4904
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto py-6 space-y-6 pl-32">
+    <div>
+      <hr class="mb-4 border-gray-400" />
+      <div class="flex items-center space-x-2">
+       
+        <a href="accommodation.html">
           <button
-            type="submit"
-            class="bg-blue-600 text-white px-6 py-2 font-bold text-sm rounded hover:bg-blue-700 transition font-['SF_Pro_Display']"
-          >
-            SUBSCRIBE
+            class="flex items-center space-x-2 px-4 py-2 rounded-full border border-gray-300 shadow text-gray-700 bg-white hover:bg-gray-100">
+            <span style="display: flex; align-items: center; font-family: 'Inter'">
+              <img src="img/keyboard_backspace.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
+              Back
+            </span>
           </button>
-        </form>
+        </a>
 
-        <p
-          class="font-normal text-xl text-gray-700 mb-4 font-['SF_Pro_Display']"
-        >
-          Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
-          and embark on a journey filled with captivating Destination
-          highlights, intriguing Event updates, deep dives into Nomadic Culture,
-          and fascinating nuggets of History. Stay connected with the heart of
-          Mongolia – your gateway to a world of enriching experiences. Don't
-          miss out – subscribe now for a regular dose of Mongolian magic!
-        </p>
+       
+        <a href="index.html">
+          <button
+            class="flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600 text-white shadow hover:bg-blue-700">
+            <span style="display: flex; align-items: center; font-family: 'Inter'">
+              <img src="img/sr-home.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
+              Home
+            </span>
+          </button>
+        </a>
 
-        <p class="text-sm">
-          <span class="font-mixed text-xl font-['SF_Pro_Display']">Phone:</span>
-          <span class="text-lg"> 8001-4904<br /> </span>
-          <span class="font-mixed text-xl font-['SF_Pro_Display']">Email:</span>
-          <span class="text-lg">BraveNewMongoliaTours@gmail.com</span>
-        </p>
-      </div>
-
-      <!-- Cartoon Character -->
-      <div class="relative">
-        <img
-          src="img/Component 65.png"
-          alt="Mongolian Character"
-          class="w-[300px] md:w-[400px] h-auto object-contain transform scale-x-[-1]"
-        />
-      </div>
-
-      <!-- WhatsApp QR Code -->
-      <div
-        class="bg-white p-3 rounded-xl w-fit flex flex-col items-center shadow-md"
-      >
-        <!-- Top Icon -->
-        <div
-          class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm"
-        >
-          <img
-            src="img/footer/bnm round.png"
-            alt="Logo"
-            class="w-full h-full object-contain"
-          />
-        </div>
-
-        <!-- Title -->
-        <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">
-          Connect via WhatsApp
-        </span>
-
-        <!-- QR Code -->
-        <div class="bg-white p-2 rounded-lg shadow">
-          <img
-            src="img/footer/BNM WebWhatsappQR.png"
-            alt="WhatsApp QR"
-            class="w-[200px] h-[200px] object-contain"
-          />
-        </div>
-
-        <!-- Phone Number -->
-        <div
-          class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']"
-        >
-          +976 8001 4904
-        </div>
+        
+        
       </div>
     </div>
+  </div>
 
-    <div class="max-w-6xl mx-auto py-6 space-y-6 pl-20">
-      <div>
-        <hr class="mb-4 border-gray-400" />
-        <div class="flex items-center space-x-2">
-          <!-- Back Button -->
-          <a href="accommodation.html">
-            <button
-              class="flex items-center space-x-2 px-4 py-2 rounded-full border border-gray-300 shadow text-gray-700 bg-white hover:bg-gray-100"
-            >
-              <span
-                style="display: flex; align-items: center; font-family: 'Inter'"
-              >
-                <img
-                  src="img/keyboard_backspace.png"
-                  class="w-18 h-15 object-cover"
-                  style="margin-right: 10px"
-                />
-                Back
-              </span>
-            </button>
-          </a>
-
-          <!-- Home Button -->
-          <a href="index.html">
-            <button
-              class="flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600 text-white shadow hover:bg-blue-700"
-            >
-              <span
-                style="display: flex; align-items: center; font-family: 'Inter'"
-              >
-                <img
-                  src="img/sr-home.png"
-                  class="w-18 h-15 object-cover"
-                  style="margin-right: 10px"
-                />
-                Home
-              </span>
-            </button>
-          </a>
-
-          <!-- Accommodation Button -->
-          
+  <footer class="bg-[#0B2B6C] text-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 gap-6 pr-30 flex">
+      <!-- Column 1: Logo -->
+      <div class="text-center pr-20">
+        <div class="flex justify-center items-center space-x-2 mt-8">
+          <span class="text-2xl font-bold">BNM</span>
+          <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-12 h-12 mt-1" />
         </div>
       </div>
-    </div>
 
-    <footer class="bg-[#0B2B6C] text-white">
-      <div
-        class="max-w-8xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8"
-      >
-        <!-- Column 1: Logo -->
-        <div class="w-full text-center">
-          <div class="flex justify-center items-center space-x-2 mt-4">
-            <img
-              src="img/footer/bnm round.png"
-              alt="BNM Logo"
-              class="w-20 h-20 mt-1"
-            />
-            <span class="text-2xl font-bold">BNM</span>
-          </div>
+      <!-- Column 2: Description -->
+      <div class="max-w-6xl">
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Brave New Mongolia
+        </h4>
+        <p class="mt-2 font-medium font-['SF_Pro_Display']">
+          Good day to everybody who is interested in our tours. We are a team
+          of Mongolians that love nature and traveling.
+        </p>
+
+        <div class="flex space-x-4 mt-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
         </div>
 
-        <!-- Column 2: Description -->
-        <div>
-          <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
-            Brave New Mongolia
-          </h4>
-          <p class="text-xl mt-2 font-medium font-['SF_Pro_Display']">
-            Good day to everybody who is interested in our tours. We are a team
-            of Mongolians that love nature and traveling.
+        <div class="mt-4">
+          <p>Phone: +976 8625-6868</p>
+          <p>Email: bnmtours@gmail.com</p>
+          <p>
+            Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
+            Mongolia
           </p>
-
-          <div class="flex space-x-4 mt-4">
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png"
-                alt="Facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png"
-                alt="YouTube"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png"
-                alt="Instagram"
-            /></a>
-          </div>
-
-          <div class="mt-4 text-lg">
-            <p>Phone: +976 8625-6868</p>
-            <p>Email: bnmtours@gmail.com</p>
-            <p>
-              Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
-              Mongolia
-            </p>
-          </div>
-        </div>
-
-        <!-- Column 3: Support Links -->
-        <div>
-          <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
-            Support
-          </h4>
-          <ul class="text-sm space-y-2">
-            <li>
-              <a
-                href="#"
-                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
-                >Package information</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="hover:underline ont-bold text-xl mb-2 font-['SF_Pro_Display']"
-                >Terms of Service</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <!-- Column 4: App Downloads -->
-        <div>
-          <h4 class="font-semibold text-2xl mb-4 font-['SF_Pro_Display']">
-            Download our mobile app
-          </h4>
-          <div class="space-y-4">
-            <a href="#">
-              <img
-                class="h-12"
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                alt="App Store"
-              />
-            </a>
-            &nbsp;
-            <a href="#">
-              <img
-                class="h-12"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Google Play"
-              />
-            </a>
-          </div>
         </div>
       </div>
 
-      <!-- Bottom Bar -->
-      <div
-        class="text-center text-xl bg-gradient-to-r from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']"
-      >
-        Copyright © 2025 Brave New Mongolia
+      <!-- Column 3: Support Links -->
+      <div>
+        <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
+          Support
+        </h4>
+        <ul class="text-sm space-y-4 max-w-6xl mx-auto">
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">About us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">Package information</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">Terms of Service</a>
+          </li>
+        </ul>
       </div>
-    </footer>
 
+      <!-- Column 4: App Downloads -->
+      <div>
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Download our mobile app
+        </h4>
+        <div class="space-y-4">
+          <a href="#">
+            <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store" />
+          </a>
+          &nbsp;
+          <a href="#">
+            <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center text-lg bg-gradient-to-r py-4 from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']">
+      Copyright © 2025 Brave New Mongolia
+    </div>
+  </footer>
 
     <script>
-      let currentSlide = 0;
+      const images = [
+        "img/1.Dandy/Top/DandyTop-1.jpg",
+        "img/1.Dandy/Top/DandyTop-2.jpg"
+      ];
 
-      function slide(direction) {
-        const slider = document.getElementById("sliderContent");
-        const slideHeight = 500; // px — нэг слайдын өндөр
-        const totalSlides = slider.children.length;
 
-        // Шинэ индексийг тооцоолно
-        currentSlide = (currentSlide + direction) % totalSlides;
+      let currentIndex = 0;
+      const mainImage = document.getElementById("mainImage");
+      const thumbnails = document.querySelectorAll("#thumbnails img");
+      let autoSlideTimer;
 
-        // Слайдыг гулсуулна
-        slider.style.transform = `translateY(-${currentSlide * slideHeight}px)`;
+      function updateImage() {
+        mainImage.src = images[currentIndex];
+        updateActiveThumbnail();
       }
+
+      function updateActiveThumbnail() {
+        thumbnails.forEach((thumb, index) => {
+          thumb.classList.remove("thumb-active");
+          thumb.classList.remove("");
+          if (index === currentIndex) {
+            thumb.classList.add("thumb-active");
+            thumb.classList.add("");
+          }
+        });
+      }
+
+      function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      }
+
+      function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideTimer);
+        autoSlideTimer = setInterval(nextImage, 4000); // slide every 4s
+      }
+
+      document.getElementById("prevBtnImage").addEventListener("click", () => {
+        prevImage();
+        resetAutoSlide();
+      });
+
+      document.getElementById("nextBtnImage").addEventListener("click", () => {
+        nextImage();
+        resetAutoSlide();
+      });
+
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener("click", () => {
+          currentIndex = index;
+          updateImage();
+          resetAutoSlide();
+        });
+      });
+
+      // Initialize
+      updateImage();
+      resetAutoSlide();
     </script>
   </body>
 </html>
