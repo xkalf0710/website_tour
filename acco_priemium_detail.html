@@ -840,7 +840,18 @@
     </div>
   </footer>
 
-    <script>
+
+  <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("nav-active");
+    }
+  });
+
       const carousel = document.getElementById("carousel");
       const nextBtn = document.getElementById("nextBtn");
       const prevBtn = document.getElementById("prevBtn");
