@@ -1,76 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Turtle Rock Slider</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-blue-50 p-6">
-
-  <div class="max-w-4xl mx-auto">
-    <!-- Main Image Container -->
-    <div class="relative col-span-3 rounded-lg overflow-hidden">
-      <img
-        id="mainImage"
-        src="img/TurtleRock/TurtleRock (1 of 4).jpg"
-        class="w-full object-cover rounded-lg"
-      />
-
-
-      <!-- Next Button -->
-      <button id="nextBtn"
-        class="absolute top-1/2 right-2 -translate-y-1/2 bg-black bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
-        &#10095;
-      </button>
-    </div>
-
-    <!-- Thumbnails -->
-    <div class="grid grid-cols-3 gap-2 mt-1">
-      <img
-        src="img/TurtleRock/TurtleRock (1 of 4).jpg"
-        class="thumb rounded-lg h-24 object-cover cursor-pointer"
-      />
-      <img
-        src="img/TurtleRock/TurtleRock (2 of 4).jpg"
-        class="thumb rounded-lg h-24 object-cover cursor-pointer"
-      />
-      <img
-        src="img/TurtleRock/TurtleRock (3 of 4).jpg"
-        class="thumb rounded-lg h-24 object-cover cursor-pointer"
-      />
-       <!-- Next Button -->
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations & Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#e9f0ff] p-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       
+      <!-- Nearby Destinations -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Nearby Destinations</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Baga_Gazriin_Chuluu_5.jpg"
+              alt="Baga gazriin Chuluu"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4 flex justify-between items-end">
+              <div>
+                <h3 class="font-medium text-gray-900">Baga gazriin Chuluu</h3>
+                <p class="text-sm text-gray-500">Southern Mongolia</p>
+              </div>
+              <button
+                class="px-4 py-1 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/31/Yolyn_Am_Gobi_Gurvan_Saikhan.jpg"
+              alt="Yolyn Am"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4 flex justify-between items-end">
+              <div>
+                <h3 class="font-medium text-gray-900">Yolyn Am</h3>
+                <p class="text-sm text-gray-500">Southern Mongolia</p>
+              </div>
+              <button
+                class="px-4 py-1 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Recommended BNM Tours -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Recommended BNM Tours</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1183488581.jpg"
+              alt="BNM Tour"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4 flex justify-between items-end">
+              <h3 class="font-medium text-gray-900 max-w-[70%]">
+                Northern Numinous Reindeers
+              </h3>
+              <button
+                class="px-1.5 py-0.5 text-xs bg-blue-500 text-white rounded hover:bg-blue-600 mb-2"
+              >
+                Tour Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <img
+              src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1183488581.jpg"
+              alt="BNM Tour"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-4 flex justify-between items-end">
+              <h3 class="font-medium text-gray-900 max-w-[70%]">
+                Northern Numinous Reindeers
+              </h3>
+              <button
+                class="px-1.5 py-0.5 text-xs bg-blue-500 text-white rounded hover:bg-blue-600 mb-2"
+              >
+                Tour Details
+              </button>
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
-  </div>
-
-  <script>
-    const mainImage = document.getElementById("mainImage");
-    const thumbnails = document.querySelectorAll(".thumb");
-    const nextBtn = document.getElementById("nextBtn");
-   
-
-    // Array of all image sources
-    const images = Array.from(thumbnails).map(img => img.src);
-    let currentIndex = 0;
-
-    // Thumbnail click
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        mainImage.src = thumb.src;
-        currentIndex = index;
-      });
-    });
-
-    // Next button
-    nextBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      mainImage.src = images[currentIndex];
-    });
-
-   
-  </script>
-
-</body>
+  </body>
 </html>
