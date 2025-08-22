@@ -3,111 +3,1074 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Destinations & Tours</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Terelj Khustai Nuruu</title>
   </head>
-  <body class="bg-[#e9f0ff] p-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      
+  <body class="min-h-screen w-full bg-blue-100">
+    <header class="bg-[#0e3b78] text-white px-6 py-3">
+      <div
+        class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
+      >
+        <div class="flex items-center space-x-4 pl-28">
+          <span class="font-bold text-white text-base text-[16px]">BNM</span>
+          <img
+            src="img/footer/bnm round.png"
+            class="w-7 h-7 rounded-full"
+            alt="BNM Logo"
+          />
+        </div>
+        <!-- Center: About us + Search -->
+        <div class="flex items-center space-x-6 flex-1 justify-center">
+          <a
+            href="about_us.html"
+            class="text-sm hover:underline whitespace-nowrap text-white text-[16px] text-semibold"
+          >
+            About us
+          </a>
+
+          <!-- Search bar -->
+          <div class="relative w-full max-w-md">
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full pl-10 pr-4 py-2 rounded-lg text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <div class="absolute left-3 top-2.5">
+              <svg
+                class="w-5 h-5 text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: User icon + Language -->
+        <div class="flex items-center space-x-3">
+          <!-- User icon -->
+          <button class="bg-[#4185f4] hover:bg-[#5a95f7] p-2 rounded-md">
+            <svg
+              class="w-5 h-5 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+              />
+            </svg>
+          </button>
+
+          <!-- Language -->
+          <button
+            class="border border-white px-3 py-1 rounded-md text-sm flex items-center font-semibold text-[16px]"
+          >
+            EN
+            <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <nav
+        class="flex justify-start max-w-6xl space-x-6 text-sm mt-0 border-t mx-auto border-blue-800 pl-28"
+      >
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="visit_ulaanbaatar.html" class="hover:underline"
+          >Visit Ulaanbaatar</a
+        >
+        <a href="destination.html" class="underline font-medium"
+          >Destinations</a
+        >
+        <a href="accommodation.html" class="hover:underline">Accommodation</a>
+        <a href="tours.html" class="hover:underline">BNM Tour</a>
+        <a href="#" class="hover:underline">Events</a>
+        <a href="#" class="hover:underline">Info</a>
+        <a href="commercial.html" class="hover:underline">Commercial</a>
+      </nav>
+    </header>
+    <div class="max-w-6xl mx-auto py-6 pl-28">
+      <div class="mb-4">
+        <button
+          class="text-sm text-blue-700 hover:underline flex items-center space-x-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          <a href="destination.html"
+            ><span
+              class="text-sm font-['SF_Pro_Display'] font-semibold"
+             
+              >Back</span
+            ></a
+          >
+        </button>
+      </div>
+
+      <h1
+        class="text-3xl font-semibold font-['SF_Pro_Display']"
+      >
+        Khustai Nuruu National Park
+      </h1>
+
+      <div class="flex items-center gap-2 mt-4">
+        <img src="img/sr-placemarker.png" class="w-6 h-6 aspect-square" />
+        Day Trips
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-6 mt-3">
+        <div class="space-y-4 col-span-8">
+          <p class="text-lg font-['SF_Pro_Display']" >
+            If you're looking for a place to get out of Ulaanbaatar and really
+            see some of Mongolia's natural beauty, Terelj National Park is the
+            perfect spot.It's only about an hour and a half drive from the city,
+            but it feels like a completely different world.The landscapes here
+            are just stunning--huge rock formations, green valleys,and the Tuul
+            River winding through the park. People come here to hike, camp, and
+            even stay in ger campswith local nomadic families, so you can really
+            get a feel for traditional Mongolian life while you're surrounded by
+            nature.One of the coolest things about Terelj is how peaceful it is.
+            You can ride horses through the park,take a quiet walk by the river,
+            or just sit and watch the clouds roll over the mountains.There's
+            plenty of space to just breathe and take it all in.
+          </p>
+          <button
+            class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm flex ml-auto p-2 items-center"
+          >
+            <img src="img/Frame (1).png" class="w-6 h-6 mr-2" />
+            Get Directions
+          </button>
+          <!-- Image gallery -->
+         <div class="w-full">
+          <!-- Main Image -->
+           <div class="aspect-video overflow-hidden rounded-lg mb-2 relative">
+
+            <img id="mainImage" src="img/TereljNP 1.jpg" alt="Main landscape" class="w-full h-full object-cover transition-all duration-500" />
+
+            <!-- Next Button -->
+            <button id="nextBtn"
+              class="absolute right-2 top-1/2 -translate-y-1/2  text-white p-2 rounded-full hover:bg-black/60"
+            >
+              &#10095;
+            </button>
+          </div>
+
+
+          <!-- Thumbnails-->
+
+          <div class="flex gap-2">
+            <img
+              src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg"
+              alt="Small 1"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(0)"
+            />
+            <img
+              src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+              alt="Small 2"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(1)"
+            />
+          
+          </div>
+         </div>
+        </div>
+
+        <!-- Video Thumbnail -->
+        <div
+          class="relative overflow-hidden rounded-xl shadow-lg w-full col-span-4"
+        >
+          <iframe
+            class="object-cover w-full h-full aspect-[9/16]"
+            src="https://www.youtube.com/embed/BXY36CGYikw?si=O5VDH_iTXC5blMdd"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-24">
+        <!-- Text Section -->
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="mt-15">
+            <h2
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
+            >
+              Takhi (Przewalski's Horse)
+            </h2>
+            <p class="text-lg font-['SF_Pro_Display']" >
+               The takhi is the crown jewel of Khustai Nuruu National Park. Once
+              extinct in the wild, these horses were successfully reintroduced
+              to the park, which is now one of the best places in the world to
+              see them thriving. Early mornings and late evenings are the best
+              times to spot takhi grazing in the valleys. Observing these wild
+              horses in their natural environment is an unforgettable experience
+              that highlights Mongolia's dedication to wildlife conservation.
+            </p>
+            <button
+              class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm flex ml-auto p-2 items-center mt-1"
+            >
+              <img src="img/Frame (1).png" class="w-6 h-6 mr-2" />
+              Get Directions
+            </button>
+          </div>
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="main" src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg" class="w-full object-cover rounded-lg"/>
+
+              <button id="nextBBtn"
+              class="absolute top-1/2 right-2 -translate-y-1/2  bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+              &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (3 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (4 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <!-- Next Button -->
+            
+              
+            </div>
+          </div>
+        </div>
+        <!-- Aryabal Meditation Temple Section -->
+        <div class="grid md:grid-cols-2 gap-8 items-start mt-24">
+         
+
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="mainAryabal" src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg" class="w-full object-cover rounded-lg"/>
+
+              <!-- Next Button -->
+              <button id="nextBtnAryabal"
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+                &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (3 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (4 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              
+            
+              
+            </div>
+          </div>
+          <div>
+            <h2
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
+            >
+             Deer
+            </h2>
+            <p  class="text-lg font-['SF_Pro_Display'] mb-4 mt-2">
+               In addition to the takhi, Khustai Nuruu is home of several deer
+              species.These graceful animals can often be seen in the park's
+              woodlands and meadows, particularly during the cooler parts of the
+              day. Deer play an important role in the ecosystem and add tot he
+              rich biodiversity that makes Khustai a fascinating place for
+              wildlife enthusiasts.
+            </p>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center gap-1 ml-auto"
+            >
+              <img
+                src="img/Frame (1).png"
+                class="w-18 h-15 object-cover"
+                style="margin-right: 10px"
+              />
+              Get Directions
+            </button>
+          </div>
+        </div>
+        <!-- Text Section -->
+        <div class="mx-auto mt-24">
+        <!-- Text Section -->
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="mt-15">
+            <h2
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
+            >
+              Wildlife
+            </h2>
+            <p class="text-lg font-['SF_Pro_Display']" >
+              Khustai Nuruu is teeming with wildlife, making it a paradise for
+              animal lovers. Marmots, foxes, eagles, and vultures are common
+              sights, while more elusive animals like wolves and lynxes offer a
+              thrilling challenge for keen observers. The park's diverse
+              habitats provide a sanctuary for numerous species, offering
+              endless opportunities for wildlife photography and exploration.
+            </p>
+            <button
+              class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm flex ml-auto p-2 items-center mt-1"
+            >
+              <img src="img/Frame (1).png" class="w-6 h-6 mr-2" />
+              Get Directions
+            </button>
+          </div>
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="main" src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg" class="w-full object-cover rounded-lg"/>
+
+              <button id="nextBBtn"
+              class="absolute top-1/2 right-2 -translate-y-1/2  bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+              &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (3 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (4 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <!-- Next Button -->
+            
+              
+            </div>
+          </div>
+        </div>
+        <!-- Aryabal Meditation Temple Section -->
+        <div class="grid md:grid-cols-2 gap-8 items-start mt-24">
+         
+
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="mainAryabal" src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg" class="w-full object-cover rounded-lg"/>
+
+              <!-- Next Button -->
+              <button id="nextBtnAryabal"
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+                &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (3 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (4 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              
+            
+              
+            </div>
+          </div>
+          <div>
+            <h2
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
+            >
+             Anicient Stones
+            </h2>
+            <p  class="text-lg font-['SF_Pro_Display'] mb-4 mt-2">
+              For history enthusiasts, the Khun Chuluu, or "People's Stones,"
+              found within the park add a cultural dimension to the visit. These
+              ancient stone monuments, believed to adte back to the Turkic
+              period, offer insight into the region's long and fascinating
+              history. The stones are adorned with carvings and inscriptions,
+              amking them a must-see for anyone interested on Mongolia's
+              archaeological heritage.
+            </p>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center gap-1 ml-auto"
+            >
+              <img
+                src="img/Frame (1).png"
+                class="w-18 h-15 object-cover"
+                style="margin-right: 10px"
+              />
+              Get Directions
+            </button>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-24">
+        <!-- Text Section -->
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div class="mt-15">
+            <h2
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
+            >
+              information Center
+            </h2>
+            <p class="text-lg font-['SF_Pro_Display']" >
+              The Information Center at Khustai Nuruu National Park is the ideal
+              starting point for your visit.It offers detailed exhibits and
+              educational materials about the park's history, wildlife, and
+              conservation efforts, including the reintroduction of the
+              Przewalski's horse. Knowledgeable staff are available to answer
+              questions, provide maps, and recommend peresentations and guided
+              tours, making it a valuable resource for visitors looking to get
+              the most out of their Khustai experience.
+            </p>
+            <button
+              class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm flex ml-auto p-2 items-center mt-1"
+            >
+              <img src="img/Frame (1).png" class="w-6 h-6 mr-2" />
+              Get Directions
+            </button>
+          </div>
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="main" src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg" class="w-full object-cover rounded-lg"/>
+
+              <button id="nextBBtn"
+              class="absolute top-1/2 right-2 -translate-y-1/2  bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+              &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (3 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (4 of 6).jpg"
+                class="thumb rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <!-- Next Button -->
+            
+              
+            </div>
+          </div>
+        </div>
+        <!-- Aryabal Meditation Temple Section -->
+        <div class="grid md:grid-cols-2 gap-8 items-start mt-24">
+         
+
+          <div class="w-full">
+            <div class="relative col-span-3 rounded-lg overflow-hidden">
+              <img id="mainAryabal" src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg" class="w-full object-cover rounded-lg"/>
+
+              <!-- Next Button -->
+              <button id="nextBtnAryabal"
+                class="absolute top-1/2 right-2 -translate-y-1/2 bg-opacity-40 text-white rounded-full p-2 hover:bg-opacity-70">
+                &#10095;
+              </button>
+            </div>
+
+             <!-- Thumbnails -->
+            <div class="grid grid-cols-3 gap-2 mt-1">
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (3 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              <img
+                src="img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (4 of 6).jpg"
+                class="thumbAryabal rounded-lg h-24 object-cover cursor-pointer"
+              />
+              
+            
+              
+            </div>
+          </div>
+          <div>
+            <h2
+              class="text-3xl font-semibold font-['SF_Pro_Display']"
+            >
+             Souvenir Shop
+            </h2>
+            <p  class="text-lg font-['SF_Pro_Display'] mb-4 mt-2">
+              The Souvenir Shop at Khustai Nuruu National Park is the perfect
+              place to take home a piece of your adventure. Featuring a wide
+              range of locally made craffs, traditional Mongolian items, and
+              wildlife-themed giffs, the shop offers something for everyone.
+              From handcrafted left products to unique takhi-inspired keepsakes,
+              these souvenirs not only serve as reminders of your visit but alos
+              support local astisans and the park's conservation efforts. Be
+              sure to stop by before you leave!.
+            </p>
+            <button
+              class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 flex items-center gap-1 ml-auto"
+            >
+              <img
+                src="img/Frame (1).png"
+                class="w-18 h-15 object-cover"
+                style="margin-right: 10px"
+              />
+              Get Directions
+            </button>
+          </div>
+        </div>
+
+        <!-- Accommodation Section -->
+        <div class="mt-24">
+          <h2
+            class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']"
+            
+          >
+            Recommended Accommodation
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative rounded-xl aspect-[16/9]">
+              <img
+                src="img/MirageTop.jpg"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
+              >
+                Mirage tourist camp
+              </div>
+            </div>
+
+            <div class="relative rounded-xl aspect-[16/9]">
+              <img
+                src="img/LodgeTop.jpg"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+               
+              >
+                Lodge
+              </div>
+            </div>
+
+            <div class="relative rounded-xl aspect-[16/9]">
+              <img
+                src="img/Copy of BaynKhadThumbnail.jpg"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
+              >
+                Bayankhad tourist camp
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="grid grid-cols-2 gap-8 mb-8 items-stretch mt-10">
       <!-- Nearby Destinations -->
-      <div>
-        <h2 class="text-xl font-semibold mb-4">Nearby Destinations</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          
+      <div class="flex flex-col h-full">
+        <h2 class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']">
+          Nearby Destinations
+        </h2>
+        <div class="grid grid-cols-2 gap-4 h-full">
           <!-- Card 1 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Baga_Gazriin_Chuluu_5.jpg"
+              src="img/Destinaion Thumbnail/BagagazariinChuluu.jpg"
               alt="Baga gazriin Chuluu"
-              class="h-48 w-full object-cover"
+              class="w-full h-48 object-cover"
             />
-            <div class="p-4 flex justify-between items-end">
+            <div class="flex items-center justify-between p-3 mt-auto">
               <div>
-                <h3 class="font-medium text-gray-900">Baga gazriin Chuluu</h3>
-                <p class="text-sm text-gray-500">Southern Mongolia</p>
+                <h3 class="text-sm font-semibold font-['SF_Pro_Display']">
+                  Baga gazriin Chuluu
+                </h3>
+                <p class="text-sm text-gray-500 font-['SF_Pro_Display']">
+                  Southern Mongolia
+                </p>
               </div>
               <button
-                class="px-4 py-1 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                class="text-sm bg-blue-500 text-white px-3 py-1 rounded font-['SF_Pro_Display']"
               >
                 Details
               </button>
             </div>
           </div>
+          <!-- Card 2 ... -->
 
-          <!-- Card 2 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/31/Yolyn_Am_Gobi_Gurvan_Saikhan.jpg"
+              src="img/Southern/Yolyn Am.jpg"
               alt="Yolyn Am"
-              class="h-48 w-full object-cover"
+              class="w-full h-48 object-cover"
             />
-            <div class="p-4 flex justify-between items-end">
+            <div class="flex items-center justify-between p-3 mt-auto">
               <div>
-                <h3 class="font-medium text-gray-900">Yolyn Am</h3>
-                <p class="text-sm text-gray-500">Southern Mongolia</p>
+                <h3 class="text-sm font-semibold font-['SF_Pro_Display']">
+                 Yolym Am
+                </h3>
+                <p class="text-sm text-gray-500 font-['SF_Pro_Display']">
+                  Southern Mongolia
+                </p>
               </div>
               <button
-                class="px-4 py-1 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+                class="text-sm bg-blue-500 text-white px-3 py-1 rounded font-['SF_Pro_Display']"
               >
                 Details
               </button>
             </div>
           </div>
-
         </div>
       </div>
 
-      <!-- Recommended BNM Tours -->
-      <div>
-        <h2 class="text-xl font-semibold mb-4">Recommended BNM Tours</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          
-          <!-- Card 3 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+      <div class="flex flex-col h-full ">
+        <h2 class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']">
+          Brave New Mongolia Tours
+        </h2>
+        <div class="grid grid-cols-2 gap-4 h-full">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
             <img
-              src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1183488581.jpg"
-              alt="BNM Tour"
-              class="h-48 w-full object-cover"
+              src="img/ToursBig.jpg"
+              alt="Baga gazriin Chuluu"
+              class="w-full h-48 object-cover"
             />
-            <div class="p-4 flex justify-between items-end">
-              <h3 class="font-medium text-gray-900 max-w-[70%]">
-                Northern Numinous Reindeers
-              </h3>
+            <div class="flex items-center justify-between p-3 mt-auto">
+               <span class="flex items-center font-['SF_Pro_Display']">
+                  <img
+                    src="img/Frame 1686560678.png"
+                    class="w-5 h-5 object-cover"
+                    style="margin-right: 5px;"
+                  />
+                    Northern Numinous Reindeers
+                </span>
+
               <button
-                class="px-1.5 py-0.5 text-xs bg-blue-500 text-white rounded hover:bg-blue-600 mb-2"
+                class="text-sm bg-blue-500 text-white px-3 py-1 rounded font-['SF_Pro_Display'] mt-2"
               >
-                Tour Details
+                Details
               </button>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="bg-white rounded-2xl shadow-md overflow-hidden">
-            <img
-              src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1183488581.jpg"
-              alt="BNM Tour"
-              class="h-48 w-full object-cover"
-            />
-            <div class="p-4 flex justify-between items-end">
-              <h3 class="font-medium text-gray-900 max-w-[70%]">
-                Northern Numinous Reindeers
-              </h3>
-              <button
-                class="px-1.5 py-0.5 text-xs bg-blue-500 text-white rounded hover:bg-blue-600 mb-2"
-              >
-                Tour Details
-              </button>
-
-
-
-
 
             </div>
           </div>
+          <!-- Card 2 ... -->
 
+          <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
+            <img
+              src="img/ToursBig.jpg"
+              alt="Baga gazriin Chuluu"
+              class="w-full h-48 object-cover"
+            />
+            <div class="flex items-center justify-between p-3 mt-auto">
+               <span class="flex items-center font-['SF_Pro_Display']">
+                  <img
+                    src="img/Frame 1686560678.png"
+                    class="w-5 h-5 object-cover"
+                    style="margin-right: 5px;"
+                  />
+                    Northern Numinous Reindeers
+                </span>
+
+              <button
+                class="text-sm bg-blue-500 text-white px-3 py-1 rounded font-['SF_Pro_Display'] mt-2"
+              >
+                Details
+              </button>
+
+            </div>
+          </div>
         </div>
       </div>
 
+  <!-- Recommended BNM Tours -->
+  
+</div>
+
+      <!-- banner -->
+
+      <div
+        class="relative max-w-6xl mx-auto py-6 rounded-xl overflow-hidden h-[247px] translate-y"
+      >
+        <!-- Left side tour characters -->
+        <img
+          src="img/visit bnm tour cta.png"
+          alt="Tour Character"
+          class="w-full h-auto object-cover"
+        />
+
+        <!-- Right side text and button -->
+        <div
+          class="absolute top-1/2 left-[55%] transform -translate-y-1/2 text-white text-center"
+        >
+          <h2
+            class="text-4xl leading-tight font-bold font-['SF_Pro_Display']"
+            style="font-family: 'Mulish'"
+          >
+            <p class="text-left">Escape to</p>
+            <p>the Land of Stories</p>
+          </h2>
+
+          <button
+            class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['SF_Pro_Display'] shadow hover:bg-yellow-300 transition flex items-center"
+          >
+            VISIT BNM TOURS
+            <img
+              src="img/sr-arrow-circle-right 2.png"
+              class="w-6 h-6 object-cover ml-2"
+            />
+          </button>
+        </div>
+      </div>
     </div>
+
+    <!-- Newsletter Section -->
+       <div
+    class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
+    <!-- Newsletter Form -->
+    <div class="max-w-xl text-left md:pl-28">
+      <h3 class="text-3xl mb-4 font-['SF_Pro_Display']">
+        Subscribe to our Newsletter!
+      </h3>
+
+      <form class="flex flex-col sm:flex-row gap-2 mb-4" onsubmit="event.preventDefault()">
+        <input type="email" placeholder="Email Here..."
+          class="flex-grow rounded border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-2 font-bold text-lg rounded hover:bg-blue-700 transition font-['Open Sans']">
+          SUBSCRIBE
+        </button>
+      </form>
+
+      <p class="font-normal text-gray-700 mb-4 font-['SF_Pro_Display']">
+        Uncover the Wonders of Mongolia! Sign up for our exclusive newsletter,
+        and embark on a journey filled with captivating Destination
+        highlights, intriguing Event updates, deep dives into Nomadic Culture,
+        and fascinating nuggets of History. Stay connected with the heart of
+        Mongolia – your gateway to a world of enriching experiences. Don't
+        miss out – subscribe now for a regular dose of Mongolian magic!
+      </p>
+
+      <p>
+        <span class="font-mixed font-['SF_Pro_Display']">Phone:</span>
+        <span class="text-sm"> 8001-4904<br /> </span>
+        <span class="font-mixed font-['SF_Pro_Display']">Email:</span>
+        <span class="text-sm">BraveNewMongoliaTours@gmail.com</span>
+      </p>
+    </div>
+
+    <!-- Cartoon Character -->
+    <div class="relative">
+      <img src="img/newsletter.png" alt="Mongolian Character"
+        class="h-full object-contain  w-[200px] md:w-[250px]" />
+    </div>
+
+    <!-- WhatsApp QR Code -->
+    <div class="bg-white translate-x-6 p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+      <!-- Top Icon -->
+      <div class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm">
+        <img src="img/footer/bnm round.png" alt="Logo" class="w-full h-full object-contain" />
+      </div>
+
+      <!-- Title -->
+      <span class="text-xl font-medium text-gray-700 font-['SF_Pro_Display']">Connect via WhatsApp</span>
+
+      <!-- QR Code -->
+      <div class="bg-white p-2 rounded-lg shadow">
+        <img src="img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+      </div>
+
+      <!-- Phone Number -->
+      <div
+        class="bg-white w-full rounded-b-lg py-2 text-center font-bold text-2xl text-gray-800 shadow-sm font-['SF_Pro_Display']">
+        +976 8001 4904
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-6xl mx-auto py-6 space-y-6 pl-32">
+    <div>
+      <hr class="mb-4 border-gray-400" />
+      <div class="flex items-center space-x-2">
+       
+        <a href="accommodation.html">
+          <button
+            class="flex items-center space-x-2 px-4 py-2 rounded-full border border-gray-300 shadow text-gray-700 bg-white hover:bg-gray-100">
+            <span style="display: flex; align-items: center; font-family: 'Inter'">
+              <img src="img/keyboard_backspace.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
+              Back
+            </span>
+          </button>
+        </a>
+
+       
+        <a href="index.html">
+          <button
+            class="flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600 text-white shadow hover:bg-blue-700">
+            <span style="display: flex; align-items: center; font-family: 'Inter'">
+              <img src="img/sr-home.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
+              Home
+            </span>
+          </button>
+        </a>
+
+        <a href="accommodation.html">
+          <button
+            class="flex items-center space-x-2 px-4 py-2 rounded-full bg-yellow-400 text-white shadow hover:bg-yellow-400">
+            <span style="display: flex; align-items: center; font-family: 'Inter'">
+              <img src="img/image 380 (Traced).png" class="w-18 h-15 object-cover " style="margin-right: 10px; color: white;" />
+              Accommodation
+            </span>
+          </button>
+        </a>
+
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-[#0B2B6C] text-white">
+    <div class="max-w-6xl mx-auto px-6 py-12 gap-6 pr-30 flex">
+      <!-- Column 1: Logo -->
+      <div class="text-center pr-20">
+        <div class="flex justify-center items-center space-x-2 mt-8">
+          <span class="text-2xl font-bold">BNM</span>
+          <img src="img/footer/bnm round.png" alt="BNM Logo" class="w-12 h-12 mt-1" />
+        </div>
+      </div>
+
+      <!-- Column 2: Description -->
+      <div class="max-w-6xl">
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Brave New Mongolia
+        </h4>
+        <p class="mt-2 font-medium font-['SF_Pro_Display']">
+          Good day to everybody who is interested in our tours. We are a team
+          of Mongolians that love nature and traveling.
+        </p>
+
+        <div class="flex space-x-4 mt-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram" /></a>
+        </div>
+
+        <div class="mt-4">
+          <p>Phone: +976 8625-6868</p>
+          <p>Email: bnmtours@gmail.com</p>
+          <p>
+            Address: 17–22, 7-r khoroo, Sukhbaatar District, Ulaanbaatar,
+            Mongolia
+          </p>
+        </div>
+      </div>
+
+      <!-- Column 3: Support Links -->
+      <div>
+        <h4 class="font-bold text-2xl mb-2 font-['SF_Pro_Display']">
+          Support
+        </h4>
+        <ul class="text-sm space-y-4 max-w-6xl mx-auto">
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">About us</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">Package information</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline font-semibold  mb-2 font-['SF_Pro_Display']">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: App Downloads -->
+      <div>
+        <h4 class="font-bold text-2xl font-['SF_Pro_Display']">
+          Download our mobile app
+        </h4>
+        <div class="space-y-4">
+          <a href="#">
+            <img class="h-12" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="App Store" />
+          </a>
+          &nbsp;
+          <a href="#">
+            <img class="h-12" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center text-lg bg-gradient-to-r py-4 from-[#0B2B6C] to-[#2B52E4] font-['SF_Pro_Display']">
+      Copyright © 2025 Brave New Mongolia
+    </div>
+  </footer>
+
+    <script>
+      const images = [
+        "img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (1 of 6).jpg", 
+        "img/GenghisKhanStatueComplex/Genghis Khan Statue Complex (2 of 6).jpg",
+      ];
+
+      let currentIndex = 0;
+
+      const mainImage = document.getElementById("mainImage");
+      
+      const nextBtn = document.getElementById("nextBtn");
+
+      function setImage(index){
+        currentIndex = index;
+        mainImage.src = images[currentIndex];
+      }
+
+      nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      setImage(currentIndex);
+    });
+ 
+
+      const main = document.getElementById("main");
+      const thumbnails = document.querySelectorAll(".thumb");
+
+      const nextBBtn1 = document.getElementById("nextBBtn");
+
+
+      const imagess = Array.from(thumbnails).map(img => img.src);
+      let currentIndexMain = 0;
+
+      // Thumbnail click
+
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener("click", () =>{
+          main.src = thumb.src;
+          currentIndexMain = index;
+        });
+      });
+
+      //Next Button
+
+      nextBBtn1.addEventListener("click", () => {
+        currentIndexMain = (currentIndexMain + 1) % imagess.length;
+
+        main.src = imagess[currentIndexMain];
+      });
+
+
+
+      const mainAryabal = document.getElementById("mainAryabal");
+
+      const thumbnailsAryabal = document.querySelectorAll(".thumbAryabal");
+
+      const nextBtnAryabal = document.getElementById("nextBtnAryabal");
+
+      const imagesAryabal = Array.from(thumbnailsAryabal).map(img => img.src);
+
+      let currentIndexAryabal = 0;
+
+      // Thumbnail click
+
+      thumbnailsAryabal.forEach((thumbAryabal, index) => {
+        thumbAryabal.addEventListener("click", () =>{
+          mainAryabal.src = thumbAryabal.src;
+          currentIndexAryabal = index;
+        });
+      });
+
+      //Next Button
+
+      nextBtnAryabal.addEventListener("click", () => {
+        currentIndexAryabal = (currentIndexAryabal + 1) % imagesAryabal.length;
+
+        mainAryabal.src = imagesAryabal[currentIndexAryabal];
+      });
+
+
+
+      const mainCave = document.getElementById("mainCave");
+
+      const thumbnailsCave = document.querySelectorAll(".thumbCave");
+
+      const nextBtnCave = document.getElementById("nextBtnCave");
+
+      const imagesCave = Array.from(thumbnailsCave).map(img => img.src);
+
+      let currentIndexCave = 0;
+
+       // Thumbnail click
+
+      thumbnailsCave.forEach((thumbCave, index) => {
+        thumbCave.addEventListener("click", () =>{
+          mainCave.src = thumbCave.src;
+          currentIndexCave = index;
+        });
+      });
+
+      //Next Button
+
+      nextBtnCave.addEventListener("click", () => {
+        currentIndexCave = (currentIndexCave + 1) % imagesCave.length;
+
+        mainCave.src = imagesCave[currentIndexCave];
+      });
+    </script>
+
+    
   </body>
 </html>
