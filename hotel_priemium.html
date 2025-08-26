@@ -14,6 +14,25 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+   <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- LightGallery CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css"
+    />
+
+    <style>
+      .rotate-180 {
+        transform: rotate(180deg);
+      }
+    </style>
+
+
     <title>Hotels Luxurious</title>
   </head>
   <body class="min-h-screen bg-blue-100">
@@ -343,27 +362,26 @@
           Rooms
         </h2>
 
-          <div class="relative">
+          <div id="lightgallery1" class="relative">
           
             <div id="carousel" class="flex space-x-4 overflow-hidden">
               
               <div
                 class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
               >
-                <img
-                  src="img/Premium/Rooms/Room1/PremiumRoom-1.jpg"
-                  alt="Room 1"
-                  class="w-full h-full object-cover rounded"
-                />
+
+                <a href="img/Premium/Rooms/Room1/PremiumRoom-1.jpg" class="relative aspect-video">
+                  <img loading="lazy" src="img/Premium/Rooms/Room1/PremiumRoom-1.jpg" alt="Rooms1" class="rounded-md object-cover w-full h-full"/>
+                </a>
               </div>
               <div
                 class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
               >
-                <img
-                  src="img/Premium/Rooms/Room2/PremiumRoom-2.jpg"
-                  alt="Room 2"
-                  class="w-full h-full rounded object-cover"
-                />
+
+              <a href="img/Premium/Rooms/Room2/PremiumRoom-2.jpg" class="relative aspect-video">
+                <img loading="lazy" src="img/Premium/Rooms/Room2/PremiumRoom-2.jpg" alt="Rooms2" class="rounded-md object-cover w-full h-full"/>
+              </a>
+             
               </div>
               <div
                 class="flex-shrink-0 bg-white rounded-[17.27px] shadow-[0px_4.32px_17.27px_#9E9E9E40] p-[9.75px] w-full max-w-[347.05px] h-[203.75px] mx-auto overflow-hidden"
@@ -796,17 +814,31 @@
     </div>
   </footer>
 
+<!-- LightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
 
-  <script>
-  const currentPage = window.location.pathname.split("/").pop();
-  const links = document.querySelectorAll("nav a");
+<!-- Initialize LightGallery -->
+    <script>
+      lightGallery(document.getElementById("lightgallery1"), {
+        plugins: [lgZoom],
+        speed: 400,
+        download: false,
+        controls: true, // ⬅️ Enables arrows
+        mode: "lg-slide", // ⬅️ Smooth transition
+      });
+ 
+      const currentPage = window.location.pathname.split("/").pop();
+      const links = document.querySelectorAll("nav a");
 
-  links.forEach(link => {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage) {
-      link.classList.add("nav-active");
-    }
-  });
+      links.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("nav-active");
+        }
+      });
 
       const carousel = document.getElementById("carousel");
       const nextBtn = document.getElementById("nextBtn");
@@ -929,6 +961,9 @@
       updateImage();
       resetAutoSlide();
 
-    </script>
+   
+ 
+        
+      </script>
   </body>
 </html>
