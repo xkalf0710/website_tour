@@ -7,11 +7,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Places to visit</title>
+    <title>Gandan Monastery</title>
   </head>
-  <body class="min-h-screen bg-blue-100 w-full">
+  <body class="min-h-screen w-full bg-blue-100">
     <header class="bg-[#0e3b78] text-white px-6 py-3">
       <div
         class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center"
@@ -101,9 +102,7 @@
         <a href="commercial.html" class="hover:underline">Commercial</a>
       </nav>
     </header>
-
-    <div class="max-w-6xl mx-auto py-6 space-y-6 pl-28">
-      <!-- Back Button -->
+    <div class="max-w-6xl mx-auto py-6 pl-28">
       <div class="mb-4">
         <button
           class="text-sm text-blue-700 hover:underline flex items-center space-x-1"
@@ -122,158 +121,177 @@
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <a href="visit_ulaanbaatar.html"
+          <a href="places.html"
             ><span
-              class="text-sm font-semibold font-['SF_Pro_Display']"
-              
+              class="text-sm font-['SF_Pro_Display'] font-semibold"
+             
               >Back</span
             ></a
           >
         </button>
       </div>
 
-      <h1 class="text-3xl font-semibold font-['SF_Pro_Display']">
-        Places to Visit
+      <h1
+        class="text-3xl font-normal font-['SF_Pro_Display']"
+      >
+        Narantuul Market (Black Market)
       </h1>
 
-      <div class="grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto py-6">
-      
-        <div
-          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-        >
-          <img
-            src="img/ZaisanMonument 1.png"
-            alt="Baga Gazarin Chuluu"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-            Zaisan Monument
-          </div>
-        </div>
+      <div class="flex items-center gap-2 mt-4 font-semibold">
+        <img src="img/sr-placemarker.png" class="w-6 h-6 aspect-square" />
+        Day Trips
+      </div>
 
-       
-        <div
-          class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-        >
-          <a href="sukhbaatar_square.html">
+      <div class="grid md:grid-cols-12 gap-6 mt-3">
+        <div class="space-y-4 col-span-8">
+          <p class="text-lg font-normal font-['SF_Pro_Display']">
+            Narantuul Market, often called the “Black Market”, is Ulaanbaatar’s largest and busiest traditional market, where locals buy and sell everything from clothing and furniture to horse saddles and handmade souvenirs. This sprawling bazaar is the best place to experience Mongolia’s vibrant commercial culture, with vendors calling out their goods, stalls overflowing with traditional Mongolian boots (gutal), and artisans crafting felt and leather products on-site.
+            Bargaining is expected, and adventurous shoppers can score great deals on unique items. However, visitors should remain cautious, as pickpocketing can be an issue in crowded areas. Whether you’re searching for an authentic Mongolian deel (traditional robe) or simply want to immerse yourself in the chaotic energy of Ulaanbaatar’s marketplaces, Narantuul is a must-visit destination.
+          </p>
+          <button
+            class="bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm flex ml-auto p-2 items-center"
+          >
+            <img src="img/Frame (1).png" class="w-6 h-6 mr-2" />
+            Get Directions
+          </button>
+          <!-- Image gallery -->
+         <div class="w-full">
+          <!-- Main Image -->
+           <div class="aspect-[16/9] overflow-hidden rounded-lg mb-2 relative ">
+
+            <img id="mainImage" src="img/Narantuul market/Narantuul-1.jpg" alt="Main landscape" class="w-full h-full object-cover transition-all duration-500" />
+
+            <!-- Next Button -->
+            <button id="nextBtn"
+              class="absolute right-2 top-1/2 -translate-y-1/2  text-white p-2 rounded-full hover:bg-black/60"
+            >
+              &#10095;
+            </button>
+          </div>
+
+
+          <!-- Thumbnails-->
+
+          <div class="flex gap-2">
             <img
-            src="img/SukhbaatarSquare-1 1.png"
-            alt="Khorgo"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-            Sukhbaatar Square
+              src="img/Narantuul market/Narantuul-2.jpg"
+              alt="Small 1"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(0)"
+            />
+            <img
+              src="img/Narantuul market/Narantuul-3.jpg"
+              alt="Small 2"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(1)"
+            />
+            <img
+              src="img/Narantuul market/Narantuul-4.jpg"
+              alt="Small 2"
+              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(1)"
+            />
+
+           
           </div>
-          </a>
-        </div>
-        <div
-          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-        >
-          <img
-            src="img/GandanMonastery.png"
-            alt="Baga Gazarin Chuluu"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-            Gandan Monastery
-          </div>
+         </div>
         </div>
 
+        <!-- Video Thumbnail -->
         <div
-          class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
+          class="relative overflow-hidden rounded-xl shadow-lg w-full col-span-4"
         >
-          <img
-            src="img/UlaanbaatarSign.png"
-            alt="Khorgo"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-           Ulaanbaatar Sign
-          </div>
+          <iframe
+            class="object-cover w-full h-full aspect-[9/16]"
+            src="https://www.youtube.com/embed/BXY36CGYikw?si=O5VDH_iTXC5blMdd"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div
-          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-        >
-          <img
-            src="img/DashchoolinMonastery 1.png"
-            alt="Baga Gazarin Chuluu"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-            Dashcholin Monastery
-          </div>
-        </div>
+      </div>
 
-        <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/narantuul-1 2.png"
-            alt="Baga Gazarin Chuluu"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-lg drop-shadow-md font-['SF_Pro_Display']"
-          >
-            Narantuul black market
-          </div>
-        </div>
+      <div class="mx-auto mt-24">
+        <!-- Text Section -->
+        
+       
+       
 
-        <div
-          class="col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square"
-        >
-          <img
-            src="img/NationalGarden (1).png"
-            alt="Baga Gazarin Chuluu"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
+        <!-- Accommodation Section -->
+        <div class="mt-24">
+          <h2
+            class="text-2xl font-semibold mb-4 font-['SF_Pro_Display']"
+            
           >
-            Nationl Garden
-          </div>
-        </div>
-        <div
-          class="col-span-1 row-span-2 relative rounded-xl overflow-hidden aspect-[1/2.08]"
-        >
-          <img
-            src="img/GandanMonastery (1).png"
-            alt="Baga Gazarin Chuluu"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-            Park
-          </div>
-        </div>
+            Nearby Commercial
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="relative rounded-xl">
+              <img
+                src="img/image 382.png"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
+              >
+                Gobi
+              </div>
+            </div>
 
-        <div
-          class="col-span-2 row-span-1 relative rounded-xl overflow-hidden aspect-[2.05/1]"
-        >
-          <img
-            src="img/MorningStreet-1 2.png"
-            alt="Khorgo"
-            class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
-          />
-          <div
-            class="absolute bottom-2 left-2 text-white text-xl drop-shadow-md font-['SF_Pro_Display']"
-          >
-           Morning Street
+            <div class="relative rounded-xl">
+              <img
+                src="img/image 382.png"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+               
+              >
+                KFC
+              </div>
+            </div>
+
+            <div class="relative rounded-xl">
+              <img
+                src="img/image 383.png"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
+              >
+                Maikhan Tolgoi
+              </div>
+            </div>
+
+             <div class="relative rounded-xl">
+              <img
+                src="img/image 383 (1).png"
+                alt="recommended"
+                class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"
+              />
+              <div
+                class="absolute bottom-2 left-2 text-white font-bold text-lg bg-opacity-50 px-2 py-1 rounded font-['SF_Pro_Display']"
+                
+              >
+                Asa Land
+              </div>
+            </div>
           </div>
         </div>
       </div>
-     <div
+
+     
+
+      <!-- banner -->
+
+      <div
         class="relative max-w-6xl mx-auto py-6 rounded-xl overflow-hidden h-[247px] translate-y"
       >
         <!-- Left side tour characters -->
@@ -309,10 +327,10 @@
     </div>
 
     <!-- Newsletter Section -->
-    <div
+  <div
     class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
     <!-- Newsletter Form -->
-    <div class="max-w-xl text-left md:pl-32">
+    <div class="max-w-xl text-left md:pl-28">
       <h3 class="text-3xl mb-4 font-['SF_Pro_Display']">
         Subscribe to our Newsletter!
       </h3>
@@ -394,6 +412,16 @@
             <span style="display: flex; align-items: center; font-family: 'Inter'">
               <img src="img/sr-home.png" class="w-18 h-15 object-cover" style="margin-right: 10px" />
               Home
+            </span>
+          </button>
+        </a>
+
+        <a href="accommodation.html">
+          <button
+            class="flex items-center space-x-2 px-4 py-2 rounded-full bg-yellow-400 text-white shadow hover:bg-yellow-400">
+            <span style="display: flex; align-items: center; font-family: 'Inter'">
+              <img src="img/image 380 (Traced).png" class="w-18 h-15 object-cover " style="margin-right: 10px; color: white;" />
+              Accommodation
             </span>
           </button>
         </a>
@@ -484,53 +512,28 @@
   </footer>
 
     <script>
-      const filterButtons = document.querySelectorAll(".filter-btn");
+      const images = [
+        "img/Narantuul market/Narantuul-1.jpg",
+        "img/Narantuul market/Narantuul-2.jpg",
+        "img/Narantuul market/Narantuul-3.jpg",
+        "img/Narantuul market/Narantuul-4.jpg",
+      ];
 
-      filterButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          // Remove active styles from all buttons
-          filterButtons.forEach((b) => {
-            b.classList.remove("bg-blue-500", "text-white");
-            b.classList.add("border", "border-blue-200", "text-gray-700");
-          });
+      let currentIndex = 0;
 
-          // Add active style to clicked button
-          btn.classList.remove("border", "border-blue-200", "text-gray-700");
-          btn.classList.add("bg-blue-500", "text-white");
-        });
-      });
+      const mainImage = document.getElementById("mainImage");
+      
+      const nextBtn = document.getElementById("nextBtn");
 
-      function filterNights(category) {
-        const cards = document.querySelectorAll(".nightlife-card");
-        cards.forEach((card) => {
-          if (category === "all") {
-            card.classList.remove("hidden");
-          } else {
-            if (card.classList.contains(category)) {
-              card.classList.remove("hidden");
-            } else {
-              card.classList.add("hidden");
-            }
-          }
-        });
+      function setImage(index){
+        currentIndex = index;
+        mainImage.src = images[currentIndex];
       }
 
-      const dropdownBtn = document.getElementById("dropdownBtn");
-      const dropdownMenu = document.getElementById("dropdownMenu");
-
-      dropdownBtn.addEventListener("click", () => {
-        dropdownMenu.classList.toggle("hidden");
-      });
-
-      // Optional: click outside to close
-      document.addEventListener("click", function (event) {
-        if (
-          !dropdownBtn.contains(event.target) &&
-          !dropdownMenu.contains(event.target)
-        ) {
-          dropdownMenu.classList.add("hidden");
-        }
-      });
+      nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      setImage(currentIndex);
+    });    
     </script>
   </body>
 </html>
