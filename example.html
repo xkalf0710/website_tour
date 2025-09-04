@@ -1,124 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rooms Gallery</title>
-
-  <!-- Tailwind (хэрэв хэрэгтэй бол) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- LightGallery CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
-  />
-
-  <!-- Custom CSS (scrollbar hide) -->
-  <style>
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-</head>
-<body class="bg-gray-100">
-
-  <div id="rooms" class="py-1 space-y-6">
-    <section class="max-w-6xl mx-auto px-6 py-6">
-      <h2 class="text-xl font-semibold mb-6">Rooms</h2>
-
-      <div class="relative">
-        <!-- Carousel wrapper -->
-        <div
-          id="carousel"
-          class="flex space-x-6 overflow-x-auto scrollbar-hide"
-        >
-          <!-- Slides -->
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (1 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (1 of 7).jpg" alt="Room 1" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
-
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (2 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (2 of 7).jpg" alt="Room 2" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
-
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (3 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (3 of 7).jpg" alt="Room 3" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
-
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (4 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (4 of 7).jpg" alt="Room 4" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
-
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (5 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (5 of 7).jpg" alt="Room 5" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
-
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (6 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (6 of 7).jpg" alt="Room 6" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
-
-          <div class="flex-shrink-0 bg-white rounded-[17px] shadow p-2 w-full max-w-[350px] h-[204px] mx-auto overflow-hidden">
-            <a href="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (7 of 7).jpg" class="gallery-item">
-              <img src="../img/Tsagaan Suvraga Camp/Rooms/TsagaanSuvargaR (7 of 7).jpg" alt="Room 7" class="rounded-md object-cover w-full h-full"/>
-            </a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Hover Zoom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-6xl py-6 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-2xl shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105"
+      >
+        <div class="flex justify-center mb-4">
+          <img
+            src="../img/image 317 (Traced).png"
+            alt="Travel Icon"
+            class="w-12 h-12"
+          />
         </div>
-
-        <!-- Navigation Arrows -->
-        <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600 bg-white rounded-2xl" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-          </svg>
-        </button>
-        <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600 bg-white rounded-2xl" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </button>
+        <h3 class="text-2xl font-bold mb-2 font-['SF_Pro_Display']">
+          Exclusive, Immersive Travel Experiences
+        </h3>
+        <p
+          class="text-lg font-normal text-black leading-relaxed font-['SF_Pro_Display']"
+        >
+          Step into a one-of-a-kind journey, crafted with care by a family-run
+          business that offers only one tour at a time. Experience Mongolia’s
+          heart and soul through cultural immersion, eco-friendly practices, and
+          personalized attention.
+        </p>
       </div>
-    </section>
-  </div>
 
-  <!-- LightGallery JS -->
-  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-2xl shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105"
+      >
+        <div class="flex justify-center mb-4">
+          <img src="../img/local_see.png" alt="Camera Icon" class="w-12 h-12" />
+        </div>
+        <h3 class="text-2xl font-bold text-[28px] mb-2 font-['SF_Pro_Display']">
+          Personalized <br />
+          Storytelling in Real Time
+        </h3>
+        <p
+          class="text-lg font-normal text-black leading-relaxed font-['SF_Pro_Display']"
+        >
+          Your journey, your story—professionally captured by our expert
+          cameraguide. Receive stunning, edited visuals delivered daily, turning
+          every moment of your adventure into a shareable masterpiece.
+        </p>
+      </div>
 
-  <script>
-    // LightGallery идэвхжүүлэх
-    document.addEventListener("DOMContentLoaded", function () {
-      lightGallery(document.getElementById("carousel"), {
-        selector: ".gallery-item",
-        plugins: [lgZoom, lgThumbnail],
-        speed: 500,
-      });
-
-      // Carousel товчлуурууд
-      const carousel = document.getElementById("carousel");
-      document.getElementById("prevBtn").addEventListener("click", () => {
-        carousel.scrollBy({ left: -350, behavior: "smooth" });
-      });
-      document.getElementById("nextBtn").addEventListener("click", () => {
-        carousel.scrollBy({ left: 350, behavior: "smooth" });
-      });
-    });
-  </script>
-</body>
+      <!-- Card 3 -->
+      <div
+        class="bg-white rounded-2xl shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105"
+      >
+        <div class="flex justify-center mb-4">
+          <img
+            src="../img/footer/bnm round.png"
+            alt="Globe Icon"
+            class="w-12 h-12"
+          />
+        </div>
+        <h3 class="text-2xl font-bold text-[24px] mb-2 font-['SF_Pro_Display']">
+          A Journey That Lasts Beyond the Adventure
+        </h3>
+        <p
+          class="text-lg font-normal text-[20px] text-black leading-relaxed font-['SF_Pro_Display']"
+        >
+          Every tour you take contributes to our growing global database,
+          sharing Mongolia’s breathtaking landscapes, rich culture, and unique
+          stories with the world. Together, we preserve and showcase the beauty
+          of this extraordinary land.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
