@@ -132,19 +132,19 @@
       </div>
 
       <h1
-        class="text-3xl font-semibold font-['SF_Pro_Display']"
+        class="text-3xl font-normal font-['SF_Pro_Display']"
       >
         National Museum of Mongolia
       </h1>
 
-      <div class="flex items-center gap-2 mt-4">
+      <div class="flex items-center gap-2 mt-4 font-semibold">
         <img src="../img/sr-placemarker.png" class="w-6 h-6 aspect-square" />
         Day Trips
       </div>
 
       <div class="grid md:grid-cols-12 gap-6 mt-3">
         <div class="space-y-4 col-span-8">
-          <p class="text-lg font-['SF_Pro_Display']" >
+          <p class="text-lg font-normal font-['SF_Pro_Display']" >
             The National Museum of Mongolia is the country’s premier historical institution, offering a comprehensive journey through Mongolia’s past, from prehistoric civilizations to the rise of the Mongol Empire and beyond. As visitors enter, they are greeted by ancient petroglyphs and Bronze Age artifacts, revealing Mongolia’s deep-rooted history before Chinggis Khan. The museum’s collection includes Xiongnu-era burial artifacts, traditional Mongolian warrior armor, Buddhist relics, and nomadic tools, each telling the story of how Mongolia evolved over millennia.
             One of the most captivating exhibits is a full set of 13th-century Mongol armor, showcasing the military ingenuity that helped Chinggis Khan build the largest empire in history. Traditional clothing from Mongolia’s many ethnic groups is also displayed, providing insight into the diverse cultural traditions that still thrive today. A section dedicated to the Soviet period illustrates how Mongolia transformed under communist rule, displaying propaganda materials and relics from this complex era. Whether you’re a history enthusiast or a first-time visitor, this museum serves as an essential introduction to Mongolia’s identity and legacy.
           </p>
@@ -159,7 +159,7 @@
           <!-- Main Image -->
            <div class="aspect-video overflow-hidden rounded-lg mb-2 relative">
 
-            <img id="mainImage" src="../img/TereljNP (1 of 2).png" alt="Main landscape" class="w-full h-full object-cover transition-all duration-500" />
+            <img id="mainImage" src="../img/national museum/National museum-1.jpg" alt="Main landscape" class="w-full h-full object-cover transition-all duration-500" />
 
             <!-- Next Button -->
             <button id="nextBtn"
@@ -174,15 +174,22 @@
 
           <div class="flex gap-2">
             <img
-              src="../img/TereljNP (1 of 2).png"
+              src="../img/national museum/National museum-2.jpg"
               alt="Small 1"
-              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              class="w-[230px] h-[120px] rounded-md object-cover cursor-pointer hover:opacity-80"
               onclick="setImage(0)"
             />
             <img
-              src="../img/TereljNP (2 of 2).png"
+              src="../img/national museum/National museum-3.jpg"
               alt="Small 2"
-              class="w-1/3 rounded-md object-cover cursor-pointer hover:opacity-80"
+              class="w-[230px] h-[120px] rounded-md object-cover cursor-pointer hover:opacity-80"
+              onclick="setImage(1)"
+            />
+
+            <img
+              src="../img/national museum/National museum-4.jpg"
+              alt="Small 2"
+              class="w-[230px] h-[120px] rounded-md object-cover cursor-pointer hover:opacity-80"
               onclick="setImage(1)"
             />
           
@@ -194,7 +201,7 @@
         <div
           class="relative overflow-hidden rounded-xl shadow-lg w-full col-span-4"
         >
-          <iframe
+          <!-- <iframe
             class="object-cover w-full h-full aspect-[9/16]"
             src="https://www.youtube.com/embed/BXY36CGYikw?si=O5VDH_iTXC5blMdd"
             title="YouTube video player"
@@ -202,7 +209,9 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
+
+          <iframe class="object-cover w-full h-full aspect-[9/16]" src="https://www.youtube.com/embed/pwmlZDQ8RzU?si=Qo2cwalFk1nh2IUz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -299,15 +308,15 @@
           class="absolute top-1/2 left-[55%] transform -translate-y-1/2 text-white text-center"
         >
           <h2
-            class="text-4xl leading-tight font-bold font-['SF_Pro_Display']"
-            style="font-family: 'Mulish'"
+            class="text-5xl  font-bold font-['Mulish']"
+           
           >
             <p class="text-left">Escape to</p>
             <p>the Land of Stories</p>
           </h2>
 
           <button
-            class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['SF_Pro_Display'] shadow hover:bg-yellow-300 transition flex items-center"
+            class="mt-2 px-12 py-3 bg-yellow-400 text-blue-700 font-bold text-xl rounded-full font-['Mulish'] shadow hover:bg-yellow-300 transition flex items-center"
           >
             VISIT BNM TOURS
             <img
@@ -323,7 +332,7 @@
   <div
     class="w-full bg-[#E8EFFF] rounded-lg flex flex-col md:flex-row items-center justify-center gap-6 px-6 py-10 mt-0">
     <!-- Newsletter Form -->
-    <div class="max-w-xl text-left md:pl-28">
+    <div class="max-w-xl text-left md:pl-28 mt-12">
       <h3 class="text-3xl mb-4 font-['SF_Pro_Display']">
         Subscribe to our Newsletter!
       </h3>
@@ -361,7 +370,7 @@
     </div>
 
     <!-- WhatsApp QR Code -->
-    <div class="bg-white translate-x-6 p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md">
+    <div class="bg-white translate-x-6 p-4 rounded-xl w-fit flex flex-col items-center space-y-2 shadow-md mt-20">
       <!-- Top Icon -->
       <div class="w-12 h-12 rounded-full overflow-hidden -mt-10 border border-gray-200 shadow-sm">
         <img src="../img/footer/bnm round.png" alt="Logo" class="w-full h-full object-contain" />
@@ -372,7 +381,7 @@
 
       <!-- QR Code -->
       <div class="bg-white p-2 rounded-lg shadow">
-        <img src="../img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[200px] h-[200px] object-contain" />
+        <img src="../img/footer/BNM WebWhatsappQR.png" alt="WhatsApp QR" class="w-[150px] h-[150px] object-contain" />
       </div>
 
       <!-- Phone Number -->
@@ -506,9 +515,9 @@
 
     <script>
       const images = [
-        "../img/TereljNP (1 of 2).png", 
-        "../img/TereljNP (2 of 2).png",
-        "../img/TereljNP (2 of 2).png"
+        "../img/national museum/National museum-2.jpg", 
+        "../img/national museum/National museum-3.jpg",
+        "../img/national museum/National museum-4.jpg"
       ];
 
       let currentIndex = 0;
