@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nomadic Culture</title>
+  </head>
+  <body class="min-h-screen w-full bg-blue-100">
+    <!-- Header -->
+    <header class="bg-[#0e3b78] text-white px-6 py-3">
+      <div class="max-w-6xl mx-auto py-6 w-full flex items-center justify-center">
+        <div class="flex items-center space-x-4 pl-28">
+          <span class="font-bold text-white text-[16px]">BNM</span>
+          <img src="../img/footer/bnm round.png" class="w-7 h-7 rounded-full" alt="BNM Logo" />
+        </div>
+
+        <!-- Center -->
+        <div class="flex items-center space-x-6 flex-1 justify-center">
+          <a href="../about_us.html" class="text-sm hover:underline whitespace-nowrap text-white text-[16px] font-semibold">About us</a>
+          <div class="relative w-full max-w-md">
+            <input type="text" placeholder="Search" class="w-full pl-10 pr-4 py-2 rounded-lg text-sm text-black focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            <div class="absolute left-3 top-2.5">
+              <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM14 8a6 6 0 11-12 0 6 6 0 0112 0z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="flex items-center space-x-3">
+          <button class="bg-[#4185f4] hover:bg-[#5a95f7] p-2 rounded-md">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+            </svg>
+          </button>
+          <button class="border border-white px-3 py-1 rounded-md text-sm flex items-center font-semibold text-[16px]">
+            EN
+            <svg class="ml-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M5.25 7.5l4.75 4.75 4.75-4.75H5.25z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <nav class="flex justify-start max-w-6xl space-x-6 text-sm mt-0 border-t mx-auto border-blue-800 pl-28">
+        <a href="../index.html" class="hover:underline">Home</a>
+        <a href="../ub/visit_ulaanbaatar.html" class="hover:underline">Visit Ulaanbaatar</a>
+        <a href="../destination/destination.html" class="hover:underline">Destinations</a>
+        <a href="../accommadition/accommodation.html" class="hover:underline">Accommodation</a>
+        <a href="../tours/tours.html" class="hover:underline">BNM Tour</a>
+        <a href="../event/event.html" class="hover:underline">Events</a>
+        <a href="../information.html" class="underline font-medium">Info</a>
+        <a href="../commercial/commercial.html" class="hover:underline">Commercial</a>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="max-w-6xl mx-auto py-6 pl-28">
+      <div class="mb-4">
+        <button class="text-sm text-blue-700 hover:underline flex items-center space-x-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          <a href="nomadic_culture.html"><span class="text-sm font-['SF_Pro_Display'] font-semibold">Back</span></a>
+        </button>
+      </div>
+
+      <h1 class="text-3xl font-semibold font-['SF_Pro_Display']">Foods</h1>
+
+      <div class="mt-6 space-y-6">
+        <p class="text-justify font-['SF_Pro_Display'] text-xl"><b>Mongolian cuisine</b> is deeply connected to the country’s nomadic lifestyle and its harsh, diverse landscapes...</p>
+        <p class="text-justify font-['SF_Pro_Display'] text-xl">Mongolian food is simple yet hearty, designed to nourish and sustain families...</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="mt-6 space-y-6">
+        <div class="flex space-x-2" id="filterButtons">
+          <button onclick="filterHotels('Tsagaan')" class="filter-btn bg-blue-500 text-white px-4 py-1 font-medium rounded-full text-lg font-['SF_Pro_Display']">Tsagaan Idee</button>
+          <button onclick="filterHotels('Ulaan')" class="filter-btn border border-blue-200 text-black px-4 py-1 font-medium rounded-full text-lg font-['SF_Pro_Display']">Ulaan Idee</button>
+          <button onclick="filterHotels('Shar')" class="filter-btn border border-blue-200 text-black px-4 py-1 font-medium rounded-full text-lg font-['SF_Pro_Display']">Shar Idee</button>
+          <button onclick="filterHotels('Khar')" class="filter-btn border border-blue-200 text-black px-4 py-1 font-medium rounded-full text-lg font-['SF_Pro_Display']">Khar Idee</button>
+          <button onclick="filterHotels('Nogoon')" class="filter-btn border border-blue-200 text-black px-4 py-1 font-medium rounded-full text-lg font-['SF_Pro_Display']">Nogoon Idee</button>
+        </div>
+      </div>
+
+      <div class="mt-2 space-y-6">
+        <p class="text-justify font-['SF_Pro_Display'] text-xl">Dairy products, central to daily meals, providing nutrition and flavor.</p>
+      </div>
+
+      <!-- Tsagaan Cards -->
+      <div class="hotel-card-container Tsagaan grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto py-6">
+        <div class="hotel-card Tsagaan col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+          <a href="#"><img src="../img/Nomadic Culture/Food/White.jpg" alt="Сүү" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"/>
+          <div class="absolute bottom-2 left-2 text-white text-lg drop-shadow-md font-['SF_Pro_Display']">Сүү</div></a>
+        </div>
+        <!-- ... Add other Tsagaan cards here ... -->
+      </div>
+
+      <!-- Ulaan Cards (hidden by default) -->
+      <div class="hotel-card-container Ulaan grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto py-1 hidden">
+        <div class="hotel-card Ulaan col-span-1 row-span-1 relative rounded-xl overflow-hidden aspect-square">
+          <a href="#"><img src="../img/Nomadic Culture/Food/White.jpg" alt="Boiled Meat" class="w-full h-full object-cover rounded-lg transition-transform duration-300 hover:scale-105 hover:brightness-90"/>
+          <div class="absolute bottom-2 left-2 text-white text-lg drop-shadow-md font-['SF_Pro_Display']">Boiled Meat</div></a>
+        </div>
+        <!-- ... Add other Ulaan cards here ... -->
+      </div>
+
+      <!-- Shar, Khar, Nogoon sections same way -->
+      <div class="hotel-card-container Shar grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto py-1 hidden">
+        <!-- Shar cards -->
+      </div>
+      <div class="hotel-card-container Khar grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto py-1 hidden">
+        <!-- Khar cards -->
+      </div>
+      <div class="hotel-card-container Nogoon grid grid-cols-4 grid-rows-3 gap-4 max-w-6xl mx-auto py-1 hidden">
+        <!-- Nogoon cards -->
+      </div>
+    </div>
+
+    
+
+    <!-- JS -->
+    <script>
+      const filterButtons = document.querySelectorAll(".filter-btn");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active styles from all buttons
+          filterButtons.forEach((b) => {
+            b.classList.remove("bg-blue-500", "text-white");
+            b.classList.add("border", "border-blue-200", "text-gray-700");
+          });
+
+          // Add active style to clicked button
+          btn.classList.remove("border", "border-blue-200", "text-gray-700");
+          btn.classList.add("bg-blue-500", "text-white");
+        });
+      });
+
+      function filterHotels(category) {
+        const containers = document.querySelectorAll(".hotel-card-container");
+        containers.forEach((container) => {
+          if (container.classList.contains(category)) {
+            container.classList.remove("hidden");
+          } else {
+            container.classList.add("hidden");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
